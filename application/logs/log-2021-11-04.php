@@ -1735,3 +1735,395 @@ DEBUG - 2021-11-04 09:18:07 --> Global POST, GET and COOKIE data sanitized
 INFO - 2021-11-04 09:18:07 --> Input Class Initialized
 INFO - 2021-11-04 09:18:07 --> Language Class Initialized
 ERROR - 2021-11-04 09:18:07 --> 404 Page Not Found: Report/Plugins/images
+ERROR - 2021-11-04 10:21:54 --> Could not find the specified $config['composer_autoload'] path: C:\laragon\www\FinanceBayu\vendor/autoload.php
+INFO - 2021-11-04 10:21:54 --> Config Class Initialized
+INFO - 2021-11-04 10:21:54 --> Hooks Class Initialized
+DEBUG - 2021-11-04 10:21:54 --> UTF-8 Support Enabled
+INFO - 2021-11-04 10:21:54 --> Utf8 Class Initialized
+INFO - 2021-11-04 10:21:54 --> URI Class Initialized
+DEBUG - 2021-11-04 10:21:54 --> No URI present. Default controller set.
+INFO - 2021-11-04 10:21:54 --> Router Class Initialized
+INFO - 2021-11-04 10:21:54 --> Output Class Initialized
+INFO - 2021-11-04 10:21:54 --> Security Class Initialized
+DEBUG - 2021-11-04 10:21:54 --> Global POST, GET and COOKIE data sanitized
+INFO - 2021-11-04 10:21:54 --> Input Class Initialized
+INFO - 2021-11-04 10:21:54 --> Language Class Initialized
+INFO - 2021-11-04 10:21:54 --> Loader Class Initialized
+INFO - 2021-11-04 10:21:54 --> Helper loaded: url_helper
+INFO - 2021-11-04 10:21:54 --> Database Driver Class Initialized
+DEBUG - 2021-11-04 10:21:54 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2021-11-04 10:21:54 --> Session: Class initialized using 'files' driver.
+INFO - 2021-11-04 10:21:54 --> Controller Class Initialized
+INFO - 2021-11-04 10:21:54 --> Helper loaded: form_helper
+INFO - 2021-11-04 10:21:54 --> Model "M_login" initialized
+INFO - 2021-11-04 10:21:55 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2021-11-04 10:21:55 --> Pagination Class Initialized
+INFO - 2021-11-04 10:21:55 --> Form Validation Class Initialized
+DEBUG - 2021-11-04 10:21:55 --> Session class already loaded. Second attempt ignored.
+INFO - 2021-11-04 10:21:55 --> File loaded: C:\laragon\www\FinanceBayu\application\views\Report/base/header.php
+INFO - 2021-11-04 10:21:55 --> File loaded: C:\laragon\www\FinanceBayu\application\views\Report/login/v_login.php
+INFO - 2021-11-04 10:21:55 --> File loaded: C:\laragon\www\FinanceBayu\application\views\Report/base/footer.php
+INFO - 2021-11-04 10:21:55 --> File loaded: C:\laragon\www\FinanceBayu\application\views\Report/base/mainAdminLogin.php
+INFO - 2021-11-04 10:21:55 --> Final output sent to browser
+DEBUG - 2021-11-04 10:21:55 --> Total execution time: 0.5149
+ERROR - 2021-11-04 10:21:55 --> Could not find the specified $config['composer_autoload'] path: C:\laragon\www\FinanceBayu\vendor/autoload.php
+INFO - 2021-11-04 10:21:55 --> Config Class Initialized
+INFO - 2021-11-04 10:21:55 --> Hooks Class Initialized
+DEBUG - 2021-11-04 10:21:55 --> UTF-8 Support Enabled
+INFO - 2021-11-04 10:21:55 --> Utf8 Class Initialized
+INFO - 2021-11-04 10:21:55 --> URI Class Initialized
+DEBUG - 2021-11-04 10:21:55 --> No URI present. Default controller set.
+INFO - 2021-11-04 10:21:55 --> Router Class Initialized
+INFO - 2021-11-04 10:21:55 --> Output Class Initialized
+INFO - 2021-11-04 10:21:55 --> Security Class Initialized
+DEBUG - 2021-11-04 10:21:55 --> Global POST, GET and COOKIE data sanitized
+INFO - 2021-11-04 10:21:55 --> Input Class Initialized
+INFO - 2021-11-04 10:21:55 --> Language Class Initialized
+INFO - 2021-11-04 10:21:55 --> Loader Class Initialized
+INFO - 2021-11-04 10:21:55 --> Helper loaded: url_helper
+INFO - 2021-11-04 10:21:55 --> Database Driver Class Initialized
+DEBUG - 2021-11-04 10:21:55 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2021-11-04 10:21:55 --> Session: Class initialized using 'files' driver.
+INFO - 2021-11-04 10:21:55 --> Controller Class Initialized
+INFO - 2021-11-04 10:21:55 --> Helper loaded: form_helper
+INFO - 2021-11-04 10:21:55 --> Model "M_login" initialized
+INFO - 2021-11-04 10:21:55 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2021-11-04 10:21:55 --> Pagination Class Initialized
+INFO - 2021-11-04 10:21:55 --> Form Validation Class Initialized
+DEBUG - 2021-11-04 10:21:55 --> Session class already loaded. Second attempt ignored.
+INFO - 2021-11-04 10:21:55 --> File loaded: C:\laragon\www\FinanceBayu\application\views\Report/base/header.php
+INFO - 2021-11-04 10:21:55 --> File loaded: C:\laragon\www\FinanceBayu\application\views\Report/login/v_login.php
+INFO - 2021-11-04 10:21:55 --> File loaded: C:\laragon\www\FinanceBayu\application\views\Report/base/footer.php
+INFO - 2021-11-04 10:21:55 --> File loaded: C:\laragon\www\FinanceBayu\application\views\Report/base/mainAdminLogin.php
+INFO - 2021-11-04 10:21:55 --> Final output sent to browser
+DEBUG - 2021-11-04 10:21:55 --> Total execution time: 0.0712
+ERROR - 2021-11-04 10:21:56 --> Could not find the specified $config['composer_autoload'] path: C:\laragon\www\FinanceBayu\vendor/autoload.php
+INFO - 2021-11-04 10:21:56 --> Config Class Initialized
+INFO - 2021-11-04 10:21:56 --> Hooks Class Initialized
+DEBUG - 2021-11-04 10:21:56 --> UTF-8 Support Enabled
+INFO - 2021-11-04 10:21:56 --> Utf8 Class Initialized
+INFO - 2021-11-04 10:21:56 --> URI Class Initialized
+INFO - 2021-11-04 10:21:56 --> Router Class Initialized
+INFO - 2021-11-04 10:21:56 --> Output Class Initialized
+INFO - 2021-11-04 10:21:56 --> Security Class Initialized
+DEBUG - 2021-11-04 10:21:56 --> Global POST, GET and COOKIE data sanitized
+INFO - 2021-11-04 10:21:56 --> Input Class Initialized
+INFO - 2021-11-04 10:21:56 --> Language Class Initialized
+ERROR - 2021-11-04 10:21:56 --> 404 Page Not Found: Plugins/components
+ERROR - 2021-11-04 10:21:59 --> Could not find the specified $config['composer_autoload'] path: C:\laragon\www\FinanceBayu\vendor/autoload.php
+INFO - 2021-11-04 10:21:59 --> Config Class Initialized
+INFO - 2021-11-04 10:21:59 --> Hooks Class Initialized
+DEBUG - 2021-11-04 10:21:59 --> UTF-8 Support Enabled
+INFO - 2021-11-04 10:21:59 --> Utf8 Class Initialized
+INFO - 2021-11-04 10:21:59 --> URI Class Initialized
+INFO - 2021-11-04 10:21:59 --> Router Class Initialized
+INFO - 2021-11-04 10:21:59 --> Output Class Initialized
+INFO - 2021-11-04 10:21:59 --> Security Class Initialized
+DEBUG - 2021-11-04 10:21:59 --> Global POST, GET and COOKIE data sanitized
+INFO - 2021-11-04 10:21:59 --> Input Class Initialized
+INFO - 2021-11-04 10:21:59 --> Language Class Initialized
+INFO - 2021-11-04 10:21:59 --> Loader Class Initialized
+INFO - 2021-11-04 10:21:59 --> Helper loaded: url_helper
+INFO - 2021-11-04 10:21:59 --> Database Driver Class Initialized
+DEBUG - 2021-11-04 10:21:59 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2021-11-04 10:21:59 --> Session: Class initialized using 'files' driver.
+INFO - 2021-11-04 10:21:59 --> Controller Class Initialized
+INFO - 2021-11-04 10:21:59 --> Helper loaded: form_helper
+INFO - 2021-11-04 10:21:59 --> Model "M_login" initialized
+INFO - 2021-11-04 10:21:59 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2021-11-04 10:21:59 --> Pagination Class Initialized
+INFO - 2021-11-04 10:21:59 --> Form Validation Class Initialized
+DEBUG - 2021-11-04 10:21:59 --> Session class already loaded. Second attempt ignored.
+INFO - 2021-11-04 10:21:59 --> Language file loaded: language/english/form_validation_lang.php
+ERROR - 2021-11-04 10:21:59 --> Could not find the specified $config['composer_autoload'] path: C:\laragon\www\FinanceBayu\vendor/autoload.php
+INFO - 2021-11-04 10:21:59 --> Config Class Initialized
+INFO - 2021-11-04 10:21:59 --> Hooks Class Initialized
+DEBUG - 2021-11-04 10:21:59 --> UTF-8 Support Enabled
+INFO - 2021-11-04 10:21:59 --> Utf8 Class Initialized
+INFO - 2021-11-04 10:21:59 --> URI Class Initialized
+INFO - 2021-11-04 10:21:59 --> Router Class Initialized
+INFO - 2021-11-04 10:21:59 --> Output Class Initialized
+INFO - 2021-11-04 10:21:59 --> Security Class Initialized
+DEBUG - 2021-11-04 10:21:59 --> Global POST, GET and COOKIE data sanitized
+INFO - 2021-11-04 10:21:59 --> Input Class Initialized
+INFO - 2021-11-04 10:21:59 --> Language Class Initialized
+INFO - 2021-11-04 10:21:59 --> Loader Class Initialized
+INFO - 2021-11-04 10:21:59 --> Helper loaded: url_helper
+INFO - 2021-11-04 10:21:59 --> Database Driver Class Initialized
+DEBUG - 2021-11-04 10:21:59 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2021-11-04 10:21:59 --> Session: Class initialized using 'files' driver.
+INFO - 2021-11-04 10:21:59 --> Controller Class Initialized
+INFO - 2021-11-04 10:21:59 --> Helper loaded: form_helper
+INFO - 2021-11-04 10:21:59 --> Model "M_login" initialized
+INFO - 2021-11-04 10:21:59 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2021-11-04 10:21:59 --> Pagination Class Initialized
+INFO - 2021-11-04 10:21:59 --> Form Validation Class Initialized
+DEBUG - 2021-11-04 10:21:59 --> Session class already loaded. Second attempt ignored.
+INFO - 2021-11-04 10:21:59 --> File loaded: C:\laragon\www\FinanceBayu\application\views\Report/base/header.php
+INFO - 2021-11-04 10:21:59 --> File loaded: C:\laragon\www\FinanceBayu\application\views\Report/login/v_login.php
+INFO - 2021-11-04 10:21:59 --> File loaded: C:\laragon\www\FinanceBayu\application\views\Report/base/footer.php
+INFO - 2021-11-04 10:21:59 --> File loaded: C:\laragon\www\FinanceBayu\application\views\Report/base/mainAdminLogin.php
+INFO - 2021-11-04 10:21:59 --> Final output sent to browser
+DEBUG - 2021-11-04 10:21:59 --> Total execution time: 0.0330
+ERROR - 2021-11-04 10:22:00 --> Could not find the specified $config['composer_autoload'] path: C:\laragon\www\FinanceBayu\vendor/autoload.php
+INFO - 2021-11-04 10:22:00 --> Config Class Initialized
+INFO - 2021-11-04 10:22:00 --> Hooks Class Initialized
+DEBUG - 2021-11-04 10:22:00 --> UTF-8 Support Enabled
+INFO - 2021-11-04 10:22:00 --> Utf8 Class Initialized
+INFO - 2021-11-04 10:22:00 --> URI Class Initialized
+INFO - 2021-11-04 10:22:00 --> Router Class Initialized
+INFO - 2021-11-04 10:22:00 --> Output Class Initialized
+INFO - 2021-11-04 10:22:00 --> Security Class Initialized
+DEBUG - 2021-11-04 10:22:00 --> Global POST, GET and COOKIE data sanitized
+INFO - 2021-11-04 10:22:00 --> Input Class Initialized
+INFO - 2021-11-04 10:22:00 --> Language Class Initialized
+ERROR - 2021-11-04 10:22:00 --> 404 Page Not Found: Plugins/components
+ERROR - 2021-11-04 10:22:00 --> Could not find the specified $config['composer_autoload'] path: C:\laragon\www\FinanceBayu\vendor/autoload.php
+INFO - 2021-11-04 10:22:00 --> Config Class Initialized
+INFO - 2021-11-04 10:22:00 --> Hooks Class Initialized
+DEBUG - 2021-11-04 10:22:00 --> UTF-8 Support Enabled
+INFO - 2021-11-04 10:22:00 --> Utf8 Class Initialized
+INFO - 2021-11-04 10:22:00 --> URI Class Initialized
+INFO - 2021-11-04 10:22:00 --> Router Class Initialized
+INFO - 2021-11-04 10:22:00 --> Output Class Initialized
+INFO - 2021-11-04 10:22:00 --> Security Class Initialized
+DEBUG - 2021-11-04 10:22:00 --> Global POST, GET and COOKIE data sanitized
+INFO - 2021-11-04 10:22:00 --> Input Class Initialized
+INFO - 2021-11-04 10:22:00 --> Language Class Initialized
+ERROR - 2021-11-04 10:22:00 --> 404 Page Not Found: Plugins/components
+ERROR - 2021-11-04 10:22:06 --> Could not find the specified $config['composer_autoload'] path: C:\laragon\www\FinanceBayu\vendor/autoload.php
+INFO - 2021-11-04 10:22:06 --> Config Class Initialized
+INFO - 2021-11-04 10:22:06 --> Hooks Class Initialized
+DEBUG - 2021-11-04 10:22:06 --> UTF-8 Support Enabled
+INFO - 2021-11-04 10:22:06 --> Utf8 Class Initialized
+INFO - 2021-11-04 10:22:06 --> URI Class Initialized
+INFO - 2021-11-04 10:22:06 --> Router Class Initialized
+INFO - 2021-11-04 10:22:06 --> Output Class Initialized
+INFO - 2021-11-04 10:22:06 --> Security Class Initialized
+DEBUG - 2021-11-04 10:22:06 --> Global POST, GET and COOKIE data sanitized
+INFO - 2021-11-04 10:22:06 --> Input Class Initialized
+INFO - 2021-11-04 10:22:06 --> Language Class Initialized
+INFO - 2021-11-04 10:22:06 --> Loader Class Initialized
+INFO - 2021-11-04 10:22:06 --> Helper loaded: url_helper
+INFO - 2021-11-04 10:22:06 --> Database Driver Class Initialized
+DEBUG - 2021-11-04 10:22:06 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2021-11-04 10:22:06 --> Session: Class initialized using 'files' driver.
+INFO - 2021-11-04 10:22:06 --> Controller Class Initialized
+INFO - 2021-11-04 10:22:06 --> Helper loaded: form_helper
+INFO - 2021-11-04 10:22:06 --> Model "M_login" initialized
+INFO - 2021-11-04 10:22:06 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2021-11-04 10:22:06 --> Pagination Class Initialized
+INFO - 2021-11-04 10:22:06 --> Form Validation Class Initialized
+DEBUG - 2021-11-04 10:22:06 --> Session class already loaded. Second attempt ignored.
+INFO - 2021-11-04 10:22:06 --> Language file loaded: language/english/form_validation_lang.php
+ERROR - 2021-11-04 10:22:06 --> Could not find the specified $config['composer_autoload'] path: C:\laragon\www\FinanceBayu\vendor/autoload.php
+INFO - 2021-11-04 10:22:06 --> Config Class Initialized
+INFO - 2021-11-04 10:22:06 --> Hooks Class Initialized
+DEBUG - 2021-11-04 10:22:06 --> UTF-8 Support Enabled
+INFO - 2021-11-04 10:22:06 --> Utf8 Class Initialized
+INFO - 2021-11-04 10:22:06 --> URI Class Initialized
+INFO - 2021-11-04 10:22:06 --> Router Class Initialized
+INFO - 2021-11-04 10:22:06 --> Output Class Initialized
+INFO - 2021-11-04 10:22:06 --> Security Class Initialized
+DEBUG - 2021-11-04 10:22:06 --> Global POST, GET and COOKIE data sanitized
+INFO - 2021-11-04 10:22:06 --> Input Class Initialized
+INFO - 2021-11-04 10:22:06 --> Language Class Initialized
+INFO - 2021-11-04 10:22:06 --> Loader Class Initialized
+INFO - 2021-11-04 10:22:06 --> Helper loaded: url_helper
+INFO - 2021-11-04 10:22:06 --> Database Driver Class Initialized
+DEBUG - 2021-11-04 10:22:06 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2021-11-04 10:22:06 --> Session: Class initialized using 'files' driver.
+INFO - 2021-11-04 10:22:06 --> Controller Class Initialized
+INFO - 2021-11-04 10:22:06 --> Helper loaded: form_helper
+INFO - 2021-11-04 10:22:06 --> Model "M_Admin" initialized
+INFO - 2021-11-04 10:22:06 --> Model "Jobs_update_model" initialized
+INFO - 2021-11-04 10:22:06 --> Model "JobsModel" initialized
+INFO - 2021-11-04 10:22:06 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2021-11-04 10:22:06 --> Pagination Class Initialized
+INFO - 2021-11-04 10:22:06 --> Form Validation Class Initialized
+DEBUG - 2021-11-04 10:22:06 --> Session class already loaded. Second attempt ignored.
+INFO - 2021-11-04 10:22:06 --> File loaded: C:\laragon\www\FinanceBayu\application\views\Report/base/header.php
+INFO - 2021-11-04 10:22:06 --> File loaded: C:\laragon\www\FinanceBayu\application\views\Report/base/sidebar.php
+INFO - 2021-11-04 10:22:06 --> File loaded: C:\laragon\www\FinanceBayu\application\views\Report/Staff/adminStaff.php
+INFO - 2021-11-04 10:22:06 --> File loaded: C:\laragon\www\FinanceBayu\application\views\Report/base/footer.php
+INFO - 2021-11-04 10:22:06 --> File loaded: C:\laragon\www\FinanceBayu\application\views\Report/base/main.php
+INFO - 2021-11-04 10:22:06 --> Final output sent to browser
+DEBUG - 2021-11-04 10:22:06 --> Total execution time: 0.1354
+ERROR - 2021-11-04 10:22:06 --> Could not find the specified $config['composer_autoload'] path: C:\laragon\www\FinanceBayu\vendor/autoload.php
+INFO - 2021-11-04 10:22:06 --> Config Class Initialized
+INFO - 2021-11-04 10:22:06 --> Hooks Class Initialized
+DEBUG - 2021-11-04 10:22:06 --> UTF-8 Support Enabled
+INFO - 2021-11-04 10:22:06 --> Utf8 Class Initialized
+INFO - 2021-11-04 10:22:06 --> URI Class Initialized
+INFO - 2021-11-04 10:22:06 --> Router Class Initialized
+INFO - 2021-11-04 10:22:06 --> Output Class Initialized
+INFO - 2021-11-04 10:22:06 --> Security Class Initialized
+DEBUG - 2021-11-04 10:22:06 --> Global POST, GET and COOKIE data sanitized
+INFO - 2021-11-04 10:22:06 --> Input Class Initialized
+INFO - 2021-11-04 10:22:06 --> Language Class Initialized
+ERROR - 2021-11-04 10:22:06 --> 404 Page Not Found: Plugins/components
+ERROR - 2021-11-04 10:22:07 --> Could not find the specified $config['composer_autoload'] path: C:\laragon\www\FinanceBayu\vendor/autoload.php
+INFO - 2021-11-04 10:22:07 --> Config Class Initialized
+INFO - 2021-11-04 10:22:07 --> Hooks Class Initialized
+DEBUG - 2021-11-04 10:22:07 --> UTF-8 Support Enabled
+INFO - 2021-11-04 10:22:07 --> Utf8 Class Initialized
+INFO - 2021-11-04 10:22:07 --> URI Class Initialized
+INFO - 2021-11-04 10:22:07 --> Router Class Initialized
+INFO - 2021-11-04 10:22:07 --> Output Class Initialized
+INFO - 2021-11-04 10:22:07 --> Security Class Initialized
+DEBUG - 2021-11-04 10:22:07 --> Global POST, GET and COOKIE data sanitized
+INFO - 2021-11-04 10:22:07 --> Input Class Initialized
+INFO - 2021-11-04 10:22:07 --> Language Class Initialized
+ERROR - 2021-11-04 10:22:07 --> 404 Page Not Found: Plugins/images
+ERROR - 2021-11-04 10:22:07 --> Could not find the specified $config['composer_autoload'] path: C:\laragon\www\FinanceBayu\vendor/autoload.php
+INFO - 2021-11-04 10:22:07 --> Config Class Initialized
+INFO - 2021-11-04 10:22:07 --> Hooks Class Initialized
+DEBUG - 2021-11-04 10:22:07 --> UTF-8 Support Enabled
+INFO - 2021-11-04 10:22:07 --> Utf8 Class Initialized
+INFO - 2021-11-04 10:22:07 --> URI Class Initialized
+INFO - 2021-11-04 10:22:07 --> Router Class Initialized
+INFO - 2021-11-04 10:22:07 --> Output Class Initialized
+INFO - 2021-11-04 10:22:07 --> Security Class Initialized
+DEBUG - 2021-11-04 10:22:07 --> Global POST, GET and COOKIE data sanitized
+INFO - 2021-11-04 10:22:07 --> Input Class Initialized
+INFO - 2021-11-04 10:22:07 --> Language Class Initialized
+ERROR - 2021-11-04 10:22:07 --> 404 Page Not Found: Plugins/components
+ERROR - 2021-11-04 10:22:08 --> Could not find the specified $config['composer_autoload'] path: C:\laragon\www\FinanceBayu\vendor/autoload.php
+INFO - 2021-11-04 10:22:08 --> Config Class Initialized
+INFO - 2021-11-04 10:22:08 --> Hooks Class Initialized
+DEBUG - 2021-11-04 10:22:08 --> UTF-8 Support Enabled
+INFO - 2021-11-04 10:22:08 --> Utf8 Class Initialized
+INFO - 2021-11-04 10:22:08 --> URI Class Initialized
+INFO - 2021-11-04 10:22:08 --> Router Class Initialized
+INFO - 2021-11-04 10:22:08 --> Output Class Initialized
+INFO - 2021-11-04 10:22:08 --> Security Class Initialized
+DEBUG - 2021-11-04 10:22:08 --> Global POST, GET and COOKIE data sanitized
+INFO - 2021-11-04 10:22:08 --> Input Class Initialized
+INFO - 2021-11-04 10:22:08 --> Language Class Initialized
+ERROR - 2021-11-04 10:22:08 --> 404 Page Not Found: Plugins/images
+ERROR - 2021-11-04 10:22:08 --> Could not find the specified $config['composer_autoload'] path: C:\laragon\www\FinanceBayu\vendor/autoload.php
+INFO - 2021-11-04 10:22:08 --> Config Class Initialized
+ERROR - 2021-11-04 10:22:08 --> Could not find the specified $config['composer_autoload'] path: C:\laragon\www\FinanceBayu\vendor/autoload.php
+INFO - 2021-11-04 10:22:08 --> Hooks Class Initialized
+INFO - 2021-11-04 10:22:08 --> Config Class Initialized
+INFO - 2021-11-04 10:22:08 --> Hooks Class Initialized
+DEBUG - 2021-11-04 10:22:08 --> UTF-8 Support Enabled
+INFO - 2021-11-04 10:22:08 --> Utf8 Class Initialized
+INFO - 2021-11-04 10:22:08 --> URI Class Initialized
+DEBUG - 2021-11-04 10:22:08 --> UTF-8 Support Enabled
+INFO - 2021-11-04 10:22:08 --> Utf8 Class Initialized
+INFO - 2021-11-04 10:22:08 --> Router Class Initialized
+INFO - 2021-11-04 10:22:08 --> URI Class Initialized
+ERROR - 2021-11-04 10:22:08 --> Could not find the specified $config['composer_autoload'] path: C:\laragon\www\FinanceBayu\vendor/autoload.php
+ERROR - 2021-11-04 10:22:08 --> Could not find the specified $config['composer_autoload'] path: C:\laragon\www\FinanceBayu\vendor/autoload.php
+INFO - 2021-11-04 10:22:08 --> Router Class Initialized
+INFO - 2021-11-04 10:22:08 --> Output Class Initialized
+INFO - 2021-11-04 10:22:08 --> Security Class Initialized
+INFO - 2021-11-04 10:22:08 --> Config Class Initialized
+INFO - 2021-11-04 10:22:08 --> Config Class Initialized
+INFO - 2021-11-04 10:22:08 --> Output Class Initialized
+INFO - 2021-11-04 10:22:08 --> Hooks Class Initialized
+INFO - 2021-11-04 10:22:08 --> Hooks Class Initialized
+DEBUG - 2021-11-04 10:22:08 --> Global POST, GET and COOKIE data sanitized
+INFO - 2021-11-04 10:22:08 --> Input Class Initialized
+INFO - 2021-11-04 10:22:08 --> Security Class Initialized
+DEBUG - 2021-11-04 10:22:08 --> UTF-8 Support Enabled
+DEBUG - 2021-11-04 10:22:08 --> UTF-8 Support Enabled
+INFO - 2021-11-04 10:22:08 --> Language Class Initialized
+DEBUG - 2021-11-04 10:22:08 --> Global POST, GET and COOKIE data sanitized
+INFO - 2021-11-04 10:22:08 --> Utf8 Class Initialized
+INFO - 2021-11-04 10:22:08 --> Utf8 Class Initialized
+INFO - 2021-11-04 10:22:08 --> Input Class Initialized
+ERROR - 2021-11-04 10:22:08 --> 404 Page Not Found: Plugins/images
+INFO - 2021-11-04 10:22:08 --> URI Class Initialized
+INFO - 2021-11-04 10:22:08 --> URI Class Initialized
+INFO - 2021-11-04 10:22:08 --> Language Class Initialized
+ERROR - 2021-11-04 10:22:08 --> 404 Page Not Found: Plugins/images
+INFO - 2021-11-04 10:22:08 --> Router Class Initialized
+INFO - 2021-11-04 10:22:08 --> Router Class Initialized
+INFO - 2021-11-04 10:22:08 --> Output Class Initialized
+INFO - 2021-11-04 10:22:08 --> Output Class Initialized
+INFO - 2021-11-04 10:22:08 --> Security Class Initialized
+INFO - 2021-11-04 10:22:08 --> Security Class Initialized
+DEBUG - 2021-11-04 10:22:08 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2021-11-04 10:22:08 --> Global POST, GET and COOKIE data sanitized
+INFO - 2021-11-04 10:22:08 --> Input Class Initialized
+INFO - 2021-11-04 10:22:08 --> Input Class Initialized
+INFO - 2021-11-04 10:22:08 --> Language Class Initialized
+INFO - 2021-11-04 10:22:08 --> Language Class Initialized
+ERROR - 2021-11-04 10:22:08 --> 404 Page Not Found: Plugins/images
+ERROR - 2021-11-04 10:22:08 --> 404 Page Not Found: Plugins/images
+ERROR - 2021-11-04 10:22:11 --> Could not find the specified $config['composer_autoload'] path: C:\laragon\www\FinanceBayu\vendor/autoload.php
+INFO - 2021-11-04 10:22:11 --> Config Class Initialized
+INFO - 2021-11-04 10:22:11 --> Hooks Class Initialized
+DEBUG - 2021-11-04 10:22:11 --> UTF-8 Support Enabled
+INFO - 2021-11-04 10:22:11 --> Utf8 Class Initialized
+INFO - 2021-11-04 10:22:11 --> URI Class Initialized
+INFO - 2021-11-04 10:22:11 --> Router Class Initialized
+INFO - 2021-11-04 10:22:11 --> Output Class Initialized
+INFO - 2021-11-04 10:22:11 --> Security Class Initialized
+DEBUG - 2021-11-04 10:22:11 --> Global POST, GET and COOKIE data sanitized
+INFO - 2021-11-04 10:22:11 --> Input Class Initialized
+INFO - 2021-11-04 10:22:11 --> Language Class Initialized
+ERROR - 2021-11-04 10:22:11 --> Severity: Warning --> require(vendor/autoload.php): failed to open stream: No such file or directory C:\laragon\www\FinanceBayu\application\controllers\Report\Finance.php 5
+ERROR - 2021-11-04 10:22:11 --> Severity: Compile Error --> require(): Failed opening required 'vendor/autoload.php' (include_path='.;C:/laragon/etc/php/pear') C:\laragon\www\FinanceBayu\application\controllers\Report\Finance.php 5
+ERROR - 2021-11-04 10:22:11 --> Could not find the specified $config['composer_autoload'] path: C:\laragon\www\FinanceBayu\vendor/autoload.php
+INFO - 2021-11-04 10:22:11 --> Config Class Initialized
+INFO - 2021-11-04 10:22:11 --> Hooks Class Initialized
+DEBUG - 2021-11-04 10:22:11 --> UTF-8 Support Enabled
+INFO - 2021-11-04 10:22:11 --> Utf8 Class Initialized
+INFO - 2021-11-04 10:22:11 --> URI Class Initialized
+INFO - 2021-11-04 10:22:11 --> Router Class Initialized
+INFO - 2021-11-04 10:22:11 --> Output Class Initialized
+INFO - 2021-11-04 10:22:11 --> Security Class Initialized
+DEBUG - 2021-11-04 10:22:11 --> Global POST, GET and COOKIE data sanitized
+INFO - 2021-11-04 10:22:11 --> Input Class Initialized
+INFO - 2021-11-04 10:22:11 --> Language Class Initialized
+ERROR - 2021-11-04 10:22:11 --> 404 Page Not Found: Faviconico/index
+ERROR - 2021-11-04 10:24:46 --> Severity: Warning --> require(C:\laragon\www\FinanceBayu\vendor\composer/../symfony/polyfill-ctype/bootstrap.php): failed to open stream: No such file or directory C:\laragon\www\FinanceBayu\vendor\composer\autoload_real.php 71
+ERROR - 2021-11-04 10:24:46 --> Severity: Compile Error --> require(): Failed opening required 'C:\laragon\www\FinanceBayu\vendor\composer/../symfony/polyfill-ctype/bootstrap.php' (include_path='.;C:/laragon/etc/php/pear') C:\laragon\www\FinanceBayu\vendor\composer\autoload_real.php 71
+INFO - 2021-11-04 10:24:57 --> Config Class Initialized
+INFO - 2021-11-04 10:24:57 --> Hooks Class Initialized
+DEBUG - 2021-11-04 10:24:57 --> UTF-8 Support Enabled
+INFO - 2021-11-04 10:24:57 --> Utf8 Class Initialized
+INFO - 2021-11-04 10:24:57 --> URI Class Initialized
+INFO - 2021-11-04 10:24:57 --> Router Class Initialized
+INFO - 2021-11-04 10:24:57 --> Output Class Initialized
+INFO - 2021-11-04 10:24:57 --> Security Class Initialized
+DEBUG - 2021-11-04 10:24:57 --> Global POST, GET and COOKIE data sanitized
+INFO - 2021-11-04 10:24:57 --> Input Class Initialized
+INFO - 2021-11-04 10:24:57 --> Language Class Initialized
+INFO - 2021-11-04 10:24:57 --> Loader Class Initialized
+INFO - 2021-11-04 10:24:57 --> Helper loaded: url_helper
+INFO - 2021-11-04 10:24:57 --> Database Driver Class Initialized
+DEBUG - 2021-11-04 10:24:57 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2021-11-04 10:24:57 --> Session: Class initialized using 'files' driver.
+INFO - 2021-11-04 10:24:57 --> Controller Class Initialized
+INFO - 2021-11-04 10:24:57 --> Helper loaded: form_helper
+INFO - 2021-11-04 10:24:57 --> Model "M_Admin" initialized
+INFO - 2021-11-04 10:24:57 --> Model "Jobs_update_model" initialized
+INFO - 2021-11-04 10:24:57 --> Model "JobsModel" initialized
+INFO - 2021-11-04 10:24:57 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2021-11-04 10:24:57 --> Pagination Class Initialized
+INFO - 2021-11-04 10:24:57 --> Form Validation Class Initialized
+DEBUG - 2021-11-04 10:24:57 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2021-11-04 10:24:57 --> Pagination class already loaded. Second attempt ignored.
+INFO - 2021-11-04 10:24:57 --> File loaded: C:\laragon\www\FinanceBayu\application\views\Report/base/header.php
+INFO - 2021-11-04 10:24:57 --> File loaded: C:\laragon\www\FinanceBayu\application\views\Report/base/sidebar.php
+INFO - 2021-11-04 10:24:57 --> File loaded: C:\laragon\www\FinanceBayu\application\views\Report/Finance/ViewPostingJournal.php
+INFO - 2021-11-04 10:24:57 --> File loaded: C:\laragon\www\FinanceBayu\application\views\Report/base/footer.php
+INFO - 2021-11-04 10:24:57 --> File loaded: C:\laragon\www\FinanceBayu\application\views\Report/base/main.php
+INFO - 2021-11-04 10:24:57 --> Final output sent to browser
+DEBUG - 2021-11-04 10:24:57 --> Total execution time: 0.0914
+INFO - 2021-11-04 10:24:57 --> Config Class Initialized
+INFO - 2021-11-04 10:24:57 --> Hooks Class Initialized
+DEBUG - 2021-11-04 10:24:57 --> UTF-8 Support Enabled
+INFO - 2021-11-04 10:24:57 --> Utf8 Class Initialized
+INFO - 2021-11-04 10:24:57 --> URI Class Initialized
+INFO - 2021-11-04 10:24:57 --> Router Class Initialized
+INFO - 2021-11-04 10:24:57 --> Output Class Initialized
+INFO - 2021-11-04 10:24:57 --> Security Class Initialized
+DEBUG - 2021-11-04 10:24:57 --> Global POST, GET and COOKIE data sanitized
+INFO - 2021-11-04 10:24:57 --> Input Class Initialized
+INFO - 2021-11-04 10:24:57 --> Language Class Initialized
+ERROR - 2021-11-04 10:24:57 --> 404 Page Not Found: Report/Plugins/components
