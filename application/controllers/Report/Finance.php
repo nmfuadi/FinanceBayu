@@ -1347,7 +1347,48 @@ class Finance extends AppBase
         $select = 'a.*,bank_rek_name,bank_norek,branch,gl_account,bank_name';
         $load_resource['data'] = $this->M_Admin->get_all_data_where_select($select,$table, $where);
         $load_resource['account'] = $this->M_Admin->get_all_data('fin_account');
+        $load_resource['tgl'] =$tgl;
         $this->load->view($this->MAIN_VIEW, $load_resource); // fix
+    }
+
+
+
+    public function postingPorcessAll()
+    {
+      echo $typeAction = $this->input->post('actionType', TRUE);
+      echo $tgl = $this->input->post('tglGet', TRUE);
+       $id =$this->input->post('myCheckboxes', TRUE);
+       echo $account = $this->input->post('accountAll', TRUE);
+
+        $mutasi_id=explode(",",$id);
+        print_r($mutasi_id);
+        $jml_acc = count($mutasi_id);
+
+        for($i=0;$i<=$jml_acc;$i++){
+
+            $tglnew = rawurldecode($tgl);
+        
+
+            if ($typeAction == 'UPDATE') {
+              $data = array(
+    
+                    'account_code' => $account,
+                    'posting_st' => 'YES',
+                    'posting_by' => $this->session->userdata('u'),
+                );
+    
+                $where = array(
+    
+                    'id' => $mutasi_id[$i]
+                );
+    
+                $this->M_Admin->update('fin_mutation', $data, $where);
+            }
+               
+    
+               
+            }
+       
     }
 
     public function postingPorcess($ids = null, $tgll = null, $typeAct = null, $fr = null)
