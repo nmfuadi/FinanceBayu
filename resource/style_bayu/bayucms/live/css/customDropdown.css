@@ -1,0 +1,317 @@
+.bookingtab .custom-dropdown {
+    position: absolute;
+    background-color: #FFF;
+    padding: 0px;
+    width: 325px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 11px;
+    top: 100%;
+    margin-top: -15px;
+    z-index: 999;
+    /* border: 1px solid #ccc; */
+}
+
+.modal .custom-dropdown {
+    max-height: 500px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+
+/* .bookingtab .custom-dropdown:before {
+    content: "";
+    position: absolute;
+    border-color: rgba(221, 221, 221, 0);
+    border: solid #ccc; 
+    margin-left: -13px;
+    width: 19px;
+    height: 19px;
+    display: inline-block;
+    background: #fff;
+    border-width: 1px 1px 0 0;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    top: -8px;
+    left: 45px;
+} */
+
+.bookingtab .custom-dropdown .btn-block {
+    display: inherit;
+    width: auto
+}
+
+.bookingtab .select-multi-hotel .custom-dropdown {
+    top: 113px;
+    background: #ebedec;
+    box-shadow: none;
+    padding: 0px 5px;
+}
+
+.room-container {
+    display: inline-block;
+    width: 100%;
+    padding: 5px 15px 5px 15px;
+    border-top: 1px solid #e5e5e5;
+}
+
+.bookingtab .custom-dropdown .room-container .row {
+    margin: 0;
+}
+
+.bookingtab .custom-dropdown .room-container .room-title {
+    padding: 4px 0;
+}
+
+.bookingtab .custom-dropdown .room-container .custom-group .label-input {
+    /* display: flex; */
+    align-items: center;
+    justify-content: space-between;
+    padding: 2px 0;
+}
+
+.bookingtab .custom-dropdown .room-container .custom-group .label-input .input-group {
+    display: inline-flex;
+    align-items: center;
+    width: 100px;
+}
+
+.custom-dropdown .room-container .custom-group .label-input .input-group .btn.btn-decrement[disabled],
+.custom-dropdown .room-container .custom-group .label-input .input-group .btn.btn-increment[disabled] {
+    pointer-events: none;
+}
+
+.bookingtab .custom-dropdown .room-container .custom-group .label-input label {
+    color: #333;
+    font-size: 12px;
+    /* width: 50%; */
+    margin: 0;
+    line-height: normal;
+}
+
+.bookingtab .custom-dropdown .room-container .custom-group .label-input label em {
+    display: inline-block;
+    font-size: 12px;
+    width: 100%;
+    font-style: normal;
+}
+
+.bookingtab .custom-dropdown .room-container .custom-group .label-input .btn,
+.bookingtab .custom-dropdown .room-container .custom-group .label-input .btn:hover,
+.bookingtab .custom-dropdown .room-container .custom-group .label-input .btn:focus,
+.bookingtab .custom-dropdown .room-container .custom-group .label-input .btn:active,
+.bookingtab .custom-dropdown .room-container .custom-group .label-input .btn:active:focus {
+    display: inline-block;
+    border: none;
+    padding: 0 1px;
+    min-width: inherit !important;
+    background: transparent;
+    color: #616161;
+    font-size: 20px;
+    line-height: normal;
+    box-shadow: none;
+}
+
+.bookingtab .custom-dropdown .room-container .custom-group .label-input .btn:not([disabled]):hover {
+    color: #e94928;
+}
+
+.bookingtab .custom-dropdown .room-container .custom-group .label-input .btn i {
+    float: left;
+}
+
+.bookingtab .custom-dropdown .room-container .custom-group .label-input .form-control {
+    padding: 4px 6px;
+    height: auto;
+    min-height: inherit;
+}
+
+.bookingtab .custom-dropdown .room-container .custom-group .label-input .input-group .form-control {
+    width: 30px;
+}
+
+.bookingtab .custom-dropdown .room-container .custom-group .label-input .passenger-control {
+    font-size: 18px;
+    border: none;
+}
+
+
+/* .bookingtab .custom-dropdown .room-container .row .childAge:first-child {
+    padding-left: 0;
+} */
+
+.bookingtab .custom-dropdown .room-container .childAge .custom-group .label-input {
+    flex-direction: column;
+}
+
+.bookingtab .custom-dropdown .room-container .childAge .custom-group .label-input label {
+    font-size: 11px;
+    width: 100%;
+    margin-bottom: 3px;
+}
+
+.bookingtab .custom-dropdown .room-container .childAge .custom-group .label-input .form-control {
+    border-radius: 4px;
+    height: 34px;
+    border: 1px solid #EEE;
+}
+
+.bookingtab .custom-dropdown .form-control {
+    padding-top: 0px;
+    box-shadow: none;
+    border-radius: 0;
+}
+
+.bookingtab .custom-dropdown .room-container .room-title span {
+    color: #000;
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.custom-dropdown .add-rooms {
+    background: transparent !important;
+    color: #e94928;
+    outline: none;
+    width: 100%;
+    border: transparent !important;
+    text-align: left;
+    padding: 0px 15px 10px;
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+}
+
+.bookingtab .custom-dropdown .add-rooms .glyphicon {
+    display: inline-block;
+    font-size: 16px;
+    margin-right: 0;
+}
+
+.bookingtab .custom-dropdown .add-rooms .glyphicon:before {
+    content: "\e903";
+    position: relative;
+    top: 0px;
+    font-family: 'icomoon' !important;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+}
+
+.custom-dropdown .add-rooms:hover,
+.custom-dropdown .add-rooms:focus,
+.custom-dropdown .add-rooms:active,
+.custom-dropdown .add-rooms.active,
+.custom-dropdown .open>.dropdown-toggle.add-rooms,
+.custom-dropdown .add-rooms:active:hover,
+.custom-dropdown .add-rooms:active:focus {
+    background: transparent !important;
+    box-shadow: none;
+    outline: none;
+}
+
+.custom-dropdown .add-rooms:hover span:not(.glyphicon) {
+    text-decoration: underline;
+}
+
+.close-dropdown {
+    float: right;
+    padding: 7px 15px;
+    font-size: 13px !important;
+    cursor: pointer;
+    margin-bottom: 0;
+    width: 100%;
+    border-radius: 0;
+    border-top: 1px solid #e0e0e0;
+    background: #f5f5f5;
+    color: #201c68 !important;
+    text-align: right;
+    position: relative;
+    padding-right: 15px;
+}
+
+.close-dropdown:after {
+    content: "\e927";
+    font-family: 'icomoon' !important;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    -webkit-font-smoothing: antialiased;
+    line-height: normal;
+    position: relative;
+    top: 2px;
+}
+
+.room-title {
+    /* float: left; */
+    margin-bottom: 0;
+    width: 100%;
+}
+
+.pax-val {
+    color: #f00;
+    margin-top: 10px;
+}
+
+.room-title .label {
+    color: #ffc600;
+    cursor: pointer;
+    margin: 0px;
+    font-weight: normal;
+    line-height: normal;
+    background: none;
+    font-size: 12px;
+}
+
+.remove-room:after {
+    content: "\f00d";
+    font-family: 'icomoon' !important;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    -webkit-font-smoothing: antialiased;
+    line-height: normal;
+    position: relative;
+    top: 2px;
+    color: #ff0000;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    line-height: 18px;
+    border: 1px solid #ff0000;
+    display: inline-table;
+    float: right;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.label-danger {
+    background-color: #140028;
+}
+
+
+/*.row.custom-padding:first-child {
+    padding-left: 0px;
+}*/
+
+.row.custom-padding {
+    width: 33.33%;
+    float: left;
+    /*padding-left: 10px;*/
+}
+
+.custom-dropdown .room1 {
+    padding-top: 15px;
+}
+
+@media screen and (max-width:480px) {
+    .bookingtab .custom-dropdown {
+        width: 300px
+    }
+    .bookingtab .custom-dropdown .label-input label {
+        font-size: 10px;
+    }
+}

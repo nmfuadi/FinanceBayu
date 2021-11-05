@@ -1,3 +1,5 @@
+<script language="JavaScript" type="text/javascript" src="/js/jquery-1.2.6.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <div id="wrapper">
        
 		<!--<div class="preloader">
@@ -50,9 +52,9 @@
                                             <td><?php echo $val['type_mutation']; ?></td>
                                             <td><?php echo $val['bank_name'].'('.$val['bank_norek'].')'; ?> </td>
                                             <td>
-                                            <form action="<?php echo site_url('Report/Finance/postingPorcess/')?>" class="form-horizontal" method="get">
+                                            
                                          
-                                            <select name="account" id="cars" required>
+                                            <select name="account" id="account<?php echo $val['id']; ?>" required>
                                             <option value="">Pilih Account</option>
                                                 <?php if(!empty($account)){
                                                     
@@ -66,11 +68,11 @@
                                             </td>
                                             <td>
                                             <div class="button-box">
-                                                <input type="hidden" name="id" value="<?php echo $val['id']; ?>">
-                                                <input type="hidden" name="tglGet" value="<?php echo $val['posting_date']; ?>">
-                                                <input type="hidden" name="actionType" value="UPDATE">
-                                            <button type="submit"class="btn btn-primary btn-outline btn-xs">POSTING <i class="fa fa-pencil" aria-hidden="true"></i></button>
-                                            </form>
+                                                <input id="id<?php echo $val['id']; ?>" type="hidden" name="id" value="<?php echo $val['id']; ?>">
+                                                <input id ="tglGet<?php echo $val['id']; ?>" type="hidden" name="tglGet" value="<?php echo $val['posting_date']; ?>">
+                                                <input id ="actionType<?php echo $val['id']; ?>" type="hidden" name="actionType" value="UPDATE">
+                                            <button id="submit<?php echo $val['id']; ?>" type="submit" class="btn btn-primary btn-outline btn-xs">POSTING <i class="fa fa-pencil" aria-hidden="true"></i></button>
+                                            
                                             <a class="btn btn-danger btn-outline btn-xs" onclick="return confirm('Are you sure you want to delete this item?');" href="<?php echo site_url('Report/Finance/postingPorcess/'.$val['id'].'/'.$val['posting_date'].'/DELETE')?>">DELETE <i class="fa fa-trash" aria-hidden="true"></i></a>
                                             <a class="btn btn-success btn-outline btn-xs"  href="<?php echo site_url('Report/Finance/editMutasi/'.$val['id'].'/'.$val['posting_date'])?>">Edit <i class="fa fa-pencil" aria-hidden="true"></i></a>
                                   
@@ -80,6 +82,37 @@
                                             </td>
                                            
                                         </tr>
+
+                                        <script>
+                                                $(document).ready(function() {
+                                                    $('#submit<?php echo $val['id']; ?>').click(function() {
+                                                        var id = $("#id<?php echo $val['id']; ?>").val();
+                                                        var tglGet = $("#tglGet<?php echo $val['id']; ?>").val();
+                                                        var actionType = $("#actionType<?php echo $val['id']; ?>").val();
+                                                        var account = $("#account<?php echo $val['id']; ?>").val();
+                                                       
+                                                        // Returns successful data submission message when the entered information is stored in database.
+                                                        var dataString = 'id='+ id + '&tglGet='+ tglGet +'&actionType='+ actionType + '&account=' + account;
+                                                        if ( id == '' || tglGet == '' || actionType == '' || account == '') {
+                                                            alert("Please Fill All Fields");
+                                                        } else {
+                                                            // AJAX Code To Submit Form.
+                                                            $.ajax({
+                                                                type: "GET",
+                                                                url: "<?php echo site_url('Report/Finance/postingPorcess/')?>",
+                                                                data: dataString,
+                                                                cache: false,
+                                                                success: function(result) {
+                                                                    window.location.reload();
+                                                                }
+                                                            });
+                                                        }
+                                                        return false;
+                                                    });
+                                                });
+                                            </script>
+
+
                                     <?php       
                                             }
                                         } 
