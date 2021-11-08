@@ -1334,6 +1334,250 @@ class Finance extends AppBase
     }
 
 
+
+
+    public function DANAMON(){
+        $this->_rules_finance();
+        if ($this->form_validation->run() == FALSE) {
+            $this->session->set_flashdata('message', 'Error! Field Not Complited');
+            $this->session->set_flashdata('status', 'alert-danger');
+            redirect(site_url('Report/Finance/importData'));
+        } else {
+
+            // If file uploaded
+
+            if (!empty($_FILES['uploadFile']['name'])) {
+                // get file extension
+                $extension = pathinfo($_FILES['uploadFile']['name'], PATHINFO_EXTENSION);
+
+                if ($extension == 'csv') {
+                    $reader = new \PhpOffice\PhpSpreadsheet\Reader\Csv();
+                } elseif ($extension == 'xlsx') {
+                    $reader = new \PhpOffice\PhpSpreadsheet\Reader\Xlsx();
+                } else {
+                    $reader = new \PhpOffice\PhpSpreadsheet\Reader\Xls();
+                }
+
+                // file path
+                $spreadsheet = $reader->load($_FILES['uploadFile']['tmp_name']);
+                //$allDataInSheet = $spreadsheet->getActiveSheet()->toArray(null, true, true, true);
+                $sheetData = $spreadsheet->getActiveSheet()->toArray();
+
+                  echo count($sheetData);
+                 echo '<table border=1>
+                 <tr>
+                 <th>NO</th>
+                <th>TGL</th>
+                 <th>KET</th>
+                 <th>JML</th>
+                 <th>JN</th>
+                 </tr>';
+
+                for ($i = 1; $i < count($sheetData); $i++) {
+                    $tgl = $sheetData[$i]['1'];
+                    $ket = $sheetData[$i]['5'];
+                    $dbt = $sheetData[$i]['6'];
+                    $crd = $sheetData[$i]['8'];
+
+                    if ($dbt == '0.00' OR $dbt =='' ) {
+                        $jml = $crd;
+                        $jml_jn = 'CR';
+                    } else {
+
+                        $jml = $dbt;
+                        $jml_jn = 'DB';
+                    }
+
+
+                    
+                    $str = [','];
+                    $jml_fix = str_replace($str, '', $jml);
+
+                  
+                    //$jml_jn = substr($jml, -2);
+                 
+                      echo '  <tr>
+                                 <td>'.$i.'</td>
+                                <td>'.$tgl.'</td>
+                                <td>'.$ket.'</td>
+                        <td>'.$jml_fix.'</td>
+                         <td>'.$jml_jn.'</td>
+                             </tr>
+                     ';
+                
+
+               
+
+                    
+
+  /*
+
+                    if (!empty(is_numeric($jml_fix))) {
+                        $dataPost = date('Y-m-d H:i:s', strtotime("now"));
+                        $ar[] = array(
+                            'bank_id' => $this->input->post('rekening', TRUE),
+                            'remark' => $ket,
+                            'amount' => $jml_fix,
+                            'trx_date' => date('m-d-Y', strtotime($tgl)),
+                            'type_mutation' => $jml_jn,
+                            'currancy'=>$this->input->post('currancy', TRUE),
+                            'posting_st' => 'NO',
+                            'posting_date' => $dataPost
+                        );
+                    }
+             */
+
+                    
+                }
+
+                 /*
+           
+                if ($this->db->insert_batch('fin_mutation', $ar)) {
+
+                    $this->session->set_flashdata('message', 'Import Data Sukses');
+                    $this->session->set_flashdata('status', 'alert-success');
+                    redirect(site_url('Report/Finance/PostingImport/' . $dataPost));
+                } else {
+                    $this->session->set_flashdata('message', 'Error! Data Gagal di import mohon di ulangi');
+                    $this->session->set_flashdata('status', 'alert-danger');
+                    redirect(site_url('Report/Finance/importData'));
+                }
+
+                 */
+            
+                       
+                
+            } else {
+                $this->session->set_flashdata('message', 'Error! File Tidak Di dukung');
+                $this->session->set_flashdata('status', 'alert-danger');
+                redirect(site_url('Report/Finance/importData'));
+            }
+            
+        }
+   
+    }
+
+
+
+    public function VICTORIA()
+    {
+
+        $this->_rules_finance();
+        if ($this->form_validation->run() == FALSE) {
+            $this->session->set_flashdata('message', 'Error! Field Not Complited');
+            $this->session->set_flashdata('status', 'alert-danger');
+            redirect(site_url('Report/Finance/importData'));
+        } else {
+
+            // If file uploaded
+
+            if (!empty($_FILES['uploadFile']['name'])) {
+                // get file extension
+                $extension = pathinfo($_FILES['uploadFile']['name'], PATHINFO_EXTENSION);
+
+                if ($extension == 'csv') {
+                    $reader = new \PhpOffice\PhpSpreadsheet\Reader\Csv();
+                } elseif ($extension == 'xlsx') {
+                    $reader = new \PhpOffice\PhpSpreadsheet\Reader\Xlsx();
+                } else {
+                    $reader = new \PhpOffice\PhpSpreadsheet\Reader\Xls();
+                }
+
+                // file path
+                $spreadsheet = $reader->load($_FILES['uploadFile']['tmp_name']);
+                //$allDataInSheet = $spreadsheet->getActiveSheet()->toArray(null, true, true, true);
+                $sheetData = $spreadsheet->getActiveSheet()->toArray();
+
+                  echo count($sheetData);
+                 echo '<table border=1>
+                 <tr>
+                 <th>NO</th>
+                <th>TGL</th>
+                 <th>KET</th>
+                 <th>JML</th>
+                 <th>JN</th>
+                 </tr>';
+
+                for ($i = 1; $i < count($sheetData); $i++) {
+                    $tgl = $sheetData[$i]['0'];
+                    $ket = $sheetData[$i]['1'];
+                    $dbt = $sheetData[$i]['2'];
+                    $crd = $sheetData[$i]['3'];
+
+                    if ($dbt == '0.00') {
+                        $jml = $crd;
+                        $jml_jn = 'CR';
+                    } else {
+
+                        $jml = $dbt;
+                        $jml_jn = 'DB';
+                    }
+
+
+                    
+                    $str = [','];
+                    $jml_fix = str_replace($str, '', $jml);
+
+                   /*
+                    //$jml_jn = substr($jml, -2);
+                    if (!empty(is_numeric($jml_fix))) {
+                      echo '  <tr>
+                                 <td>'.$i.'</td>
+                                <td>'.$tgl.'</td>
+                                <td>'.$ket.'</td>
+                        <td>'.$jml_fix.'</td>
+                         <td>'.$jml_jn.'</td>
+                             </tr>
+                     ';
+                    }
+
+                */
+
+                    
+
+ 
+
+                    if (!empty(is_numeric($jml_fix))) {
+                        $dataPost = date('Y-m-d H:i:s', strtotime("now"));
+                        $ar[] = array(
+                            'bank_id' => $this->input->post('rekening', TRUE),
+                            'remark' => $ket,
+                            'amount' => $jml_fix,
+                            'trx_date' => date('m-d-Y', strtotime($tgl)),
+                            'type_mutation' => $jml_jn,
+                            'currancy'=>$this->input->post('currancy', TRUE),
+                            'posting_st' => 'NO',
+                            'posting_date' => $dataPost
+                        );
+                    }
+
+                    
+                }
+
+           
+                if ($this->db->insert_batch('fin_mutation', $ar)) {
+
+                    $this->session->set_flashdata('message', 'Import Data Sukses');
+                    $this->session->set_flashdata('status', 'alert-success');
+                    redirect(site_url('Report/Finance/PostingImport/' . $dataPost));
+                } else {
+                    $this->session->set_flashdata('message', 'Error! Data Gagal di import mohon di ulangi');
+                    $this->session->set_flashdata('status', 'alert-danger');
+                    redirect(site_url('Report/Finance/importData'));
+                }
+            
+                       
+                
+            } else {
+                $this->session->set_flashdata('message', 'Error! File Tidak Di dukung');
+                $this->session->set_flashdata('status', 'alert-danger');
+                redirect(site_url('Report/Finance/importData'));
+            }
+            
+        }
+    }
+
+
     public function PostingImport($tgl = null)
     {
 

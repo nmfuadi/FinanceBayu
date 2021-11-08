@@ -51,7 +51,10 @@
                                                             <option value="UOB">BANK UOB</option>
                                                             <option value="DBS">BANK DBS</option>
                                                             <option value="CIMB">CIMB</option>
+                                                            <option value="VICTORIA">VICTORIA</option>
+                                                            <option value="DANAMON">DANAMON</option>
                                                             <option value="SAP">FORMAT SAP</option>
+
                                                                 
                                                             </select> </div>
                                                     </div>
