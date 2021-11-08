@@ -151,7 +151,7 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <a href="#" class="btn btn-primary">Total Record : <?php echo $total_rows ?></a>
-                                <?php echo anchor(site_url('bayuform/excel'), 'Excel', 'class="btn btn-primary"'); ?>
+                            
                                 <button class="btn btn-success" data-toggle="modal" data-target="#myModalHorizontal">
                                     Lanjutkan Pilihan
                                 </button>

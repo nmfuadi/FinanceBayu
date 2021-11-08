@@ -62,7 +62,7 @@ class LoginAdmin extends BaseLoginReport {
 						redirect('Report/AdminVp');
 					}elseif($data_login['rules']==5){
 						
-						redirect('Report/AdminStaff');
+						redirect('Report/Finance/viewAllJournal');
 					}else {
 						
 						redirect('Report/AdminDir');
