@@ -1355,8 +1355,7 @@ class Finance extends AppBase
 
     public function postingPorcessAll()
     {
-      echo $typeAction = $this->input->post('actionType', TRUE);
-      echo $tgl = $this->input->post('tglGet', TRUE);
+   
        $id =$this->input->post('myCheckboxes', TRUE);
        echo $account = $this->input->post('accountAll', TRUE);
 
@@ -1366,14 +1365,13 @@ class Finance extends AppBase
 
         for($i=0;$i<=$jml_acc;$i++){
 
-            $tglnew = rawurldecode($tgl);
-        
+                   
             $db = $this->M_Admin->get_data_by_id('fin_account','code',"'".$account."'");
 
-            $mut =  $this->M_Admin->get_data_by_id('fin_mutation','code',"'".$mutasi_id[$i]."'");
+            $mut =  $this->M_Admin->get_data_by_id('fin_mutation','id',"'".$mutasi_id[$i]."'");
+            if(!empty($db) and !empty($mut)){
 
-            if ($typeAction == 'UPDATE') {
-                if($db['trx_type']== $mut['type_mutation']){
+                if($db['trx_type'] == $mut['type_mutation']){
 
                     $data = array(
                         'account_code' => $account,
@@ -1388,7 +1386,10 @@ class Finance extends AppBase
         
                     $this->M_Admin->update('fin_mutation', $data, $where);
                 }
+
             }
+           
+            
                
     
                
@@ -1401,10 +1402,10 @@ class Finance extends AppBase
         $typeAction = $_GET['actionType'] == null ? $typeAct : $_GET['actionType'];
         $tgl = $_GET['tglGet'] == null ? $tgll : $_GET['tglGet'];
         $id = $_GET['id'] == null ? $ids : $_GET['id'];
-        $from = $_GET['from'] == null ? $fr : $_GET['from'];
+        
 
         $tglnew = rawurldecode($tgl);
-        if ($typeAction == 'UPDATE') {
+       
             $account = $_GET['account'];
             $data = array(
 
@@ -1422,27 +1423,8 @@ class Finance extends AppBase
             $this->session->set_flashdata('message', 'Posting Record Success');
             $this->session->set_flashdata('status', 'alert-success');
 
-            if (!empty($from)) {
-                redirect(site_url('Report/Finance/viewAllPostingJournal/'));
-            } else {
-                redirect(site_url('Report/Finance/PostingImport/' . $tglnew));
-            }
-        } else {
-
-            $where = array(
-
-                'id' => $id
-            );
-
-            $this->M_Admin->delete('fin_mutation', $where);
-            $this->session->set_flashdata('message', 'Delete Record Success');
-            $this->session->set_flashdata('status', 'alert-success');
-            if (!empty($from)) {
-                redirect(site_url('Report/Finance/viewAllPostingJournal/'));
-            } else {
-                redirect(site_url('Report/Finance/PostingImport/' . $tglnew));
-            }
-        }
+           
+         
     }
 
 

@@ -424,7 +424,7 @@ function get_jobs_by_user_id_ext_from($params){
 	
 	
 	function get_data_by_id($table, $column, $id,$and=null){
-		$sql = "SELECT * FROM $table WHERE $column = $id.$and";
+		$sql = "SELECT * FROM $table WHERE $column = ".$id.$and;
 		$query = $this->db->query($sql);
         if ($query->num_rows() > 0) {
             $result = $query->row_array();
