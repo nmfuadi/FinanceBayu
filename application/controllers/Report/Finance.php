@@ -1368,21 +1368,26 @@ class Finance extends AppBase
 
             $tglnew = rawurldecode($tgl);
         
+            $db = $this->M_Admin->get_data_by_id('fin_account','code',"'".$account."'");
+
+            $mut =  $this->M_Admin->get_data_by_id('fin_mutation','code',"'".$mutasi_id[$i]."'");
 
             if ($typeAction == 'UPDATE') {
-              $data = array(
-    
-                    'account_code' => $account,
-                    'posting_st' => 'YES',
-                    'posting_by' => $this->session->userdata('u'),
-                );
-    
-                $where = array(
-    
-                    'id' => $mutasi_id[$i]
-                );
-    
-                $this->M_Admin->update('fin_mutation', $data, $where);
+                if($db['trx_type']== $mut['type_mutation']){
+
+                    $data = array(
+                        'account_code' => $account,
+                        'posting_st' => 'YES',
+                        'posting_by' => $this->session->userdata('u'),
+                    );
+        
+                    $where = array(
+        
+                        'id' => $mutasi_id[$i]
+                    );
+        
+                    $this->M_Admin->update('fin_mutation', $data, $where);
+                }
             }
                
     
@@ -1976,7 +1981,6 @@ class Finance extends AppBase
         //$this->load->view('marketing/customer/st_cust_form', $data);
         $this->load->view($this->MAIN_VIEW, $load_resource);
         //$this->load->view('marketing/customer/st_cust_list', $data);
-
 
     }
 

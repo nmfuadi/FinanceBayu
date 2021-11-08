@@ -47,8 +47,6 @@
                                         foreach ($data as $val) {
                                             $ret_d = date_create($val['trx_date']);
                                     ?>
-
-
                                             <tr>
                                                 <td><input type="checkbox" name="myCheckboxes[]" id="myCheckboxes" value="<?php echo $val['id']; ?>" /></td>
                                                 <td><?php echo date_format($ret_d, "d/m/y"); ?></td>
@@ -57,8 +55,6 @@
                                                 <td><?php echo $val['type_mutation']; ?></td>
                                                 <td><?php echo $val['bank_name'] . '(' . $val['bank_norek'] . ')'; ?> </td>
                                                 <td>
-
-
                                                     <select name="account" id="account<?php echo $val['id']; ?>" required>
                                                         <option value="">Pilih Account</option>
                                                         <?php if (!empty($account)) {
@@ -67,7 +63,6 @@
 
                                                                 <?php if ($val['type_mutation'] == $acc['trx_type']) { ?>
                                                                     <option value="<?php echo $acc['code'] ?>"><?php echo $acc['account_name'] ?></option>
-
                                                         <?php  }
                                                             }
                                                         } ?>
@@ -210,7 +205,7 @@
                             <button type="button" class="btn btn-default" data-dismiss="modal">
                                 Close
                             </button>
-                            <button id="submit" type="submit" class="btn btn-primary btn-outline btn-xs">POSTING <i class="fa fa-pencil" aria-hidden="true"></i></button>
+                            <button id="submit" type="submit" class="btn btn-primary">POSTING <i class="fa fa-pencil" aria-hidden="true"></i></button>
                         </div>
                     </div>
                 </div>
