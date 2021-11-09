@@ -4748,3 +4748,60 @@ DEBUG - 2021-11-09 15:05:36 --> Global POST, GET and COOKIE data sanitized
 INFO - 2021-11-09 15:05:36 --> Input Class Initialized
 INFO - 2021-11-09 15:05:36 --> Language Class Initialized
 ERROR - 2021-11-09 15:05:36 --> 404 Page Not Found: Report/Plugins/components
+INFO - 2021-11-09 15:08:44 --> Config Class Initialized
+INFO - 2021-11-09 15:08:44 --> Hooks Class Initialized
+DEBUG - 2021-11-09 15:08:44 --> UTF-8 Support Enabled
+INFO - 2021-11-09 15:08:44 --> Utf8 Class Initialized
+INFO - 2021-11-09 15:08:44 --> URI Class Initialized
+INFO - 2021-11-09 15:08:44 --> Router Class Initialized
+INFO - 2021-11-09 15:08:44 --> Output Class Initialized
+INFO - 2021-11-09 15:08:44 --> Security Class Initialized
+DEBUG - 2021-11-09 15:08:44 --> Global POST, GET and COOKIE data sanitized
+INFO - 2021-11-09 15:08:44 --> Input Class Initialized
+INFO - 2021-11-09 15:08:44 --> Language Class Initialized
+INFO - 2021-11-09 15:08:44 --> Loader Class Initialized
+INFO - 2021-11-09 15:08:44 --> Helper loaded: url_helper
+INFO - 2021-11-09 15:08:44 --> Database Driver Class Initialized
+DEBUG - 2021-11-09 15:08:44 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2021-11-09 15:08:44 --> Session: Class initialized using 'files' driver.
+INFO - 2021-11-09 15:08:44 --> Controller Class Initialized
+INFO - 2021-11-09 15:08:44 --> Helper loaded: form_helper
+INFO - 2021-11-09 15:08:44 --> Model "M_Admin" initialized
+INFO - 2021-11-09 15:08:44 --> Model "Jobs_update_model" initialized
+INFO - 2021-11-09 15:08:44 --> Model "JobsModel" initialized
+INFO - 2021-11-09 15:08:44 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2021-11-09 15:08:44 --> Pagination Class Initialized
+INFO - 2021-11-09 15:08:44 --> Form Validation Class Initialized
+DEBUG - 2021-11-09 15:08:44 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2021-11-09 15:08:44 --> Pagination class already loaded. Second attempt ignored.
+INFO - 2021-11-09 15:08:44 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/header.php
+INFO - 2021-11-09 15:08:44 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/sidebar.php
+INFO - 2021-11-09 15:08:44 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/Finance/ViewPostingJournal.php
+INFO - 2021-11-09 15:08:44 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/footer.php
+INFO - 2021-11-09 15:08:44 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/main.php
+INFO - 2021-11-09 15:08:44 --> Final output sent to browser
+DEBUG - 2021-11-09 15:08:44 --> Total execution time: 0.0481
+INFO - 2021-11-09 15:08:45 --> Config Class Initialized
+INFO - 2021-11-09 15:08:45 --> Hooks Class Initialized
+DEBUG - 2021-11-09 15:08:45 --> UTF-8 Support Enabled
+INFO - 2021-11-09 15:08:45 --> Utf8 Class Initialized
+INFO - 2021-11-09 15:08:45 --> URI Class Initialized
+INFO - 2021-11-09 15:08:45 --> Router Class Initialized
+INFO - 2021-11-09 15:08:45 --> Output Class Initialized
+INFO - 2021-11-09 15:08:45 --> Security Class Initialized
+DEBUG - 2021-11-09 15:08:45 --> Global POST, GET and COOKIE data sanitized
+INFO - 2021-11-09 15:08:45 --> Input Class Initialized
+INFO - 2021-11-09 15:08:45 --> Language Class Initialized
+ERROR - 2021-11-09 15:08:45 --> 404 Page Not Found: Report/Plugins/components
+INFO - 2021-11-09 15:08:51 --> Config Class Initialized
+INFO - 2021-11-09 15:08:51 --> Hooks Class Initialized
+DEBUG - 2021-11-09 15:08:51 --> UTF-8 Support Enabled
+INFO - 2021-11-09 15:08:51 --> Utf8 Class Initialized
+INFO - 2021-11-09 15:08:51 --> URI Class Initialized
+INFO - 2021-11-09 15:08:51 --> Router Class Initialized
+INFO - 2021-11-09 15:08:51 --> Output Class Initialized
+INFO - 2021-11-09 15:08:51 --> Security Class Initialized
+DEBUG - 2021-11-09 15:08:51 --> Global POST, GET and COOKIE data sanitized
+INFO - 2021-11-09 15:08:51 --> Input Class Initialized
+INFO - 2021-11-09 15:08:51 --> Language Class Initialized
+ERROR - 2021-11-09 15:08:51 --> 404 Page Not Found: Report/Plugins/components
