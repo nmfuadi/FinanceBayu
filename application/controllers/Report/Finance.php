@@ -115,7 +115,8 @@ class Finance extends AppBase
         $load_resource = $this->load_resource(); // digawe ngene ikie
         $row = $this->M_Admin->get_data_by_mutation_id('fin_mutation','id',$id);
         $load_resource['bank'] = $this->M_Admin->get_all_data('fin_bank');
-        $load_resource['account'] = $this->M_Admin->get_all_data('fin_account');
+        $where = "trx_type ='".$row['type_mutation']."'" ;
+        $load_resource['account'] = $this->M_Admin->get_all_data_where('fin_account',$where);
         if ($row) {
             $load_resource['data'] = array(
                 'button' => 'Update',
@@ -276,7 +277,7 @@ class Finance extends AppBase
                 $spreadsheet = $reader->load($_FILES['uploadFile']['tmp_name']);
                 //$allDataInSheet = $spreadsheet->getActiveSheet()->toArray(null, true, true, true);
                 $sheetData = $spreadsheet->getActiveSheet()->toArray();
-                 /* 
+                 
                 echo count($sheetData);
                 echo '<table border=1>
                 <tr>
@@ -287,7 +288,7 @@ class Finance extends AppBase
                 <th>JML</th>
                 <th>JN</th>
                 </tr>';
-              */
+              
                 
                 for ($i = 1; $i < count($sheetData); $i++) {
                     $tgl = $sheetData[$i]['0'];
@@ -298,8 +299,9 @@ class Finance extends AppBase
                     $str = ['CR', 'DB', ','];
                     $jml_fix = str_replace($str, '', $jml);
                     $jml_jn = substr($jml, -2);
-                    /* 
-                    if (($jml_fix != 0 or !empty($jml_fix)) and $tgl !='PEND') {
+                   
+                /* 
+                    if (($jml_fix != 0 or !empty(is_numeric($jml))) and $tgl !='PEND') {
                     echo '  <tr>
                                  <td>'.$i.'</td>
                                 <td>'. date('Y-m-d', strtotime($tgl)).'</td>
@@ -312,10 +314,10 @@ class Finance extends AppBase
                     
                 }
 
-                */
+             */
                  
-
-                if (($jml_fix != 0 or !empty($jml_fix)) and $tgl !='PEND') {
+  
+                if (($jml_fix != 0 or !empty(is_numeric($jml))) and $tgl !='PEND') {
                         $dataPost = date('Y-m-d H:i:s', strtotime("now"));
                         $ar[] = array(
                             'bank_id' => $this->input->post('rekening', TRUE),
@@ -328,9 +330,12 @@ class Finance extends AppBase
                             'posting_date' => date('Y-m-d H:i:s', strtotime("now"))
                         );
                     }
+                   
                 }
 
-               // echo "</table>";
+          
+
+               //echo "</table>";
                
                 if ($this->db->insert_batch('fin_mutation', $ar)) {
 
@@ -342,6 +347,8 @@ class Finance extends AppBase
                     $this->session->set_flashdata('status', 'alert-danger');
                     redirect(site_url('Report/Finance/importData'));
                 }
+
+            
             
             } else {
                 $this->session->set_flashdata('message', 'Error! File Tidak Di dukung');
@@ -1225,7 +1232,7 @@ class Finance extends AppBase
     
     
 
-    public function SAP()
+    public function CASH()
     {
 
         $this->_rules_finance();
