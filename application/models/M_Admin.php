@@ -420,6 +420,9 @@ function get_jobs_by_user_id_ext_from($params){
             return NULL;
         }
     }
+
+
+    
 	
 	
 	
@@ -730,6 +733,32 @@ function pertahun_bulan(){
                 return NULL;
             }
         }
+
+
+
+        function ReportCashflow($year = null,$cr= null){
+
+            $sql = "select account_code,account_name,[January],[February],[March],[April],[May],[June],[July],[August],[September],[October],[November],[December] from 
+                        (select YEAR(trx_date) as years,account_code,account_name,sum(amount) as uang ,DATENAME(MONTH, DATEADD(MONTH, 0,trx_date))as bulan from fin_mutation a
+                        join fin_account b on a.account_code = b.code 
+                        where posting_st = 'YES' And account_code <>'' and YEAR(trx_date)= '$year' and type_mutation = '$cr' 
+                        GROUP BY account_code,account_name,YEAR(trx_date),DATENAME(MONTH, DATEADD(MONTH, 0,trx_date))) as a
+                                PIVOT
+                                (
+                                    SUM(uang)
+                                    FOR [bulan] IN ([January],[February],[March],[April],[May],[June],[July],[August],[September],[October],[November],[December])
+                                ) AS P"; 
+            $query = $this->db->query($sql);
+            if ($query->num_rows() > 0) {
+                $result = $query->result_array();
+                $query->free_result();
+                return $result;
+            } else {
+                return NULL;
+            }
+        }
+
+//end bayu finance 
 	
 	
 	function data_customerBysource_chart(){

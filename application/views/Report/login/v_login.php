@@ -10,7 +10,7 @@
                 <form class="form-horizontal form-material" id="loginform"  method="POST" enctype="multipart/form-data" action="<?php echo base_url(); ?>index.php/Report/LoginAdmin/LoginProccess">
 					<input class="form-control" type="hidden" name="url" value="" >
 				
-                    <h3 class="box-title m-b-20" >Login Finance Cash FLow Report</h3>
+                    <h3 class="box-title m-b-20 text-center" >Login Finance Cash FLow Report</h3>
 					
                     <div class="form-group ">
                         <div class="col-xs-12">

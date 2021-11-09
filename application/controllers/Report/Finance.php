@@ -1757,6 +1757,33 @@ class Finance extends AppBase
 
 
 
+    public function ReportCashflow(){
+
+        $this->VIEW_FILE = "Report/Finance/RCashFlow"; // dynamic
+        $load_resource = $this->load_resource(); // digawe ngene ikie
+        //$load_resource['CONTOH'] = 'Namaku Fuad';
+        //$load_resource['emp'] = $this->M_Admin->get_employe_by_id($this->session->userdata('u'));
+        
+        $q = urldecode($this->input->get('q', TRUE));
+
+        if(empty($q)){
+
+            $q_val = date("Y"); 
+        }else {
+            $q_val = $q;
+
+        }
+       
+        $load_resource['data_cr'] = $this->M_Admin->ReportCashflow($q_val,'CR');
+        $load_resource['data_db'] = $this->M_Admin->ReportCashflow($q_val,'DB');
+        $load_resource['q'] =$q_val;
+        $this->load->view($this->MAIN_VIEW, $load_resource); // fix
+
+    }
+
+
+
+
 
 
     /* Batas Bawah */
