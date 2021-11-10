@@ -45,7 +45,7 @@
                                                             <?php
                                                             if (!empty($bank)) {
                                                                 foreach ($bank as $banks) { ?>
-                                                                    <option value="<?php echo $banks['id'] ?>" <?php echo $banks['id'] == $data['bank_id'] ? 'selected' : '' ?>><?php echo $banks['bank_name'] . ' (' . $banks['bank_norek'] . ')'; ?></option>
+                                                                    <option value="<?php echo $banks['id'] ?>" <?php echo $banks['id'] == $data['bank_id'] ? 'selected' : '' ?>><?php echo $banks['bank_name'].'-'.$banks['branch'].' (' . $banks['bank_norek'] . ')'; ?></option>
                                                             <?php }
                                                             } ?>
 
