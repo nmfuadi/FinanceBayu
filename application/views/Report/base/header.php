@@ -43,7 +43,7 @@
 
     <body class="mini-sidebar">
         <!-- Preloader -->
-        <div class="preloader">
+        <div class="preloaders">
            <!--  <div class="cssload-speeding-wheel"></div> -->
         </div>
         <?= $LOAD_JAVASCRIPT; ?>
