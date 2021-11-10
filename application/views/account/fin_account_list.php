@@ -59,8 +59,7 @@
             <td><?php echo $account->trx_type ?></td>
 			<td style="text-align:center" width="200px">
 				<?php 
-				echo anchor(site_url('Report/Account/read/'.$account->code),'Read'); 
-				echo ' | '; 
+				
 				echo anchor(site_url('Report/Account/update/'.$account->code),'Update'); 
 				echo ' | '; 
 				echo anchor(site_url('Report/Account/delete/'.$account->code),'Delete','onclick="javasciprt: return confirm(\'Are You Sure ?\')"'); 
