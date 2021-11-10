@@ -80,6 +80,7 @@ class Account extends AppBase
             'button' => 'Create',
             'action' => site_url('Report/Account/create_action'),
             'code_acc' => set_value('code_acc'),
+            'code' => set_value('code'),
             'trx_type' => set_value('trx_type'),
             'account_name' => set_value('account_name'),
         );
@@ -98,8 +99,9 @@ class Account extends AppBase
         } else {
             $cek = $this->M_Admin->cek_avail('fin_account', 'code', $this->input->post('code_acc', TRUE));
 
-            if ($cek > 0) {
+            if ($cek['total'] > 0) {
 
+                echo $cek['total'];
                 $this->session->set_flashdata('message', 'Account Code Already Exist, Please Change Number');
                 $this->session->set_flashdata('status', 'alert-danger');
                 $this->create();
