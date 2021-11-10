@@ -184,7 +184,7 @@ class Bank extends AppBase
             $this->Bank_model->delete($id);
             $this->session->set_flashdata('message', 'Delete Record Success');
             $this->session->set_flashdata('status', 'alert-warning');
-            redirect(site_url('bank'));
+            redirect(site_url('Report/Bank'));
         } else {
             $this->session->set_flashdata('message', 'Record Not Found');
             $this->session->set_flashdata('status', 'alert-danger');
