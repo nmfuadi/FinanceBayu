@@ -47,17 +47,7 @@
                                                             </select> </div>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-12">
-                                                    <div class="form-group">
-                                                        <label class="control-label col-md-3">Currancy </label>
-                                                        <div class="col-md-9">
-                                                            <select  name="currancy" class="form-control">
-                                                                    <option value="IDR"> IDR </option>
-                                                                    <option value="USD"> USD </option>
-                                                                                                                               
-                                                            </select> </div>
-                                                    </div>
-                                                </div>
+                                                
                                                 <!--/span-->
                                                <!--  <div class="col-md-12">
                                                     <div class="form-group">

@@ -47,6 +47,7 @@
                                 <th>Branch</th>
                                 <th>Bank Norek</th>
                                 <th>Bank Rek Name</th>
+                                <th>Kurs</th>
                                 <th>G/L Account</th>
                                  <th>Action</th>
                             </tr><?php
@@ -58,6 +59,7 @@
                                     <td><?php echo $bank->branch ?></td>
                                     <td><?php echo $bank->bank_norek ?></td>
                                     <td><?php echo $bank->bank_rek_name ?></td>
+                                    <td><?php echo $bank->currency_code ?></td>
                                     <td><?php echo $bank->gl_account ?></td>
                                     <td style="text-align:center" width="200px">
                                         <?php

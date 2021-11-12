@@ -15,6 +15,8 @@ class Bank extends AppBase
         parent::__construct();
         $this->load->model('Bank_model');
         $this->load->library('form_validation');
+        $this->load->model('M_Admin');
+
     }
 
     public function index()
@@ -79,7 +81,7 @@ class Bank extends AppBase
         $this->VIEW_FILE = "bank/fin_bank_form"; 
 
         $load_resource = $this->load_resource(); // digawe ngene ikie
-
+        $load_resource['kurs'] = $this->M_Admin->get_all_data('fin_kurs_name');
         $load_resource['data'] = array(
             'button' => 'Create',
             'action' => site_url('Report/Bank/create_action'),
@@ -88,6 +90,7 @@ class Bank extends AppBase
 	    'branch' => set_value('branch'),
 	    'bank_norek' => set_value('bank_norek'),
 	    'bank_rek_name' => set_value('bank_rek_name'),
+        'currency_code' => set_value('currency_code'),
         'gl_account' => set_value('gl_account'),
 	    'cr_dt' => set_value('cr_dt'),
 	);
@@ -109,6 +112,7 @@ class Bank extends AppBase
 		'branch' => $this->input->post('branch',TRUE),
 		'bank_norek' => $this->input->post('bank_norek',TRUE),
        	'bank_rek_name' => $this->input->post('bank_rek_name',TRUE),
+        'currency_code' => $this->input->post('currency_code',TRUE),
         'gl_account' => $this->input->post('gl_account',TRUE),
 		'cr_dt' => date('Y-m-d H:i:s', strtotime("now")),
 	    );
@@ -128,7 +132,7 @@ class Bank extends AppBase
         $load_resource = $this->load_resource(); // digawe ngene ikie
 
         $row = $this->Bank_model->get_by_id($id);
-
+        $load_resource['kurs'] = $this->M_Admin->get_all_data('fin_kurs_name');
         if ($row) {
             $load_resource['data'] = array(
                 'button' => 'Update',
@@ -138,8 +142,9 @@ class Bank extends AppBase
 		'branch' => set_value('branch', $row->branch),
 		'bank_norek' => set_value('bank_norek', $row->bank_norek),
 		'gl_account' => set_value('gl_account', $row->gl_account),
+        'currency_code' => set_value('currency_code', $row->currency_code),
         'branch' => set_value('branch', $row->branch),
-        'bank_rek_name' => set_value('bank_rek_name', $row->branch),
+        'bank_rek_name' => set_value('bank_rek_name', $row->bank_rek_name),
 		'cr_dt' => set_value('cr_dt', $row->cr_dt),
 	    );
         $this->load->view($this->MAIN_VIEW, $load_resource); // fix
@@ -165,6 +170,7 @@ class Bank extends AppBase
 		'branch' => $this->input->post('branch',TRUE),
 		'bank_norek' => $this->input->post('bank_norek',TRUE),
         'gl_account' => $this->input->post('gl_account',TRUE),
+        'currency_code' => $this->input->post('currency_code',TRUE),
 		'bank_rek_name' => $this->input->post('bank_rek_name',TRUE),
 		
 	    );

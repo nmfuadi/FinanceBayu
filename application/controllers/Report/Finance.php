@@ -1113,8 +1113,6 @@ class Finance extends AppBase
     }
 
 
-
-
     public function CIMB()
     {
 
@@ -1168,9 +1166,7 @@ class Finance extends AppBase
                         $jml = $dbt;
                         $jml_jn = 'DB';
                     }
-
-
-                    
+ 
                     $str = [','];
                     $jml_fix = str_replace($str, '', $jml);
 
@@ -1188,10 +1184,6 @@ class Finance extends AppBase
                     }
 
                     */
-
-                    
-
-
 
                     if (!empty(is_numeric($jml_fix))) {
                         $dataPost = date('Y-m-d H:i:s', strtotime("now"));
@@ -1275,12 +1267,7 @@ class Finance extends AppBase
                     $tgl = $sheetData[$i]['2'];
                     $ket = $sheetData[$i]['9'];
                     $jml = $sheetData[$i]['4'];
-                    $ket2 = $sheetData[$i]['6'];
-
-                   
-
-
-                    
+                    $ket2 = $sheetData[$i]['6'];        
                     $str = [','];
                     $jml_fix = str_replace($str, '', $jml);
                     $ket_fix = '('.$ket2 .') '.$ket;
@@ -1300,7 +1287,6 @@ class Finance extends AppBase
                     }
 
                     */
-
                  
                     if (!empty(is_numeric($jml_fix))) {
                         $dataPost = date('Y-m-d H:i:s', strtotime("now"));
