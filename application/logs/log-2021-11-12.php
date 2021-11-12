@@ -2080,3 +2080,2035 @@ DEBUG - 2021-11-12 10:10:38 --> Global POST, GET and COOKIE data sanitized
 INFO - 2021-11-12 10:10:38 --> Input Class Initialized
 INFO - 2021-11-12 10:10:38 --> Language Class Initialized
 ERROR - 2021-11-12 10:10:38 --> 404 Page Not Found: Resource/assets_eoffice
+INFO - 2021-11-12 11:06:15 --> Config Class Initialized
+INFO - 2021-11-12 11:06:15 --> Hooks Class Initialized
+DEBUG - 2021-11-12 11:06:15 --> UTF-8 Support Enabled
+INFO - 2021-11-12 11:06:15 --> Utf8 Class Initialized
+INFO - 2021-11-12 11:06:15 --> URI Class Initialized
+INFO - 2021-11-12 11:06:15 --> Router Class Initialized
+INFO - 2021-11-12 11:06:15 --> Output Class Initialized
+INFO - 2021-11-12 11:06:15 --> Security Class Initialized
+DEBUG - 2021-11-12 11:06:15 --> Global POST, GET and COOKIE data sanitized
+INFO - 2021-11-12 11:06:15 --> Input Class Initialized
+INFO - 2021-11-12 11:06:15 --> Language Class Initialized
+INFO - 2021-11-12 11:06:15 --> Loader Class Initialized
+INFO - 2021-11-12 11:06:15 --> Helper loaded: url_helper
+INFO - 2021-11-12 11:06:15 --> Database Driver Class Initialized
+DEBUG - 2021-11-12 11:06:15 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2021-11-12 11:06:15 --> Session: Class initialized using 'files' driver.
+INFO - 2021-11-12 11:06:15 --> Controller Class Initialized
+INFO - 2021-11-12 11:06:15 --> Helper loaded: form_helper
+INFO - 2021-11-12 11:06:15 --> Model "M_Admin" initialized
+INFO - 2021-11-12 11:06:15 --> Model "Jobs_update_model" initialized
+INFO - 2021-11-12 11:06:15 --> Model "JobsModel" initialized
+INFO - 2021-11-12 11:06:15 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2021-11-12 11:06:15 --> Pagination Class Initialized
+INFO - 2021-11-12 11:06:15 --> Form Validation Class Initialized
+DEBUG - 2021-11-12 11:06:15 --> Session class already loaded. Second attempt ignored.
+INFO - 2021-11-12 11:06:15 --> Config Class Initialized
+INFO - 2021-11-12 11:06:15 --> Hooks Class Initialized
+DEBUG - 2021-11-12 11:06:15 --> UTF-8 Support Enabled
+INFO - 2021-11-12 11:06:15 --> Utf8 Class Initialized
+INFO - 2021-11-12 11:06:15 --> URI Class Initialized
+INFO - 2021-11-12 11:06:15 --> Router Class Initialized
+INFO - 2021-11-12 11:06:15 --> Output Class Initialized
+INFO - 2021-11-12 11:06:15 --> Security Class Initialized
+DEBUG - 2021-11-12 11:06:15 --> Global POST, GET and COOKIE data sanitized
+INFO - 2021-11-12 11:06:15 --> Input Class Initialized
+INFO - 2021-11-12 11:06:15 --> Language Class Initialized
+INFO - 2021-11-12 11:06:15 --> Loader Class Initialized
+INFO - 2021-11-12 11:06:15 --> Helper loaded: url_helper
+INFO - 2021-11-12 11:06:15 --> Database Driver Class Initialized
+DEBUG - 2021-11-12 11:06:15 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2021-11-12 11:06:15 --> Session: Class initialized using 'files' driver.
+INFO - 2021-11-12 11:06:15 --> Controller Class Initialized
+INFO - 2021-11-12 11:06:15 --> Helper loaded: form_helper
+INFO - 2021-11-12 11:06:15 --> Model "M_Admin" initialized
+INFO - 2021-11-12 11:06:15 --> Model "Jobs_update_model" initialized
+INFO - 2021-11-12 11:06:15 --> Model "JobsModel" initialized
+INFO - 2021-11-12 11:06:15 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2021-11-12 11:06:15 --> Pagination Class Initialized
+INFO - 2021-11-12 11:06:15 --> Form Validation Class Initialized
+DEBUG - 2021-11-12 11:06:15 --> Session class already loaded. Second attempt ignored.
+INFO - 2021-11-12 11:06:16 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/header.php
+INFO - 2021-11-12 11:06:16 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/sidebar.php
+INFO - 2021-11-12 11:06:16 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/Finance/SelectFormat.php
+INFO - 2021-11-12 11:06:16 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/footer.php
+INFO - 2021-11-12 11:06:16 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/main.php
+INFO - 2021-11-12 11:06:16 --> Final output sent to browser
+DEBUG - 2021-11-12 11:06:16 --> Total execution time: 0.0602
+INFO - 2021-11-12 11:06:16 --> Config Class Initialized
+INFO - 2021-11-12 11:06:16 --> Hooks Class Initialized
+DEBUG - 2021-11-12 11:06:16 --> UTF-8 Support Enabled
+INFO - 2021-11-12 11:06:16 --> Utf8 Class Initialized
+INFO - 2021-11-12 11:06:16 --> URI Class Initialized
+INFO - 2021-11-12 11:06:16 --> Router Class Initialized
+INFO - 2021-11-12 11:06:16 --> Output Class Initialized
+INFO - 2021-11-12 11:06:16 --> Security Class Initialized
+DEBUG - 2021-11-12 11:06:16 --> Global POST, GET and COOKIE data sanitized
+INFO - 2021-11-12 11:06:16 --> Input Class Initialized
+INFO - 2021-11-12 11:06:16 --> Language Class Initialized
+ERROR - 2021-11-12 11:06:16 --> 404 Page Not Found: Plugins/components
+INFO - 2021-11-12 11:06:16 --> Config Class Initialized
+INFO - 2021-11-12 11:06:16 --> Hooks Class Initialized
+DEBUG - 2021-11-12 11:06:16 --> UTF-8 Support Enabled
+INFO - 2021-11-12 11:06:16 --> Utf8 Class Initialized
+INFO - 2021-11-12 11:06:16 --> URI Class Initialized
+INFO - 2021-11-12 11:06:16 --> Router Class Initialized
+INFO - 2021-11-12 11:06:16 --> Output Class Initialized
+INFO - 2021-11-12 11:06:16 --> Security Class Initialized
+DEBUG - 2021-11-12 11:06:16 --> Global POST, GET and COOKIE data sanitized
+INFO - 2021-11-12 11:06:16 --> Input Class Initialized
+INFO - 2021-11-12 11:06:16 --> Language Class Initialized
+ERROR - 2021-11-12 11:06:16 --> 404 Page Not Found: Plugins/components
+INFO - 2021-11-12 11:06:19 --> Config Class Initialized
+INFO - 2021-11-12 11:06:19 --> Hooks Class Initialized
+DEBUG - 2021-11-12 11:06:19 --> UTF-8 Support Enabled
+INFO - 2021-11-12 11:06:19 --> Utf8 Class Initialized
+INFO - 2021-11-12 11:06:19 --> URI Class Initialized
+INFO - 2021-11-12 11:06:19 --> Router Class Initialized
+INFO - 2021-11-12 11:06:19 --> Output Class Initialized
+INFO - 2021-11-12 11:06:19 --> Security Class Initialized
+DEBUG - 2021-11-12 11:06:19 --> Global POST, GET and COOKIE data sanitized
+INFO - 2021-11-12 11:06:19 --> Input Class Initialized
+INFO - 2021-11-12 11:06:19 --> Language Class Initialized
+INFO - 2021-11-12 11:06:19 --> Loader Class Initialized
+INFO - 2021-11-12 11:06:19 --> Helper loaded: url_helper
+INFO - 2021-11-12 11:06:19 --> Database Driver Class Initialized
+DEBUG - 2021-11-12 11:06:19 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2021-11-12 11:06:19 --> Session: Class initialized using 'files' driver.
+INFO - 2021-11-12 11:06:19 --> Controller Class Initialized
+INFO - 2021-11-12 11:06:19 --> Helper loaded: form_helper
+INFO - 2021-11-12 11:06:19 --> Model "M_Admin" initialized
+INFO - 2021-11-12 11:06:19 --> Model "Jobs_update_model" initialized
+INFO - 2021-11-12 11:06:19 --> Model "JobsModel" initialized
+INFO - 2021-11-12 11:06:19 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2021-11-12 11:06:19 --> Pagination Class Initialized
+INFO - 2021-11-12 11:06:19 --> Form Validation Class Initialized
+DEBUG - 2021-11-12 11:06:19 --> Session class already loaded. Second attempt ignored.
+INFO - 2021-11-12 11:06:19 --> Config Class Initialized
+INFO - 2021-11-12 11:06:19 --> Hooks Class Initialized
+DEBUG - 2021-11-12 11:06:19 --> UTF-8 Support Enabled
+INFO - 2021-11-12 11:06:19 --> Utf8 Class Initialized
+INFO - 2021-11-12 11:06:19 --> URI Class Initialized
+INFO - 2021-11-12 11:06:19 --> Router Class Initialized
+INFO - 2021-11-12 11:06:19 --> Output Class Initialized
+INFO - 2021-11-12 11:06:19 --> Security Class Initialized
+DEBUG - 2021-11-12 11:06:19 --> Global POST, GET and COOKIE data sanitized
+INFO - 2021-11-12 11:06:19 --> Input Class Initialized
+INFO - 2021-11-12 11:06:19 --> Language Class Initialized
+INFO - 2021-11-12 11:06:19 --> Loader Class Initialized
+INFO - 2021-11-12 11:06:19 --> Helper loaded: url_helper
+INFO - 2021-11-12 11:06:19 --> Database Driver Class Initialized
+DEBUG - 2021-11-12 11:06:19 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2021-11-12 11:06:19 --> Session: Class initialized using 'files' driver.
+INFO - 2021-11-12 11:06:19 --> Controller Class Initialized
+INFO - 2021-11-12 11:06:19 --> Helper loaded: form_helper
+INFO - 2021-11-12 11:06:19 --> Model "M_Admin" initialized
+INFO - 2021-11-12 11:06:19 --> Model "Jobs_update_model" initialized
+INFO - 2021-11-12 11:06:19 --> Model "JobsModel" initialized
+INFO - 2021-11-12 11:06:19 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2021-11-12 11:06:19 --> Pagination Class Initialized
+INFO - 2021-11-12 11:06:19 --> Form Validation Class Initialized
+DEBUG - 2021-11-12 11:06:19 --> Session class already loaded. Second attempt ignored.
+INFO - 2021-11-12 11:06:19 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/header.php
+INFO - 2021-11-12 11:06:19 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/sidebar.php
+INFO - 2021-11-12 11:06:19 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/Finance/SelectFormat.php
+INFO - 2021-11-12 11:06:19 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/footer.php
+INFO - 2021-11-12 11:06:19 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/main.php
+INFO - 2021-11-12 11:06:19 --> Final output sent to browser
+DEBUG - 2021-11-12 11:06:19 --> Total execution time: 0.0521
+INFO - 2021-11-12 11:06:19 --> Config Class Initialized
+INFO - 2021-11-12 11:06:19 --> Hooks Class Initialized
+DEBUG - 2021-11-12 11:06:19 --> UTF-8 Support Enabled
+INFO - 2021-11-12 11:06:19 --> Utf8 Class Initialized
+INFO - 2021-11-12 11:06:19 --> URI Class Initialized
+INFO - 2021-11-12 11:06:19 --> Router Class Initialized
+INFO - 2021-11-12 11:06:19 --> Output Class Initialized
+INFO - 2021-11-12 11:06:19 --> Security Class Initialized
+DEBUG - 2021-11-12 11:06:19 --> Global POST, GET and COOKIE data sanitized
+INFO - 2021-11-12 11:06:19 --> Input Class Initialized
+INFO - 2021-11-12 11:06:19 --> Language Class Initialized
+ERROR - 2021-11-12 11:06:19 --> 404 Page Not Found: Plugins/components
+INFO - 2021-11-12 11:06:22 --> Config Class Initialized
+INFO - 2021-11-12 11:06:22 --> Hooks Class Initialized
+DEBUG - 2021-11-12 11:06:22 --> UTF-8 Support Enabled
+INFO - 2021-11-12 11:06:22 --> Utf8 Class Initialized
+INFO - 2021-11-12 11:06:22 --> URI Class Initialized
+INFO - 2021-11-12 11:06:22 --> Router Class Initialized
+INFO - 2021-11-12 11:06:22 --> Output Class Initialized
+INFO - 2021-11-12 11:06:22 --> Security Class Initialized
+DEBUG - 2021-11-12 11:06:22 --> Global POST, GET and COOKIE data sanitized
+INFO - 2021-11-12 11:06:22 --> Input Class Initialized
+INFO - 2021-11-12 11:06:22 --> Language Class Initialized
+INFO - 2021-11-12 11:06:22 --> Loader Class Initialized
+INFO - 2021-11-12 11:06:22 --> Helper loaded: url_helper
+INFO - 2021-11-12 11:06:22 --> Database Driver Class Initialized
+DEBUG - 2021-11-12 11:06:22 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2021-11-12 11:06:22 --> Session: Class initialized using 'files' driver.
+INFO - 2021-11-12 11:06:22 --> Controller Class Initialized
+INFO - 2021-11-12 11:06:22 --> Helper loaded: form_helper
+INFO - 2021-11-12 11:06:22 --> Model "M_Admin" initialized
+INFO - 2021-11-12 11:06:22 --> Model "Jobs_update_model" initialized
+INFO - 2021-11-12 11:06:22 --> Model "JobsModel" initialized
+INFO - 2021-11-12 11:06:22 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2021-11-12 11:06:22 --> Pagination Class Initialized
+INFO - 2021-11-12 11:06:22 --> Form Validation Class Initialized
+DEBUG - 2021-11-12 11:06:22 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2021-11-12 11:06:22 --> Pagination class already loaded. Second attempt ignored.
+INFO - 2021-11-12 11:06:22 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/header.php
+INFO - 2021-11-12 11:06:22 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/sidebar.php
+INFO - 2021-11-12 11:06:22 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/Finance/ViewPostingJournal.php
+INFO - 2021-11-12 11:06:22 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/footer.php
+INFO - 2021-11-12 11:06:22 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/main.php
+INFO - 2021-11-12 11:06:22 --> Final output sent to browser
+DEBUG - 2021-11-12 11:06:22 --> Total execution time: 0.0589
+INFO - 2021-11-12 11:06:22 --> Config Class Initialized
+INFO - 2021-11-12 11:06:22 --> Hooks Class Initialized
+DEBUG - 2021-11-12 11:06:22 --> UTF-8 Support Enabled
+INFO - 2021-11-12 11:06:22 --> Utf8 Class Initialized
+INFO - 2021-11-12 11:06:22 --> URI Class Initialized
+INFO - 2021-11-12 11:06:22 --> Router Class Initialized
+INFO - 2021-11-12 11:06:22 --> Output Class Initialized
+INFO - 2021-11-12 11:06:22 --> Security Class Initialized
+DEBUG - 2021-11-12 11:06:22 --> Global POST, GET and COOKIE data sanitized
+INFO - 2021-11-12 11:06:22 --> Input Class Initialized
+INFO - 2021-11-12 11:06:22 --> Language Class Initialized
+ERROR - 2021-11-12 11:06:22 --> 404 Page Not Found: Report/Plugins/components
+INFO - 2021-11-12 11:06:22 --> Config Class Initialized
+INFO - 2021-11-12 11:06:22 --> Hooks Class Initialized
+DEBUG - 2021-11-12 11:06:22 --> UTF-8 Support Enabled
+INFO - 2021-11-12 11:06:22 --> Utf8 Class Initialized
+INFO - 2021-11-12 11:06:22 --> URI Class Initialized
+INFO - 2021-11-12 11:06:22 --> Router Class Initialized
+INFO - 2021-11-12 11:06:22 --> Output Class Initialized
+INFO - 2021-11-12 11:06:22 --> Security Class Initialized
+DEBUG - 2021-11-12 11:06:22 --> Global POST, GET and COOKIE data sanitized
+INFO - 2021-11-12 11:06:22 --> Input Class Initialized
+INFO - 2021-11-12 11:06:22 --> Language Class Initialized
+ERROR - 2021-11-12 11:06:22 --> 404 Page Not Found: Report/Plugins/components
+INFO - 2021-11-12 11:06:37 --> Config Class Initialized
+INFO - 2021-11-12 11:06:37 --> Hooks Class Initialized
+DEBUG - 2021-11-12 11:06:37 --> UTF-8 Support Enabled
+INFO - 2021-11-12 11:06:37 --> Utf8 Class Initialized
+INFO - 2021-11-12 11:06:37 --> URI Class Initialized
+INFO - 2021-11-12 11:06:37 --> Router Class Initialized
+INFO - 2021-11-12 11:06:37 --> Output Class Initialized
+INFO - 2021-11-12 11:06:37 --> Security Class Initialized
+DEBUG - 2021-11-12 11:06:37 --> Global POST, GET and COOKIE data sanitized
+INFO - 2021-11-12 11:06:37 --> Input Class Initialized
+INFO - 2021-11-12 11:06:37 --> Language Class Initialized
+ERROR - 2021-11-12 11:06:37 --> 404 Page Not Found: Report/Finance/CrurencyKurs
+INFO - 2021-11-12 11:06:41 --> Config Class Initialized
+INFO - 2021-11-12 11:06:41 --> Hooks Class Initialized
+DEBUG - 2021-11-12 11:06:41 --> UTF-8 Support Enabled
+INFO - 2021-11-12 11:06:41 --> Utf8 Class Initialized
+INFO - 2021-11-12 11:06:41 --> URI Class Initialized
+INFO - 2021-11-12 11:06:42 --> Router Class Initialized
+INFO - 2021-11-12 11:06:42 --> Output Class Initialized
+INFO - 2021-11-12 11:06:42 --> Security Class Initialized
+DEBUG - 2021-11-12 11:06:42 --> Global POST, GET and COOKIE data sanitized
+INFO - 2021-11-12 11:06:42 --> Input Class Initialized
+INFO - 2021-11-12 11:06:42 --> Language Class Initialized
+INFO - 2021-11-12 11:06:42 --> Loader Class Initialized
+INFO - 2021-11-12 11:06:42 --> Helper loaded: url_helper
+INFO - 2021-11-12 11:06:42 --> Database Driver Class Initialized
+DEBUG - 2021-11-12 11:06:42 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2021-11-12 11:06:42 --> Session: Class initialized using 'files' driver.
+INFO - 2021-11-12 11:06:42 --> Controller Class Initialized
+INFO - 2021-11-12 11:06:42 --> Model "CrurencyKursModel" initialized
+INFO - 2021-11-12 11:06:42 --> Helper loaded: form_helper
+INFO - 2021-11-12 11:06:42 --> Form Validation Class Initialized
+INFO - 2021-11-12 11:06:42 --> Model "M_Admin" initialized
+INFO - 2021-11-12 11:06:42 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2021-11-12 11:06:42 --> Pagination Class Initialized
+INFO - 2021-11-12 11:06:42 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/header.php
+INFO - 2021-11-12 11:06:42 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/sidebar.php
+INFO - 2021-11-12 11:06:45 --> Config Class Initialized
+INFO - 2021-11-12 11:06:45 --> Hooks Class Initialized
+DEBUG - 2021-11-12 11:06:45 --> UTF-8 Support Enabled
+INFO - 2021-11-12 11:06:45 --> Utf8 Class Initialized
+INFO - 2021-11-12 11:06:45 --> URI Class Initialized
+INFO - 2021-11-12 11:06:45 --> Router Class Initialized
+INFO - 2021-11-12 11:06:45 --> Output Class Initialized
+INFO - 2021-11-12 11:06:45 --> Security Class Initialized
+DEBUG - 2021-11-12 11:06:45 --> Global POST, GET and COOKIE data sanitized
+INFO - 2021-11-12 11:06:45 --> Input Class Initialized
+INFO - 2021-11-12 11:06:45 --> Language Class Initialized
+INFO - 2021-11-12 11:06:45 --> Loader Class Initialized
+INFO - 2021-11-12 11:06:45 --> Helper loaded: url_helper
+INFO - 2021-11-12 11:06:45 --> Database Driver Class Initialized
+DEBUG - 2021-11-12 11:06:45 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2021-11-12 11:06:45 --> Session: Class initialized using 'files' driver.
+INFO - 2021-11-12 11:06:45 --> Controller Class Initialized
+INFO - 2021-11-12 11:06:45 --> Model "CrurencyKursModel" initialized
+INFO - 2021-11-12 11:06:45 --> Helper loaded: form_helper
+INFO - 2021-11-12 11:06:45 --> Form Validation Class Initialized
+INFO - 2021-11-12 11:06:45 --> Model "M_Admin" initialized
+INFO - 2021-11-12 11:06:45 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2021-11-12 11:06:45 --> Pagination Class Initialized
+INFO - 2021-11-12 11:06:45 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/header.php
+INFO - 2021-11-12 11:06:45 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/sidebar.php
+INFO - 2021-11-12 11:07:29 --> Config Class Initialized
+INFO - 2021-11-12 11:07:29 --> Hooks Class Initialized
+DEBUG - 2021-11-12 11:07:29 --> UTF-8 Support Enabled
+INFO - 2021-11-12 11:07:29 --> Utf8 Class Initialized
+INFO - 2021-11-12 11:07:29 --> URI Class Initialized
+INFO - 2021-11-12 11:07:29 --> Router Class Initialized
+INFO - 2021-11-12 11:07:29 --> Output Class Initialized
+INFO - 2021-11-12 11:07:29 --> Security Class Initialized
+DEBUG - 2021-11-12 11:07:29 --> Global POST, GET and COOKIE data sanitized
+INFO - 2021-11-12 11:07:29 --> Input Class Initialized
+INFO - 2021-11-12 11:07:29 --> Language Class Initialized
+INFO - 2021-11-12 11:07:29 --> Loader Class Initialized
+INFO - 2021-11-12 11:07:29 --> Helper loaded: url_helper
+INFO - 2021-11-12 11:07:29 --> Database Driver Class Initialized
+DEBUG - 2021-11-12 11:07:29 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2021-11-12 11:07:29 --> Session: Class initialized using 'files' driver.
+INFO - 2021-11-12 11:07:29 --> Controller Class Initialized
+INFO - 2021-11-12 11:07:29 --> Model "CrurencyKursModel" initialized
+INFO - 2021-11-12 11:07:29 --> Helper loaded: form_helper
+INFO - 2021-11-12 11:07:29 --> Form Validation Class Initialized
+INFO - 2021-11-12 11:07:29 --> Model "M_Admin" initialized
+INFO - 2021-11-12 11:07:29 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2021-11-12 11:07:29 --> Pagination Class Initialized
+INFO - 2021-11-12 11:07:29 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/header.php
+INFO - 2021-11-12 11:07:29 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/sidebar.php
+INFO - 2021-11-12 11:07:32 --> Config Class Initialized
+INFO - 2021-11-12 11:07:32 --> Hooks Class Initialized
+DEBUG - 2021-11-12 11:07:32 --> UTF-8 Support Enabled
+INFO - 2021-11-12 11:07:32 --> Utf8 Class Initialized
+INFO - 2021-11-12 11:07:32 --> URI Class Initialized
+INFO - 2021-11-12 11:07:32 --> Router Class Initialized
+INFO - 2021-11-12 11:07:32 --> Output Class Initialized
+INFO - 2021-11-12 11:07:32 --> Security Class Initialized
+DEBUG - 2021-11-12 11:07:32 --> Global POST, GET and COOKIE data sanitized
+INFO - 2021-11-12 11:07:32 --> Input Class Initialized
+INFO - 2021-11-12 11:07:32 --> Language Class Initialized
+INFO - 2021-11-12 11:07:32 --> Loader Class Initialized
+INFO - 2021-11-12 11:07:32 --> Helper loaded: url_helper
+INFO - 2021-11-12 11:07:32 --> Database Driver Class Initialized
+DEBUG - 2021-11-12 11:07:32 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2021-11-12 11:07:32 --> Session: Class initialized using 'files' driver.
+INFO - 2021-11-12 11:07:32 --> Controller Class Initialized
+INFO - 2021-11-12 11:07:32 --> Model "CrurencyKursModel" initialized
+INFO - 2021-11-12 11:07:32 --> Helper loaded: form_helper
+INFO - 2021-11-12 11:07:32 --> Form Validation Class Initialized
+INFO - 2021-11-12 11:07:32 --> Model "M_Admin" initialized
+INFO - 2021-11-12 11:07:32 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2021-11-12 11:07:32 --> Pagination Class Initialized
+INFO - 2021-11-12 11:07:32 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/header.php
+INFO - 2021-11-12 11:07:32 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/sidebar.php
+INFO - 2021-11-12 11:07:34 --> Config Class Initialized
+INFO - 2021-11-12 11:07:34 --> Hooks Class Initialized
+DEBUG - 2021-11-12 11:07:34 --> UTF-8 Support Enabled
+INFO - 2021-11-12 11:07:34 --> Utf8 Class Initialized
+INFO - 2021-11-12 11:07:34 --> URI Class Initialized
+INFO - 2021-11-12 11:07:34 --> Router Class Initialized
+INFO - 2021-11-12 11:07:34 --> Output Class Initialized
+INFO - 2021-11-12 11:07:34 --> Security Class Initialized
+DEBUG - 2021-11-12 11:07:34 --> Global POST, GET and COOKIE data sanitized
+INFO - 2021-11-12 11:07:34 --> Input Class Initialized
+INFO - 2021-11-12 11:07:34 --> Language Class Initialized
+INFO - 2021-11-12 11:07:34 --> Loader Class Initialized
+INFO - 2021-11-12 11:07:34 --> Helper loaded: url_helper
+INFO - 2021-11-12 11:07:34 --> Database Driver Class Initialized
+DEBUG - 2021-11-12 11:07:34 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2021-11-12 11:07:34 --> Session: Class initialized using 'files' driver.
+INFO - 2021-11-12 11:07:34 --> Controller Class Initialized
+INFO - 2021-11-12 11:07:34 --> Model "CrurencyKursModel" initialized
+INFO - 2021-11-12 11:07:34 --> Helper loaded: form_helper
+INFO - 2021-11-12 11:07:34 --> Form Validation Class Initialized
+INFO - 2021-11-12 11:07:34 --> Model "M_Admin" initialized
+INFO - 2021-11-12 11:07:34 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2021-11-12 11:07:34 --> Pagination Class Initialized
+INFO - 2021-11-12 11:07:34 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/header.php
+INFO - 2021-11-12 11:07:34 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/sidebar.php
+INFO - 2021-11-12 11:10:23 --> Config Class Initialized
+INFO - 2021-11-12 11:10:23 --> Hooks Class Initialized
+DEBUG - 2021-11-12 11:10:23 --> UTF-8 Support Enabled
+INFO - 2021-11-12 11:10:23 --> Utf8 Class Initialized
+INFO - 2021-11-12 11:10:23 --> URI Class Initialized
+INFO - 2021-11-12 11:10:23 --> Router Class Initialized
+INFO - 2021-11-12 11:10:23 --> Output Class Initialized
+INFO - 2021-11-12 11:10:23 --> Security Class Initialized
+DEBUG - 2021-11-12 11:10:23 --> Global POST, GET and COOKIE data sanitized
+INFO - 2021-11-12 11:10:23 --> Input Class Initialized
+INFO - 2021-11-12 11:10:23 --> Language Class Initialized
+INFO - 2021-11-12 11:10:23 --> Loader Class Initialized
+INFO - 2021-11-12 11:10:23 --> Helper loaded: url_helper
+INFO - 2021-11-12 11:10:23 --> Database Driver Class Initialized
+DEBUG - 2021-11-12 11:10:23 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2021-11-12 11:10:23 --> Session: Class initialized using 'files' driver.
+INFO - 2021-11-12 11:10:23 --> Controller Class Initialized
+INFO - 2021-11-12 11:10:23 --> Model "CrurencyKursModel" initialized
+INFO - 2021-11-12 11:10:23 --> Helper loaded: form_helper
+INFO - 2021-11-12 11:10:23 --> Form Validation Class Initialized
+INFO - 2021-11-12 11:10:23 --> Model "M_Admin" initialized
+INFO - 2021-11-12 11:10:23 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2021-11-12 11:10:23 --> Pagination Class Initialized
+INFO - 2021-11-12 11:10:23 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/header.php
+INFO - 2021-11-12 11:10:23 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/sidebar.php
+INFO - 2021-11-12 11:10:25 --> Config Class Initialized
+INFO - 2021-11-12 11:10:25 --> Hooks Class Initialized
+DEBUG - 2021-11-12 11:10:25 --> UTF-8 Support Enabled
+INFO - 2021-11-12 11:10:25 --> Utf8 Class Initialized
+INFO - 2021-11-12 11:10:25 --> URI Class Initialized
+INFO - 2021-11-12 11:10:25 --> Router Class Initialized
+INFO - 2021-11-12 11:10:25 --> Output Class Initialized
+INFO - 2021-11-12 11:10:25 --> Security Class Initialized
+DEBUG - 2021-11-12 11:10:25 --> Global POST, GET and COOKIE data sanitized
+INFO - 2021-11-12 11:10:25 --> Input Class Initialized
+INFO - 2021-11-12 11:10:25 --> Language Class Initialized
+INFO - 2021-11-12 11:10:25 --> Loader Class Initialized
+INFO - 2021-11-12 11:10:25 --> Helper loaded: url_helper
+INFO - 2021-11-12 11:10:25 --> Database Driver Class Initialized
+DEBUG - 2021-11-12 11:10:25 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2021-11-12 11:10:25 --> Session: Class initialized using 'files' driver.
+INFO - 2021-11-12 11:10:25 --> Controller Class Initialized
+INFO - 2021-11-12 11:10:25 --> Model "CrurencyKursModel" initialized
+INFO - 2021-11-12 11:10:25 --> Helper loaded: form_helper
+INFO - 2021-11-12 11:10:25 --> Form Validation Class Initialized
+INFO - 2021-11-12 11:10:25 --> Model "M_Admin" initialized
+INFO - 2021-11-12 11:10:25 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2021-11-12 11:10:25 --> Pagination Class Initialized
+INFO - 2021-11-12 11:10:25 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/header.php
+INFO - 2021-11-12 11:10:25 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/sidebar.php
+INFO - 2021-11-12 11:12:02 --> Config Class Initialized
+INFO - 2021-11-12 11:12:02 --> Hooks Class Initialized
+DEBUG - 2021-11-12 11:12:02 --> UTF-8 Support Enabled
+INFO - 2021-11-12 11:12:02 --> Utf8 Class Initialized
+INFO - 2021-11-12 11:12:02 --> URI Class Initialized
+INFO - 2021-11-12 11:12:02 --> Router Class Initialized
+INFO - 2021-11-12 11:12:02 --> Output Class Initialized
+INFO - 2021-11-12 11:12:02 --> Security Class Initialized
+DEBUG - 2021-11-12 11:12:02 --> Global POST, GET and COOKIE data sanitized
+INFO - 2021-11-12 11:12:02 --> Input Class Initialized
+INFO - 2021-11-12 11:12:02 --> Language Class Initialized
+INFO - 2021-11-12 11:12:02 --> Loader Class Initialized
+INFO - 2021-11-12 11:12:02 --> Helper loaded: url_helper
+INFO - 2021-11-12 11:12:02 --> Database Driver Class Initialized
+DEBUG - 2021-11-12 11:12:02 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2021-11-12 11:12:02 --> Session: Class initialized using 'files' driver.
+INFO - 2021-11-12 11:12:02 --> Controller Class Initialized
+INFO - 2021-11-12 11:12:02 --> Model "CrurencyKursModel" initialized
+INFO - 2021-11-12 11:12:02 --> Helper loaded: form_helper
+INFO - 2021-11-12 11:12:02 --> Form Validation Class Initialized
+INFO - 2021-11-12 11:12:02 --> Model "M_Admin" initialized
+INFO - 2021-11-12 11:12:02 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2021-11-12 11:12:02 --> Pagination Class Initialized
+INFO - 2021-11-12 11:12:02 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/header.php
+INFO - 2021-11-12 11:12:02 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/sidebar.php
+INFO - 2021-11-12 11:13:08 --> Config Class Initialized
+INFO - 2021-11-12 11:13:08 --> Hooks Class Initialized
+DEBUG - 2021-11-12 11:13:08 --> UTF-8 Support Enabled
+INFO - 2021-11-12 11:13:08 --> Utf8 Class Initialized
+INFO - 2021-11-12 11:13:08 --> URI Class Initialized
+INFO - 2021-11-12 11:13:08 --> Router Class Initialized
+INFO - 2021-11-12 11:13:08 --> Output Class Initialized
+INFO - 2021-11-12 11:13:08 --> Security Class Initialized
+DEBUG - 2021-11-12 11:13:08 --> Global POST, GET and COOKIE data sanitized
+INFO - 2021-11-12 11:13:08 --> Input Class Initialized
+INFO - 2021-11-12 11:13:08 --> Language Class Initialized
+INFO - 2021-11-12 11:13:08 --> Loader Class Initialized
+INFO - 2021-11-12 11:13:08 --> Helper loaded: url_helper
+INFO - 2021-11-12 11:13:08 --> Database Driver Class Initialized
+DEBUG - 2021-11-12 11:13:08 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2021-11-12 11:13:08 --> Session: Class initialized using 'files' driver.
+INFO - 2021-11-12 11:13:08 --> Controller Class Initialized
+INFO - 2021-11-12 11:13:08 --> Model "CrurencyKursModel" initialized
+INFO - 2021-11-12 11:13:08 --> Helper loaded: form_helper
+INFO - 2021-11-12 11:13:08 --> Form Validation Class Initialized
+INFO - 2021-11-12 11:13:08 --> Model "M_Admin" initialized
+INFO - 2021-11-12 11:13:08 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2021-11-12 11:13:08 --> Pagination Class Initialized
+INFO - 2021-11-12 11:13:08 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/header.php
+INFO - 2021-11-12 11:13:08 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/sidebar.php
+INFO - 2021-11-12 11:14:57 --> Config Class Initialized
+INFO - 2021-11-12 11:14:57 --> Hooks Class Initialized
+DEBUG - 2021-11-12 11:14:57 --> UTF-8 Support Enabled
+INFO - 2021-11-12 11:14:57 --> Utf8 Class Initialized
+INFO - 2021-11-12 11:14:57 --> URI Class Initialized
+INFO - 2021-11-12 11:14:57 --> Router Class Initialized
+INFO - 2021-11-12 11:14:57 --> Output Class Initialized
+INFO - 2021-11-12 11:14:57 --> Security Class Initialized
+DEBUG - 2021-11-12 11:14:57 --> Global POST, GET and COOKIE data sanitized
+INFO - 2021-11-12 11:14:57 --> Input Class Initialized
+INFO - 2021-11-12 11:14:57 --> Language Class Initialized
+INFO - 2021-11-12 11:14:57 --> Loader Class Initialized
+INFO - 2021-11-12 11:14:57 --> Helper loaded: url_helper
+INFO - 2021-11-12 11:14:57 --> Database Driver Class Initialized
+DEBUG - 2021-11-12 11:14:57 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2021-11-12 11:14:57 --> Session: Class initialized using 'files' driver.
+INFO - 2021-11-12 11:14:57 --> Controller Class Initialized
+INFO - 2021-11-12 11:14:57 --> Model "CrurencyKursModel" initialized
+INFO - 2021-11-12 11:14:57 --> Helper loaded: form_helper
+INFO - 2021-11-12 11:14:57 --> Form Validation Class Initialized
+INFO - 2021-11-12 11:14:57 --> Model "M_Admin" initialized
+INFO - 2021-11-12 11:14:57 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2021-11-12 11:14:57 --> Pagination Class Initialized
+INFO - 2021-11-12 11:14:57 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/header.php
+INFO - 2021-11-12 11:14:57 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/sidebar.php
+INFO - 2021-11-12 11:14:57 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\crurencykurs/fin_kurs_list.php
+INFO - 2021-11-12 11:14:57 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/footer.php
+INFO - 2021-11-12 11:14:57 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/main.php
+INFO - 2021-11-12 11:14:57 --> Final output sent to browser
+DEBUG - 2021-11-12 11:14:57 --> Total execution time: 0.0833
+INFO - 2021-11-12 11:14:57 --> Config Class Initialized
+INFO - 2021-11-12 11:14:57 --> Hooks Class Initialized
+DEBUG - 2021-11-12 11:14:57 --> UTF-8 Support Enabled
+INFO - 2021-11-12 11:14:57 --> Utf8 Class Initialized
+INFO - 2021-11-12 11:14:57 --> URI Class Initialized
+INFO - 2021-11-12 11:14:57 --> Router Class Initialized
+INFO - 2021-11-12 11:14:57 --> Output Class Initialized
+INFO - 2021-11-12 11:14:57 --> Security Class Initialized
+DEBUG - 2021-11-12 11:14:57 --> Global POST, GET and COOKIE data sanitized
+INFO - 2021-11-12 11:14:57 --> Input Class Initialized
+INFO - 2021-11-12 11:14:57 --> Language Class Initialized
+ERROR - 2021-11-12 11:14:57 --> 404 Page Not Found: Plugins/components
+INFO - 2021-11-12 11:14:57 --> Config Class Initialized
+INFO - 2021-11-12 11:14:57 --> Hooks Class Initialized
+DEBUG - 2021-11-12 11:14:57 --> UTF-8 Support Enabled
+INFO - 2021-11-12 11:14:57 --> Utf8 Class Initialized
+INFO - 2021-11-12 11:14:57 --> URI Class Initialized
+INFO - 2021-11-12 11:14:57 --> Router Class Initialized
+INFO - 2021-11-12 11:14:57 --> Output Class Initialized
+INFO - 2021-11-12 11:14:57 --> Security Class Initialized
+DEBUG - 2021-11-12 11:14:57 --> Global POST, GET and COOKIE data sanitized
+INFO - 2021-11-12 11:14:57 --> Input Class Initialized
+INFO - 2021-11-12 11:14:57 --> Language Class Initialized
+ERROR - 2021-11-12 11:14:57 --> 404 Page Not Found: Plugins/components
+INFO - 2021-11-12 11:15:00 --> Config Class Initialized
+INFO - 2021-11-12 11:15:00 --> Hooks Class Initialized
+DEBUG - 2021-11-12 11:15:00 --> UTF-8 Support Enabled
+INFO - 2021-11-12 11:15:00 --> Utf8 Class Initialized
+INFO - 2021-11-12 11:15:00 --> URI Class Initialized
+INFO - 2021-11-12 11:15:00 --> Router Class Initialized
+INFO - 2021-11-12 11:15:00 --> Output Class Initialized
+INFO - 2021-11-12 11:15:00 --> Security Class Initialized
+DEBUG - 2021-11-12 11:15:00 --> Global POST, GET and COOKIE data sanitized
+INFO - 2021-11-12 11:15:00 --> Input Class Initialized
+INFO - 2021-11-12 11:15:00 --> Language Class Initialized
+INFO - 2021-11-12 11:15:00 --> Loader Class Initialized
+INFO - 2021-11-12 11:15:00 --> Helper loaded: url_helper
+INFO - 2021-11-12 11:15:00 --> Database Driver Class Initialized
+DEBUG - 2021-11-12 11:15:00 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2021-11-12 11:15:00 --> Session: Class initialized using 'files' driver.
+INFO - 2021-11-12 11:15:00 --> Controller Class Initialized
+INFO - 2021-11-12 11:15:00 --> Model "CrurencyKursModel" initialized
+INFO - 2021-11-12 11:15:00 --> Helper loaded: form_helper
+INFO - 2021-11-12 11:15:00 --> Form Validation Class Initialized
+INFO - 2021-11-12 11:15:00 --> Model "M_Admin" initialized
+INFO - 2021-11-12 11:15:00 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\crurencykurs/fin_kurs_form.php
+INFO - 2021-11-12 11:15:00 --> Final output sent to browser
+DEBUG - 2021-11-12 11:15:00 --> Total execution time: 0.0366
+INFO - 2021-11-12 11:15:02 --> Config Class Initialized
+INFO - 2021-11-12 11:15:02 --> Hooks Class Initialized
+DEBUG - 2021-11-12 11:15:02 --> UTF-8 Support Enabled
+INFO - 2021-11-12 11:15:02 --> Utf8 Class Initialized
+INFO - 2021-11-12 11:15:02 --> URI Class Initialized
+INFO - 2021-11-12 11:15:02 --> Router Class Initialized
+INFO - 2021-11-12 11:15:02 --> Output Class Initialized
+INFO - 2021-11-12 11:15:02 --> Security Class Initialized
+DEBUG - 2021-11-12 11:15:02 --> Global POST, GET and COOKIE data sanitized
+INFO - 2021-11-12 11:15:02 --> Input Class Initialized
+INFO - 2021-11-12 11:15:02 --> Language Class Initialized
+INFO - 2021-11-12 11:15:02 --> Loader Class Initialized
+INFO - 2021-11-12 11:15:02 --> Helper loaded: url_helper
+INFO - 2021-11-12 11:15:02 --> Database Driver Class Initialized
+DEBUG - 2021-11-12 11:15:02 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2021-11-12 11:15:02 --> Session: Class initialized using 'files' driver.
+INFO - 2021-11-12 11:15:02 --> Controller Class Initialized
+INFO - 2021-11-12 11:15:02 --> Model "CrurencyKursModel" initialized
+INFO - 2021-11-12 11:15:02 --> Helper loaded: form_helper
+INFO - 2021-11-12 11:15:02 --> Form Validation Class Initialized
+INFO - 2021-11-12 11:15:02 --> Model "M_Admin" initialized
+INFO - 2021-11-12 11:15:02 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2021-11-12 11:15:02 --> Pagination Class Initialized
+INFO - 2021-11-12 11:15:02 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/header.php
+INFO - 2021-11-12 11:15:02 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/sidebar.php
+INFO - 2021-11-12 11:15:02 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\crurencykurs/fin_kurs_list.php
+INFO - 2021-11-12 11:15:02 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/footer.php
+INFO - 2021-11-12 11:15:02 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/main.php
+INFO - 2021-11-12 11:15:02 --> Final output sent to browser
+DEBUG - 2021-11-12 11:15:02 --> Total execution time: 0.0974
+INFO - 2021-11-12 11:23:47 --> Config Class Initialized
+INFO - 2021-11-12 11:23:47 --> Hooks Class Initialized
+DEBUG - 2021-11-12 11:23:47 --> UTF-8 Support Enabled
+INFO - 2021-11-12 11:23:47 --> Utf8 Class Initialized
+INFO - 2021-11-12 11:23:47 --> URI Class Initialized
+INFO - 2021-11-12 11:23:47 --> Router Class Initialized
+INFO - 2021-11-12 11:23:47 --> Output Class Initialized
+INFO - 2021-11-12 11:23:47 --> Security Class Initialized
+DEBUG - 2021-11-12 11:23:47 --> Global POST, GET and COOKIE data sanitized
+INFO - 2021-11-12 11:23:47 --> Input Class Initialized
+INFO - 2021-11-12 11:23:47 --> Language Class Initialized
+INFO - 2021-11-12 11:23:47 --> Loader Class Initialized
+INFO - 2021-11-12 11:23:47 --> Helper loaded: url_helper
+INFO - 2021-11-12 11:23:47 --> Database Driver Class Initialized
+DEBUG - 2021-11-12 11:23:47 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2021-11-12 11:23:47 --> Session: Class initialized using 'files' driver.
+INFO - 2021-11-12 11:23:47 --> Controller Class Initialized
+INFO - 2021-11-12 11:23:47 --> Model "CrurencyKursModel" initialized
+INFO - 2021-11-12 11:23:47 --> Helper loaded: form_helper
+INFO - 2021-11-12 11:23:47 --> Form Validation Class Initialized
+INFO - 2021-11-12 11:23:47 --> Model "M_Admin" initialized
+INFO - 2021-11-12 11:23:47 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2021-11-12 11:23:47 --> Pagination Class Initialized
+INFO - 2021-11-12 11:23:47 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/header.php
+INFO - 2021-11-12 11:23:47 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/sidebar.php
+INFO - 2021-11-12 11:23:47 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\crurencykurs/fin_kurs_list.php
+INFO - 2021-11-12 11:23:47 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/footer.php
+INFO - 2021-11-12 11:23:47 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/main.php
+INFO - 2021-11-12 11:23:47 --> Final output sent to browser
+DEBUG - 2021-11-12 11:23:47 --> Total execution time: 0.0642
+INFO - 2021-11-12 11:23:47 --> Config Class Initialized
+INFO - 2021-11-12 11:23:47 --> Hooks Class Initialized
+DEBUG - 2021-11-12 11:23:47 --> UTF-8 Support Enabled
+INFO - 2021-11-12 11:23:47 --> Utf8 Class Initialized
+INFO - 2021-11-12 11:23:47 --> URI Class Initialized
+INFO - 2021-11-12 11:23:47 --> Router Class Initialized
+INFO - 2021-11-12 11:23:47 --> Output Class Initialized
+INFO - 2021-11-12 11:23:47 --> Security Class Initialized
+DEBUG - 2021-11-12 11:23:47 --> Global POST, GET and COOKIE data sanitized
+INFO - 2021-11-12 11:23:47 --> Input Class Initialized
+INFO - 2021-11-12 11:23:47 --> Language Class Initialized
+ERROR - 2021-11-12 11:23:47 --> 404 Page Not Found: Plugins/components
+INFO - 2021-11-12 11:23:47 --> Config Class Initialized
+INFO - 2021-11-12 11:23:47 --> Hooks Class Initialized
+DEBUG - 2021-11-12 11:23:47 --> UTF-8 Support Enabled
+INFO - 2021-11-12 11:23:47 --> Utf8 Class Initialized
+INFO - 2021-11-12 11:23:47 --> URI Class Initialized
+INFO - 2021-11-12 11:23:47 --> Router Class Initialized
+INFO - 2021-11-12 11:23:47 --> Output Class Initialized
+INFO - 2021-11-12 11:23:47 --> Security Class Initialized
+DEBUG - 2021-11-12 11:23:47 --> Global POST, GET and COOKIE data sanitized
+INFO - 2021-11-12 11:23:47 --> Input Class Initialized
+INFO - 2021-11-12 11:23:47 --> Language Class Initialized
+ERROR - 2021-11-12 11:23:47 --> 404 Page Not Found: Plugins/components
+INFO - 2021-11-12 11:23:49 --> Config Class Initialized
+INFO - 2021-11-12 11:23:49 --> Hooks Class Initialized
+DEBUG - 2021-11-12 11:23:49 --> UTF-8 Support Enabled
+INFO - 2021-11-12 11:23:49 --> Utf8 Class Initialized
+INFO - 2021-11-12 11:23:49 --> URI Class Initialized
+INFO - 2021-11-12 11:23:49 --> Router Class Initialized
+INFO - 2021-11-12 11:23:49 --> Output Class Initialized
+INFO - 2021-11-12 11:23:49 --> Security Class Initialized
+DEBUG - 2021-11-12 11:23:49 --> Global POST, GET and COOKIE data sanitized
+INFO - 2021-11-12 11:23:49 --> Input Class Initialized
+INFO - 2021-11-12 11:23:49 --> Language Class Initialized
+INFO - 2021-11-12 11:23:49 --> Loader Class Initialized
+INFO - 2021-11-12 11:23:49 --> Helper loaded: url_helper
+INFO - 2021-11-12 11:23:49 --> Database Driver Class Initialized
+DEBUG - 2021-11-12 11:23:49 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2021-11-12 11:23:49 --> Session: Class initialized using 'files' driver.
+INFO - 2021-11-12 11:23:49 --> Controller Class Initialized
+INFO - 2021-11-12 11:23:49 --> Model "CrurencyKursModel" initialized
+INFO - 2021-11-12 11:23:49 --> Helper loaded: form_helper
+INFO - 2021-11-12 11:23:49 --> Form Validation Class Initialized
+INFO - 2021-11-12 11:23:49 --> Model "M_Admin" initialized
+INFO - 2021-11-12 11:23:49 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/header.php
+INFO - 2021-11-12 11:23:49 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/sidebar.php
+ERROR - 2021-11-12 11:23:49 --> Severity: Notice --> Undefined variable: button C:\laragon\www\FinanceBayu2\application\views\crurencykurs\fin_kurs_form.php 7
+ERROR - 2021-11-12 11:23:49 --> Severity: Notice --> Undefined variable: action C:\laragon\www\FinanceBayu2\application\views\crurencykurs\fin_kurs_form.php 8
+ERROR - 2021-11-12 11:23:49 --> Severity: Notice --> Undefined variable: currency_code C:\laragon\www\FinanceBayu2\application\views\crurencykurs\fin_kurs_form.php 17
+ERROR - 2021-11-12 11:23:49 --> Severity: Notice --> Undefined variable: currency_code C:\laragon\www\FinanceBayu2\application\views\crurencykurs\fin_kurs_form.php 17
+ERROR - 2021-11-12 11:23:49 --> Severity: Notice --> Undefined variable: kurs_amount C:\laragon\www\FinanceBayu2\application\views\crurencykurs\fin_kurs_form.php 26
+ERROR - 2021-11-12 11:23:49 --> Severity: Notice --> Undefined variable: kurs_date C:\laragon\www\FinanceBayu2\application\views\crurencykurs\fin_kurs_form.php 30
+ERROR - 2021-11-12 11:23:49 --> Severity: Notice --> Undefined variable: input_date C:\laragon\www\FinanceBayu2\application\views\crurencykurs\fin_kurs_form.php 34
+ERROR - 2021-11-12 11:23:49 --> Severity: Notice --> Undefined variable: id C:\laragon\www\FinanceBayu2\application\views\crurencykurs\fin_kurs_form.php 36
+ERROR - 2021-11-12 11:23:49 --> Severity: Notice --> Undefined variable: button C:\laragon\www\FinanceBayu2\application\views\crurencykurs\fin_kurs_form.php 37
+INFO - 2021-11-12 11:23:49 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\crurencykurs/fin_kurs_form.php
+INFO - 2021-11-12 11:23:49 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/footer.php
+INFO - 2021-11-12 11:23:49 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/main.php
+INFO - 2021-11-12 11:23:49 --> Final output sent to browser
+DEBUG - 2021-11-12 11:23:49 --> Total execution time: 0.1008
+INFO - 2021-11-12 11:23:49 --> Config Class Initialized
+INFO - 2021-11-12 11:23:49 --> Hooks Class Initialized
+DEBUG - 2021-11-12 11:23:49 --> UTF-8 Support Enabled
+INFO - 2021-11-12 11:23:49 --> Utf8 Class Initialized
+INFO - 2021-11-12 11:23:49 --> URI Class Initialized
+INFO - 2021-11-12 11:23:49 --> Router Class Initialized
+INFO - 2021-11-12 11:23:49 --> Output Class Initialized
+INFO - 2021-11-12 11:23:49 --> Security Class Initialized
+DEBUG - 2021-11-12 11:23:49 --> Global POST, GET and COOKIE data sanitized
+INFO - 2021-11-12 11:23:49 --> Input Class Initialized
+INFO - 2021-11-12 11:23:49 --> Language Class Initialized
+ERROR - 2021-11-12 11:23:49 --> 404 Page Not Found: Report/Plugins/components
+INFO - 2021-11-12 11:24:16 --> Config Class Initialized
+INFO - 2021-11-12 11:24:16 --> Hooks Class Initialized
+DEBUG - 2021-11-12 11:24:16 --> UTF-8 Support Enabled
+INFO - 2021-11-12 11:24:16 --> Utf8 Class Initialized
+INFO - 2021-11-12 11:24:16 --> URI Class Initialized
+INFO - 2021-11-12 11:24:16 --> Router Class Initialized
+INFO - 2021-11-12 11:24:16 --> Output Class Initialized
+INFO - 2021-11-12 11:24:16 --> Security Class Initialized
+DEBUG - 2021-11-12 11:24:16 --> Global POST, GET and COOKIE data sanitized
+INFO - 2021-11-12 11:24:16 --> Input Class Initialized
+INFO - 2021-11-12 11:24:16 --> Language Class Initialized
+INFO - 2021-11-12 11:24:16 --> Loader Class Initialized
+INFO - 2021-11-12 11:24:16 --> Helper loaded: url_helper
+INFO - 2021-11-12 11:24:16 --> Database Driver Class Initialized
+DEBUG - 2021-11-12 11:24:16 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2021-11-12 11:24:16 --> Session: Class initialized using 'files' driver.
+INFO - 2021-11-12 11:24:16 --> Controller Class Initialized
+INFO - 2021-11-12 11:24:16 --> Model "CrurencyKursModel" initialized
+INFO - 2021-11-12 11:24:16 --> Helper loaded: form_helper
+INFO - 2021-11-12 11:24:16 --> Form Validation Class Initialized
+INFO - 2021-11-12 11:24:16 --> Model "M_Admin" initialized
+INFO - 2021-11-12 11:24:16 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/header.php
+INFO - 2021-11-12 11:24:16 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/sidebar.php
+ERROR - 2021-11-12 11:24:16 --> Severity: Notice --> Undefined variable: currency_code C:\laragon\www\FinanceBayu2\application\views\crurencykurs\fin_kurs_form.php 17
+ERROR - 2021-11-12 11:24:16 --> Severity: Notice --> Undefined variable: currency_code C:\laragon\www\FinanceBayu2\application\views\crurencykurs\fin_kurs_form.php 17
+INFO - 2021-11-12 11:24:16 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\crurencykurs/fin_kurs_form.php
+INFO - 2021-11-12 11:24:16 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/footer.php
+INFO - 2021-11-12 11:24:16 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/main.php
+INFO - 2021-11-12 11:24:16 --> Final output sent to browser
+DEBUG - 2021-11-12 11:24:16 --> Total execution time: 0.0715
+INFO - 2021-11-12 11:24:16 --> Config Class Initialized
+INFO - 2021-11-12 11:24:16 --> Hooks Class Initialized
+DEBUG - 2021-11-12 11:24:16 --> UTF-8 Support Enabled
+INFO - 2021-11-12 11:24:16 --> Utf8 Class Initialized
+INFO - 2021-11-12 11:24:16 --> URI Class Initialized
+INFO - 2021-11-12 11:24:16 --> Router Class Initialized
+INFO - 2021-11-12 11:24:16 --> Output Class Initialized
+INFO - 2021-11-12 11:24:16 --> Security Class Initialized
+DEBUG - 2021-11-12 11:24:16 --> Global POST, GET and COOKIE data sanitized
+INFO - 2021-11-12 11:24:16 --> Input Class Initialized
+INFO - 2021-11-12 11:24:16 --> Language Class Initialized
+ERROR - 2021-11-12 11:24:16 --> 404 Page Not Found: Report/Plugins/components
+INFO - 2021-11-12 11:24:16 --> Config Class Initialized
+INFO - 2021-11-12 11:24:16 --> Hooks Class Initialized
+DEBUG - 2021-11-12 11:24:16 --> UTF-8 Support Enabled
+INFO - 2021-11-12 11:24:16 --> Utf8 Class Initialized
+INFO - 2021-11-12 11:24:16 --> URI Class Initialized
+INFO - 2021-11-12 11:24:16 --> Router Class Initialized
+INFO - 2021-11-12 11:24:16 --> Output Class Initialized
+INFO - 2021-11-12 11:24:16 --> Security Class Initialized
+DEBUG - 2021-11-12 11:24:16 --> Global POST, GET and COOKIE data sanitized
+INFO - 2021-11-12 11:24:16 --> Input Class Initialized
+INFO - 2021-11-12 11:24:16 --> Language Class Initialized
+ERROR - 2021-11-12 11:24:16 --> 404 Page Not Found: Report/Plugins/components
+INFO - 2021-11-12 11:24:48 --> Config Class Initialized
+INFO - 2021-11-12 11:24:48 --> Hooks Class Initialized
+DEBUG - 2021-11-12 11:24:48 --> UTF-8 Support Enabled
+INFO - 2021-11-12 11:24:48 --> Utf8 Class Initialized
+INFO - 2021-11-12 11:24:48 --> URI Class Initialized
+INFO - 2021-11-12 11:24:48 --> Router Class Initialized
+INFO - 2021-11-12 11:24:48 --> Output Class Initialized
+INFO - 2021-11-12 11:24:48 --> Security Class Initialized
+DEBUG - 2021-11-12 11:24:48 --> Global POST, GET and COOKIE data sanitized
+INFO - 2021-11-12 11:24:48 --> Input Class Initialized
+INFO - 2021-11-12 11:24:48 --> Language Class Initialized
+INFO - 2021-11-12 11:24:48 --> Loader Class Initialized
+INFO - 2021-11-12 11:24:48 --> Helper loaded: url_helper
+INFO - 2021-11-12 11:24:48 --> Database Driver Class Initialized
+DEBUG - 2021-11-12 11:24:48 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2021-11-12 11:24:48 --> Session: Class initialized using 'files' driver.
+INFO - 2021-11-12 11:24:48 --> Controller Class Initialized
+INFO - 2021-11-12 11:24:48 --> Model "CrurencyKursModel" initialized
+INFO - 2021-11-12 11:24:48 --> Helper loaded: form_helper
+INFO - 2021-11-12 11:24:48 --> Form Validation Class Initialized
+INFO - 2021-11-12 11:24:48 --> Model "M_Admin" initialized
+INFO - 2021-11-12 11:24:48 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/header.php
+INFO - 2021-11-12 11:24:48 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/sidebar.php
+INFO - 2021-11-12 11:24:48 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\crurencykurs/fin_kurs_form.php
+INFO - 2021-11-12 11:24:48 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/footer.php
+INFO - 2021-11-12 11:24:48 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/main.php
+INFO - 2021-11-12 11:24:48 --> Final output sent to browser
+DEBUG - 2021-11-12 11:24:48 --> Total execution time: 0.0421
+INFO - 2021-11-12 11:24:48 --> Config Class Initialized
+INFO - 2021-11-12 11:24:48 --> Hooks Class Initialized
+DEBUG - 2021-11-12 11:24:48 --> UTF-8 Support Enabled
+INFO - 2021-11-12 11:24:48 --> Utf8 Class Initialized
+INFO - 2021-11-12 11:24:48 --> URI Class Initialized
+INFO - 2021-11-12 11:24:48 --> Router Class Initialized
+INFO - 2021-11-12 11:24:48 --> Output Class Initialized
+INFO - 2021-11-12 11:24:48 --> Security Class Initialized
+DEBUG - 2021-11-12 11:24:48 --> Global POST, GET and COOKIE data sanitized
+INFO - 2021-11-12 11:24:48 --> Input Class Initialized
+INFO - 2021-11-12 11:24:48 --> Language Class Initialized
+ERROR - 2021-11-12 11:24:48 --> 404 Page Not Found: Report/Plugins/components
+INFO - 2021-11-12 11:25:47 --> Config Class Initialized
+INFO - 2021-11-12 11:25:47 --> Hooks Class Initialized
+DEBUG - 2021-11-12 11:25:47 --> UTF-8 Support Enabled
+INFO - 2021-11-12 11:25:47 --> Utf8 Class Initialized
+INFO - 2021-11-12 11:25:47 --> URI Class Initialized
+INFO - 2021-11-12 11:25:47 --> Router Class Initialized
+INFO - 2021-11-12 11:25:47 --> Output Class Initialized
+INFO - 2021-11-12 11:25:47 --> Security Class Initialized
+DEBUG - 2021-11-12 11:25:47 --> Global POST, GET and COOKIE data sanitized
+INFO - 2021-11-12 11:25:47 --> Input Class Initialized
+INFO - 2021-11-12 11:25:47 --> Language Class Initialized
+INFO - 2021-11-12 11:25:47 --> Loader Class Initialized
+INFO - 2021-11-12 11:25:47 --> Helper loaded: url_helper
+INFO - 2021-11-12 11:25:47 --> Database Driver Class Initialized
+DEBUG - 2021-11-12 11:25:47 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2021-11-12 11:25:47 --> Session: Class initialized using 'files' driver.
+INFO - 2021-11-12 11:25:47 --> Controller Class Initialized
+INFO - 2021-11-12 11:25:47 --> Model "CrurencyKursModel" initialized
+INFO - 2021-11-12 11:25:47 --> Helper loaded: form_helper
+INFO - 2021-11-12 11:25:47 --> Form Validation Class Initialized
+INFO - 2021-11-12 11:25:47 --> Model "M_Admin" initialized
+INFO - 2021-11-12 11:25:47 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/header.php
+INFO - 2021-11-12 11:25:47 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/sidebar.php
+INFO - 2021-11-12 11:25:47 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\crurencykurs/fin_kurs_form.php
+INFO - 2021-11-12 11:25:47 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/footer.php
+INFO - 2021-11-12 11:25:47 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/main.php
+INFO - 2021-11-12 11:25:47 --> Final output sent to browser
+DEBUG - 2021-11-12 11:25:47 --> Total execution time: 0.0636
+INFO - 2021-11-12 11:25:47 --> Config Class Initialized
+INFO - 2021-11-12 11:25:47 --> Hooks Class Initialized
+DEBUG - 2021-11-12 11:25:47 --> UTF-8 Support Enabled
+INFO - 2021-11-12 11:25:47 --> Utf8 Class Initialized
+INFO - 2021-11-12 11:25:47 --> URI Class Initialized
+INFO - 2021-11-12 11:25:47 --> Router Class Initialized
+INFO - 2021-11-12 11:25:47 --> Output Class Initialized
+INFO - 2021-11-12 11:25:47 --> Security Class Initialized
+DEBUG - 2021-11-12 11:25:47 --> Global POST, GET and COOKIE data sanitized
+INFO - 2021-11-12 11:25:47 --> Input Class Initialized
+INFO - 2021-11-12 11:25:47 --> Language Class Initialized
+ERROR - 2021-11-12 11:25:47 --> 404 Page Not Found: Report/Plugins/components
+INFO - 2021-11-12 11:26:43 --> Config Class Initialized
+INFO - 2021-11-12 11:26:43 --> Hooks Class Initialized
+DEBUG - 2021-11-12 11:26:43 --> UTF-8 Support Enabled
+INFO - 2021-11-12 11:26:43 --> Utf8 Class Initialized
+INFO - 2021-11-12 11:26:43 --> URI Class Initialized
+INFO - 2021-11-12 11:26:43 --> Router Class Initialized
+INFO - 2021-11-12 11:26:43 --> Output Class Initialized
+INFO - 2021-11-12 11:26:43 --> Security Class Initialized
+DEBUG - 2021-11-12 11:26:43 --> Global POST, GET and COOKIE data sanitized
+INFO - 2021-11-12 11:26:43 --> Input Class Initialized
+INFO - 2021-11-12 11:26:43 --> Language Class Initialized
+INFO - 2021-11-12 11:26:43 --> Loader Class Initialized
+INFO - 2021-11-12 11:26:43 --> Helper loaded: url_helper
+INFO - 2021-11-12 11:26:43 --> Database Driver Class Initialized
+DEBUG - 2021-11-12 11:26:43 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2021-11-12 11:26:43 --> Session: Class initialized using 'files' driver.
+INFO - 2021-11-12 11:26:43 --> Controller Class Initialized
+INFO - 2021-11-12 11:26:43 --> Model "CrurencyKursModel" initialized
+INFO - 2021-11-12 11:26:43 --> Helper loaded: form_helper
+INFO - 2021-11-12 11:26:43 --> Form Validation Class Initialized
+INFO - 2021-11-12 11:26:43 --> Model "M_Admin" initialized
+INFO - 2021-11-12 11:26:43 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/header.php
+INFO - 2021-11-12 11:26:43 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/sidebar.php
+INFO - 2021-11-12 11:26:43 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\crurencykurs/fin_kurs_form.php
+INFO - 2021-11-12 11:26:43 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/footer.php
+INFO - 2021-11-12 11:26:43 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/main.php
+INFO - 2021-11-12 11:26:43 --> Final output sent to browser
+DEBUG - 2021-11-12 11:26:43 --> Total execution time: 0.0620
+INFO - 2021-11-12 11:26:43 --> Config Class Initialized
+INFO - 2021-11-12 11:26:43 --> Hooks Class Initialized
+DEBUG - 2021-11-12 11:26:43 --> UTF-8 Support Enabled
+INFO - 2021-11-12 11:26:43 --> Utf8 Class Initialized
+INFO - 2021-11-12 11:26:43 --> URI Class Initialized
+INFO - 2021-11-12 11:26:43 --> Router Class Initialized
+INFO - 2021-11-12 11:26:43 --> Output Class Initialized
+INFO - 2021-11-12 11:26:43 --> Security Class Initialized
+DEBUG - 2021-11-12 11:26:43 --> Global POST, GET and COOKIE data sanitized
+INFO - 2021-11-12 11:26:43 --> Input Class Initialized
+INFO - 2021-11-12 11:26:43 --> Language Class Initialized
+ERROR - 2021-11-12 11:26:43 --> 404 Page Not Found: Report/Plugins/components
+INFO - 2021-11-12 11:26:43 --> Config Class Initialized
+INFO - 2021-11-12 11:26:43 --> Hooks Class Initialized
+DEBUG - 2021-11-12 11:26:43 --> UTF-8 Support Enabled
+INFO - 2021-11-12 11:26:43 --> Utf8 Class Initialized
+INFO - 2021-11-12 11:26:43 --> URI Class Initialized
+INFO - 2021-11-12 11:26:43 --> Router Class Initialized
+INFO - 2021-11-12 11:26:43 --> Output Class Initialized
+INFO - 2021-11-12 11:26:43 --> Security Class Initialized
+DEBUG - 2021-11-12 11:26:43 --> Global POST, GET and COOKIE data sanitized
+INFO - 2021-11-12 11:26:43 --> Input Class Initialized
+INFO - 2021-11-12 11:26:43 --> Language Class Initialized
+ERROR - 2021-11-12 11:26:43 --> 404 Page Not Found: Report/Plugins/components
+INFO - 2021-11-12 11:26:54 --> Config Class Initialized
+INFO - 2021-11-12 11:26:54 --> Hooks Class Initialized
+DEBUG - 2021-11-12 11:26:54 --> UTF-8 Support Enabled
+INFO - 2021-11-12 11:26:54 --> Utf8 Class Initialized
+INFO - 2021-11-12 11:26:54 --> URI Class Initialized
+INFO - 2021-11-12 11:26:54 --> Router Class Initialized
+INFO - 2021-11-12 11:26:54 --> Output Class Initialized
+INFO - 2021-11-12 11:26:54 --> Security Class Initialized
+DEBUG - 2021-11-12 11:26:54 --> Global POST, GET and COOKIE data sanitized
+INFO - 2021-11-12 11:26:54 --> Input Class Initialized
+INFO - 2021-11-12 11:26:54 --> Language Class Initialized
+INFO - 2021-11-12 11:26:54 --> Loader Class Initialized
+INFO - 2021-11-12 11:26:54 --> Helper loaded: url_helper
+INFO - 2021-11-12 11:26:54 --> Database Driver Class Initialized
+DEBUG - 2021-11-12 11:26:54 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2021-11-12 11:26:54 --> Session: Class initialized using 'files' driver.
+INFO - 2021-11-12 11:26:54 --> Controller Class Initialized
+INFO - 2021-11-12 11:26:54 --> Model "CrurencyKursModel" initialized
+INFO - 2021-11-12 11:26:54 --> Helper loaded: form_helper
+INFO - 2021-11-12 11:26:54 --> Form Validation Class Initialized
+INFO - 2021-11-12 11:26:54 --> Model "M_Admin" initialized
+INFO - 2021-11-12 11:26:54 --> Language file loaded: language/english/form_validation_lang.php
+ERROR - 2021-11-12 11:26:54 --> Query error: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot insert the value NULL into column 'id', table 'BAYUBUANA.dbo.fin_kurs'; column does not allow nulls. INSERT fails. - Invalid query: INSERT INTO "fin_kurs" ("kurs_code", "kurs_amount", "kurs_date", "input_date") VALUES ('USD', '14000', '2021-11-30', '2021-11-12 11:26:54')
+INFO - 2021-11-12 11:26:54 --> Language file loaded: language/english/db_lang.php
+INFO - 2021-11-12 11:32:13 --> Config Class Initialized
+INFO - 2021-11-12 11:32:13 --> Hooks Class Initialized
+DEBUG - 2021-11-12 11:32:13 --> UTF-8 Support Enabled
+INFO - 2021-11-12 11:32:13 --> Utf8 Class Initialized
+INFO - 2021-11-12 11:32:13 --> URI Class Initialized
+INFO - 2021-11-12 11:32:13 --> Router Class Initialized
+INFO - 2021-11-12 11:32:13 --> Output Class Initialized
+INFO - 2021-11-12 11:32:13 --> Security Class Initialized
+DEBUG - 2021-11-12 11:32:13 --> Global POST, GET and COOKIE data sanitized
+INFO - 2021-11-12 11:32:13 --> Input Class Initialized
+INFO - 2021-11-12 11:32:13 --> Language Class Initialized
+INFO - 2021-11-12 11:32:13 --> Loader Class Initialized
+INFO - 2021-11-12 11:32:13 --> Helper loaded: url_helper
+INFO - 2021-11-12 11:32:13 --> Database Driver Class Initialized
+DEBUG - 2021-11-12 11:32:13 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2021-11-12 11:32:13 --> Session: Class initialized using 'files' driver.
+INFO - 2021-11-12 11:32:13 --> Controller Class Initialized
+INFO - 2021-11-12 11:32:13 --> Model "CrurencyKursModel" initialized
+INFO - 2021-11-12 11:32:13 --> Helper loaded: form_helper
+INFO - 2021-11-12 11:32:13 --> Form Validation Class Initialized
+INFO - 2021-11-12 11:32:13 --> Model "M_Admin" initialized
+INFO - 2021-11-12 11:32:13 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/header.php
+INFO - 2021-11-12 11:32:13 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/sidebar.php
+INFO - 2021-11-12 11:32:13 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\crurencykurs/fin_kurs_form.php
+INFO - 2021-11-12 11:32:13 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/footer.php
+INFO - 2021-11-12 11:32:13 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/main.php
+INFO - 2021-11-12 11:32:13 --> Final output sent to browser
+DEBUG - 2021-11-12 11:32:13 --> Total execution time: 0.0680
+INFO - 2021-11-12 11:32:15 --> Config Class Initialized
+INFO - 2021-11-12 11:32:15 --> Hooks Class Initialized
+DEBUG - 2021-11-12 11:32:15 --> UTF-8 Support Enabled
+INFO - 2021-11-12 11:32:15 --> Utf8 Class Initialized
+INFO - 2021-11-12 11:32:15 --> URI Class Initialized
+INFO - 2021-11-12 11:32:15 --> Router Class Initialized
+INFO - 2021-11-12 11:32:15 --> Output Class Initialized
+INFO - 2021-11-12 11:32:15 --> Security Class Initialized
+DEBUG - 2021-11-12 11:32:15 --> Global POST, GET and COOKIE data sanitized
+INFO - 2021-11-12 11:32:15 --> Input Class Initialized
+INFO - 2021-11-12 11:32:15 --> Language Class Initialized
+INFO - 2021-11-12 11:32:15 --> Loader Class Initialized
+INFO - 2021-11-12 11:32:15 --> Helper loaded: url_helper
+INFO - 2021-11-12 11:32:15 --> Database Driver Class Initialized
+DEBUG - 2021-11-12 11:32:15 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2021-11-12 11:32:15 --> Session: Class initialized using 'files' driver.
+INFO - 2021-11-12 11:32:15 --> Controller Class Initialized
+INFO - 2021-11-12 11:32:15 --> Model "CrurencyKursModel" initialized
+INFO - 2021-11-12 11:32:15 --> Helper loaded: form_helper
+INFO - 2021-11-12 11:32:15 --> Form Validation Class Initialized
+INFO - 2021-11-12 11:32:15 --> Model "M_Admin" initialized
+INFO - 2021-11-12 11:32:15 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/header.php
+INFO - 2021-11-12 11:32:15 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/sidebar.php
+INFO - 2021-11-12 11:32:15 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\crurencykurs/fin_kurs_form.php
+INFO - 2021-11-12 11:32:15 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/footer.php
+INFO - 2021-11-12 11:32:15 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/main.php
+INFO - 2021-11-12 11:32:15 --> Final output sent to browser
+DEBUG - 2021-11-12 11:32:15 --> Total execution time: 0.0396
+INFO - 2021-11-12 11:32:15 --> Config Class Initialized
+INFO - 2021-11-12 11:32:15 --> Hooks Class Initialized
+DEBUG - 2021-11-12 11:32:15 --> UTF-8 Support Enabled
+INFO - 2021-11-12 11:32:15 --> Utf8 Class Initialized
+INFO - 2021-11-12 11:32:15 --> URI Class Initialized
+INFO - 2021-11-12 11:32:15 --> Router Class Initialized
+INFO - 2021-11-12 11:32:15 --> Output Class Initialized
+INFO - 2021-11-12 11:32:15 --> Security Class Initialized
+DEBUG - 2021-11-12 11:32:15 --> Global POST, GET and COOKIE data sanitized
+INFO - 2021-11-12 11:32:15 --> Input Class Initialized
+INFO - 2021-11-12 11:32:15 --> Language Class Initialized
+ERROR - 2021-11-12 11:32:15 --> 404 Page Not Found: Report/Plugins/components
+INFO - 2021-11-12 11:32:46 --> Config Class Initialized
+INFO - 2021-11-12 11:32:46 --> Hooks Class Initialized
+DEBUG - 2021-11-12 11:32:46 --> UTF-8 Support Enabled
+INFO - 2021-11-12 11:32:46 --> Utf8 Class Initialized
+INFO - 2021-11-12 11:32:46 --> URI Class Initialized
+INFO - 2021-11-12 11:32:46 --> Router Class Initialized
+INFO - 2021-11-12 11:32:46 --> Output Class Initialized
+INFO - 2021-11-12 11:32:46 --> Security Class Initialized
+DEBUG - 2021-11-12 11:32:46 --> Global POST, GET and COOKIE data sanitized
+INFO - 2021-11-12 11:32:46 --> Input Class Initialized
+INFO - 2021-11-12 11:32:46 --> Language Class Initialized
+INFO - 2021-11-12 11:32:46 --> Loader Class Initialized
+INFO - 2021-11-12 11:32:46 --> Helper loaded: url_helper
+INFO - 2021-11-12 11:32:46 --> Database Driver Class Initialized
+DEBUG - 2021-11-12 11:32:46 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2021-11-12 11:32:46 --> Session: Class initialized using 'files' driver.
+INFO - 2021-11-12 11:32:46 --> Controller Class Initialized
+INFO - 2021-11-12 11:32:46 --> Model "CrurencyKursModel" initialized
+INFO - 2021-11-12 11:32:46 --> Helper loaded: form_helper
+INFO - 2021-11-12 11:32:46 --> Form Validation Class Initialized
+INFO - 2021-11-12 11:32:46 --> Model "M_Admin" initialized
+INFO - 2021-11-12 11:32:46 --> Language file loaded: language/english/form_validation_lang.php
+ERROR - 2021-11-12 11:32:46 --> Query error: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot insert the value NULL into column 'id', table 'BAYUBUANA.dbo.fin_kurs'; column does not allow nulls. INSERT fails. - Invalid query: INSERT INTO "fin_kurs" ("kurs_code", "kurs_amount", "kurs_date", "input_date") VALUES ('USD', '14000', '2021-11-30', '2021-11-12 11:32:46')
+INFO - 2021-11-12 11:32:46 --> Language file loaded: language/english/db_lang.php
+INFO - 2021-11-12 11:34:04 --> Config Class Initialized
+INFO - 2021-11-12 11:34:04 --> Hooks Class Initialized
+DEBUG - 2021-11-12 11:34:04 --> UTF-8 Support Enabled
+INFO - 2021-11-12 11:34:04 --> Utf8 Class Initialized
+INFO - 2021-11-12 11:34:04 --> URI Class Initialized
+INFO - 2021-11-12 11:34:04 --> Router Class Initialized
+INFO - 2021-11-12 11:34:04 --> Output Class Initialized
+INFO - 2021-11-12 11:34:04 --> Security Class Initialized
+DEBUG - 2021-11-12 11:34:04 --> Global POST, GET and COOKIE data sanitized
+INFO - 2021-11-12 11:34:04 --> Input Class Initialized
+INFO - 2021-11-12 11:34:04 --> Language Class Initialized
+INFO - 2021-11-12 11:34:04 --> Loader Class Initialized
+INFO - 2021-11-12 11:34:04 --> Helper loaded: url_helper
+INFO - 2021-11-12 11:34:04 --> Database Driver Class Initialized
+DEBUG - 2021-11-12 11:34:04 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2021-11-12 11:34:04 --> Session: Class initialized using 'files' driver.
+INFO - 2021-11-12 11:34:04 --> Controller Class Initialized
+INFO - 2021-11-12 11:34:04 --> Model "CrurencyKursModel" initialized
+INFO - 2021-11-12 11:34:04 --> Helper loaded: form_helper
+INFO - 2021-11-12 11:34:04 --> Form Validation Class Initialized
+INFO - 2021-11-12 11:34:04 --> Model "M_Admin" initialized
+INFO - 2021-11-12 11:34:04 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/header.php
+INFO - 2021-11-12 11:34:04 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/sidebar.php
+INFO - 2021-11-12 11:34:04 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\crurencykurs/fin_kurs_form.php
+INFO - 2021-11-12 11:34:04 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/footer.php
+INFO - 2021-11-12 11:34:04 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/main.php
+INFO - 2021-11-12 11:34:04 --> Final output sent to browser
+DEBUG - 2021-11-12 11:34:04 --> Total execution time: 0.0558
+INFO - 2021-11-12 11:34:06 --> Config Class Initialized
+INFO - 2021-11-12 11:34:06 --> Hooks Class Initialized
+DEBUG - 2021-11-12 11:34:06 --> UTF-8 Support Enabled
+INFO - 2021-11-12 11:34:06 --> Utf8 Class Initialized
+INFO - 2021-11-12 11:34:06 --> URI Class Initialized
+INFO - 2021-11-12 11:34:06 --> Router Class Initialized
+INFO - 2021-11-12 11:34:06 --> Output Class Initialized
+INFO - 2021-11-12 11:34:06 --> Security Class Initialized
+DEBUG - 2021-11-12 11:34:06 --> Global POST, GET and COOKIE data sanitized
+INFO - 2021-11-12 11:34:06 --> Input Class Initialized
+INFO - 2021-11-12 11:34:06 --> Language Class Initialized
+INFO - 2021-11-12 11:34:06 --> Loader Class Initialized
+INFO - 2021-11-12 11:34:06 --> Helper loaded: url_helper
+INFO - 2021-11-12 11:34:06 --> Database Driver Class Initialized
+DEBUG - 2021-11-12 11:34:06 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2021-11-12 11:34:06 --> Session: Class initialized using 'files' driver.
+INFO - 2021-11-12 11:34:06 --> Controller Class Initialized
+INFO - 2021-11-12 11:34:06 --> Model "CrurencyKursModel" initialized
+INFO - 2021-11-12 11:34:06 --> Helper loaded: form_helper
+INFO - 2021-11-12 11:34:06 --> Form Validation Class Initialized
+INFO - 2021-11-12 11:34:06 --> Model "M_Admin" initialized
+INFO - 2021-11-12 11:34:06 --> Language file loaded: language/english/form_validation_lang.php
+ERROR - 2021-11-12 11:34:06 --> Query error: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot insert the value NULL into column 'id', table 'BAYUBUANA.dbo.fin_kurs'; column does not allow nulls. INSERT fails. - Invalid query: INSERT INTO "fin_kurs" ("kurs_code", "kurs_amount", "kurs_date", "input_date") VALUES ('USD', '14000', '2021-11-30', '2021-11-12 11:34:06')
+INFO - 2021-11-12 11:34:06 --> Language file loaded: language/english/db_lang.php
+INFO - 2021-11-12 11:34:08 --> Config Class Initialized
+INFO - 2021-11-12 11:34:08 --> Hooks Class Initialized
+DEBUG - 2021-11-12 11:34:08 --> UTF-8 Support Enabled
+INFO - 2021-11-12 11:34:08 --> Utf8 Class Initialized
+INFO - 2021-11-12 11:34:08 --> URI Class Initialized
+INFO - 2021-11-12 11:34:08 --> Router Class Initialized
+INFO - 2021-11-12 11:34:08 --> Output Class Initialized
+INFO - 2021-11-12 11:34:08 --> Security Class Initialized
+DEBUG - 2021-11-12 11:34:08 --> Global POST, GET and COOKIE data sanitized
+INFO - 2021-11-12 11:34:08 --> Input Class Initialized
+INFO - 2021-11-12 11:34:08 --> Language Class Initialized
+INFO - 2021-11-12 11:34:08 --> Loader Class Initialized
+INFO - 2021-11-12 11:34:08 --> Helper loaded: url_helper
+INFO - 2021-11-12 11:34:08 --> Database Driver Class Initialized
+DEBUG - 2021-11-12 11:34:08 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2021-11-12 11:34:08 --> Session: Class initialized using 'files' driver.
+INFO - 2021-11-12 11:34:08 --> Controller Class Initialized
+INFO - 2021-11-12 11:34:08 --> Model "CrurencyKursModel" initialized
+INFO - 2021-11-12 11:34:08 --> Helper loaded: form_helper
+INFO - 2021-11-12 11:34:08 --> Form Validation Class Initialized
+INFO - 2021-11-12 11:34:08 --> Model "M_Admin" initialized
+INFO - 2021-11-12 11:34:08 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/header.php
+INFO - 2021-11-12 11:34:08 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/sidebar.php
+INFO - 2021-11-12 11:34:08 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\crurencykurs/fin_kurs_form.php
+INFO - 2021-11-12 11:34:08 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/footer.php
+INFO - 2021-11-12 11:34:08 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/main.php
+INFO - 2021-11-12 11:34:08 --> Final output sent to browser
+DEBUG - 2021-11-12 11:34:08 --> Total execution time: 0.0405
+INFO - 2021-11-12 11:34:10 --> Config Class Initialized
+INFO - 2021-11-12 11:34:10 --> Hooks Class Initialized
+DEBUG - 2021-11-12 11:34:10 --> UTF-8 Support Enabled
+INFO - 2021-11-12 11:34:10 --> Utf8 Class Initialized
+INFO - 2021-11-12 11:34:10 --> URI Class Initialized
+INFO - 2021-11-12 11:34:10 --> Router Class Initialized
+INFO - 2021-11-12 11:34:10 --> Output Class Initialized
+INFO - 2021-11-12 11:34:10 --> Security Class Initialized
+DEBUG - 2021-11-12 11:34:10 --> Global POST, GET and COOKIE data sanitized
+INFO - 2021-11-12 11:34:10 --> Input Class Initialized
+INFO - 2021-11-12 11:34:10 --> Language Class Initialized
+INFO - 2021-11-12 11:34:10 --> Loader Class Initialized
+INFO - 2021-11-12 11:34:10 --> Helper loaded: url_helper
+INFO - 2021-11-12 11:34:10 --> Database Driver Class Initialized
+DEBUG - 2021-11-12 11:34:10 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2021-11-12 11:34:10 --> Session: Class initialized using 'files' driver.
+INFO - 2021-11-12 11:34:10 --> Controller Class Initialized
+INFO - 2021-11-12 11:34:10 --> Model "CrurencyKursModel" initialized
+INFO - 2021-11-12 11:34:10 --> Helper loaded: form_helper
+INFO - 2021-11-12 11:34:10 --> Form Validation Class Initialized
+INFO - 2021-11-12 11:34:10 --> Model "M_Admin" initialized
+INFO - 2021-11-12 11:34:10 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/header.php
+INFO - 2021-11-12 11:34:10 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/sidebar.php
+INFO - 2021-11-12 11:34:10 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\crurencykurs/fin_kurs_form.php
+INFO - 2021-11-12 11:34:10 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/footer.php
+INFO - 2021-11-12 11:34:10 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/main.php
+INFO - 2021-11-12 11:34:10 --> Final output sent to browser
+DEBUG - 2021-11-12 11:34:10 --> Total execution time: 0.0371
+INFO - 2021-11-12 11:34:10 --> Config Class Initialized
+INFO - 2021-11-12 11:34:10 --> Hooks Class Initialized
+DEBUG - 2021-11-12 11:34:10 --> UTF-8 Support Enabled
+INFO - 2021-11-12 11:34:10 --> Utf8 Class Initialized
+INFO - 2021-11-12 11:34:10 --> URI Class Initialized
+INFO - 2021-11-12 11:34:10 --> Router Class Initialized
+INFO - 2021-11-12 11:34:10 --> Output Class Initialized
+INFO - 2021-11-12 11:34:10 --> Security Class Initialized
+DEBUG - 2021-11-12 11:34:10 --> Global POST, GET and COOKIE data sanitized
+INFO - 2021-11-12 11:34:10 --> Input Class Initialized
+INFO - 2021-11-12 11:34:10 --> Language Class Initialized
+ERROR - 2021-11-12 11:34:10 --> 404 Page Not Found: Report/Plugins/components
+INFO - 2021-11-12 11:34:10 --> Config Class Initialized
+INFO - 2021-11-12 11:34:10 --> Hooks Class Initialized
+DEBUG - 2021-11-12 11:34:10 --> UTF-8 Support Enabled
+INFO - 2021-11-12 11:34:10 --> Utf8 Class Initialized
+INFO - 2021-11-12 11:34:10 --> URI Class Initialized
+INFO - 2021-11-12 11:34:10 --> Router Class Initialized
+INFO - 2021-11-12 11:34:10 --> Output Class Initialized
+INFO - 2021-11-12 11:34:10 --> Security Class Initialized
+DEBUG - 2021-11-12 11:34:10 --> Global POST, GET and COOKIE data sanitized
+INFO - 2021-11-12 11:34:10 --> Input Class Initialized
+INFO - 2021-11-12 11:34:10 --> Language Class Initialized
+ERROR - 2021-11-12 11:34:10 --> 404 Page Not Found: Report/Plugins/components
+INFO - 2021-11-12 13:36:59 --> Config Class Initialized
+INFO - 2021-11-12 13:36:59 --> Hooks Class Initialized
+DEBUG - 2021-11-12 13:36:59 --> UTF-8 Support Enabled
+INFO - 2021-11-12 13:36:59 --> Utf8 Class Initialized
+INFO - 2021-11-12 13:36:59 --> URI Class Initialized
+INFO - 2021-11-12 13:36:59 --> Router Class Initialized
+INFO - 2021-11-12 13:36:59 --> Output Class Initialized
+INFO - 2021-11-12 13:36:59 --> Security Class Initialized
+DEBUG - 2021-11-12 13:36:59 --> Global POST, GET and COOKIE data sanitized
+INFO - 2021-11-12 13:36:59 --> Input Class Initialized
+INFO - 2021-11-12 13:36:59 --> Language Class Initialized
+INFO - 2021-11-12 13:36:59 --> Loader Class Initialized
+INFO - 2021-11-12 13:36:59 --> Helper loaded: url_helper
+INFO - 2021-11-12 13:36:59 --> Database Driver Class Initialized
+DEBUG - 2021-11-12 13:36:59 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2021-11-12 13:36:59 --> Session: Class initialized using 'files' driver.
+INFO - 2021-11-12 13:36:59 --> Controller Class Initialized
+INFO - 2021-11-12 13:36:59 --> Config Class Initialized
+INFO - 2021-11-12 13:36:59 --> Hooks Class Initialized
+DEBUG - 2021-11-12 13:36:59 --> UTF-8 Support Enabled
+INFO - 2021-11-12 13:36:59 --> Utf8 Class Initialized
+INFO - 2021-11-12 13:36:59 --> URI Class Initialized
+INFO - 2021-11-12 13:36:59 --> Router Class Initialized
+INFO - 2021-11-12 13:36:59 --> Output Class Initialized
+INFO - 2021-11-12 13:36:59 --> Security Class Initialized
+DEBUG - 2021-11-12 13:36:59 --> Global POST, GET and COOKIE data sanitized
+INFO - 2021-11-12 13:36:59 --> Input Class Initialized
+INFO - 2021-11-12 13:36:59 --> Language Class Initialized
+INFO - 2021-11-12 13:36:59 --> Loader Class Initialized
+INFO - 2021-11-12 13:36:59 --> Helper loaded: url_helper
+INFO - 2021-11-12 13:36:59 --> Database Driver Class Initialized
+DEBUG - 2021-11-12 13:36:59 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2021-11-12 13:36:59 --> Session: Class initialized using 'files' driver.
+INFO - 2021-11-12 13:36:59 --> Controller Class Initialized
+INFO - 2021-11-12 13:36:59 --> Helper loaded: form_helper
+INFO - 2021-11-12 13:36:59 --> Model "M_login" initialized
+INFO - 2021-11-12 13:36:59 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2021-11-12 13:36:59 --> Pagination Class Initialized
+INFO - 2021-11-12 13:36:59 --> Form Validation Class Initialized
+DEBUG - 2021-11-12 13:36:59 --> Session class already loaded. Second attempt ignored.
+INFO - 2021-11-12 13:36:59 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/header.php
+INFO - 2021-11-12 13:36:59 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/login/v_login.php
+INFO - 2021-11-12 13:36:59 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/footer.php
+INFO - 2021-11-12 13:36:59 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/mainAdminLogin.php
+INFO - 2021-11-12 13:36:59 --> Final output sent to browser
+DEBUG - 2021-11-12 13:36:59 --> Total execution time: 0.0659
+INFO - 2021-11-12 13:36:59 --> Config Class Initialized
+INFO - 2021-11-12 13:36:59 --> Hooks Class Initialized
+DEBUG - 2021-11-12 13:36:59 --> UTF-8 Support Enabled
+INFO - 2021-11-12 13:36:59 --> Utf8 Class Initialized
+INFO - 2021-11-12 13:36:59 --> URI Class Initialized
+INFO - 2021-11-12 13:36:59 --> Router Class Initialized
+INFO - 2021-11-12 13:36:59 --> Output Class Initialized
+INFO - 2021-11-12 13:36:59 --> Security Class Initialized
+DEBUG - 2021-11-12 13:36:59 --> Global POST, GET and COOKIE data sanitized
+INFO - 2021-11-12 13:36:59 --> Input Class Initialized
+INFO - 2021-11-12 13:36:59 --> Language Class Initialized
+ERROR - 2021-11-12 13:36:59 --> 404 Page Not Found: Plugins/components
+INFO - 2021-11-12 13:36:59 --> Config Class Initialized
+INFO - 2021-11-12 13:36:59 --> Hooks Class Initialized
+DEBUG - 2021-11-12 13:36:59 --> UTF-8 Support Enabled
+INFO - 2021-11-12 13:36:59 --> Utf8 Class Initialized
+INFO - 2021-11-12 13:36:59 --> URI Class Initialized
+INFO - 2021-11-12 13:36:59 --> Router Class Initialized
+INFO - 2021-11-12 13:36:59 --> Output Class Initialized
+INFO - 2021-11-12 13:36:59 --> Security Class Initialized
+DEBUG - 2021-11-12 13:36:59 --> Global POST, GET and COOKIE data sanitized
+INFO - 2021-11-12 13:36:59 --> Input Class Initialized
+INFO - 2021-11-12 13:36:59 --> Language Class Initialized
+ERROR - 2021-11-12 13:36:59 --> 404 Page Not Found: Plugins/components
+INFO - 2021-11-12 13:37:03 --> Config Class Initialized
+INFO - 2021-11-12 13:37:03 --> Hooks Class Initialized
+DEBUG - 2021-11-12 13:37:03 --> UTF-8 Support Enabled
+INFO - 2021-11-12 13:37:03 --> Utf8 Class Initialized
+INFO - 2021-11-12 13:37:03 --> URI Class Initialized
+INFO - 2021-11-12 13:37:03 --> Router Class Initialized
+INFO - 2021-11-12 13:37:03 --> Output Class Initialized
+INFO - 2021-11-12 13:37:03 --> Security Class Initialized
+DEBUG - 2021-11-12 13:37:03 --> Global POST, GET and COOKIE data sanitized
+INFO - 2021-11-12 13:37:03 --> Input Class Initialized
+INFO - 2021-11-12 13:37:03 --> Language Class Initialized
+INFO - 2021-11-12 13:37:03 --> Loader Class Initialized
+INFO - 2021-11-12 13:37:03 --> Helper loaded: url_helper
+INFO - 2021-11-12 13:37:03 --> Database Driver Class Initialized
+DEBUG - 2021-11-12 13:37:03 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2021-11-12 13:37:03 --> Session: Class initialized using 'files' driver.
+INFO - 2021-11-12 13:37:03 --> Controller Class Initialized
+INFO - 2021-11-12 13:37:03 --> Helper loaded: form_helper
+INFO - 2021-11-12 13:37:03 --> Model "M_login" initialized
+INFO - 2021-11-12 13:37:03 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2021-11-12 13:37:03 --> Pagination Class Initialized
+INFO - 2021-11-12 13:37:03 --> Form Validation Class Initialized
+DEBUG - 2021-11-12 13:37:03 --> Session class already loaded. Second attempt ignored.
+INFO - 2021-11-12 13:37:03 --> Language file loaded: language/english/form_validation_lang.php
+INFO - 2021-11-12 13:37:03 --> Config Class Initialized
+INFO - 2021-11-12 13:37:03 --> Hooks Class Initialized
+DEBUG - 2021-11-12 13:37:03 --> UTF-8 Support Enabled
+INFO - 2021-11-12 13:37:03 --> Utf8 Class Initialized
+INFO - 2021-11-12 13:37:03 --> URI Class Initialized
+INFO - 2021-11-12 13:37:03 --> Router Class Initialized
+INFO - 2021-11-12 13:37:03 --> Output Class Initialized
+INFO - 2021-11-12 13:37:03 --> Security Class Initialized
+DEBUG - 2021-11-12 13:37:03 --> Global POST, GET and COOKIE data sanitized
+INFO - 2021-11-12 13:37:03 --> Input Class Initialized
+INFO - 2021-11-12 13:37:03 --> Language Class Initialized
+INFO - 2021-11-12 13:37:03 --> Loader Class Initialized
+INFO - 2021-11-12 13:37:03 --> Helper loaded: url_helper
+INFO - 2021-11-12 13:37:03 --> Database Driver Class Initialized
+DEBUG - 2021-11-12 13:37:03 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2021-11-12 13:37:03 --> Session: Class initialized using 'files' driver.
+INFO - 2021-11-12 13:37:03 --> Controller Class Initialized
+INFO - 2021-11-12 13:37:03 --> Helper loaded: form_helper
+INFO - 2021-11-12 13:37:03 --> Model "M_Admin" initialized
+INFO - 2021-11-12 13:37:03 --> Model "Jobs_update_model" initialized
+INFO - 2021-11-12 13:37:03 --> Model "JobsModel" initialized
+INFO - 2021-11-12 13:37:03 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2021-11-12 13:37:03 --> Pagination Class Initialized
+INFO - 2021-11-12 13:37:03 --> Form Validation Class Initialized
+DEBUG - 2021-11-12 13:37:03 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2021-11-12 13:37:03 --> Pagination class already loaded. Second attempt ignored.
+INFO - 2021-11-12 13:37:03 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/header.php
+INFO - 2021-11-12 13:37:03 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/sidebar.php
+INFO - 2021-11-12 13:37:03 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/Finance/ViewJournal.php
+INFO - 2021-11-12 13:37:03 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/footer.php
+INFO - 2021-11-12 13:37:03 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/main.php
+INFO - 2021-11-12 13:37:03 --> Final output sent to browser
+DEBUG - 2021-11-12 13:37:03 --> Total execution time: 0.0661
+INFO - 2021-11-12 13:37:03 --> Config Class Initialized
+INFO - 2021-11-12 13:37:03 --> Hooks Class Initialized
+DEBUG - 2021-11-12 13:37:03 --> UTF-8 Support Enabled
+INFO - 2021-11-12 13:37:03 --> Utf8 Class Initialized
+INFO - 2021-11-12 13:37:03 --> URI Class Initialized
+INFO - 2021-11-12 13:37:03 --> Router Class Initialized
+INFO - 2021-11-12 13:37:03 --> Output Class Initialized
+INFO - 2021-11-12 13:37:03 --> Security Class Initialized
+DEBUG - 2021-11-12 13:37:03 --> Global POST, GET and COOKIE data sanitized
+INFO - 2021-11-12 13:37:03 --> Input Class Initialized
+INFO - 2021-11-12 13:37:03 --> Language Class Initialized
+ERROR - 2021-11-12 13:37:03 --> 404 Page Not Found: Report/Plugins/components
+INFO - 2021-11-12 13:37:04 --> Config Class Initialized
+INFO - 2021-11-12 13:37:04 --> Hooks Class Initialized
+DEBUG - 2021-11-12 13:37:04 --> UTF-8 Support Enabled
+INFO - 2021-11-12 13:37:04 --> Utf8 Class Initialized
+INFO - 2021-11-12 13:37:04 --> URI Class Initialized
+INFO - 2021-11-12 13:37:04 --> Router Class Initialized
+INFO - 2021-11-12 13:37:04 --> Output Class Initialized
+INFO - 2021-11-12 13:37:04 --> Security Class Initialized
+DEBUG - 2021-11-12 13:37:04 --> Global POST, GET and COOKIE data sanitized
+INFO - 2021-11-12 13:37:04 --> Input Class Initialized
+INFO - 2021-11-12 13:37:04 --> Language Class Initialized
+ERROR - 2021-11-12 13:37:04 --> 404 Page Not Found: Report/Plugins/components
+INFO - 2021-11-12 13:37:09 --> Config Class Initialized
+INFO - 2021-11-12 13:37:09 --> Hooks Class Initialized
+DEBUG - 2021-11-12 13:37:09 --> UTF-8 Support Enabled
+INFO - 2021-11-12 13:37:09 --> Utf8 Class Initialized
+INFO - 2021-11-12 13:37:09 --> URI Class Initialized
+INFO - 2021-11-12 13:37:09 --> Router Class Initialized
+INFO - 2021-11-12 13:37:09 --> Output Class Initialized
+INFO - 2021-11-12 13:37:09 --> Security Class Initialized
+DEBUG - 2021-11-12 13:37:09 --> Global POST, GET and COOKIE data sanitized
+INFO - 2021-11-12 13:37:09 --> Input Class Initialized
+INFO - 2021-11-12 13:37:09 --> Language Class Initialized
+INFO - 2021-11-12 13:37:09 --> Loader Class Initialized
+INFO - 2021-11-12 13:37:09 --> Helper loaded: url_helper
+INFO - 2021-11-12 13:37:09 --> Database Driver Class Initialized
+DEBUG - 2021-11-12 13:37:09 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2021-11-12 13:37:09 --> Session: Class initialized using 'files' driver.
+INFO - 2021-11-12 13:37:09 --> Controller Class Initialized
+INFO - 2021-11-12 13:37:09 --> Model "Bank_model" initialized
+INFO - 2021-11-12 13:37:09 --> Helper loaded: form_helper
+INFO - 2021-11-12 13:37:09 --> Form Validation Class Initialized
+INFO - 2021-11-12 13:37:09 --> Model "M_Admin" initialized
+INFO - 2021-11-12 13:37:09 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2021-11-12 13:37:09 --> Pagination Class Initialized
+INFO - 2021-11-12 13:37:09 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/header.php
+INFO - 2021-11-12 13:37:09 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/sidebar.php
+INFO - 2021-11-12 13:37:09 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\bank/fin_bank_list.php
+INFO - 2021-11-12 13:37:09 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/footer.php
+INFO - 2021-11-12 13:37:09 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/main.php
+INFO - 2021-11-12 13:37:09 --> Final output sent to browser
+DEBUG - 2021-11-12 13:37:09 --> Total execution time: 0.0460
+INFO - 2021-11-12 13:37:09 --> Config Class Initialized
+INFO - 2021-11-12 13:37:09 --> Hooks Class Initialized
+DEBUG - 2021-11-12 13:37:09 --> UTF-8 Support Enabled
+INFO - 2021-11-12 13:37:09 --> Utf8 Class Initialized
+INFO - 2021-11-12 13:37:09 --> URI Class Initialized
+INFO - 2021-11-12 13:37:09 --> Router Class Initialized
+INFO - 2021-11-12 13:37:09 --> Output Class Initialized
+INFO - 2021-11-12 13:37:09 --> Security Class Initialized
+DEBUG - 2021-11-12 13:37:09 --> Global POST, GET and COOKIE data sanitized
+INFO - 2021-11-12 13:37:09 --> Input Class Initialized
+INFO - 2021-11-12 13:37:09 --> Language Class Initialized
+ERROR - 2021-11-12 13:37:09 --> 404 Page Not Found: Plugins/components
+INFO - 2021-11-12 13:37:15 --> Config Class Initialized
+INFO - 2021-11-12 13:37:15 --> Hooks Class Initialized
+DEBUG - 2021-11-12 13:37:15 --> UTF-8 Support Enabled
+INFO - 2021-11-12 13:37:15 --> Utf8 Class Initialized
+INFO - 2021-11-12 13:37:15 --> URI Class Initialized
+INFO - 2021-11-12 13:37:15 --> Router Class Initialized
+INFO - 2021-11-12 13:37:15 --> Output Class Initialized
+INFO - 2021-11-12 13:37:15 --> Security Class Initialized
+DEBUG - 2021-11-12 13:37:15 --> Global POST, GET and COOKIE data sanitized
+INFO - 2021-11-12 13:37:15 --> Input Class Initialized
+INFO - 2021-11-12 13:37:15 --> Language Class Initialized
+INFO - 2021-11-12 13:37:15 --> Loader Class Initialized
+INFO - 2021-11-12 13:37:15 --> Helper loaded: url_helper
+INFO - 2021-11-12 13:37:15 --> Database Driver Class Initialized
+DEBUG - 2021-11-12 13:37:15 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2021-11-12 13:37:15 --> Session: Class initialized using 'files' driver.
+INFO - 2021-11-12 13:37:15 --> Controller Class Initialized
+INFO - 2021-11-12 13:37:15 --> Model "CrurencyKursModel" initialized
+INFO - 2021-11-12 13:37:15 --> Helper loaded: form_helper
+INFO - 2021-11-12 13:37:15 --> Form Validation Class Initialized
+INFO - 2021-11-12 13:37:15 --> Model "M_Admin" initialized
+INFO - 2021-11-12 13:37:15 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2021-11-12 13:37:15 --> Pagination Class Initialized
+INFO - 2021-11-12 13:37:15 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/header.php
+INFO - 2021-11-12 13:37:15 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/sidebar.php
+INFO - 2021-11-12 13:37:15 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\crurencykurs/fin_kurs_list.php
+INFO - 2021-11-12 13:37:15 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/footer.php
+INFO - 2021-11-12 13:37:15 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/main.php
+INFO - 2021-11-12 13:37:15 --> Final output sent to browser
+DEBUG - 2021-11-12 13:37:15 --> Total execution time: 0.0491
+INFO - 2021-11-12 13:37:15 --> Config Class Initialized
+INFO - 2021-11-12 13:37:15 --> Hooks Class Initialized
+DEBUG - 2021-11-12 13:37:15 --> UTF-8 Support Enabled
+INFO - 2021-11-12 13:37:15 --> Utf8 Class Initialized
+INFO - 2021-11-12 13:37:15 --> URI Class Initialized
+INFO - 2021-11-12 13:37:15 --> Router Class Initialized
+INFO - 2021-11-12 13:37:15 --> Output Class Initialized
+INFO - 2021-11-12 13:37:15 --> Security Class Initialized
+DEBUG - 2021-11-12 13:37:15 --> Global POST, GET and COOKIE data sanitized
+INFO - 2021-11-12 13:37:15 --> Input Class Initialized
+INFO - 2021-11-12 13:37:15 --> Language Class Initialized
+ERROR - 2021-11-12 13:37:15 --> 404 Page Not Found: Plugins/components
+INFO - 2021-11-12 13:37:25 --> Config Class Initialized
+INFO - 2021-11-12 13:37:25 --> Hooks Class Initialized
+DEBUG - 2021-11-12 13:37:25 --> UTF-8 Support Enabled
+INFO - 2021-11-12 13:37:25 --> Utf8 Class Initialized
+INFO - 2021-11-12 13:37:25 --> URI Class Initialized
+INFO - 2021-11-12 13:37:25 --> Router Class Initialized
+INFO - 2021-11-12 13:37:25 --> Output Class Initialized
+INFO - 2021-11-12 13:37:25 --> Security Class Initialized
+DEBUG - 2021-11-12 13:37:25 --> Global POST, GET and COOKIE data sanitized
+INFO - 2021-11-12 13:37:25 --> Input Class Initialized
+INFO - 2021-11-12 13:37:25 --> Language Class Initialized
+INFO - 2021-11-12 13:37:25 --> Loader Class Initialized
+INFO - 2021-11-12 13:37:25 --> Helper loaded: url_helper
+INFO - 2021-11-12 13:37:25 --> Database Driver Class Initialized
+DEBUG - 2021-11-12 13:37:25 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2021-11-12 13:37:25 --> Session: Class initialized using 'files' driver.
+INFO - 2021-11-12 13:37:25 --> Controller Class Initialized
+INFO - 2021-11-12 13:37:25 --> Model "CrurencyKursModel" initialized
+INFO - 2021-11-12 13:37:25 --> Helper loaded: form_helper
+INFO - 2021-11-12 13:37:25 --> Form Validation Class Initialized
+INFO - 2021-11-12 13:37:25 --> Model "M_Admin" initialized
+INFO - 2021-11-12 13:37:25 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/header.php
+INFO - 2021-11-12 13:37:25 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/sidebar.php
+INFO - 2021-11-12 13:37:25 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\crurencykurs/fin_kurs_form.php
+INFO - 2021-11-12 13:37:25 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/footer.php
+INFO - 2021-11-12 13:37:25 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/main.php
+INFO - 2021-11-12 13:37:25 --> Final output sent to browser
+DEBUG - 2021-11-12 13:37:25 --> Total execution time: 0.0431
+INFO - 2021-11-12 13:37:25 --> Config Class Initialized
+INFO - 2021-11-12 13:37:25 --> Hooks Class Initialized
+DEBUG - 2021-11-12 13:37:25 --> UTF-8 Support Enabled
+INFO - 2021-11-12 13:37:25 --> Utf8 Class Initialized
+INFO - 2021-11-12 13:37:25 --> URI Class Initialized
+INFO - 2021-11-12 13:37:25 --> Router Class Initialized
+INFO - 2021-11-12 13:37:25 --> Output Class Initialized
+INFO - 2021-11-12 13:37:25 --> Security Class Initialized
+DEBUG - 2021-11-12 13:37:25 --> Global POST, GET and COOKIE data sanitized
+INFO - 2021-11-12 13:37:25 --> Input Class Initialized
+INFO - 2021-11-12 13:37:25 --> Language Class Initialized
+ERROR - 2021-11-12 13:37:25 --> 404 Page Not Found: Report/Plugins/components
+INFO - 2021-11-12 13:37:45 --> Config Class Initialized
+INFO - 2021-11-12 13:37:45 --> Hooks Class Initialized
+DEBUG - 2021-11-12 13:37:45 --> UTF-8 Support Enabled
+INFO - 2021-11-12 13:37:45 --> Utf8 Class Initialized
+INFO - 2021-11-12 13:37:45 --> URI Class Initialized
+INFO - 2021-11-12 13:37:45 --> Router Class Initialized
+INFO - 2021-11-12 13:37:45 --> Output Class Initialized
+INFO - 2021-11-12 13:37:45 --> Security Class Initialized
+DEBUG - 2021-11-12 13:37:45 --> Global POST, GET and COOKIE data sanitized
+INFO - 2021-11-12 13:37:45 --> Input Class Initialized
+INFO - 2021-11-12 13:37:45 --> Language Class Initialized
+INFO - 2021-11-12 13:37:45 --> Loader Class Initialized
+INFO - 2021-11-12 13:37:45 --> Helper loaded: url_helper
+INFO - 2021-11-12 13:37:45 --> Database Driver Class Initialized
+DEBUG - 2021-11-12 13:37:45 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2021-11-12 13:37:45 --> Session: Class initialized using 'files' driver.
+INFO - 2021-11-12 13:37:45 --> Controller Class Initialized
+INFO - 2021-11-12 13:37:45 --> Model "CrurencyKursModel" initialized
+INFO - 2021-11-12 13:37:45 --> Helper loaded: form_helper
+INFO - 2021-11-12 13:37:45 --> Form Validation Class Initialized
+INFO - 2021-11-12 13:37:45 --> Model "M_Admin" initialized
+INFO - 2021-11-12 13:37:45 --> Language file loaded: language/english/form_validation_lang.php
+ERROR - 2021-11-12 13:37:45 --> Query error: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot insert the value NULL into column 'id', table 'BAYUBUANA.dbo.fin_kurs'; column does not allow nulls. INSERT fails. - Invalid query: INSERT INTO "fin_kurs" ("kurs_code", "kurs_amount", "kurs_date", "input_date") VALUES ('USD', '14000', '2021-11-30', '2021-11-12 13:37:45')
+INFO - 2021-11-12 13:37:45 --> Language file loaded: language/english/db_lang.php
+INFO - 2021-11-12 14:09:32 --> Config Class Initialized
+INFO - 2021-11-12 14:09:32 --> Hooks Class Initialized
+DEBUG - 2021-11-12 14:09:32 --> UTF-8 Support Enabled
+INFO - 2021-11-12 14:09:32 --> Utf8 Class Initialized
+INFO - 2021-11-12 14:09:32 --> URI Class Initialized
+INFO - 2021-11-12 14:09:32 --> Router Class Initialized
+INFO - 2021-11-12 14:09:32 --> Output Class Initialized
+INFO - 2021-11-12 14:09:32 --> Security Class Initialized
+DEBUG - 2021-11-12 14:09:32 --> Global POST, GET and COOKIE data sanitized
+INFO - 2021-11-12 14:09:32 --> Input Class Initialized
+INFO - 2021-11-12 14:09:32 --> Language Class Initialized
+INFO - 2021-11-12 14:09:32 --> Loader Class Initialized
+INFO - 2021-11-12 14:09:32 --> Helper loaded: url_helper
+INFO - 2021-11-12 14:09:32 --> Database Driver Class Initialized
+DEBUG - 2021-11-12 14:09:32 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2021-11-12 14:09:32 --> Session: Class initialized using 'files' driver.
+INFO - 2021-11-12 14:09:32 --> Controller Class Initialized
+INFO - 2021-11-12 14:09:32 --> Model "CrurencyKursModel" initialized
+INFO - 2021-11-12 14:09:32 --> Helper loaded: form_helper
+INFO - 2021-11-12 14:09:32 --> Form Validation Class Initialized
+INFO - 2021-11-12 14:09:32 --> Model "M_Admin" initialized
+INFO - 2021-11-12 14:09:32 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/header.php
+INFO - 2021-11-12 14:09:32 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/sidebar.php
+INFO - 2021-11-12 14:09:32 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\crurencykurs/fin_kurs_form.php
+INFO - 2021-11-12 14:09:32 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/footer.php
+INFO - 2021-11-12 14:09:32 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/main.php
+INFO - 2021-11-12 14:09:32 --> Final output sent to browser
+DEBUG - 2021-11-12 14:09:32 --> Total execution time: 0.0695
+INFO - 2021-11-12 14:09:34 --> Config Class Initialized
+INFO - 2021-11-12 14:09:34 --> Hooks Class Initialized
+DEBUG - 2021-11-12 14:09:34 --> UTF-8 Support Enabled
+INFO - 2021-11-12 14:09:34 --> Utf8 Class Initialized
+INFO - 2021-11-12 14:09:34 --> URI Class Initialized
+INFO - 2021-11-12 14:09:34 --> Router Class Initialized
+INFO - 2021-11-12 14:09:34 --> Output Class Initialized
+INFO - 2021-11-12 14:09:34 --> Security Class Initialized
+DEBUG - 2021-11-12 14:09:34 --> Global POST, GET and COOKIE data sanitized
+INFO - 2021-11-12 14:09:34 --> Input Class Initialized
+INFO - 2021-11-12 14:09:34 --> Language Class Initialized
+INFO - 2021-11-12 14:09:34 --> Loader Class Initialized
+INFO - 2021-11-12 14:09:34 --> Helper loaded: url_helper
+INFO - 2021-11-12 14:09:34 --> Database Driver Class Initialized
+DEBUG - 2021-11-12 14:09:34 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2021-11-12 14:09:34 --> Session: Class initialized using 'files' driver.
+INFO - 2021-11-12 14:09:34 --> Controller Class Initialized
+INFO - 2021-11-12 14:09:34 --> Model "CrurencyKursModel" initialized
+INFO - 2021-11-12 14:09:34 --> Helper loaded: form_helper
+INFO - 2021-11-12 14:09:34 --> Form Validation Class Initialized
+INFO - 2021-11-12 14:09:34 --> Model "M_Admin" initialized
+INFO - 2021-11-12 14:09:34 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/header.php
+INFO - 2021-11-12 14:09:34 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/sidebar.php
+INFO - 2021-11-12 14:09:34 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\crurencykurs/fin_kurs_form.php
+INFO - 2021-11-12 14:09:34 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/footer.php
+INFO - 2021-11-12 14:09:34 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/main.php
+INFO - 2021-11-12 14:09:34 --> Final output sent to browser
+DEBUG - 2021-11-12 14:09:34 --> Total execution time: 0.0443
+INFO - 2021-11-12 14:09:34 --> Config Class Initialized
+INFO - 2021-11-12 14:09:34 --> Hooks Class Initialized
+DEBUG - 2021-11-12 14:09:34 --> UTF-8 Support Enabled
+INFO - 2021-11-12 14:09:34 --> Utf8 Class Initialized
+INFO - 2021-11-12 14:09:34 --> URI Class Initialized
+INFO - 2021-11-12 14:09:34 --> Router Class Initialized
+INFO - 2021-11-12 14:09:34 --> Output Class Initialized
+INFO - 2021-11-12 14:09:34 --> Security Class Initialized
+DEBUG - 2021-11-12 14:09:34 --> Global POST, GET and COOKIE data sanitized
+INFO - 2021-11-12 14:09:34 --> Input Class Initialized
+INFO - 2021-11-12 14:09:34 --> Language Class Initialized
+ERROR - 2021-11-12 14:09:34 --> 404 Page Not Found: Report/Plugins/components
+INFO - 2021-11-12 14:09:43 --> Config Class Initialized
+INFO - 2021-11-12 14:09:43 --> Hooks Class Initialized
+DEBUG - 2021-11-12 14:09:43 --> UTF-8 Support Enabled
+INFO - 2021-11-12 14:09:43 --> Utf8 Class Initialized
+INFO - 2021-11-12 14:09:43 --> URI Class Initialized
+INFO - 2021-11-12 14:09:43 --> Router Class Initialized
+INFO - 2021-11-12 14:09:43 --> Output Class Initialized
+INFO - 2021-11-12 14:09:43 --> Security Class Initialized
+DEBUG - 2021-11-12 14:09:43 --> Global POST, GET and COOKIE data sanitized
+INFO - 2021-11-12 14:09:43 --> Input Class Initialized
+INFO - 2021-11-12 14:09:43 --> Language Class Initialized
+INFO - 2021-11-12 14:09:43 --> Loader Class Initialized
+INFO - 2021-11-12 14:09:43 --> Helper loaded: url_helper
+INFO - 2021-11-12 14:09:43 --> Database Driver Class Initialized
+DEBUG - 2021-11-12 14:09:43 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2021-11-12 14:09:43 --> Session: Class initialized using 'files' driver.
+INFO - 2021-11-12 14:09:43 --> Controller Class Initialized
+INFO - 2021-11-12 14:09:43 --> Model "CrurencyKursModel" initialized
+INFO - 2021-11-12 14:09:43 --> Helper loaded: form_helper
+INFO - 2021-11-12 14:09:43 --> Form Validation Class Initialized
+INFO - 2021-11-12 14:09:43 --> Model "M_Admin" initialized
+INFO - 2021-11-12 14:09:43 --> Language file loaded: language/english/form_validation_lang.php
+INFO - 2021-11-12 14:09:43 --> Config Class Initialized
+INFO - 2021-11-12 14:09:43 --> Hooks Class Initialized
+DEBUG - 2021-11-12 14:09:43 --> UTF-8 Support Enabled
+INFO - 2021-11-12 14:09:43 --> Utf8 Class Initialized
+INFO - 2021-11-12 14:09:43 --> URI Class Initialized
+INFO - 2021-11-12 14:09:43 --> Router Class Initialized
+INFO - 2021-11-12 14:09:43 --> Output Class Initialized
+INFO - 2021-11-12 14:09:43 --> Security Class Initialized
+DEBUG - 2021-11-12 14:09:43 --> Global POST, GET and COOKIE data sanitized
+INFO - 2021-11-12 14:09:43 --> Input Class Initialized
+INFO - 2021-11-12 14:09:43 --> Language Class Initialized
+INFO - 2021-11-12 14:09:43 --> Loader Class Initialized
+INFO - 2021-11-12 14:09:43 --> Helper loaded: url_helper
+INFO - 2021-11-12 14:09:43 --> Database Driver Class Initialized
+DEBUG - 2021-11-12 14:09:43 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2021-11-12 14:09:43 --> Session: Class initialized using 'files' driver.
+INFO - 2021-11-12 14:09:43 --> Controller Class Initialized
+INFO - 2021-11-12 14:09:43 --> Model "CrurencyKursModel" initialized
+INFO - 2021-11-12 14:09:43 --> Helper loaded: form_helper
+INFO - 2021-11-12 14:09:43 --> Form Validation Class Initialized
+INFO - 2021-11-12 14:09:43 --> Model "M_Admin" initialized
+INFO - 2021-11-12 14:09:43 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2021-11-12 14:09:43 --> Pagination Class Initialized
+INFO - 2021-11-12 14:09:43 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/header.php
+INFO - 2021-11-12 14:09:43 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/sidebar.php
+INFO - 2021-11-12 14:09:43 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\crurencykurs/fin_kurs_list.php
+INFO - 2021-11-12 14:09:43 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/footer.php
+INFO - 2021-11-12 14:09:43 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/main.php
+INFO - 2021-11-12 14:09:43 --> Final output sent to browser
+DEBUG - 2021-11-12 14:09:43 --> Total execution time: 0.0504
+INFO - 2021-11-12 14:09:43 --> Config Class Initialized
+INFO - 2021-11-12 14:09:43 --> Hooks Class Initialized
+DEBUG - 2021-11-12 14:09:43 --> UTF-8 Support Enabled
+INFO - 2021-11-12 14:09:43 --> Utf8 Class Initialized
+INFO - 2021-11-12 14:09:43 --> URI Class Initialized
+INFO - 2021-11-12 14:09:43 --> Router Class Initialized
+INFO - 2021-11-12 14:09:43 --> Output Class Initialized
+INFO - 2021-11-12 14:09:43 --> Security Class Initialized
+DEBUG - 2021-11-12 14:09:43 --> Global POST, GET and COOKIE data sanitized
+INFO - 2021-11-12 14:09:43 --> Input Class Initialized
+INFO - 2021-11-12 14:09:43 --> Language Class Initialized
+ERROR - 2021-11-12 14:09:43 --> 404 Page Not Found: Report/Plugins/components
+INFO - 2021-11-12 14:12:47 --> Config Class Initialized
+INFO - 2021-11-12 14:12:47 --> Hooks Class Initialized
+DEBUG - 2021-11-12 14:12:47 --> UTF-8 Support Enabled
+INFO - 2021-11-12 14:12:47 --> Utf8 Class Initialized
+INFO - 2021-11-12 14:12:47 --> URI Class Initialized
+INFO - 2021-11-12 14:12:47 --> Router Class Initialized
+INFO - 2021-11-12 14:12:47 --> Output Class Initialized
+INFO - 2021-11-12 14:12:47 --> Security Class Initialized
+DEBUG - 2021-11-12 14:12:47 --> Global POST, GET and COOKIE data sanitized
+INFO - 2021-11-12 14:12:47 --> Input Class Initialized
+INFO - 2021-11-12 14:12:47 --> Language Class Initialized
+INFO - 2021-11-12 14:12:47 --> Loader Class Initialized
+INFO - 2021-11-12 14:12:47 --> Helper loaded: url_helper
+INFO - 2021-11-12 14:12:47 --> Database Driver Class Initialized
+DEBUG - 2021-11-12 14:12:47 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2021-11-12 14:12:47 --> Session: Class initialized using 'files' driver.
+INFO - 2021-11-12 14:12:47 --> Controller Class Initialized
+INFO - 2021-11-12 14:12:47 --> Model "CrurencyKursModel" initialized
+INFO - 2021-11-12 14:12:47 --> Helper loaded: form_helper
+INFO - 2021-11-12 14:12:47 --> Form Validation Class Initialized
+INFO - 2021-11-12 14:12:47 --> Model "M_Admin" initialized
+INFO - 2021-11-12 14:12:47 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/header.php
+INFO - 2021-11-12 14:12:47 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/sidebar.php
+INFO - 2021-11-12 14:12:47 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\crurencykurs/fin_kurs_form.php
+INFO - 2021-11-12 14:12:47 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/footer.php
+INFO - 2021-11-12 14:12:47 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/main.php
+INFO - 2021-11-12 14:12:47 --> Final output sent to browser
+DEBUG - 2021-11-12 14:12:47 --> Total execution time: 0.0611
+INFO - 2021-11-12 14:12:47 --> Config Class Initialized
+INFO - 2021-11-12 14:12:47 --> Hooks Class Initialized
+DEBUG - 2021-11-12 14:12:47 --> UTF-8 Support Enabled
+INFO - 2021-11-12 14:12:47 --> Utf8 Class Initialized
+INFO - 2021-11-12 14:12:47 --> URI Class Initialized
+INFO - 2021-11-12 14:12:47 --> Router Class Initialized
+INFO - 2021-11-12 14:12:47 --> Output Class Initialized
+INFO - 2021-11-12 14:12:47 --> Security Class Initialized
+DEBUG - 2021-11-12 14:12:47 --> Global POST, GET and COOKIE data sanitized
+INFO - 2021-11-12 14:12:47 --> Input Class Initialized
+INFO - 2021-11-12 14:12:47 --> Language Class Initialized
+ERROR - 2021-11-12 14:12:47 --> 404 Page Not Found: Report/CrurencyKurs/plugins
+INFO - 2021-11-12 14:13:14 --> Config Class Initialized
+INFO - 2021-11-12 14:13:14 --> Hooks Class Initialized
+DEBUG - 2021-11-12 14:13:14 --> UTF-8 Support Enabled
+INFO - 2021-11-12 14:13:14 --> Utf8 Class Initialized
+INFO - 2021-11-12 14:13:14 --> URI Class Initialized
+INFO - 2021-11-12 14:13:14 --> Router Class Initialized
+INFO - 2021-11-12 14:13:14 --> Output Class Initialized
+INFO - 2021-11-12 14:13:14 --> Security Class Initialized
+DEBUG - 2021-11-12 14:13:14 --> Global POST, GET and COOKIE data sanitized
+INFO - 2021-11-12 14:13:14 --> Input Class Initialized
+INFO - 2021-11-12 14:13:14 --> Language Class Initialized
+INFO - 2021-11-12 14:13:14 --> Loader Class Initialized
+INFO - 2021-11-12 14:13:14 --> Helper loaded: url_helper
+INFO - 2021-11-12 14:13:14 --> Database Driver Class Initialized
+DEBUG - 2021-11-12 14:13:14 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2021-11-12 14:13:14 --> Session: Class initialized using 'files' driver.
+INFO - 2021-11-12 14:13:14 --> Controller Class Initialized
+INFO - 2021-11-12 14:13:14 --> Model "CrurencyKursModel" initialized
+INFO - 2021-11-12 14:13:14 --> Helper loaded: form_helper
+INFO - 2021-11-12 14:13:14 --> Form Validation Class Initialized
+INFO - 2021-11-12 14:13:14 --> Model "M_Admin" initialized
+INFO - 2021-11-12 14:13:14 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/header.php
+INFO - 2021-11-12 14:13:14 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/sidebar.php
+INFO - 2021-11-12 14:13:14 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\crurencykurs/fin_kurs_form.php
+INFO - 2021-11-12 14:13:14 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/footer.php
+INFO - 2021-11-12 14:13:14 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/main.php
+INFO - 2021-11-12 14:13:14 --> Final output sent to browser
+DEBUG - 2021-11-12 14:13:14 --> Total execution time: 0.0565
+INFO - 2021-11-12 14:13:14 --> Config Class Initialized
+INFO - 2021-11-12 14:13:14 --> Hooks Class Initialized
+DEBUG - 2021-11-12 14:13:14 --> UTF-8 Support Enabled
+INFO - 2021-11-12 14:13:14 --> Utf8 Class Initialized
+INFO - 2021-11-12 14:13:14 --> URI Class Initialized
+INFO - 2021-11-12 14:13:14 --> Router Class Initialized
+INFO - 2021-11-12 14:13:14 --> Output Class Initialized
+INFO - 2021-11-12 14:13:14 --> Security Class Initialized
+DEBUG - 2021-11-12 14:13:14 --> Global POST, GET and COOKIE data sanitized
+INFO - 2021-11-12 14:13:14 --> Input Class Initialized
+INFO - 2021-11-12 14:13:14 --> Language Class Initialized
+ERROR - 2021-11-12 14:13:14 --> 404 Page Not Found: Report/CrurencyKurs/plugins
+INFO - 2021-11-12 14:13:14 --> Config Class Initialized
+INFO - 2021-11-12 14:13:14 --> Hooks Class Initialized
+DEBUG - 2021-11-12 14:13:14 --> UTF-8 Support Enabled
+INFO - 2021-11-12 14:13:14 --> Utf8 Class Initialized
+INFO - 2021-11-12 14:13:14 --> URI Class Initialized
+INFO - 2021-11-12 14:13:14 --> Router Class Initialized
+INFO - 2021-11-12 14:13:14 --> Output Class Initialized
+INFO - 2021-11-12 14:13:14 --> Security Class Initialized
+DEBUG - 2021-11-12 14:13:14 --> Global POST, GET and COOKIE data sanitized
+INFO - 2021-11-12 14:13:14 --> Input Class Initialized
+INFO - 2021-11-12 14:13:14 --> Language Class Initialized
+ERROR - 2021-11-12 14:13:14 --> 404 Page Not Found: Report/CrurencyKurs/plugins
+INFO - 2021-11-12 14:13:18 --> Config Class Initialized
+INFO - 2021-11-12 14:13:18 --> Hooks Class Initialized
+DEBUG - 2021-11-12 14:13:18 --> UTF-8 Support Enabled
+INFO - 2021-11-12 14:13:18 --> Utf8 Class Initialized
+INFO - 2021-11-12 14:13:18 --> URI Class Initialized
+INFO - 2021-11-12 14:13:18 --> Router Class Initialized
+INFO - 2021-11-12 14:13:18 --> Output Class Initialized
+INFO - 2021-11-12 14:13:18 --> Security Class Initialized
+DEBUG - 2021-11-12 14:13:18 --> Global POST, GET and COOKIE data sanitized
+INFO - 2021-11-12 14:13:18 --> Input Class Initialized
+INFO - 2021-11-12 14:13:18 --> Language Class Initialized
+INFO - 2021-11-12 14:13:18 --> Loader Class Initialized
+INFO - 2021-11-12 14:13:18 --> Helper loaded: url_helper
+INFO - 2021-11-12 14:13:18 --> Database Driver Class Initialized
+DEBUG - 2021-11-12 14:13:18 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2021-11-12 14:13:18 --> Session: Class initialized using 'files' driver.
+INFO - 2021-11-12 14:13:18 --> Controller Class Initialized
+INFO - 2021-11-12 14:13:18 --> Model "CrurencyKursModel" initialized
+INFO - 2021-11-12 14:13:18 --> Helper loaded: form_helper
+INFO - 2021-11-12 14:13:18 --> Form Validation Class Initialized
+INFO - 2021-11-12 14:13:18 --> Model "M_Admin" initialized
+INFO - 2021-11-12 14:13:18 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/header.php
+INFO - 2021-11-12 14:13:18 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/sidebar.php
+INFO - 2021-11-12 14:13:18 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\crurencykurs/fin_kurs_form.php
+INFO - 2021-11-12 14:13:18 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/footer.php
+INFO - 2021-11-12 14:13:18 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/main.php
+INFO - 2021-11-12 14:13:18 --> Final output sent to browser
+DEBUG - 2021-11-12 14:13:18 --> Total execution time: 0.0421
+INFO - 2021-11-12 14:13:18 --> Config Class Initialized
+INFO - 2021-11-12 14:13:18 --> Hooks Class Initialized
+DEBUG - 2021-11-12 14:13:18 --> UTF-8 Support Enabled
+INFO - 2021-11-12 14:13:18 --> Utf8 Class Initialized
+INFO - 2021-11-12 14:13:18 --> URI Class Initialized
+INFO - 2021-11-12 14:13:18 --> Router Class Initialized
+INFO - 2021-11-12 14:13:18 --> Output Class Initialized
+INFO - 2021-11-12 14:13:18 --> Security Class Initialized
+DEBUG - 2021-11-12 14:13:18 --> Global POST, GET and COOKIE data sanitized
+INFO - 2021-11-12 14:13:18 --> Input Class Initialized
+INFO - 2021-11-12 14:13:18 --> Language Class Initialized
+ERROR - 2021-11-12 14:13:18 --> 404 Page Not Found: Report/CrurencyKurs/plugins
+INFO - 2021-11-12 14:13:58 --> Config Class Initialized
+INFO - 2021-11-12 14:13:58 --> Hooks Class Initialized
+DEBUG - 2021-11-12 14:13:58 --> UTF-8 Support Enabled
+INFO - 2021-11-12 14:13:58 --> Utf8 Class Initialized
+INFO - 2021-11-12 14:13:58 --> URI Class Initialized
+INFO - 2021-11-12 14:13:58 --> Router Class Initialized
+INFO - 2021-11-12 14:13:58 --> Output Class Initialized
+INFO - 2021-11-12 14:13:58 --> Security Class Initialized
+DEBUG - 2021-11-12 14:13:58 --> Global POST, GET and COOKIE data sanitized
+INFO - 2021-11-12 14:13:58 --> Input Class Initialized
+INFO - 2021-11-12 14:13:58 --> Language Class Initialized
+INFO - 2021-11-12 14:13:58 --> Loader Class Initialized
+INFO - 2021-11-12 14:13:58 --> Helper loaded: url_helper
+INFO - 2021-11-12 14:13:58 --> Database Driver Class Initialized
+DEBUG - 2021-11-12 14:13:58 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2021-11-12 14:13:58 --> Session: Class initialized using 'files' driver.
+INFO - 2021-11-12 14:13:58 --> Controller Class Initialized
+INFO - 2021-11-12 14:13:58 --> Model "CrurencyKursModel" initialized
+INFO - 2021-11-12 14:13:58 --> Helper loaded: form_helper
+INFO - 2021-11-12 14:13:58 --> Form Validation Class Initialized
+INFO - 2021-11-12 14:13:58 --> Model "M_Admin" initialized
+INFO - 2021-11-12 14:13:58 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/header.php
+INFO - 2021-11-12 14:13:58 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/sidebar.php
+INFO - 2021-11-12 14:13:58 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\crurencykurs/fin_kurs_form.php
+INFO - 2021-11-12 14:13:58 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/footer.php
+INFO - 2021-11-12 14:13:58 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/main.php
+INFO - 2021-11-12 14:13:58 --> Final output sent to browser
+DEBUG - 2021-11-12 14:13:58 --> Total execution time: 0.0410
+INFO - 2021-11-12 14:13:59 --> Config Class Initialized
+INFO - 2021-11-12 14:13:59 --> Hooks Class Initialized
+DEBUG - 2021-11-12 14:13:59 --> UTF-8 Support Enabled
+INFO - 2021-11-12 14:13:59 --> Utf8 Class Initialized
+INFO - 2021-11-12 14:13:59 --> URI Class Initialized
+INFO - 2021-11-12 14:13:59 --> Router Class Initialized
+INFO - 2021-11-12 14:13:59 --> Output Class Initialized
+INFO - 2021-11-12 14:13:59 --> Security Class Initialized
+DEBUG - 2021-11-12 14:13:59 --> Global POST, GET and COOKIE data sanitized
+INFO - 2021-11-12 14:13:59 --> Input Class Initialized
+INFO - 2021-11-12 14:13:59 --> Language Class Initialized
+ERROR - 2021-11-12 14:13:59 --> 404 Page Not Found: Report/CrurencyKurs/plugins
+INFO - 2021-11-12 14:13:59 --> Config Class Initialized
+INFO - 2021-11-12 14:13:59 --> Hooks Class Initialized
+DEBUG - 2021-11-12 14:13:59 --> UTF-8 Support Enabled
+INFO - 2021-11-12 14:13:59 --> Utf8 Class Initialized
+INFO - 2021-11-12 14:13:59 --> URI Class Initialized
+INFO - 2021-11-12 14:13:59 --> Router Class Initialized
+INFO - 2021-11-12 14:13:59 --> Output Class Initialized
+INFO - 2021-11-12 14:13:59 --> Security Class Initialized
+DEBUG - 2021-11-12 14:13:59 --> Global POST, GET and COOKIE data sanitized
+INFO - 2021-11-12 14:13:59 --> Input Class Initialized
+INFO - 2021-11-12 14:13:59 --> Language Class Initialized
+ERROR - 2021-11-12 14:13:59 --> 404 Page Not Found: Report/CrurencyKurs/plugins
+INFO - 2021-11-12 14:14:02 --> Config Class Initialized
+INFO - 2021-11-12 14:14:02 --> Hooks Class Initialized
+DEBUG - 2021-11-12 14:14:02 --> UTF-8 Support Enabled
+INFO - 2021-11-12 14:14:02 --> Utf8 Class Initialized
+INFO - 2021-11-12 14:14:02 --> URI Class Initialized
+INFO - 2021-11-12 14:14:02 --> Router Class Initialized
+INFO - 2021-11-12 14:14:02 --> Output Class Initialized
+INFO - 2021-11-12 14:14:02 --> Security Class Initialized
+DEBUG - 2021-11-12 14:14:02 --> Global POST, GET and COOKIE data sanitized
+INFO - 2021-11-12 14:14:02 --> Input Class Initialized
+INFO - 2021-11-12 14:14:02 --> Language Class Initialized
+INFO - 2021-11-12 14:14:02 --> Loader Class Initialized
+INFO - 2021-11-12 14:14:02 --> Helper loaded: url_helper
+INFO - 2021-11-12 14:14:02 --> Database Driver Class Initialized
+DEBUG - 2021-11-12 14:14:02 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2021-11-12 14:14:02 --> Session: Class initialized using 'files' driver.
+INFO - 2021-11-12 14:14:02 --> Controller Class Initialized
+INFO - 2021-11-12 14:14:02 --> Model "CrurencyKursModel" initialized
+INFO - 2021-11-12 14:14:02 --> Helper loaded: form_helper
+INFO - 2021-11-12 14:14:02 --> Form Validation Class Initialized
+INFO - 2021-11-12 14:14:02 --> Model "M_Admin" initialized
+INFO - 2021-11-12 14:14:02 --> Language file loaded: language/english/form_validation_lang.php
+INFO - 2021-11-12 14:14:02 --> Config Class Initialized
+INFO - 2021-11-12 14:14:02 --> Hooks Class Initialized
+DEBUG - 2021-11-12 14:14:02 --> UTF-8 Support Enabled
+INFO - 2021-11-12 14:14:02 --> Utf8 Class Initialized
+INFO - 2021-11-12 14:14:02 --> URI Class Initialized
+INFO - 2021-11-12 14:14:02 --> Router Class Initialized
+INFO - 2021-11-12 14:14:02 --> Output Class Initialized
+INFO - 2021-11-12 14:14:02 --> Security Class Initialized
+DEBUG - 2021-11-12 14:14:02 --> Global POST, GET and COOKIE data sanitized
+INFO - 2021-11-12 14:14:02 --> Input Class Initialized
+INFO - 2021-11-12 14:14:02 --> Language Class Initialized
+INFO - 2021-11-12 14:14:02 --> Loader Class Initialized
+INFO - 2021-11-12 14:14:02 --> Helper loaded: url_helper
+INFO - 2021-11-12 14:14:02 --> Database Driver Class Initialized
+DEBUG - 2021-11-12 14:14:02 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2021-11-12 14:14:02 --> Session: Class initialized using 'files' driver.
+INFO - 2021-11-12 14:14:02 --> Controller Class Initialized
+INFO - 2021-11-12 14:14:02 --> Model "CrurencyKursModel" initialized
+INFO - 2021-11-12 14:14:02 --> Helper loaded: form_helper
+INFO - 2021-11-12 14:14:02 --> Form Validation Class Initialized
+INFO - 2021-11-12 14:14:02 --> Model "M_Admin" initialized
+INFO - 2021-11-12 14:14:02 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2021-11-12 14:14:02 --> Pagination Class Initialized
+INFO - 2021-11-12 14:14:02 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/header.php
+INFO - 2021-11-12 14:14:02 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/sidebar.php
+INFO - 2021-11-12 14:14:02 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\crurencykurs/fin_kurs_list.php
+INFO - 2021-11-12 14:14:02 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/footer.php
+INFO - 2021-11-12 14:14:02 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/main.php
+INFO - 2021-11-12 14:14:02 --> Final output sent to browser
+DEBUG - 2021-11-12 14:14:02 --> Total execution time: 0.0462
+INFO - 2021-11-12 14:14:03 --> Config Class Initialized
+INFO - 2021-11-12 14:14:03 --> Hooks Class Initialized
+DEBUG - 2021-11-12 14:14:03 --> UTF-8 Support Enabled
+INFO - 2021-11-12 14:14:03 --> Utf8 Class Initialized
+INFO - 2021-11-12 14:14:03 --> URI Class Initialized
+INFO - 2021-11-12 14:14:03 --> Router Class Initialized
+INFO - 2021-11-12 14:14:03 --> Output Class Initialized
+INFO - 2021-11-12 14:14:03 --> Security Class Initialized
+DEBUG - 2021-11-12 14:14:03 --> Global POST, GET and COOKIE data sanitized
+INFO - 2021-11-12 14:14:03 --> Input Class Initialized
+INFO - 2021-11-12 14:14:03 --> Language Class Initialized
+ERROR - 2021-11-12 14:14:03 --> 404 Page Not Found: Plugins/components
+INFO - 2021-11-12 14:14:06 --> Config Class Initialized
+INFO - 2021-11-12 14:14:06 --> Hooks Class Initialized
+DEBUG - 2021-11-12 14:14:06 --> UTF-8 Support Enabled
+INFO - 2021-11-12 14:14:06 --> Utf8 Class Initialized
+INFO - 2021-11-12 14:14:06 --> URI Class Initialized
+INFO - 2021-11-12 14:14:06 --> Router Class Initialized
+INFO - 2021-11-12 14:14:06 --> Output Class Initialized
+INFO - 2021-11-12 14:14:06 --> Security Class Initialized
+DEBUG - 2021-11-12 14:14:06 --> Global POST, GET and COOKIE data sanitized
+INFO - 2021-11-12 14:14:06 --> Input Class Initialized
+INFO - 2021-11-12 14:14:06 --> Language Class Initialized
+INFO - 2021-11-12 14:14:06 --> Loader Class Initialized
+INFO - 2021-11-12 14:14:06 --> Helper loaded: url_helper
+INFO - 2021-11-12 14:14:06 --> Database Driver Class Initialized
+DEBUG - 2021-11-12 14:14:06 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2021-11-12 14:14:06 --> Session: Class initialized using 'files' driver.
+INFO - 2021-11-12 14:14:06 --> Controller Class Initialized
+INFO - 2021-11-12 14:14:06 --> Model "CrurencyKursModel" initialized
+INFO - 2021-11-12 14:14:06 --> Helper loaded: form_helper
+INFO - 2021-11-12 14:14:06 --> Form Validation Class Initialized
+INFO - 2021-11-12 14:14:06 --> Model "M_Admin" initialized
+INFO - 2021-11-12 14:14:06 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/header.php
+INFO - 2021-11-12 14:14:06 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/sidebar.php
+INFO - 2021-11-12 14:14:06 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\crurencykurs/fin_kurs_form.php
+INFO - 2021-11-12 14:14:06 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/footer.php
+INFO - 2021-11-12 14:14:06 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/main.php
+INFO - 2021-11-12 14:14:06 --> Final output sent to browser
+DEBUG - 2021-11-12 14:14:06 --> Total execution time: 0.0436
+INFO - 2021-11-12 14:14:06 --> Config Class Initialized
+INFO - 2021-11-12 14:14:06 --> Hooks Class Initialized
+DEBUG - 2021-11-12 14:14:06 --> UTF-8 Support Enabled
+INFO - 2021-11-12 14:14:06 --> Utf8 Class Initialized
+INFO - 2021-11-12 14:14:06 --> URI Class Initialized
+INFO - 2021-11-12 14:14:06 --> Router Class Initialized
+INFO - 2021-11-12 14:14:06 --> Output Class Initialized
+INFO - 2021-11-12 14:14:06 --> Security Class Initialized
+DEBUG - 2021-11-12 14:14:06 --> Global POST, GET and COOKIE data sanitized
+INFO - 2021-11-12 14:14:06 --> Input Class Initialized
+INFO - 2021-11-12 14:14:06 --> Language Class Initialized
+ERROR - 2021-11-12 14:14:06 --> 404 Page Not Found: Report/Plugins/components
+INFO - 2021-11-12 14:22:19 --> Config Class Initialized
+INFO - 2021-11-12 14:22:19 --> Hooks Class Initialized
+DEBUG - 2021-11-12 14:22:19 --> UTF-8 Support Enabled
+INFO - 2021-11-12 14:22:19 --> Utf8 Class Initialized
+INFO - 2021-11-12 14:22:19 --> URI Class Initialized
+INFO - 2021-11-12 14:22:19 --> Router Class Initialized
+INFO - 2021-11-12 14:22:19 --> Output Class Initialized
+INFO - 2021-11-12 14:22:19 --> Security Class Initialized
+DEBUG - 2021-11-12 14:22:19 --> Global POST, GET and COOKIE data sanitized
+INFO - 2021-11-12 14:22:19 --> Input Class Initialized
+INFO - 2021-11-12 14:22:19 --> Language Class Initialized
+INFO - 2021-11-12 14:22:19 --> Loader Class Initialized
+INFO - 2021-11-12 14:22:19 --> Helper loaded: url_helper
+INFO - 2021-11-12 14:22:19 --> Database Driver Class Initialized
+DEBUG - 2021-11-12 14:22:19 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2021-11-12 14:22:19 --> Session: Class initialized using 'files' driver.
+INFO - 2021-11-12 14:22:19 --> Controller Class Initialized
+INFO - 2021-11-12 14:22:19 --> Model "Bank_model" initialized
+INFO - 2021-11-12 14:22:19 --> Helper loaded: form_helper
+INFO - 2021-11-12 14:22:19 --> Form Validation Class Initialized
+INFO - 2021-11-12 14:22:19 --> Model "M_Admin" initialized
+INFO - 2021-11-12 14:22:19 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2021-11-12 14:22:19 --> Pagination Class Initialized
+INFO - 2021-11-12 14:22:19 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/header.php
+INFO - 2021-11-12 14:22:19 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/sidebar.php
+INFO - 2021-11-12 14:22:19 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\bank/fin_bank_list.php
+INFO - 2021-11-12 14:22:19 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/footer.php
+INFO - 2021-11-12 14:22:19 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/main.php
+INFO - 2021-11-12 14:22:19 --> Final output sent to browser
+DEBUG - 2021-11-12 14:22:19 --> Total execution time: 0.0596
+INFO - 2021-11-12 14:22:19 --> Config Class Initialized
+INFO - 2021-11-12 14:22:19 --> Hooks Class Initialized
+DEBUG - 2021-11-12 14:22:19 --> UTF-8 Support Enabled
+INFO - 2021-11-12 14:22:19 --> Utf8 Class Initialized
+INFO - 2021-11-12 14:22:19 --> URI Class Initialized
+INFO - 2021-11-12 14:22:19 --> Router Class Initialized
+INFO - 2021-11-12 14:22:19 --> Output Class Initialized
+INFO - 2021-11-12 14:22:19 --> Security Class Initialized
+DEBUG - 2021-11-12 14:22:19 --> Global POST, GET and COOKIE data sanitized
+INFO - 2021-11-12 14:22:19 --> Input Class Initialized
+INFO - 2021-11-12 14:22:19 --> Language Class Initialized
+ERROR - 2021-11-12 14:22:19 --> 404 Page Not Found: Plugins/components
+INFO - 2021-11-12 14:22:19 --> Config Class Initialized
+INFO - 2021-11-12 14:22:19 --> Hooks Class Initialized
+DEBUG - 2021-11-12 14:22:19 --> UTF-8 Support Enabled
+INFO - 2021-11-12 14:22:19 --> Utf8 Class Initialized
+INFO - 2021-11-12 14:22:19 --> URI Class Initialized
+INFO - 2021-11-12 14:22:19 --> Router Class Initialized
+INFO - 2021-11-12 14:22:19 --> Output Class Initialized
+INFO - 2021-11-12 14:22:19 --> Security Class Initialized
+DEBUG - 2021-11-12 14:22:19 --> Global POST, GET and COOKIE data sanitized
+INFO - 2021-11-12 14:22:19 --> Input Class Initialized
+INFO - 2021-11-12 14:22:19 --> Language Class Initialized
+ERROR - 2021-11-12 14:22:19 --> 404 Page Not Found: Plugins/components
+INFO - 2021-11-12 14:22:22 --> Config Class Initialized
+INFO - 2021-11-12 14:22:22 --> Hooks Class Initialized
+DEBUG - 2021-11-12 14:22:22 --> UTF-8 Support Enabled
+INFO - 2021-11-12 14:22:22 --> Utf8 Class Initialized
+INFO - 2021-11-12 14:22:22 --> URI Class Initialized
+INFO - 2021-11-12 14:22:22 --> Router Class Initialized
+INFO - 2021-11-12 14:22:22 --> Output Class Initialized
+INFO - 2021-11-12 14:22:22 --> Security Class Initialized
+DEBUG - 2021-11-12 14:22:22 --> Global POST, GET and COOKIE data sanitized
+INFO - 2021-11-12 14:22:22 --> Input Class Initialized
+INFO - 2021-11-12 14:22:22 --> Language Class Initialized
+INFO - 2021-11-12 14:22:22 --> Loader Class Initialized
+INFO - 2021-11-12 14:22:22 --> Helper loaded: url_helper
+INFO - 2021-11-12 14:22:22 --> Database Driver Class Initialized
+DEBUG - 2021-11-12 14:22:22 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2021-11-12 14:22:22 --> Session: Class initialized using 'files' driver.
+INFO - 2021-11-12 14:22:22 --> Controller Class Initialized
+INFO - 2021-11-12 14:22:22 --> Model "KursMataUangModel" initialized
+INFO - 2021-11-12 14:22:22 --> Helper loaded: form_helper
+INFO - 2021-11-12 14:22:22 --> Form Validation Class Initialized
+INFO - 2021-11-12 14:22:22 --> Model "M_Admin" initialized
+INFO - 2021-11-12 14:22:22 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2021-11-12 14:22:22 --> Pagination Class Initialized
+INFO - 2021-11-12 14:22:22 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/header.php
+INFO - 2021-11-12 14:22:22 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/sidebar.php
+INFO - 2021-11-12 14:22:22 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\KursMataUang/fin_kurs_list.php
+INFO - 2021-11-12 14:22:22 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/footer.php
+INFO - 2021-11-12 14:22:22 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/main.php
+INFO - 2021-11-12 14:22:22 --> Final output sent to browser
+DEBUG - 2021-11-12 14:22:22 --> Total execution time: 0.0599
+INFO - 2021-11-12 14:22:22 --> Config Class Initialized
+INFO - 2021-11-12 14:22:22 --> Hooks Class Initialized
+DEBUG - 2021-11-12 14:22:22 --> UTF-8 Support Enabled
+INFO - 2021-11-12 14:22:22 --> Utf8 Class Initialized
+INFO - 2021-11-12 14:22:22 --> URI Class Initialized
+INFO - 2021-11-12 14:22:22 --> Router Class Initialized
+INFO - 2021-11-12 14:22:22 --> Output Class Initialized
+INFO - 2021-11-12 14:22:22 --> Security Class Initialized
+DEBUG - 2021-11-12 14:22:22 --> Global POST, GET and COOKIE data sanitized
+INFO - 2021-11-12 14:22:22 --> Input Class Initialized
+INFO - 2021-11-12 14:22:22 --> Language Class Initialized
+ERROR - 2021-11-12 14:22:22 --> 404 Page Not Found: Plugins/components
+INFO - 2021-11-12 14:22:22 --> Config Class Initialized
+INFO - 2021-11-12 14:22:22 --> Hooks Class Initialized
+DEBUG - 2021-11-12 14:22:22 --> UTF-8 Support Enabled
+INFO - 2021-11-12 14:22:22 --> Utf8 Class Initialized
+INFO - 2021-11-12 14:22:22 --> URI Class Initialized
+INFO - 2021-11-12 14:22:22 --> Router Class Initialized
+INFO - 2021-11-12 14:22:22 --> Output Class Initialized
+INFO - 2021-11-12 14:22:22 --> Security Class Initialized
+DEBUG - 2021-11-12 14:22:22 --> Global POST, GET and COOKIE data sanitized
+INFO - 2021-11-12 14:22:22 --> Input Class Initialized
+INFO - 2021-11-12 14:22:22 --> Language Class Initialized
+ERROR - 2021-11-12 14:22:22 --> 404 Page Not Found: Plugins/components
+INFO - 2021-11-12 14:22:26 --> Config Class Initialized
+INFO - 2021-11-12 14:22:26 --> Hooks Class Initialized
+DEBUG - 2021-11-12 14:22:26 --> UTF-8 Support Enabled
+INFO - 2021-11-12 14:22:26 --> Utf8 Class Initialized
+INFO - 2021-11-12 14:22:26 --> URI Class Initialized
+INFO - 2021-11-12 14:22:26 --> Router Class Initialized
+INFO - 2021-11-12 14:22:26 --> Output Class Initialized
+INFO - 2021-11-12 14:22:26 --> Security Class Initialized
+DEBUG - 2021-11-12 14:22:26 --> Global POST, GET and COOKIE data sanitized
+INFO - 2021-11-12 14:22:26 --> Input Class Initialized
+INFO - 2021-11-12 14:22:26 --> Language Class Initialized
+INFO - 2021-11-12 14:22:26 --> Loader Class Initialized
+INFO - 2021-11-12 14:22:26 --> Helper loaded: url_helper
+INFO - 2021-11-12 14:22:26 --> Database Driver Class Initialized
+DEBUG - 2021-11-12 14:22:26 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2021-11-12 14:22:26 --> Session: Class initialized using 'files' driver.
+INFO - 2021-11-12 14:22:26 --> Controller Class Initialized
+INFO - 2021-11-12 14:22:26 --> Model "KursMataUangModel" initialized
+INFO - 2021-11-12 14:22:26 --> Helper loaded: form_helper
+INFO - 2021-11-12 14:22:26 --> Form Validation Class Initialized
+INFO - 2021-11-12 14:22:26 --> Model "M_Admin" initialized
+INFO - 2021-11-12 14:22:26 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/header.php
+INFO - 2021-11-12 14:22:26 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/sidebar.php
+INFO - 2021-11-12 14:22:26 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\KursMataUang/fin_kurs_form.php
+INFO - 2021-11-12 14:22:26 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/footer.php
+INFO - 2021-11-12 14:22:26 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/main.php
+INFO - 2021-11-12 14:22:26 --> Final output sent to browser
+DEBUG - 2021-11-12 14:22:26 --> Total execution time: 0.0416
+INFO - 2021-11-12 14:22:26 --> Config Class Initialized
+INFO - 2021-11-12 14:22:26 --> Hooks Class Initialized
+DEBUG - 2021-11-12 14:22:26 --> UTF-8 Support Enabled
+INFO - 2021-11-12 14:22:26 --> Utf8 Class Initialized
+INFO - 2021-11-12 14:22:26 --> URI Class Initialized
+INFO - 2021-11-12 14:22:26 --> Router Class Initialized
+INFO - 2021-11-12 14:22:26 --> Output Class Initialized
+INFO - 2021-11-12 14:22:26 --> Security Class Initialized
+DEBUG - 2021-11-12 14:22:26 --> Global POST, GET and COOKIE data sanitized
+INFO - 2021-11-12 14:22:26 --> Input Class Initialized
+INFO - 2021-11-12 14:22:26 --> Language Class Initialized
+ERROR - 2021-11-12 14:22:26 --> 404 Page Not Found: Report/Plugins/components
+INFO - 2021-11-12 14:22:40 --> Config Class Initialized
+INFO - 2021-11-12 14:22:40 --> Hooks Class Initialized
+DEBUG - 2021-11-12 14:22:40 --> UTF-8 Support Enabled
+INFO - 2021-11-12 14:22:40 --> Utf8 Class Initialized
+INFO - 2021-11-12 14:22:40 --> URI Class Initialized
+INFO - 2021-11-12 14:22:40 --> Router Class Initialized
+INFO - 2021-11-12 14:22:40 --> Output Class Initialized
+INFO - 2021-11-12 14:22:40 --> Security Class Initialized
+DEBUG - 2021-11-12 14:22:40 --> Global POST, GET and COOKIE data sanitized
+INFO - 2021-11-12 14:22:40 --> Input Class Initialized
+INFO - 2021-11-12 14:22:40 --> Language Class Initialized
+INFO - 2021-11-12 14:22:40 --> Loader Class Initialized
+INFO - 2021-11-12 14:22:40 --> Helper loaded: url_helper
+INFO - 2021-11-12 14:22:40 --> Database Driver Class Initialized
+DEBUG - 2021-11-12 14:22:40 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2021-11-12 14:22:40 --> Session: Class initialized using 'files' driver.
+INFO - 2021-11-12 14:22:40 --> Controller Class Initialized
+INFO - 2021-11-12 14:22:40 --> Model "KursMataUangModel" initialized
+INFO - 2021-11-12 14:22:40 --> Helper loaded: form_helper
+INFO - 2021-11-12 14:22:40 --> Form Validation Class Initialized
+INFO - 2021-11-12 14:22:40 --> Model "M_Admin" initialized
+INFO - 2021-11-12 14:22:40 --> Language file loaded: language/english/form_validation_lang.php
+INFO - 2021-11-12 14:22:40 --> Config Class Initialized
+INFO - 2021-11-12 14:22:40 --> Hooks Class Initialized
+DEBUG - 2021-11-12 14:22:40 --> UTF-8 Support Enabled
+INFO - 2021-11-12 14:22:40 --> Utf8 Class Initialized
+INFO - 2021-11-12 14:22:40 --> URI Class Initialized
+INFO - 2021-11-12 14:22:40 --> Router Class Initialized
+INFO - 2021-11-12 14:22:40 --> Output Class Initialized
+INFO - 2021-11-12 14:22:40 --> Security Class Initialized
+DEBUG - 2021-11-12 14:22:40 --> Global POST, GET and COOKIE data sanitized
+INFO - 2021-11-12 14:22:40 --> Input Class Initialized
+INFO - 2021-11-12 14:22:40 --> Language Class Initialized
+INFO - 2021-11-12 14:22:40 --> Loader Class Initialized
+INFO - 2021-11-12 14:22:40 --> Helper loaded: url_helper
+INFO - 2021-11-12 14:22:40 --> Database Driver Class Initialized
+DEBUG - 2021-11-12 14:22:40 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2021-11-12 14:22:40 --> Session: Class initialized using 'files' driver.
+INFO - 2021-11-12 14:22:40 --> Controller Class Initialized
+INFO - 2021-11-12 14:22:40 --> Model "KursMataUangModel" initialized
+INFO - 2021-11-12 14:22:40 --> Helper loaded: form_helper
+INFO - 2021-11-12 14:22:40 --> Form Validation Class Initialized
+INFO - 2021-11-12 14:22:40 --> Model "M_Admin" initialized
+INFO - 2021-11-12 14:22:40 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2021-11-12 14:22:40 --> Pagination Class Initialized
+INFO - 2021-11-12 14:22:40 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/header.php
+INFO - 2021-11-12 14:22:40 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/sidebar.php
+INFO - 2021-11-12 14:22:40 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\KursMataUang/fin_kurs_list.php
+INFO - 2021-11-12 14:22:40 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/footer.php
+INFO - 2021-11-12 14:22:40 --> File loaded: C:\laragon\www\FinanceBayu2\application\views\Report/base/main.php
+INFO - 2021-11-12 14:22:40 --> Final output sent to browser
+DEBUG - 2021-11-12 14:22:40 --> Total execution time: 0.0546
+INFO - 2021-11-12 14:22:40 --> Config Class Initialized
+INFO - 2021-11-12 14:22:40 --> Hooks Class Initialized
+DEBUG - 2021-11-12 14:22:40 --> UTF-8 Support Enabled
+INFO - 2021-11-12 14:22:40 --> Utf8 Class Initialized
+INFO - 2021-11-12 14:22:40 --> URI Class Initialized
+INFO - 2021-11-12 14:22:40 --> Router Class Initialized
+INFO - 2021-11-12 14:22:40 --> Output Class Initialized
+INFO - 2021-11-12 14:22:40 --> Security Class Initialized
+DEBUG - 2021-11-12 14:22:40 --> Global POST, GET and COOKIE data sanitized
+INFO - 2021-11-12 14:22:40 --> Input Class Initialized
+INFO - 2021-11-12 14:22:40 --> Language Class Initialized
+ERROR - 2021-11-12 14:22:40 --> 404 Page Not Found: Report/Plugins/components
+INFO - 2021-11-12 14:22:41 --> Config Class Initialized
+INFO - 2021-11-12 14:22:41 --> Hooks Class Initialized
+DEBUG - 2021-11-12 14:22:41 --> UTF-8 Support Enabled
+INFO - 2021-11-12 14:22:41 --> Utf8 Class Initialized
+INFO - 2021-11-12 14:22:41 --> URI Class Initialized
+INFO - 2021-11-12 14:22:41 --> Router Class Initialized
+INFO - 2021-11-12 14:22:41 --> Output Class Initialized
+INFO - 2021-11-12 14:22:41 --> Security Class Initialized
+DEBUG - 2021-11-12 14:22:41 --> Global POST, GET and COOKIE data sanitized
+INFO - 2021-11-12 14:22:41 --> Input Class Initialized
+INFO - 2021-11-12 14:22:41 --> Language Class Initialized
+ERROR - 2021-11-12 14:22:41 --> 404 Page Not Found: Report/Plugins/components

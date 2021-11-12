@@ -63,8 +63,7 @@
                                     <td><?php echo $bank->gl_account ?></td>
                                     <td style="text-align:center" width="200px">
                                         <?php
-                                        echo anchor(site_url('Report/Bank/read/' . $bank->id), 'Read');
-                                        echo ' | ';
+                                    
                                         echo anchor(site_url('Report/Bank/update/' . $bank->id), 'Update');
                                         echo ' | ';
                                         echo anchor(site_url('Report/Bank/delete/' . $bank->id), 'Delete', 'onclick="javasciprt: return confirm(\'Are You Sure ?\')"');
