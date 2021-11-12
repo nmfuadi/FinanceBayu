@@ -44,7 +44,7 @@
                                                                 <?php 
                                                                 if(!empty($bank)){
                                                                 foreach($bank as $banks){ ?>
-                                                                <option value="<?php echo $banks['id']?>"><?php echo $banks['bank_name'].'-'.$banks['branch'].' ('.$banks['bank_norek'].')';?></option>
+                                                                <option value="<?php echo $banks['id']?>"><?php echo $banks['bank_name'].'-'.$banks['branch'].' ('.$banks['bank_norek'].')-'.$banks['currency_code'];?></option>
                                                                 <?php }} ?>
                                                                 
                                                             </select> </div>
@@ -94,9 +94,12 @@
                                                         <label class="control-label col-md-3">Currancy </label>
                                                         <div class="col-md-9">
                                                             <select  name="currancy" class="form-control">
-                                                                    <option value="IDR"> IDR </option>
-                                                                    <option value="USD"> USD </option>
-                                                                                                                               
+                                                            <?php if (!empty($kurs)) {
+                                                            foreach ($kurs as $kurs) {
+                                                        ?>
+                                                                <option value="<?php echo $kurs['kurs_code'] ?>" ><?php echo $kurs['kurs_code'] ?></option>
+                                                        <?php }
+                                                        } ?>                        
                                                             </select> </div>
                                                     </div>
                                                 </div>

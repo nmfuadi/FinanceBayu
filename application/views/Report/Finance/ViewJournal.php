@@ -79,7 +79,7 @@
                                                 <td><?php echo $ss++; ?></td>
                                                 <td><?php echo date_format($ret_d, "d/m/y"); ?></td>
                                                 <td><?php echo $val->remark; ?></td>
-                                                <td><?php echo number_format($val->amount); ?></td>
+                                                <td><?php echo $val->currancy.' ' .number_format($val->amount); ?></td>
                                                 <td><?php echo $val->type_mutation; ?></td>
                                                 <td><?php echo $val->account_name; ?> (<?php echo $val->code; ?>) </td>
                                                 <td><?php echo $val->bank_name; ?> (<?php echo $val->bank_norek; ?>) </td>

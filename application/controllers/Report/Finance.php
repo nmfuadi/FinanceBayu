@@ -58,6 +58,7 @@ class Finance extends AppBase
 
             $load_resource = $this->load_resource(); // digawe ngene ikie
             $load_resource['emp'] = $this->M_Admin->get_employe_by_id($this->session->userdata('u'));
+            $load_resource['kurs'] = $this->M_Admin->get_all_data('fin_kurs_name');
             $table = "fin_bank WHERE bank_name = '".$_GET['format']."'";
             $load_resource['bank'] = $this->M_Admin->get_all_data($table);
             $load_resource['data'] = array(
@@ -96,6 +97,7 @@ class Finance extends AppBase
         $load_resource = $this->load_resource(); // digawe ngene ikie
         $load_resource['emp'] = $this->M_Admin->get_employe_by_id($this->session->userdata('u'));
         $load_resource['bank'] = $this->M_Admin->get_all_data('fin_bank');
+        $load_resource['kurs'] = $this->M_Admin->get_all_data('fin_kurs_name');
         $load_resource['account'] = $this->M_Admin->get_all_data('fin_account');
         $load_resource['data'] = array(
             'button' => 'Posting Journal',
@@ -115,6 +117,7 @@ class Finance extends AppBase
         $load_resource = $this->load_resource(); // digawe ngene ikie
         $row = $this->M_Admin->get_data_by_mutation_id('fin_mutation','id',$id);
         $load_resource['bank'] = $this->M_Admin->get_all_data('fin_bank');
+        $load_resource['kurs'] = $this->M_Admin->get_all_data('fin_kurs_name');
         $where = "trx_type ='".$row['type_mutation']."'" ;
         $load_resource['account'] = $this->M_Admin->get_all_data_where('fin_account',$where);
         if ($row) {
@@ -315,14 +318,18 @@ class Finance extends AppBase
                 }
 
              */
-                 
-  
+
+               
+
+
+
                 if (($jml_fix != 0 or !empty(is_numeric($jml))) and $tgl !='PEND') {
                         $dataPost = date('Y-m-d H:i:s', strtotime("now"));
                         $ar[] = array(
                             'bank_id' => $this->input->post('rekening', TRUE),
                             'remark' => $ket,
                             'amount' => $jml_fix,
+                            'original_amount' => $jml_fix,
                             'currancy'=>$this->input->post('currancy', TRUE),
                             'trx_date' => date('Y-m-d', strtotime($tgl)),
                             'type_mutation' => $jml_jn,
@@ -357,6 +364,9 @@ class Finance extends AppBase
             }
         }
     }
+
+
+   
 
 
 
@@ -435,6 +445,7 @@ class Finance extends AppBase
                             'bank_id' => $this->input->post('rekening', TRUE),
                             'remark' => $ket,
                             'amount' => $jml_fix,
+                            'original_amount' => $jml_fix,
                             'currancy'=>$this->input->post('currancy', TRUE),
                             'trx_date' => date('d-m-Y', strtotime($tgl)),
                             'type_mutation' => $jml_jn,
@@ -544,6 +555,7 @@ class Finance extends AppBase
                             'bank_id' => $this->input->post('rekening', TRUE),
                             'remark' => $ket,
                             'amount' => $jml_fix,
+                            'original_amount' => $jml_fix,
                             'currancy'=>$this->input->post('currancy', TRUE),
                             'trx_date' => date('d-m-Y', strtotime($tgl)),
                             'type_mutation' => $jml_jn,
@@ -647,6 +659,7 @@ class Finance extends AppBase
                             'bank_id' => $this->input->post('rekening', TRUE),
                             'remark' => $ket,
                             'amount' => floatval($jml_fix),
+                            'original_amount' => floatval($jml_fix),
                             'currancy'=>$this->input->post('currancy', TRUE),
                             'trx_date' => date('d-m-Y', strtotime($tgl)),
                             'type_mutation' => $jml_jn,
@@ -715,7 +728,6 @@ class Finance extends AppBase
                  <th>JN</th>
                  </tr>';
                   */
-
                 for ($i = 1; $i < count($sheetData); $i++) {
                     $tgl = $sheetData[$i]['1'];
                     $ket = $sheetData[$i]['8'];
@@ -727,7 +739,6 @@ class Finance extends AppBase
                     if($jn=='D'){
                         $jml = $db ;
                         $jml_jn = 'DB';
-
 
                     }else {
 
@@ -762,6 +773,7 @@ class Finance extends AppBase
                             'bank_id' => $this->input->post('rekening', TRUE),
                             'remark' => $ket,
                             'amount' => floatval($jml_fix),
+                            'original_amount' => floatval($jml_fix),
                             'currancy'=>$this->input->post('currancy', TRUE),
                             'trx_date' => date('m-d-Y', strtotime($tgl)),
                             'type_mutation' => $jml_jn,
@@ -873,6 +885,7 @@ class Finance extends AppBase
                             'bank_id' => $this->input->post('rekening', TRUE),
                             'remark' => $ket,
                             'amount' => $jml_fix,
+                            'amount' => $jml_fix,
                             'trx_date' => date('m-d-Y', strtotime($tgl)),
                             'type_mutation' => $jml_jn,
                             'currancy'=>$this->input->post('currancy', TRUE),
@@ -983,6 +996,7 @@ class Finance extends AppBase
                             'bank_id' => $this->input->post('rekening', TRUE),
                             'remark' => $ket,
                             'amount' => $jml_fix,
+                            'original_amount' => $jml_fix,
                             'trx_date' => date('m-d-Y', strtotime($tgl)),
                             'type_mutation' => $jml_jn,
                             'currancy'=>$this->input->post('currancy', TRUE),
@@ -1080,6 +1094,7 @@ class Finance extends AppBase
                             'bank_id' => $this->input->post('rekening', TRUE),
                             'remark' => $ket,
                             'amount' => $jml_fix,
+                            'original_amount' => $jml_fix,
                             'currancy'=>$this->input->post('currancy', TRUE),
                             'trx_date' => date('m-d-Y', strtotime($tgl)),
                             'type_mutation' => $jml_jn,
@@ -1191,6 +1206,7 @@ class Finance extends AppBase
                             'bank_id' => $this->input->post('rekening', TRUE),
                             'remark' => $ket,
                             'amount' => $jml_fix,
+                            'original_amount' => $jml_fix,
                             'trx_date' => date('m-d-Y', strtotime($tgl)),
                             'type_mutation' => $jml_jn,
                             'currancy'=>$this->input->post('currancy', TRUE),
@@ -1294,6 +1310,7 @@ class Finance extends AppBase
                             'bank_id' => $this->input->post('rekening', TRUE),
                             'remark' => $ket_fix,
                             'amount' => $jml_fix,
+                            'original_amount' => $jml_fix,
                             'trx_date' => date('m-d-Y', strtotime($tgl)),
                             'type_mutation' => 'DB',
                             'currancy'=>$this->input->post('currancy', TRUE),
@@ -1536,6 +1553,7 @@ class Finance extends AppBase
                             'bank_id' => $this->input->post('rekening', TRUE),
                             'remark' => $ket,
                             'amount' => $jml_fix,
+                            'original_amount' => $jml_fix,
                             'trx_date' => date('m-d-Y', strtotime($tgl)),
                             'type_mutation' => $jml_jn,
                             'currancy'=>$this->input->post('currancy', TRUE),
@@ -1585,6 +1603,7 @@ class Finance extends AppBase
         $load_resource['data'] = $this->M_Admin->get_all_data_where_select($select,$table, $where);
         $load_resource['account'] = $this->M_Admin->get_all_data('fin_account');
         $load_resource['tgl'] =$tgl;
+        $load_resource['kurs'] = $this->M_Admin->get_all_data('fin_kurs_name');
         $this->load->view($this->MAIN_VIEW, $load_resource); // fix
     }
 

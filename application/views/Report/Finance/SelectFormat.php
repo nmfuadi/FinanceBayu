@@ -43,6 +43,7 @@
                                                         <div class="col-md-9">
                                                             <select  name="format" class="form-control">
                                                             <option value="BCA">BANK BCA</option>
+                                                            <option value="BCA">BANK BCA USD</option>
                                                             <option value="BNI">BANK BNI</option>
                                                             <option value="MANDIRI">BANK MANDIRI</option>
                                                             <option value="BRI">BANK BRI</option>

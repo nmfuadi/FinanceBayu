@@ -102,8 +102,13 @@
                                                     <label class="control-label col-md-3">Currancy </label>
                                                     <div class="col-md-9">
                                                         <select name="currancy" class="form-control">
-                                                            <option value="IDR" <?php echo  $data['currancy'] == 'IDR' ? 'selected' : '' ?>> IDR </option>
-                                                            <option value="USD" <?php echo  $data['currancy'] == 'USD' ? 'selected' : '' ?>> USD </option>
+                                                        <?php if (!empty($kurs)) {
+                                                                foreach ($kurs as $kurs) {
+                                                            ?>
+                                                                    <option value="<?php echo $kurs['kurs_code'] ?>" <?php echo  $kurs['kurs_code'] == $data['currancy'] ? 'selected' : '' ?>><?php echo $kurs['kurs_code'] ?></option>
+                                                            <?php }
+                                                            } ?>
+                                                            
 
                                                         </select>
                                                     </div>
