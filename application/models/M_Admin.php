@@ -665,7 +665,7 @@ function pertahun_bulan(){
     
         // get data with limit and search
         function get_limit_data($limit, $start = 0, $q = NULL) {
-            $this->db->order_by('trx_date', 'ASC');
+            $this->db->order_by('trx_date', 'DESC');
             $this->db->select('fin_mutation.*,fin_mutation.id as mut_id,fin_bank.*');
             $this->db->group_start();
             $this->db->or_like('amount', $q);

@@ -75,7 +75,7 @@
                                                             <select  name="type_trx" class="form-control">
                                                             <option value="CR">Credit</option>
                                                             <option value="DB">Debit</option>
-                                                                
+       
                                                         
                                                                 
                                                             </select> </div>
