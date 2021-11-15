@@ -25,7 +25,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
   |
  */
 //$config['base_url'] = 'http://localhost:82/gitlab/internal/joinx/development/joinx_connector';
-$config['base_url'] = 'http://'.$_SERVER['HTTP_HOST'].'/FinanceBayu2';
+$config['base_url'] = 'http://'.$_SERVER['HTTP_HOST'].'/cashflow_dev';
 date_default_timezone_set("Asia/Bangkok");
 
 

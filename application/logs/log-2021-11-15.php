@@ -772,3 +772,19 @@ DEBUG - 2021-11-15 10:12:24 --> Global POST, GET and COOKIE data sanitized
 INFO - 2021-11-15 10:12:24 --> Input Class Initialized
 INFO - 2021-11-15 10:12:24 --> Language Class Initialized
 ERROR - 2021-11-15 10:12:24 --> 404 Page Not Found: Report/Plugins/components
+INFO - 2021-11-15 10:17:37 --> Config Class Initialized
+INFO - 2021-11-15 10:17:37 --> Hooks Class Initialized
+DEBUG - 2021-11-15 10:17:37 --> UTF-8 Support Enabled
+INFO - 2021-11-15 10:17:37 --> Utf8 Class Initialized
+INFO - 2021-11-15 10:17:37 --> URI Class Initialized
+INFO - 2021-11-15 10:17:37 --> Router Class Initialized
+INFO - 2021-11-15 10:17:37 --> Output Class Initialized
+INFO - 2021-11-15 10:17:37 --> Security Class Initialized
+DEBUG - 2021-11-15 10:17:37 --> Global POST, GET and COOKIE data sanitized
+INFO - 2021-11-15 10:17:37 --> Input Class Initialized
+INFO - 2021-11-15 10:17:37 --> Language Class Initialized
+INFO - 2021-11-15 10:17:37 --> Loader Class Initialized
+INFO - 2021-11-15 10:17:37 --> Helper loaded: url_helper
+INFO - 2021-11-15 10:17:37 --> Database Driver Class Initialized
+ERROR - 2021-11-15 10:17:37 --> Unable to connect to the database
+INFO - 2021-11-15 10:17:37 --> Language file loaded: language/english/db_lang.php
