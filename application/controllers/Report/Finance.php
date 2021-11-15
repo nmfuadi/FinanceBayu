@@ -327,7 +327,7 @@ class Finance extends AppBase
                         $dataPost = date('Y-m-d H:i:s', strtotime("now"));
                         $ar[] = array(
                             'bank_id' => $this->input->post('rekening', TRUE),
-                            'remark' => $ket,
+                            'remark' => strval($ket),
                             'amount' => $jml_fix,
                             'original_amount' => $jml_fix,
                             'currancy'=>$this->input->post('currancy', TRUE),
@@ -399,15 +399,15 @@ class Finance extends AppBase
                 //$allDataInSheet = $spreadsheet->getActiveSheet()->toArray(null, true, true, true);
                 $sheetData = $spreadsheet->getActiveSheet()->toArray();
 
-                //  echo count($sheetData);
-                // echo '<table border=1>
-                // <tr>
-                // <th>NO</th>
-                // <th>TGL</th>
-                // <th>KET</th>
-                // <th>JML</th>
-                // <th>JN</th>
-                // </tr>';
+            //       echo count($sheetData);
+            //      echo '<table border=1>
+            //      <tr>
+            //      <th>NO</th>
+            //     <th>TGL</th>
+            //      <th>KET</th>
+            //      <th>JML</th>
+            //    <th>JN</th>
+            //     </tr>';
 
                 for ($i = 1; $i < count($sheetData); $i++) {
                     $tgl = $sheetData[$i]['3'];
@@ -427,10 +427,12 @@ class Finance extends AppBase
                     $str = [','];
                     $jml_fix = str_replace($str, '', $jml);
                     //$jml_jn = substr($jml, -2);
-
+                  
+                   
+                    //$date_ok = $date_exp[2].'-'.$date_exp[1].'-'.$date_exp[0];
                     //   echo '  <tr>
                     //              <td>'.$i.'</td>
-                    //             <td>'.$tgl.'</td>
+                    //             <td>'.$date_ok.'</td>
                     //             <td>'.$ket.'</td>
                     //            <td>'.$jml_fix.'</td>
                     //             <td>'.$jml_jn.'</td>
@@ -440,20 +442,31 @@ class Finance extends AppBase
 
 
                     if ($tgl != 0 or !empty($tgl)) {
+
+                        if(!empty($tgl)){
+                            $date_exp = explode('/',$tgl);
+                        }
+                        
+                        //print_r($date_exp);
+    
+                       $date_ok =  $date_exp[2].'-'.$date_exp[1].'-'.$date_exp[0];  
                         $dataPost = date('Y-m-d H:i:s', strtotime("now"));
                         $ar[] = array(
                             'bank_id' => $this->input->post('rekening', TRUE),
-                            'remark' => $ket,
+                            'remark' => strval($ket),
                             'amount' => $jml_fix,
                             'original_amount' => $jml_fix,
                             'currancy'=>$this->input->post('currancy', TRUE),
-                            'trx_date' => date('d-m-Y', strtotime($tgl)),
+                            'trx_date' => date('Y-m-d', strtotime($date_ok)),
                             'type_mutation' => $jml_jn,
                             'posting_st' => 'NO',
                             'posting_date' => $dataPost
                         );
                     }
                 }
+
+
+                // echo '</table>';
 
 
                 if ($this->db->insert_batch('fin_mutation', $ar)) {
@@ -549,15 +562,28 @@ class Finance extends AppBase
 
                    */
 
+                  
+
                   if(!empty($tgl) and !empty($ket) and !empty($jml_fix)){
+
+                    if(!empty($tgl)){
+                        $date_exp = explode('/',$tgl);
+                    }
+                    
+                    print_r($date_exp);
+    
+    
+                   $date_ok =  $date_exp[2].'-'.$date_exp[1].'-'.$date_exp[0];
+
+
                         $dataPost = date('Y-m-d H:i:s', strtotime("now"));
                         $ar[] = array(
                             'bank_id' => $this->input->post('rekening', TRUE),
-                            'remark' => $ket,
+                            'remark' => strval($ket),
                             'amount' => $jml_fix,
                             'original_amount' => $jml_fix,
                             'currancy'=>$this->input->post('currancy', TRUE),
-                            'trx_date' => date('d-m-Y', strtotime($tgl)),
+                            'trx_date' => date('Y-m-d', strtotime($date_ok)),
                             'type_mutation' => $jml_jn,
                             'posting_st' => 'NO',
                             'posting_date' => $dataPost
@@ -654,14 +680,23 @@ class Finance extends AppBase
 
 
                 if ($tgl != 0 or !empty($tgl) and !empty (is_numeric($jml)) ) {
+                    if(!empty($tgl)){
+                        $date_exp = explode('/',$tgl);
+                    }
+                    
+                    print_r($date_exp);
+    
+                    $year = substr($date_exp[2],0,4);
+                   $date_ok =  $year.'-'.$date_exp[1].'-'.$date_exp[0];
+
                         $dataPost = date('Y-m-d H:i:s', strtotime("now"));
                         $ar[] = array(
                             'bank_id' => $this->input->post('rekening', TRUE),
-                            'remark' => $ket,
+                            'remark' => strval($ket),
                             'amount' => floatval($jml_fix),
                             'original_amount' => floatval($jml_fix),
                             'currancy'=>$this->input->post('currancy', TRUE),
-                            'trx_date' => date('d-m-Y', strtotime($tgl)),
+                            'trx_date' => date('Y-m-d', strtotime( $date_ok)),
                             'type_mutation' => $jml_jn,
                             'posting_st' => 'NO',
                             'posting_date' => $dataPost
@@ -768,14 +803,25 @@ class Finance extends AppBase
                  
 
                     if ($tgl != 0 or !empty($tgl) and !empty (is_numeric($jml))) {
+
+                        
+                    if(!empty($tgl)){
+                        $date_exp = explode('/',$tgl);
+                    }
+                    
+                    print_r($date_exp);
+    
+    
+                   $date_ok =  $date_exp[2].'-'.$date_exp[1].'-'.$date_exp[0];
+
                         $dataPost = date('Y-m-d H:i:s', strtotime("now"));
                         $ar[] = array(
                             'bank_id' => $this->input->post('rekening', TRUE),
-                            'remark' => $ket,
+                            'remark' => strval($ket),
                             'amount' => floatval($jml_fix),
                             'original_amount' => floatval($jml_fix),
                             'currancy'=>$this->input->post('currancy', TRUE),
-                            'trx_date' => date('m-d-Y', strtotime($tgl)),
+                            'trx_date' => date('m-d-Y', strtotime($date_ok)),
                             'type_mutation' => $jml_jn,
                             'posting_st' => 'NO',
                             'posting_date' => $dataPost
@@ -880,13 +926,22 @@ class Finance extends AppBase
 
 
                     if (!empty(is_numeric($jml_fix))) {
+
+                        if(!empty($tgl)){
+                            $date_exp = explode('/',$tgl);
+                        }
+                        
+                        print_r($date_exp);
+        
+        
+                       $date_ok =  $date_exp[2].'-'.$date_exp[0].'-'.$date_exp[1];
                         $dataPost = date('Y-m-d H:i:s', strtotime("now"));
                         $ar[] = array(
                             'bank_id' => $this->input->post('rekening', TRUE),
-                            'remark' => $ket,
+                            'remark' => strval($ket),
                             'amount' => $jml_fix,
                             'amount' => $jml_fix,
-                            'trx_date' => date('m-d-Y', strtotime($tgl)),
+                            'trx_date' => date('m-d-Y', strtotime($date_ok)),
                             'type_mutation' => $jml_jn,
                             'currancy'=>$this->input->post('currancy', TRUE),
                             'posting_st' => 'NO',
@@ -991,10 +1046,11 @@ class Finance extends AppBase
 
 
                     if (!empty(is_numeric($jml_fix))) {
+
                         $dataPost = date('Y-m-d H:i:s', strtotime("now"));
                         $ar[] = array(
                             'bank_id' => $this->input->post('rekening', TRUE),
-                            'remark' => $ket,
+                            'remark' => strval($ket),
                             'amount' => $jml_fix,
                             'original_amount' => $jml_fix,
                             'trx_date' => date('m-d-Y', strtotime($tgl)),
@@ -1088,15 +1144,15 @@ class Finance extends AppBase
                     //$jml_jn = substr($jml, -2);
                    
                   
-                    if (!empty(is_numeric($jml_fix))) {
+                    if (!empty(is_numeric($jml_fix)) AND !empty($tgl)) {
                         $dataPost = date('Y-m-d H:i:s', strtotime("now"));
                         $ar[] = array(
                             'bank_id' => $this->input->post('rekening', TRUE),
-                            'remark' => $ket,
+                            'remark' => strval($ket),
                             'amount' => $jml_fix,
                             'original_amount' => $jml_fix,
                             'currancy'=>$this->input->post('currancy', TRUE),
-                            'trx_date' => date('m-d-Y', strtotime($tgl)),
+                            'trx_date' => date('d-m-Y', strtotime($tgl)),
                             'type_mutation' => $jml_jn,
                             'posting_st' => 'NO',
                             'posting_date' => $dataPost
@@ -1204,7 +1260,7 @@ class Finance extends AppBase
                         $dataPost = date('Y-m-d H:i:s', strtotime("now"));
                         $ar[] = array(
                             'bank_id' => $this->input->post('rekening', TRUE),
-                            'remark' => $ket,
+                            'remark' => strval($ket),
                             'amount' => $jml_fix,
                             'original_amount' => $jml_fix,
                             'trx_date' => date('m-d-Y', strtotime($tgl)),
@@ -1305,13 +1361,21 @@ class Finance extends AppBase
                     */
                  
                     if (!empty(is_numeric($jml_fix))) {
+                        if(!empty($tgl)){
+                            $date_exp = explode('/',$tgl);
+                        }
+                        
+                        print_r($date_exp);
+        
+        
+                       $date_ok =  $date_exp[2].'-'.$date_exp[1].'-'.$date_exp[0];
                         $dataPost = date('Y-m-d H:i:s', strtotime("now"));
                         $ar[] = array(
                             'bank_id' => $this->input->post('rekening', TRUE),
-                            'remark' => $ket_fix,
+                            'remark' => strval($ket_fix),
                             'amount' => $jml_fix,
                             'original_amount' => $jml_fix,
-                            'trx_date' => date('m-d-Y', strtotime($tgl)),
+                            'trx_date' => date('m-d-Y', strtotime($date_ok)),
                             'type_mutation' => 'DB',
                             'currancy'=>$this->input->post('currancy', TRUE),
                             'posting_st' => 'NO',
@@ -1548,13 +1612,21 @@ class Finance extends AppBase
  
 
                     if (!empty(is_numeric($jml_fix))) {
+                        if(!empty($tgl)){
+                            $date_exp = explode('/',$tgl);
+                        }
+                        
+                        print_r($date_exp);
+        
+        
+                       $date_ok =  $date_exp[2].'-'.$date_exp[1].'-'.$date_exp[0];
                         $dataPost = date('Y-m-d H:i:s', strtotime("now"));
                         $ar[] = array(
                             'bank_id' => $this->input->post('rekening', TRUE),
-                            'remark' => $ket,
+                            'remark' => strval($ket),
                             'amount' => $jml_fix,
                             'original_amount' => $jml_fix,
-                            'trx_date' => date('m-d-Y', strtotime($tgl)),
+                            'trx_date' => date('m-d-Y', strtotime($date_ok)),
                             'type_mutation' => $jml_jn,
                             'currancy'=>$this->input->post('currancy', TRUE),
                             'posting_st' => 'NO',
@@ -1576,8 +1648,7 @@ class Finance extends AppBase
                     $this->session->set_flashdata('status', 'alert-danger');
                     redirect(site_url('Report/Finance/importData'));
                 }
-            
-                       
+                  
                 
             } else {
                 $this->session->set_flashdata('message', 'Error! File Tidak Di dukung');
@@ -1585,6 +1656,131 @@ class Finance extends AppBase
                 redirect(site_url('Report/Finance/importData'));
             }
             
+        }
+    }
+
+
+    public function MYBANK()
+    {
+
+        $this->_rules_finance();
+        if ($this->form_validation->run() == FALSE) {
+            $this->session->set_flashdata('message', 'Error! Field Not Complited');
+            $this->session->set_flashdata('status', 'alert-danger');
+            redirect(site_url('Report/Finance/importData'));
+        } else {
+
+            // If file uploaded
+
+            if (!empty($_FILES['uploadFile']['name'])) {
+                // get file extension
+                $extension = pathinfo($_FILES['uploadFile']['name'], PATHINFO_EXTENSION);
+
+                if ($extension == 'csv') {
+                    $reader = new \PhpOffice\PhpSpreadsheet\Reader\Csv();
+                } elseif ($extension == 'xlsx') {
+                    $reader = new \PhpOffice\PhpSpreadsheet\Reader\Xlsx();
+                } else {
+                    $reader = new \PhpOffice\PhpSpreadsheet\Reader\Xls();
+                }
+
+                // file path
+                $spreadsheet = $reader->load($_FILES['uploadFile']['tmp_name']);
+                //$allDataInSheet = $spreadsheet->getActiveSheet()->toArray(null, true, true, true);
+                $sheetData = $spreadsheet->getActiveSheet()->toArray();
+
+                  echo count($sheetData);
+                 echo '<table border=1>
+                 <tr>
+                 <th>NO</th>
+                <th>TGL</th>
+                 <th>KET</th>
+                 <th>JML</th>
+               <th>JN</th>
+                </tr>';
+
+                for ($i = 1; $i < count($sheetData); $i++) {
+                    $tgl = $sheetData[$i]['0'];
+                    $ket = $sheetData[$i]['1'];
+                    $dbt = $sheetData[$i]['3'];
+                    $crd = $sheetData[$i]['4'];
+
+                    if ($dbt == '0.00' or empty($dbt) ) {
+                        $jml = $crd;
+                        $jml_jn = 'CR';
+                    } else {
+
+                        $jml = $dbt;
+                        $jml_jn = 'DB';
+                    }
+
+                    $str = [',',' ','Rp'];
+                    $jml_fix = str_replace($str, '', $jml);
+                  //  $jml_jn = substr($jml, -2);
+                    
+                    // if ($tgl != 0 or !empty($tgl) AND !empty($jml_fix)) {
+
+                    //     if(!empty($tgl)){
+                    //         $date_exp = explode('/',$tgl);
+                    //     }
+                        
+                   
+                    // $date_ok = $date_exp[2].'-'.$date_exp[0].'-'.$date_exp[1];
+                    //   echo '  <tr>
+                    //              <td>'.$i.'</td>
+                    //             <td>'.$date_ok.'</td>
+                    //             <td>'.$ket.'</td>
+                    //            <td>'.$jml_fix.'</td>
+                    //             <td>'.$jml_jn.'</td>
+                    //         </tr>
+                    // ';
+                    // }
+
+
+
+                    if (($tgl != 0 or !empty($tgl)) AND !empty(is_numeric($jml_fix))) {
+
+                        if(!empty($tgl)){
+                            $date_exp = explode('/',$tgl);
+                        }
+                        
+                        //print_r($date_exp);
+    
+                        $date_ok = $date_exp[2].'-'.$date_exp[0].'-'.$date_exp[1];  
+                        $dataPost = date('Y-m-d H:i:s', strtotime("now"));
+                        $ar[] = array(
+                            'bank_id' => $this->input->post('rekening', TRUE),
+                            'remark' => strval($ket),
+                            'amount' => $jml_fix,
+                            'original_amount' => $jml_fix,
+                            'currancy'=>$this->input->post('currancy', TRUE),
+                            'trx_date' => date('Y-m-d', strtotime($date_ok)),
+                            'type_mutation' => $jml_jn,
+                            'posting_st' => 'NO',
+                            'posting_date' => $dataPost
+                        );
+                    }
+                }
+
+
+                // echo '</table>';
+
+
+                if ($this->db->insert_batch('fin_mutation', $ar)) {
+
+                    $this->session->set_flashdata('message', 'Import Data Sukses');
+                    $this->session->set_flashdata('status', 'alert-success');
+                    redirect(site_url('Report/Finance/PostingImport/' . $dataPost));
+                } else {
+                    $this->session->set_flashdata('message', 'Error! Data Gagal di import mohon di ulangi');
+                    $this->session->set_flashdata('status', 'alert-danger');
+                    redirect(site_url('Report/Finance/importData'));
+                }
+            } else {
+                $this->session->set_flashdata('message', 'Error! File Tidak Di dukung');
+                $this->session->set_flashdata('status', 'alert-danger');
+                redirect(site_url('Report/Finance/importData'));
+            }
         }
     }
 
@@ -1627,11 +1823,21 @@ class Finance extends AppBase
             $mut =  $this->M_Admin->get_data_by_id('fin_mutation','id',"'".$mutasi_id[$i]."'");
             if(!empty($db) and !empty($mut)){
 
+            if($mut['currancy'] != 'IDR'){
+
+                $cur = $this->M_Admin->get_currancy_amount($mut['currancy'] );
+                $cur_ammount = $cur['kurs_amount'] * $mut['original_amount'];
+            }else{
+
+                $cur_ammount =  $mut['original_amount'];
+            }
+
                 if($db['trx_type'] == $mut['type_mutation']){
 
                     $data = array(
                         'account_code' => $account,
                         'posting_st' => 'YES',
+                        'amount' =>$cur_ammount,
                         'posting_by' => $this->session->userdata('u'),
                     );
         
@@ -1659,7 +1865,15 @@ class Finance extends AppBase
         $tgl = $_GET['tglGet'] == null ? $tgll : $_GET['tglGet'];
         $id = $_GET['id'] == null ? $ids : $_GET['id'];
         
+        $mut =  $this->M_Admin->get_data_by_id('fin_mutation','id',"'".$id."'");
+        if($mut['currancy'] != 'IDR'){
 
+            $cur = $this->M_Admin->get_currancy_amount($mut['currancy'] );
+            $cur_ammount = $cur['kurs_amount'] * $mut['original_amount'];
+        }else{
+
+            $cur_ammount =  $mut['original_amount'];
+        }
         $tglnew = rawurldecode($tgl);
        
             $account = $_GET['account'];
@@ -1667,6 +1881,7 @@ class Finance extends AppBase
 
                 'account_code' => $account,
                 'posting_st' => 'YES',
+                'amount' =>$cur_ammount,
                 'posting_by' => $this->session->userdata('u'),
             );
 
@@ -1679,6 +1894,35 @@ class Finance extends AppBase
             $this->session->set_flashdata('message', 'Posting Record Success');
             $this->session->set_flashdata('status', 'alert-success');
 
+           
+         
+    }
+
+
+    public function DeletePorcess($ids = null, $tgll = null, $typeAct = null, $fr = null)
+    {
+        $typeAction = $_GET['actionType'] == null ? $typeAct : $_GET['actionType'];
+        $tgl = $tgll;
+        $id = $ids;
+         $where = array(
+
+                'id' => $id
+            );
+
+            $this->M_Admin->delete('fin_mutation', $where);
+
+            if(!empty($tgl)){
+
+                redirect(site_url('Report/Finance/PostingImport/'.$tgl));
+            }else {
+                redirect(site_url('Report/Finance/viewAllPostingJournal'));
+            }
+
+            $this->session->set_flashdata('message', 'Delete Reocrd Success');
+            $this->session->set_flashdata('status', 'alert-success');
+
+           
+           
            
          
     }

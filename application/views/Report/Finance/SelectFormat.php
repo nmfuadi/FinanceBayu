@@ -54,7 +54,8 @@
                                                             <option value="CIMB">CIMB</option>
                                                             <option value="VICTORIA">VICTORIA</option>
                                                             <option value="DANAMON">DANAMON</option>
-                                                            <option value="CASH">FORMAT SAP</option>
+                                                            <option value="CASH">CASH</option>
+                                                            <option value="MYBANK">MYBANK</option>
 
                                                                 
                                                             </select> </div>

@@ -54,7 +54,8 @@
                                                 <div class="form-group">
                                                     <label class="control-label col-md-3">Kurs</label>
                                                     <div class="col-md-9">
-                                                    <select name="currency" class="form-control">
+                                                    <select name="currancy" class="form-control" required>
+                                                    <option value="" disabled selected> Select Currancy</option>
                                                         <?php if (!empty($kurs)) {
                                                             foreach ($kurs as $kurs) {
                                                         ?>

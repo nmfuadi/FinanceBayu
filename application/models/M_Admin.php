@@ -758,6 +758,21 @@ function pertahun_bulan(){
             }
         }
 
+
+
+        function get_currancy_amount($st=null){
+
+            $sql = "SELECT top 1 * FROM fin_kurs where kurs_code = '$st' order by kurs_date DESC   ";
+            $query = $this->db->query($sql);
+            if ($query->num_rows() > 0) {
+                $result = $query->row_array();
+                $query->free_result();
+                return $result;
+            } else {
+                return NULL;
+            }
+        } 
+
 //end bayu finance 
 	
 	
