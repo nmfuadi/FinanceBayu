@@ -55,7 +55,7 @@
                                                             <option value="VICTORIA">VICTORIA</option>
                                                             <option value="DANAMON">DANAMON</option>
                                                             <option value="CASH">CASH</option>
-                                                            <option value="MYBANK">MYBANK</option>
+                                                            <option value="MAYBANK">MAYBANK</option>
 
                                                                 
                                                             </select> </div>

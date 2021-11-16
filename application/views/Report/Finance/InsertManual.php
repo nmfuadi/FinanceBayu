@@ -18,8 +18,7 @@
 					<?php echo $this->session->userdata('message') <> '' ? '<div class="alert '.$this->session->userdata('status').'">
 					
 				   '.$this->session->userdata('message').'
-				</div>' : ''; ?>
-                    
+				</div>' : ''; ?>     
                 </div>					
                     <div class="col-md-12">
                         <div class="panel panel-info">
@@ -41,6 +40,7 @@
                                                         <label class="control-label col-md-3">Rekenening Bank </label>
                                                         <div class="col-md-9">
                                                             <select  name="rekening" class="form-control">
+                                                            <option value="" selected disabled>Pilih Rekening</option>
                                                                 <?php 
                                                                 if(!empty($bank)){
                                                                 foreach($bank as $banks){ ?>
@@ -56,31 +56,35 @@
                                                         <label class="control-label col-md-3">Pilih Account </label>
                                                         <div class="col-md-9">
                                                             <select  name="account" class="form-control">
-                                                            <option value="">Pilih Account</option>
-                                                                <?php if(!empty($account)){
-                                                                    
-                                                            foreach($account as $acc){ ?>
-                                                                <option value="<?php echo $acc['code']?>"><?php echo $acc['account_name']?></option>
+                                                            <option value="" selected disabled>Pilih Account</option>
+                                                            <optgroup label="CREDIT ACCOUNT">
+                                                                <?php if (!empty($account)) {
+                                                                    foreach ($account as $acc) { ?>
+                                                                        <?php if ($acc['trx_type'] == 'CR') { ?>
+                                                                            <option value="<?php echo $acc['code'] ?>"><?php echo $acc['account_name'] ?></option>
+                                                                <?php  }
+                                                                    }
+                                                                } ?>
+                                                            </optgroup>
+                                                            <optgroup label="DEBIT ACCOUNT">
+                                                                <?php if (!empty($account)) {
+                                                                    foreach ($account as $acc) { ?>
+                                                                        <?php if ($acc['trx_type'] == 'DB') { ?>
+
+                                                                            <option value="<?php echo $acc['code'] ?>"><?php echo $acc['account_name'] ?></option>
+
+                                                                <?php  }
+                                                                    }
+                                                                } ?>
+
+                                                            </optgroup>
                                                                 
-                                                                <?php  }} ?>
-                                                                
-                                                            </select> </div>
+                                                            </select> 
+                                                        </div>
                                                     </div>
                                                 </div>
 
-                                                <div class="col-md-12">
-                                                    <div class="form-group">
-                                                        <label class="control-label col-md-3">Tipe Mutasi </label>
-                                                        <div class="col-md-9">
-                                                            <select  name="type_trx" class="form-control">
-                                                            <option value="CR">Credit</option>
-                                                            <option value="DB">Debit</option>
-       
-                                                        
-                                                                
-                                                            </select> </div>
-                                                    </div>
-                                                </div>
+                                               
                                                 <!--/span-->
                                                 <div class="col-md-12">
                                                     <div class="form-group">
@@ -95,6 +99,7 @@
                                                         <label class="control-label col-md-3">Currancy </label>
                                                         <div class="col-md-9">
                                                             <select  name="currancy" class="form-control">
+                                                            <option value="" selected disabled>Pilih Currancy</option>
                                                             <?php if (!empty($kurs)) {
                                                             foreach ($kurs as $kurs) {
                                                         ?>

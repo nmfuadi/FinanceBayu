@@ -193,9 +193,10 @@ class Finance extends AppBase
         if ($this->form_validation->run() == FALSE) {
             $this->session->set_flashdata('message', 'Error! Field Not Complited');
             $this->session->set_flashdata('status', 'alert-danger');
-            redirect(site_url('Report/Finance/importData'));
+            redirect(site_url('Report/Finance/inputManual'));
         } else {
 
+            $acc = $this->M_Admin->get_fin_by_id('fin_account','code',$this->input->post('account', TRUE));
 
             $dataPost = date('Y-m-d H:i:s', strtotime("now"));
             $ar = array(
@@ -204,7 +205,7 @@ class Finance extends AppBase
                 'amount' => $this->input->post('amount', TRUE),
                 'currancy'=>$this->input->post('currancy', TRUE),
                 'trx_date' => date('Y-m-d', strtotime($this->input->post('trx_date', TRUE))),
-                'type_mutation' => $this->input->post('type_trx', TRUE),
+                'type_mutation' =>  $acc['trx_type'],
                 'posting_by' => $this->session->userdata('u'),
                 'posting_st' => 'YES',
                 'posting_date' => $dataPost,
@@ -1660,7 +1661,7 @@ class Finance extends AppBase
     }
 
 
-    public function MYBANK()
+    public function MAYBANK()
     {
 
         $this->_rules_finance();

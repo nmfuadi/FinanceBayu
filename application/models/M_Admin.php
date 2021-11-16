@@ -773,6 +773,20 @@ function pertahun_bulan(){
             }
         } 
 
+
+        function get_fin_by_id($table,$field,$st=null){
+
+            $sql = "SELECT * FROM $table where $field = '$st'    ";
+            $query = $this->db->query($sql);
+            if ($query->num_rows() > 0) {
+                $result = $query->row_array();
+                $query->free_result();
+                return $result;
+            } else {
+                return NULL;
+            }
+        }
+
 //end bayu finance 
 	
 	
