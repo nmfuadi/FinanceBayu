@@ -51,7 +51,7 @@
                                                 <td><input type="checkbox" name="myCheckboxes[]" id="myCheckboxes" value="<?php echo $val['id']; ?>" /></td>
                                                 <td><?php echo date_format($ret_d, "d/m/y"); ?></td>
                                                 <td><?php echo $val['remark']; ?></td>
-                                                <td><?php echo number_format($val['amount']); ?></td>
+                                                <td><?php echo number_format($val['amount'],2); ?></td>
                                                 <td><?php echo $val['type_mutation']; ?></td>
                                                 <td><?php echo $val['bank_name'] . '(' . $val['bank_norek'] . ')'; ?> </td>
                                                 <td>

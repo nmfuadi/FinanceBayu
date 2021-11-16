@@ -57,7 +57,8 @@
                                         <th>NO</th>
                                         <th>Tanggal</th>
                                         <th>Keterangan</th>
-                                        <th>Jumlah</th>
+                                        <th>Amount (Curency IDR)</th>
+                                        <th>Amount Origin </th>
                                         <th>Jenis</th>
                                         <th>Account</th>
                                         <th>Bank</th>
@@ -74,15 +75,15 @@
 
                                     ?>
 
-
                                             <tr>
                                                 <td><?php echo $ss++; ?></td>
                                                 <td><?php echo date_format($ret_d, "d/m/y"); ?></td>
                                                 <td><?php echo $val->remark; ?></td>
-                                                <td><?php echo $val->currancy.' ' .number_format($val->amount); ?></td>
+                                                <td><?php echo 'IDR ' .number_format($val->amount,2); ?></td>
+                                                <td><?php echo $val->currancy.' ' .number_format($val->original_amount,2); ?></td>
                                                 <td><?php echo $val->type_mutation; ?></td>
                                                 <td><?php echo $val->account_name; ?> (<?php echo $val->code; ?>) </td>
-                                                <td><?php echo $val->bank_name; ?> (<?php echo $val->bank_norek; ?>) </td>
+                                                <td><?php echo $val->bank_name .'-'.$val->branch;  ?> (<?php echo $val->bank_norek?>) </td>
                                                 <td>
                                                     <a class="btn btn-danger btn-outline btn-xs" onclick="return confirm('Are you sure you want to delete this item?');" href="<?php echo site_url('Report/Finance/postingPorcess/' . $val->mut_id . '/' . $val->posting_date . '/DELETE/jurnal') ?>">DELETE <i class="fa fa-trash" aria-hidden="true"></i></a>
                                                     <a class="btn btn-success btn-outline btn-xs" href="<?php echo site_url('Report/Finance/editMutasi/' . $val->mut_id) ?>">Edit <i class="fa fa-pencil" aria-hidden="true"></i></a>
