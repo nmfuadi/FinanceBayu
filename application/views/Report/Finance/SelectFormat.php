@@ -56,6 +56,7 @@
                                                             <option value="DANAMON">DANAMON</option>
                                                             <option value="CASH">CASH</option>
                                                             <option value="MAYBANK">MAYBANK</option>
+                                                            <option value="MANDIRI_PERSONAL">MANDIRI PERSONAL</option>
 
                                                                 
                                                             </select> </div>

@@ -54,15 +54,15 @@
                             <table class="table color-table primary-table table-bordered">
                                 <thead>
                                     <tr>
-                                        <th>NO</th>
-                                        <th>Tanggal</th>
-                                        <th>Keterangan</th>
-                                        <th>Amount (Curency IDR)</th>
-                                        <th>Amount Origin </th>
-                                        <th>Jenis</th>
-                                        <th>Account</th>
-                                        <th>Bank</th>
-                                        <th>Action</th>
+                                        <th width="3%">NO</th>
+                                        <th width="5%">Tanggal</th>
+                                        <th width="20%">Keterangan</th>
+                                        <th width="15%">Amount (Curency IDR)</th>
+                                        <th width="15%">Amount Origin </th>
+                                        <th width="3%">Jenis</th>
+                                        <th width="15%">Account</th>
+                                        <th width="10%">Bank</th>
+                                        <th width="19%">Action</th>
 
                                     </tr>
                                 </thead>
@@ -79,8 +79,8 @@
                                                 <td><?php echo $ss++; ?></td>
                                                 <td><?php echo date_format($ret_d, "d/m/y"); ?></td>
                                                 <td><?php echo $val->remark; ?></td>
-                                                <td><?php echo 'IDR ' .number_format($val->amount,2); ?></td>
-                                                <td><?php echo $val->currancy.' ' .number_format($val->original_amount,2); ?></td>
+                                                <td class="text-right"><?php echo 'IDR ' .number_format($val->amount,2); ?></td>
+                                                <td class="text-right"><?php echo $val->currancy.' ' .number_format($val->original_amount,2); ?></td>
                                                 <td><?php echo $val->type_mutation; ?></td>
                                                 <td><?php echo $val->account_name; ?> (<?php echo $val->code; ?>) </td>
                                                 <td><?php echo $val->bank_name .'-'.$val->branch;  ?> (<?php echo $val->bank_norek?>) </td>

@@ -22,13 +22,13 @@
                 </div>					
                     <div class="col-md-12">
                         <div class="panel panel-info">
-                            <div class="panel-heading">Insert Data Jurnal</div>
+                            <div class="panel-heading">Syncronize Update Currancy</div>
                             <div class="panel-wrapper collapse in" aria-expanded="true">
                                 <div class="panel-body">
                                     <form action="<?php echo $action; ?>" class="form-horizontal" method="post" enctype="multipart/form-data" accept-charset="utf-8"> 
 																		 
                                         <div class="form-body">
-                                            <h3 class="box-title">Insert Data Jurnal</h3>
+                                            <h3 class="box-title">Syncronize Update Currancy</h3>
                                             <hr class="m-t-0 m-b-40">
                                             <div class="row">
                                                 
@@ -41,6 +41,7 @@
                                                         <div class="col-md-9">
                                                             <select  name="rekening" class="form-control">
                                                             <option value="" selected disabled>Pilih Rekening</option>
+                                                            <option value="" >Semua Rekening Bank</option>
                                                                 <?php 
                                                                 if(!empty($bank)){
                                                                 foreach($bank as $banks){ ?>
@@ -51,65 +52,51 @@
                                                     </div>
                                                 </div>
 
-                                                <div class="col-md-12">
-                                                    <div class="form-group">
-                                                        <label class="control-label col-md-3">Pilih Account </label>
-                                                        <div class="col-md-9">
-                                                            <select  name="account" class="form-control">
-                                                            <option value="" selected disabled>Pilih Account</option>
-                                                            <optgroup label="CREDIT ACCOUNT">
-                                                                <?php if (!empty($account)) {
-                                                                    foreach ($account as $acc) { ?>
-                                                                        <?php if ($acc['trx_type'] == 'CR') { ?>
-                                                                            <option value="<?php echo $acc['code'] ?>"><?php echo $acc['account_name'] ?></option>
-                                                                <?php  }
-                                                                    }
-                                                                } ?>
-                                                            </optgroup>
-                                                            <optgroup label="DEBIT ACCOUNT">
-                                                                <?php if (!empty($account)) {
-                                                                    foreach ($account as $acc) { ?>
-                                                                        <?php if ($acc['trx_type'] == 'DB') { ?>
-
-                                                                            <option value="<?php echo $acc['code'] ?>"><?php echo $acc['account_name'] ?></option>
-
-                                                                <?php  }
-                                                                    }
-                                                                } ?>
-
-                                                            </optgroup>
-                                                                
-                                                            </select> 
-                                                        </div>
-                                                    </div>
-                                                </div>
+                                                
 
                                                
                                                 <!--/span-->
                                                 <div class="col-md-12">
                                                     <div class="form-group">
-                                                        <label class="control-label col-md-3">Tanggal Transaksi</label>
-                                                        <div class="col-md-9">
-                                                            <input class="form-control" id='datepicker' type="text" name="trx_date" value="" /> </div> </div>
+                                                        <label class="control-label col-md-3">Range Tanggal Transaksi</label>
+                                                        <div class="col-md-4">
+                                                            <input class="form-control" id='datepicker' type="text" name="start" value="" placeholder="Start" />
+                                                        </div> 
+                                                        <div class="col-md-1">
+                                                        <label class="control-label">Sampai</label>  
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <input class="form-control" id='datepicker' type="text" name="end" value=""  placeholder="End"/>
+                                                        </div> 
+                                                    </div>
                                                     </div> 
 
+                                                    
+                                                    <div class="col-md-12">
+                                                    <div class="form-group">
+                                                        <label class="control-label col-md-3">Original Currancy </label>
+                                                        <div class="col-md-9">
+                                                            <select id="kurs" name="kurs" class="form-control">
+                                                            <option value="" selected disabled>Pilih Kurs Matauang</option>
+                                                               <?php 
+                                                                if(!empty($kurs)){
+                                                                foreach($kurs as $kurs){ 
+                                                                    if($kurs['kurs_code']!='IDR'){
+                                                                     ?>
+                                                                
+                                                                <option value="<?php echo $kurs['kurs_code']?>"><?php echo $kurs['kurs_code'];?></option>
+                                                                <?php }}} ?>
+                                                                
+                                                            </select> 
+                                                            <p id="kurs_amount" style="color:red;"></p>
+                                                        </div>
+                                                            
+                                                    </div>
+                                                </div>
 
                                                    
-
-                                                    <div class="col-md-12">
-                                                    <div class="form-group">
-                                                        <label class="control-label col-md-3">Jumlah Transaksi</label>
-                                                        <div class="col-md-9">
-                                                            <input class="form-control"  type="number" name="amount" value="" /> </div> </div>
-                                                    </div>
-
-
-                                                    <div class="col-md-12">
-                                                    <div class="form-group">
-                                                        <label class="control-label col-md-3">Keterangan</label>
-                                                        <div class="col-md-9">
-                                                            <input class="form-control"  type="text" name="remark" value="" /> </div> </div>
-                                                    </div>
+                                                   
+                                                   
 					
 										<!--	<div class="col-md-12">
 													<div class="form-group">
@@ -141,7 +128,7 @@
                                                     <div class="row">
                                                         <div class="col-md-offset-3 col-md-9">
                                                              <button type="submit" class="btn btn-primary"><?php echo $button ?></button> 
-																<a href="<?php echo site_url('Report/AdminStaff') ?>" class="btn btn-default">Cancel</a>
+																<a href="<?php echo site_url('Report/Finance/viewAllJournal') ?>" class="btn btn-default">Cancel</a>
 															<br/>
                                                         </div>
                                                     </div>
@@ -172,7 +159,33 @@
         <!-- ===== Page-Content-End ===== -->
     </div>
 
-<script src="https://cdn.ckeditor.com/ckeditor5/18.0.0/classic/ckeditor.js">
+    <script>
+    $(document).ready(function() {
+        $('#kurs').change(function() {
+            $("#kurs_amount").empty();
+            var kurs_code = $("#kurs").val();
+           
+            if (kurs_code == '') {
+                alert("Select1");
+            } else {
+                $.ajax({
+                    type: "GET",
+                    url: "<?php echo site_url('Report/Finance/get_last_update_kurs/') ?>",
+                    data: 'kurs=' + kurs_code,
+                    cache: true,
+                    dataType: 'json',
+                    success: function(response) {
+                        console.log(response.kurs_amount);
+                        $("#kurs_amount").append('Kurs IDR : '+response.kurs_amount+', Update Kurs :'+response.kurs_date );
+                        
+                        
+                    }
+                });
+                return false;
+            }
+        });
+    });
+</script>
 
 
 

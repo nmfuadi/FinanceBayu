@@ -68,8 +68,26 @@
                                                 </div>
                                             </div>
 
+                                            <?php if($format=='DANAMON' or $format=='MANDIRI_PERSONAL') {?>
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <label class="control-label col-md-3">Tahun</label>
+                                                    <div class="col-md-9">
+                                                    <select name="tahun" class="form-control" required>
+                                                    <option value="<?php echo date("Y")-1; ?>" ><?php  echo date("Y")-1; ?></option>
+                                                    <option value="<?php echo date("Y"); ?>" selected><?php  echo date("Y"); ?></option>
+                                                        <option value="<?php echo date("Y")+1; ?>" ><?php  echo date("Y")+1; ?></option>
+                                                       
+
+                                                    </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <?php } ?>
 
 
+    
                                             <!--/span-->
                                             <!--  <div class="col-md-12">
                                                     <div class="form-group">

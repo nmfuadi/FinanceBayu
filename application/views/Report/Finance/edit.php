@@ -45,7 +45,7 @@
                                                             <?php
                                                             if (!empty($bank)) {
                                                                 foreach ($bank as $banks) { ?>
-                                                                    <option value="<?php echo $banks['id'] ?>" <?php echo $banks['id'] == $data['bank_id'] ? 'selected' : '' ?>><?php echo $banks['bank_name'].'-'.$banks['branch'].' (' . $banks['bank_norek'] . ')'; ?></option>
+                                                                    <option value="<?php echo $banks['id'] ?>" <?php echo $banks['id'] == $data['bank_id'] ? 'selected' : '' ?>><?php echo $banks['bank_name'].'-'.$banks['branch'].' ('.$banks['bank_norek'].')-'.$banks['currency_code'];?></option>
                                                             <?php }
                                                             } ?>
 
@@ -73,20 +73,7 @@
                                                 </div>
                                             </div>
 
-                                            <div class="col-md-12">
-                                                <div class="form-group">
-                                                    <label class="control-label col-md-3">Tipe Mutasi </label>
-                                                    <div class="col-md-9">
-                                                        <select name="type_trx" class="form-control">
-                                                            <option value="CR" <?php echo  $data['type_mutation'] == 'CR' ? 'selected' : '' ?>>Credit</option>
-                                                            <option value="DB" <?php echo  $data['type_mutation'] == 'DB' ? 'selected' : '' ?>>Debit</option>
-
-
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!--/span-->
+                                         
                                             <div class="col-md-12">
                                                 <div class="form-group">
                                                     <label class="control-label col-md-3">Tanggal Transaksi</label>
@@ -97,23 +84,7 @@
                                             </div>
 
 
-                                            <div class="col-md-12">
-                                                <div class="form-group">
-                                                    <label class="control-label col-md-3">Currancy </label>
-                                                    <div class="col-md-9">
-                                                        <select name="currancy" class="form-control">
-                                                        <?php if (!empty($kurs)) {
-                                                                foreach ($kurs as $kurs) {
-                                                            ?>
-                                                                    <option value="<?php echo $kurs['kurs_code'] ?>" <?php echo  $kurs['kurs_code'] == $data['currancy'] ? 'selected' : '' ?>><?php echo $kurs['kurs_code'] ?></option>
-                                                            <?php }
-                                                            } ?>
-                                                            
-
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                           
 
                                             <div class="col-md-12">
                                                 <div class="form-group">

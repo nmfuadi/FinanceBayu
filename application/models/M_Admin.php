@@ -787,6 +787,20 @@ function pertahun_bulan(){
             }
         }
 
+
+        function get_sync_mutation($start=null,$end,$bank_id=null,$currancy=NULL){
+
+            $sql = "SELECT * FROM fin_mutation where trx_date between '$start' AND '$end' AND bank_id LIKE '%$bank_id%' AND currancy = '$currancy' AND posting_st='YES'";
+            $query = $this->db->query($sql);
+            if ($query->num_rows() > 0) {
+                $result = $query->result_array();
+                $query->free_result();
+                return $result;
+            } else {
+                return NULL;
+            }
+        }
+
 //end bayu finance 
 	
 	

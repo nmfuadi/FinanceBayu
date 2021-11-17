@@ -24,20 +24,24 @@
                  </div>' : ''; ?>
                         <h3 class="box-title m-b-0">Data Import Mutasi</h3>
                         <p class="text-muted m-b-30">Silahkan Pilih Account untuk memposting hasil import ini</p>
+                        <a class="btn btn-danger btn-outline btn-lg" onclick="return confirm('Are you sure you want delete All in Your Import Item?');" href="<?php echo site_url('Report/Finance/DeleteAllData/'.$tgl) ?>">DELETE ALL  <i class="fa fa-trash" aria-hidden="true"></i></a><br/><br/>
 
                         <div class="table-responsive">
+
+                       
 
                             <table id="myTable" class="table table-striped">
                                 <thead>
                                     <tr>
-                                        <th>Cecklist</th>
-                                        <th>Tanggal</th>
-                                        <th>Keterangan</th>
-                                        <th>Jumlah</th>
-                                        <th>Jenis</th>
-                                        <th>Bank Info</th>
-                                        <th>Pilih Account</th>
-                                        <th>Action</th>
+                                    <th width="2%" class="text-center">Cecklist</th>
+                                    <th width="5%" class="text-center">Tanggal</th>
+                                    <th width="20%" class="text-center">Keterangan</th>
+                                    <th width="15%" class="text-center">Jumlah</th>
+                                    <th width="3%" class="text-center">Jenis</th>
+                                    <th width="10%" class="text-center">Bank</th>
+                                    <th width="32%" class="text-center">Pilih Account</th>
+                                    <th width="20%" class="text-center">Action</th>
+ 
 
                                     </tr>
                                 </thead>

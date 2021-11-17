@@ -53,15 +53,15 @@
                             <table class="table color-table primary-table table-bordered">
                                 <thead>
                                     <tr>
-                                        <th class="text-center">NO</th>
-                                        <th class="text-center">Cecklist</th>
-                                        <th class="text-center">Tanggal</th>
-                                        <th class="text-center">Keterangan</th>
-                                        <th class="text-center">Jumlah</th>
-                                        <th class="text-center">Jenis</th>
-                                        <th class="text-center">Bank</th>
-                                        <th class="text-center">Pilih Account</th>
-                                        <th class="text-center">Action</th>
+                                        <th width="3%" class="text-center">NO</th>
+                                        <th width="2%" class="text-center">Cecklist</th>
+                                        <th width="5%" class="text-center">Tanggal</th>
+                                        <th width="20%" class="text-center">Keterangan</th>
+                                        <th width="15%" class="text-center">Jumlah</th>
+                                        <th width="3%" class="text-center">Jenis</th>
+                                        <th width="10%" class="text-center">Bank</th>
+                                        <th width="32%" class="text-center">Pilih Account</th>
+                                        <th width="18%" class="text-center">Action</th>
                                     </tr>
                                 </thead>
                                 <tbody>
