@@ -90,19 +90,19 @@
                                         foreach ($data_cr as $val) {
                                     ?>
                                             <tr>
-                                                <td> <?php echo $val['account_name'] ?></td>
-                                                <td> <?php echo number_format($val['January'], 2, ",", ".") ?></td>
-                                                <td> <?php echo number_format($val['February'], 2, ",", ".") ?></td>
-                                                <td> <?php echo number_format($val['March'], 2, ",", ".") ?></td>
-                                                <td> <?php echo number_format($val['April'], 2, ",", ".") ?></td>
-                                                <td> <?php echo number_format($val['May'], 2, ",", ".") ?></td>
-                                                <td> <?php echo number_format($val['June'], 2, ",", ".") ?></td>
-                                                <td> <?php echo number_format($val['July'], 2, ",", ".") ?></td>
-                                                <td> <?php echo number_format($val['August'], 2, ",", ".") ?></td>
-                                                <td> <?php echo number_format($val['September'], 2, ",", ".") ?></td>
-                                                <td> <?php echo number_format($val['October'], 2, ",", ".") ?></td>
-                                                <td> <?php echo number_format($val['November'], 2, ",", ".") ?></td>
-                                                <td> <?php echo number_format($val['December'], 2, ",", ".") ?></td>
+                                                <td  class="text-right"> <?php echo $val['account_name'] ?></td>
+                                                <td  class="text-right"> <?php echo number_format($val['January'], 2, ",", ".") ?></td>
+                                                <td  class="text-right"> <?php echo number_format($val['February'], 2, ",", ".") ?></td>
+                                                <td  class="text-right"> <?php echo number_format($val['March'], 2, ",", ".") ?></td>
+                                                <td  class="text-right"> <?php echo number_format($val['April'], 2, ",", ".") ?></td>
+                                                <td  class="text-right"> <?php echo number_format($val['May'], 2, ",", ".") ?></td>
+                                                <td  class="text-right"> <?php echo number_format($val['June'], 2, ",", ".") ?></td>
+                                                <td  class="text-right"> <?php echo number_format($val['July'], 2, ",", ".") ?></td>
+                                                <td  class="text-right"> <?php echo number_format($val['August'], 2, ",", ".") ?></td>
+                                                <td  class="text-right"> <?php echo number_format($val['September'], 2, ",", ".") ?></td>
+                                                <td  class="text-right"> <?php echo number_format($val['October'], 2, ",", ".") ?></td>
+                                                <td  class="text-right"> <?php echo number_format($val['November'], 2, ",", ".") ?></td>
+                                                <td  class="text-right"> <?php echo number_format($val['December'], 2, ",", ".") ?></td>
 
                                             </tr>
                                             <?php
@@ -127,18 +127,18 @@
 
                                         <tr>
                                             <td class="text-center"><b>TOTAL PENERIMAAN</b></td>
-                                            <td><b><?php echo number_format($jan_cr, 2, ",", "."); ?> </b></td>
-                                            <td><b><?php echo number_format($feb_cr, 2, ",", "."); ?> </b></td>
-                                            <td><b><?php echo number_format($mar_cr, 2, ",", "."); ?> </b></td>
-                                            <td><b><?php echo number_format($apr_cr, 2, ",", "."); ?> </b></td>
-                                            <td><b><?php echo number_format($mei_cr, 2, ",", "."); ?> </b></td>
-                                            <td><b><?php echo number_format($jun_cr, 2, ",", "."); ?> </b></td>
-                                            <td><b><?php echo number_format($jul_cr, 2, ",", "."); ?> </b></td>
-                                            <td><b><?php echo number_format($agt_cr, 2, ",", "."); ?> </b></td>
-                                            <td><b><?php echo number_format($sep_cr, 2, ",", "."); ?> </b></td>
-                                            <td><b><?php echo number_format($okt_cr, 2, ",", "."); ?> </b></td>
-                                            <td><b><?php echo number_format($nov_cr, 2, ",", "."); ?> </b></td>
-                                            <td><b><?php echo number_format($des_cr, 2, ",", "."); ?> </b></td>
+                                            <td  class="text-right"><b><?php echo number_format($jan_cr, 2, ",", "."); ?> </b></td>
+                                            <td  class="text-right"><b><?php echo number_format($feb_cr, 2, ",", "."); ?> </b></td>
+                                            <td  class="text-right"><b><?php echo number_format($mar_cr, 2, ",", "."); ?> </b></td>
+                                            <td  class="text-right"><b><?php echo number_format($apr_cr, 2, ",", "."); ?> </b></td>
+                                            <td  class="text-right"><b><?php echo number_format($mei_cr, 2, ",", "."); ?> </b></td>
+                                            <td  class="text-right"><b><?php echo number_format($jun_cr, 2, ",", "."); ?> </b></td>
+                                            <td  class="text-right"><b><?php echo number_format($jul_cr, 2, ",", "."); ?> </b></td>
+                                            <td  class="text-right"><b><?php echo number_format($agt_cr, 2, ",", "."); ?> </b></td>
+                                            <td  class="text-right"><b><?php echo number_format($sep_cr, 2, ",", "."); ?> </b></td>
+                                            <td  class="text-right"><b><?php echo number_format($okt_cr, 2, ",", "."); ?> </b></td>
+                                            <td  class="text-right"><b><?php echo number_format($nov_cr, 2, ",", "."); ?> </b></td>
+                                            <td  class="text-right"><b><?php echo number_format($des_cr, 2, ",", "."); ?> </b></td>
                                         </tr>
 
                                     <?php
@@ -147,7 +147,7 @@
 
 
                                     <tr>
-                                        <td colspan="13"> <b>PENGELUARAN</b></td>
+                                        <td colspan="13" class="text-center"> <b>PENGELUARAN</b></td>
                                     </tr>
                                     <?php
                                     if (!empty($data_db)) {
@@ -171,19 +171,19 @@
 
 
                                             <tr>
-                                                <td> <?php echo $val_db['account_name'] ?></td>
-                                                <td> <?php echo number_format($val_db['January'], 2, ",", ".") ?></td>
-                                                <td> <?php echo number_format($val_db['February'], 2, ",", ".") ?></td>
-                                                <td> <?php echo number_format($val_db['March'], 2, ",", ".") ?></td>
-                                                <td> <?php echo number_format($val_db['April'], 2, ",", ".") ?></td>
-                                                <td> <?php echo number_format($val_db['May'], 2, ",", ".") ?></td>
-                                                <td> <?php echo number_format($val_db['June'], 2, ",", ".") ?></td>
-                                                <td> <?php echo number_format($val_db['July'], 2, ",", ".") ?></td>
-                                                <td> <?php echo number_format($val_db['August'], 2, ",", ".") ?></td>
-                                                <td> <?php echo number_format($val_db['September'], 2, ",", ".") ?></td>
-                                                <td> <?php echo number_format($val_db['October'], 2, ",", ".") ?></td>
-                                                <td> <?php echo number_format($val_db['November'], 2, ",", ".") ?></td>
-                                                <td> <?php echo number_format($val_db['December'], 2, ",", ".") ?></td>
+                                                <td class="text-right"> <?php echo $val_db['account_name'] ?></td>
+                                                <td class="text-right"> <?php echo number_format($val_db['January'], 2, ",", ".") ?></td>
+                                                <td class="text-right"> <?php echo number_format($val_db['February'], 2, ",", ".") ?></td>
+                                                <td class="text-right"> <?php echo number_format($val_db['March'], 2, ",", ".") ?></td>
+                                                <td class="text-right"> <?php echo number_format($val_db['April'], 2, ",", ".") ?></td>
+                                                <td class="text-right"> <?php echo number_format($val_db['May'], 2, ",", ".") ?></td>
+                                                <td class="text-right"> <?php echo number_format($val_db['June'], 2, ",", ".") ?></td>
+                                                <td class="text-right"> <?php echo number_format($val_db['July'], 2, ",", ".") ?></td>
+                                                <td class="text-right"> <?php echo number_format($val_db['August'], 2, ",", ".") ?></td>
+                                                <td class="text-right"> <?php echo number_format($val_db['September'], 2, ",", ".") ?></td>
+                                                <td class="text-right"> <?php echo number_format($val_db['October'], 2, ",", ".") ?></td>
+                                                <td class="text-right"> <?php echo number_format($val_db['November'], 2, ",", ".") ?></td>
+                                                <td class="text-right"> <?php echo number_format($val_db['December'], 2, ",", ".") ?></td>
 
                                             </tr>
                                             <?php
@@ -209,38 +209,38 @@
                                         ?>
 
                                         <tr>
-                                            <td><b>TOTAL PENGELUARAN</b></td>
-                                            <td><b><?php echo number_format($jan_db, 2, ",", "."); ?> </b></td>
-                                            <td><b><?php echo number_format($feb_db, 2, ",", "."); ?> </b></td>
-                                            <td><b><?php echo number_format($mar_db, 2, ",", "."); ?> </b></td>
-                                            <td><b><?php echo number_format($apr_db, 2, ",", "."); ?> </b></td>
-                                            <td><b><?php echo number_format($mei_db, 2, ",", "."); ?> </b></td>
-                                            <td><b><?php echo number_format($jun_db, 2, ",", "."); ?> </b></td>
-                                            <td><b><?php echo number_format($jul_db, 2, ",", "."); ?> </b></td>
-                                            <td><b><?php echo number_format($agt_db, 2, ",", "."); ?> </b></td>
-                                            <td><b><?php echo number_format($sep_db, 2, ",", "."); ?> </b></td>
-                                            <td><b><?php echo number_format($okt_db, 2, ",", "."); ?> </b></td>
-                                            <td><b><?php echo number_format($nov_db, 2, ",", "."); ?> </b></td>
-                                            <td><b><?php echo number_format($des_db, 2, ",", "."); ?> </b></td>
+                                            <td class="text-center"><b>TOTAL PENGELUARAN</b></td>
+                                            <td class="text-right"><b><?php echo number_format($jan_db, 2, ",", "."); ?> </b></td>
+                                            <td class="text-right"><b><?php echo number_format($feb_db, 2, ",", "."); ?> </b></td>
+                                            <td class="text-right"><b><?php echo number_format($mar_db, 2, ",", "."); ?> </b></td>
+                                            <td class="text-right"><b><?php echo number_format($apr_db, 2, ",", "."); ?> </b></td>
+                                            <td class="text-right"><b><?php echo number_format($mei_db, 2, ",", "."); ?> </b></td>
+                                            <td class="text-right"><b><?php echo number_format($jun_db, 2, ",", "."); ?> </b></td>
+                                            <td class="text-right"><b><?php echo number_format($jul_db, 2, ",", "."); ?> </b></td>
+                                            <td class="text-right"><b><?php echo number_format($agt_db, 2, ",", "."); ?> </b></td>
+                                            <td class="text-right"><b><?php echo number_format($sep_db, 2, ",", "."); ?> </b></td>
+                                            <td class="text-right"><b><?php echo number_format($okt_db, 2, ",", "."); ?> </b></td>
+                                            <td class="text-right"><b><?php echo number_format($nov_db, 2, ",", "."); ?> </b></td>
+                                            <td class="text-right"><b><?php echo number_format($des_db, 2, ",", "."); ?> </b></td>
                                         </tr>
 
                                     <?php
                                     }
                                     ?>
                                     <tr>
-                                        <td><b> SALDO PENERIMAAN - PENGELUARAN</b></td>
-                                        <td><b><?php echo number_format($jan_cr-$jan_db, 2, ",", "."); ?> </b></td>
-                                            <td><b><?php echo number_format($feb_cr-$feb_db, 2, ",", "."); ?> </b></td>
-                                            <td><b><?php echo number_format($mar_cr-$mar_db, 2, ",", "."); ?> </b></td>
-                                            <td><b><?php echo number_format($apr_cr-$apr_db, 2, ",", "."); ?> </b></td>
-                                            <td><b><?php echo number_format($mei_cr-$mei_db, 2, ",", "."); ?> </b></td>
-                                            <td><b><?php echo number_format($jun_cr-$jun_db, 2, ",", "."); ?> </b></td>
-                                            <td><b><?php echo number_format($jul_cr-$jul_db, 2, ",", "."); ?> </b></td>
-                                            <td><b><?php echo number_format($agt_cr-$agt_db, 2, ",", "."); ?> </b></td>
-                                            <td><b><?php echo number_format($sep_cr-$sep_db, 2, ",", "."); ?> </b></td>
-                                            <td><b><?php echo number_format($okt_cr-$okt_db, 2, ",", "."); ?> </b></td>
-                                            <td><b><?php echo number_format($nov_cr-$nov_db, 2, ",", "."); ?> </b></td>
-                                            <td><b><?php echo number_format($des_cr-$des_db, 2, ",", "."); ?> </b></td>
+                                            <td class="text-center"><b> SALDO PENERIMAAN - PENGELUARAN</b></td>
+                                            <td class="text-right"><b><?php echo number_format($jan_cr-$jan_db, 2, ",", "."); ?> </b></td>
+                                            <td class="text-right"><b><?php echo number_format($feb_cr-$feb_db, 2, ",", "."); ?> </b></td>
+                                            <td class="text-right"><b><?php echo number_format($mar_cr-$mar_db, 2, ",", "."); ?> </b></td>
+                                            <td class="text-right"><b><?php echo number_format($apr_cr-$apr_db, 2, ",", "."); ?> </b></td>
+                                            <td class="text-right"><b><?php echo number_format($mei_cr-$mei_db, 2, ",", "."); ?> </b></td>
+                                            <td class="text-right"><b><?php echo number_format($jun_cr-$jun_db, 2, ",", "."); ?> </b></td>
+                                            <td class="text-right"><b><?php echo number_format($jul_cr-$jul_db, 2, ",", "."); ?> </b></td>
+                                            <td class="text-right"><b><?php echo number_format($agt_cr-$agt_db, 2, ",", "."); ?> </b></td>
+                                            <td class="text-right"><b><?php echo number_format($sep_cr-$sep_db, 2, ",", "."); ?> </b></td>
+                                            <td class="text-right"><b><?php echo number_format($okt_cr-$okt_db, 2, ",", "."); ?> </b></td>
+                                            <td class="text-right"><b><?php echo number_format($nov_cr-$nov_db, 2, ",", "."); ?> </b></td>
+                                            <td class="text-right"><b><?php echo number_format($des_cr-$des_db, 2, ",", "."); ?> </b></td>
 
                                     </tr>
                                 </tbody>
