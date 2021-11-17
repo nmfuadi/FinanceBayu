@@ -685,6 +685,7 @@ function pertahun_bulan(){
      function total_rows_jurnal($q = NULL) {
         $this->db->group_start();
         $this->db->or_like('amount', $q);
+        $this->db->or_like('original_amount', $q);
         $this->db->or_like('type_mutation', $q);
         $this->db->or_like('bank_name', $q);
         $this->db->or_like('bank_norek', $q);
@@ -706,6 +707,7 @@ function pertahun_bulan(){
             $this->db->select('fin_mutation.*,fin_mutation.id as mut_id,fin_bank.*,fin_account.*');
             $this->db->group_start();
             $this->db->or_like('amount', $q);
+            $this->db->or_like('original_amount', $q);
             $this->db->or_like('type_mutation', $q);
             $this->db->or_like('bank_name', $q);
             $this->db->or_like('code', $q);
