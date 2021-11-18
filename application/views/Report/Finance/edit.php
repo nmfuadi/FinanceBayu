@@ -28,6 +28,8 @@
                             <div class="panel-body">
                                 <form action="<?php echo $action; ?>" class="form-horizontal" method="post" enctype="multipart/form-data" accept-charset="utf-8">
                                     <input class="form-control" type="hidden" name="id" value="<?php echo $data['id'] ?>" />
+                                    <input class="form-control" type="hidden" name="source" value="<?php echo $data['source'] ?>" />
+                                    <input class="form-control" type="hidden" name="pagination" value="<?php echo $data['pagination'] ?>" />
                                     <input class="form-control" type="hidden" name="tglform" value="<?php echo $data['tgl'] ?>" />
                                     <div class="form-body">
                                         <h3 class="box-title">Insert Data Jurnal</h3>
@@ -78,7 +80,7 @@
                                                 <div class="form-group">
                                                     <label class="control-label col-md-3">Tanggal Transaksi</label>
                                                     <div class="col-md-9">
-                                                        <input class="form-control" id='datepicker' type="text" name="trx_date" value="<?php echo $data['trx_date'] ?>" />
+                                                        <input class="form-control"  type="date" name="trx_date" value="<?php echo $data['trx_date'] ?>" />
                                                     </div>
                                                 </div>
                                             </div>
@@ -135,7 +137,16 @@
                                                 <div class="row">
                                                     <div class="col-md-offset-3 col-md-9">
                                                         <button type="submit" class="btn btn-primary"><?php echo $button ?></button>
-                                                        <a href="<?php echo site_url('Report/AdminStaff') ?>" class="btn btn-default">Cancel</a>
+                                                        <?php if($data['source']!='PostingImport'){
+
+                                                            $link = $data['source'].'?start='.$data['pagination'];
+                                                        }else{
+                                                            $link = $data['source'].'/'.$data['tgl'];
+
+                                                        }
+                                                        
+                                                        ?>
+                                                        <a href="<?php echo site_url('Report/Finance/'.$link) ?>" class="btn btn-default">Cancel</a>
                                                         <br />
                                                     </div>
                                                 </div>

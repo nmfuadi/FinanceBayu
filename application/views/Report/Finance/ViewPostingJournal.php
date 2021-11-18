@@ -104,7 +104,7 @@
                                                         <button id="submit<?php echo $val->mut_id; ?>" type="submit" class="btn btn-primary btn-outline btn-xs">POSTING <i class="fa fa-pencil" aria-hidden="true"></i></button>
 
                                                         <a class="btn btn-danger btn-outline btn-xs" onclick="return confirm('Are you sure you want to delete this item?');" href="<?php echo site_url('Report/Finance/DeletePorcess/' . $val->mut_id) ?>">DELETE <i class="fa fa-trash" aria-hidden="true"></i></a>
-                                                        <a class="btn btn-success btn-outline btn-xs" href="<?php echo site_url('Report/Finance/editMutasi/' . $val->mut_id) ?>">Edit <i class="fa fa-pencil" aria-hidden="true"></i></a>
+                                                        <a class="btn btn-success btn-outline btn-xs" href="<?php echo site_url('Report/Finance/editMutasi/'  .$val->mut_id.'/'.$val->posting_date.'/viewAllPostingJournal/'.$start) ?>">Edit <i class="fa fa-pencil" aria-hidden="true"></i></a>
                                                     </div>
 
 

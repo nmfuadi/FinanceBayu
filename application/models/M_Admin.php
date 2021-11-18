@@ -775,6 +775,19 @@ function pertahun_bulan(){
             }
         } 
 
+        function get_currancy_amount_bymont($st=null,$tgl=null){
+
+            $sql = "SELECT top 1 * FROM fin_kurs where kurs_code = '$st' and datepart(month,kurs_date) = datepart(month,'$tgl') order by kurs_date DESC   ";
+            $query = $this->db->query($sql);
+            if ($query->num_rows() > 0) {
+                $result = $query->row_array();
+                $query->free_result();
+                return $result;
+            } else {
+                return NULL;
+            }
+        }
+
 
         function get_fin_by_id($table,$field,$st=null){
 

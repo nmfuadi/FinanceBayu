@@ -151,7 +151,7 @@ class Finance extends AppBase
 
                 if ($sync['currancy'] != 'IDR') {
 
-                    $cur = $this->M_Admin->get_currancy_amount($sync['currancy']);
+                    $cur = $this->M_Admin->get_currancy_amount_bymont($sync['currancy'],$start);
                     $cur_ammount = $cur['kurs_amount'] * $sync['original_amount'];
                 } else {
                     $cur_ammount =  $sync['original_amount'];
@@ -183,12 +183,12 @@ class Finance extends AppBase
 
         if(!empty($_GET['kurs'])){
 
-            $cur = $this->M_Admin->get_currancy_amount($_GET['kurs']);
+            $cur = $this->M_Admin->get_currancy_amount_bymont($_GET['kurs'],$_GET['tgl']);
             $response = json_encode(($cur));
 
         }else{
 
-            $response = '{}';
+            $response = '{"kurs_amount":"Data Tidak Ada","kurs_date":"Belum di input"}';
         }
 
         echo $response;
@@ -196,7 +196,7 @@ class Finance extends AppBase
     }
 
 
-    public function editMutasi($id = null, $tgl = null)
+    public function editMutasi($id = null, $tgl = null,$source = null, $pagination=null)
     {
 
         $this->VIEW_FILE = "Report/Finance/Edit";
@@ -218,7 +218,9 @@ class Finance extends AppBase
                 'type_mutation' => set_value('type_mutation', $row['type_mutation']),
                 'remark' => set_value('remark', $row['remark']),
                 'currancy' => set_value('currancy', $row['currancy']),
-                'tgl' => $tgl
+                'tgl' => $tgl,
+                'source'=>$source,
+                'pagination'=>$pagination,
             );
             $this->load->view($this->MAIN_VIEW, $load_resource); // fix
         } else {
@@ -275,8 +277,8 @@ class Finance extends AppBase
             $this->M_Admin->update('fin_mutation',$data, $where);
             $this->session->set_flashdata('message', 'Update Record Success');
             $this->session->set_flashdata('status', 'alert-success');
-            if (empty($tglnew)) {
-                redirect(site_url('Report/Finance/viewAllPostingJournal/'));
+            if ($this->input->post('source', TRUE)!='PostingImport') {
+                redirect(site_url('Report/Finance/'.$this->input->post('source', TRUE).'?start='.$this->input->post('pagination', TRUE)));
             } else {
                 redirect(site_url('Report/Finance/PostingImport/'.$tglnew));
             }
@@ -2338,41 +2340,33 @@ class Finance extends AppBase
 
 
 
-
-
-
-    /* Batas Bawah */
-
-
-    public function InsertJobs()
+    public function _rules_vp()
     {
-        $this->VIEW_FILE = "Report/Vp/Insert"; // dynamic
-        $load_resource = $this->load_resource(); // digawe ngene ikie
-        $load_resource['vp'] = $this->M_Admin->get_all_depertement_vp();
-
-        $load_resource['data'] = array(
-            'button' => 'Create Jobs',
-            'action' => site_url('Report/AdminStaff/create_action_task'),
-            'id' => set_value('id'),
-            'jobs_code' => set_value('jobs_code'),
-            'kry_id' => set_value('kry_id'),
-            'jobs_tittle' => set_value('jobs_tittle'),
-            'jobs_desc' => set_value('jobs_desc'),
-            'jobs_stat' => set_value('jobs_stat'),
-            'jobs_start' => set_value('jobs_start'),
-            'ext_kry_id' => set_value('ext_kry_id'),
-            'ext_st' => set_value('ext_st'),
-            'jobs_end' => set_value('jobs_end'),
-            'archieve_st' => set_value('archieve_st'),
-            'cr_dt' => set_value('cr_dt'),
-            'cr_up' => set_value('cr_up'),
-            'u_cr' => set_value('u_cr'),
-        );
-
-
-
-        $this->load->view($this->MAIN_VIEW, $load_resource); // fix
+        $this->form_validation->set_rules('jobs_tittle', 'jobs tittle', 'trim|required');
+        $this->form_validation->set_rules('jobs_desc', 'jobs desc', 'trim|required');
+        $this->form_validation->set_rules('jobs_stat', 'jobs stat', 'trim|required');
+        $this->form_validation->set_error_delimiters('<span class="text-danger">', '</span>');
     }
+
+
+    public function _rules_finance()
+    {
+        $this->form_validation->set_rules('rekening', 'No Rekening', 'trim|required');
+        $this->form_validation->set_error_delimiters('<span class="text-danger">', '</span>');
+    }
+
+
+    public function _rules_sync()
+    {
+        $this->form_validation->set_rules('start', 'start date', 'trim|required');
+        $this->form_validation->set_error_delimiters('<span class="text-danger">', '</span>');
+    }
+
+
+    /* Batas Bawah FINANCE bayu buana*/
+
+
+    
 
     public function token()
     {
@@ -2408,331 +2402,21 @@ class Finance extends AppBase
     }
 
 
-    public function create_action_task()
-    {
-        $this->_rules_vp();
-        $em = $this->input->post('jobs_date', TRUE);
-        $employe = $this->M_Admin->get_employe_by_id($this->session->userdata('u'));
-        $dateori = $this->input->post('jobs_date', TRUE);
-        $dateexplode = explode("to", $dateori);
-        //echo date("Y-m-d",);
+    
 
-        $start = date('Y-m-d', strtotime($dateexplode[0]));
-        $end = date('Y-m-d', strtotime($dateexplode[1]));
-        $token = $this->token();
-        if ($this->input->post('ext_st', TRUE) == 'yes') {
+    
 
-            $kry = null;
-            $ext_kry = $employe['id_kry'];
-        } else {
 
-            $kry = $employe['id_kry'];
-            $ext_kry = null;
-        }
 
 
-        if ($this->form_validation->run() == FALSE) {
-            $this->InsertJobs();
-        } else {
-            $data = array(
-                'jobs_code' => $token,
-                'kry_id' => $kry,
-                'jobs_tittle' => $this->input->post('jobs_tittle', TRUE),
-                'jobs_desc' => $this->input->post('jobs_desc', TRUE),
-                'jobs_stat' => $this->input->post('jobs_stat', TRUE),
-                'archieve_st' => $this->input->post('archieve_st', TRUE),
-                'jobs_start' => $start,
-                'jobs_end' => $end,
-                'ext_kry_id' => $this->input->post('ext_kry_id', TRUE),
-                'ext_kry_from' => $ext_kry,
-                'ext_st' => $this->input->post('ext_st', TRUE),
-                'cr_dt' => date("Y-m-d H:i:s"),
-                'cr_up' => date("Y-m-d H:i:s"),
-                'u_cr' => $this->session->userdata('u')
-            );
+   
 
-            $this->JobsModel->insert($data);
-            $this->session->set_flashdata('message', 'Create Task Success');
-            $this->session->set_flashdata('status', 'alert-success');
-            redirect(site_url('Report/AdminVp/InsertJobs'));
-        }
-    }
+   
 
-    public function UpdateList()
-    {
 
-
-        $this->VIEW_FILE = "Report/Staff/VupdateList"; // dynamic
-        $load_resource = $this->load_resource(); // digawe ngene ikie
-        $load_resource['CONTOH'] = 'Namaku Fuad';
-
-
-        $load_resource['emp'] = $this->M_Admin->get_employe_by_id($this->session->userdata('u'));
-        $load_resource['jobsUp'] = $this->M_Admin->get_update_jobs_by_user_id($load_resource['emp']['id_kry']);
-        $load_resource['emp_jobs'] = $this->M_Admin->get_jobs_by_id(null);
-
-
-
-        $this->load->view($this->MAIN_VIEW, $load_resource); // fix
-    }
-
-
-
-
-
-
-
-
-
-
-    public function create_action()
-    {
-        $this->_rules();
-
-        if ($this->form_validation->run() == FALSE) {
-            $this->session->set_flashdata('message', 'Error! Field Not Complited');
-            $this->session->set_flashdata('status', 'alert-danger');
-            redirect(site_url('Report/AdminStaff/create' . $this->input->post('jb_id', TRUE)));
-        } else {
-            $filename = $_FILES['uploadFile']['name'];
-            $emp = $this->M_Admin->get_employe_by_id($this->session->userdata('u'));
-            if (!empty($filename)) {
-
-                $bk = $this->M_Admin->get_jobs_by_id($this->input->post('jobs_id'));
-                $emp = $this->M_Admin->get_employe_by_id($this->session->userdata('u'));
-                $code = $bk['jobs_code'];
-                $doc_name = $emp['emp_name'];
-
-                $ext = substr(strrchr($filename, '.'), 1);
-                $img_name = str_replace(' ', '_', ucwords($doc_name));
-                $t = time();
-
-                $name_file_save1 = $t . "-" . $img_name . "-" . $code . "." . $ext;
-                $name_file = $t . "-" . $img_name . "-" . $code;
-
-                //$and = "AND doc_name='".$this->input->post('doc_name',TRUE)."'";
-                /*$bk = $this->general_model->get_data_by_id('st_booking_doc','cust_id',$this->input->post('cust_id',TRUE),$and);
-			
-			$file_old = './file/'.$bk['doc_file'];
-			if(file_exists($file_old)){
-				unlink($file_old);
-			}
-			*/
-
-                $config['upload_path'] = './file';
-                $config['allowed_types'] = 'gif|jpg|png|pdf|jpeg|doc|docx|xlsx|ppt|pptx|zip|rar';
-                $config['max_size']     = 6000;
-                $config['file_name'] = $name_file;
-
-                $this->load->library('upload', $config);
-
-                $field_name = "uploadFile";
-                if ($this->upload->do_upload($field_name)) {
-
-
-                    $data = array(
-                        'jobs_id' => $this->input->post('jb_id', TRUE),
-                        'kry_id' => $emp['id_kry'],
-                        'jobs_up_descr' => $this->input->post('jobs_up_descr', TRUE),
-                        'pic' => $name_file_save1,
-                        'job_up_st' => $this->input->post('job_up_st', TRUE),
-                        'update_date' => $this->input->post('update_date', TRUE),
-                        'cr_dt' => date("Y-m-d H:i:s"),
-                        'cr_up' => date("Y-m-d H:i:s"),
-                        'u_cr' => $this->session->userdata('u')
-                    );
-
-                    $this->Jobs_update_model->insert($data);
-                    $this->session->set_flashdata('message', 'Create Record Success');
-                    $this->session->set_flashdata('status', 'alert-success');
-                    redirect(site_url('Report/AdminStaff'));
-                } else {
-
-                    echo 'belum berhasil upload';
-                }
-            } else {
-
-                $data = array(
-                    'jobs_id' => $this->input->post('jb_id', TRUE),
-                    'kry_id' => $emp['id_kry'],
-                    'jobs_up_descr' => $this->input->post('jobs_up_descr', TRUE),
-                    'job_up_st' => $this->input->post('job_up_st', TRUE),
-                    'update_date' => $this->input->post('update_date', TRUE),
-                    'cr_dt' => date("Y-m-d H:i:s"),
-                    'cr_up' => date("Y-m-d H:i:s"),
-                    'u_cr' => $this->session->userdata('u')
-                );
-
-                $this->Jobs_update_model->insert($data);
-                $this->session->set_flashdata('message', 'Create Record Success');
-                $this->session->set_flashdata('status', 'alert-success');
-                redirect(site_url('Report/AdminStaff'));
-            }
-        }
-    }
-
-    public function UpdateTaskList($jobs_id = null)
-    {
-
-
-        $this->VIEW_FILE = "Report/Staff/VupdateList"; // dynamic
-        $load_resource = $this->load_resource(); // digawe ngene ikie
-        $load_resource['CONTOH'] = 'Namaku Fuad';
-
-        $load_resource['emp'] = $this->M_Admin->get_employe_by_id($this->session->userdata('u'));
-        $load_resource['emp_jobs'] = $this->M_Admin->get_jobs_by_id($jobs_id);
-        $load_resource['jobsUp'] = $this->M_Admin->get_update_jobs_by_jobs_id($jobs_id);
-
-
-        $this->load->view($this->MAIN_VIEW, $load_resource); // fix
-    }
-
-
-
-    public function update($id)
-    {
-        $this->VIEW_FILE = "Report/Staff/Insert"; // dynamic
-        $load_resource = $this->load_resource(); // digawe ngene ikie
-        $cek = $this->M_Admin->get_employe_by_id($this->session->userdata('u'));
-        $row = $this->M_Admin->get_update_jobs_by_id($id);
-        $load_resource['emp'] = $this->M_Admin->get_jobs_by_id($row['jobs_id']);
-
-        if ($row['staff_kry'] != $cek['id_kry']) {
-
-            $this->session->set_flashdata('message', 'Record Not Found');
-            $this->session->set_flashdata('status', 'alert-danger');
-            redirect(site_url('Report/AdminStaff/UpdateList'));
-        }
-
-        if ($row) {
-            $load_resource['data'] = array(
-                'button' => 'Update',
-                'action' => site_url('Report/AdminStaff/update_action'),
-                'up_jobs_id' => $row['up_jobs_id'],
-                'jb_id' => $row['jobs_id'],
-                'jobs_id' => $row['jobs_id'],
-                'kry_id' => $row['kry_id'],
-                'jobs_up_descr' => $row['jobs_up_descr'],
-                'update_date' => $row['update_date'],
-                'pic' => $row['pic'],
-                'job_up_st' => $row['job_up_st']
-            );
-            $this->load->view($this->MAIN_VIEW, $load_resource); // fix
-        } else {
-            $this->session->set_flashdata('message', 'Record Not Found');
-            $this->session->set_flashdata('status', 'alert-danger');
-            redirect(site_url('Report/AdminStaff/UpdateList'));
-        }
-    }
-
-    public function update_action()
-    {
-
-
-        $this->_rules();
-
-        if ($this->form_validation->run() == FALSE) {
-            $this->session->set_flashdata('message', 'Error! Field Not Complited');
-            $this->session->set_flashdata('status', 'alert-danger');
-            redirect(site_url('Report/AdminStaff/' . $this->update($this->input->post('up_jobs_id', TRUE))));
-        } else {
-            $filename = $_FILES['uploadFile']['name'];
-
-            if (!empty($filename)) {
-
-                $bk = $this->M_Admin->get_jobs_by_id($this->input->post('jobs_id'));
-                $emp = $this->M_Admin->get_employe_by_id($this->session->userdata('u'));
-                $code = $bk['jobs_code'];
-                $doc_name = $emp['emp_name'];
-
-                $ext = substr(strrchr($filename, '.'), 1);
-                $img_name = str_replace(' ', '_', ucwords($doc_name));
-                $t = time();
-
-                $name_file_save1 = $t . "-" . $img_name . "-" . $code . "." . $ext;
-                $name_file = $t . "-" . $img_name . "-" . $code;
-
-                //$and = "AND doc_name='".$this->input->post('doc_name',TRUE)."'";
-                /*$bk = $this->general_model->get_data_by_id('st_booking_doc','cust_id',$this->input->post('cust_id',TRUE),$and);
-			
-			
-			*/
-                if (!empty($this->input->post('pic_old', TRUE))) {
-                    $file_old = './file/' . $this->input->post('pic_old', TRUE);
-                    if (file_exists($file_old)) {
-                        unlink($file_old);
-                    }
-                }
-
-                $config['upload_path'] = './file';
-                $config['allowed_types'] = 'gif|jpg|png|pdf|jpeg|doc|docx|xlsx|ppt|pptx|zip|rar';
-                $config['max_size']     = 6000;
-                $config['file_name'] = $name_file;
-
-                $this->load->library('upload', $config);
-
-                $field_name = "uploadFile";
-                if ($this->upload->do_upload($field_name)) {
-
-
-                    $data = array(
-
-                        'jobs_up_descr' => $this->input->post('jobs_up_descr', TRUE),
-                        'pic' => $name_file_save1,
-                        'update_date' => $this->input->post('update_date', TRUE),
-                        'job_up_st' => $this->input->post('job_up_st', TRUE),
-                        'cr_up' => date("Y-m-d H:i:s"),
-                        'u_cr' => $this->session->userdata('u')
-                    );
-
-                    $this->Jobs_update_model->update($this->input->post('up_jobs_id', TRUE), $data);
-                    $this->session->set_flashdata('message', 'Update Record Success');
-                    $this->session->set_flashdata('status', 'alert-success');
-                    redirect(site_url('Report/AdminStaff/UpdateList'));
-                }
-            } else {
-
-                //only data Update
-
-                $data = array(
-
-                    'jobs_up_descr' => $this->input->post('jobs_up_descr', TRUE),
-                    'update_date' => $this->input->post('update_date', TRUE),
-                    'job_up_st' => $this->input->post('job_up_st', TRUE),
-                    'cr_up' => date("Y-m-d H:i:s"),
-                    'u_cr' => $this->session->userdata('u')
-                );
-
-                $this->Jobs_update_model->update($this->input->post('up_jobs_id', TRUE), $data);
-                $this->session->set_flashdata('message', 'Update Record Success');
-                $this->session->set_flashdata('status', 'alert-success');
-                redirect(site_url('Report/AdminStaff/UpdateList'));
-            }
-        }
-    }
-
-    public function delete($id)
-    {
-        $row = $this->M_Admin->get_update_jobs_by_id($id);
-        $cek = $this->M_Admin->get_employe_by_id($this->session->userdata('u'));
-        if ($row['staff_kry'] != $cek['id_kry']) {
-
-            $this->session->set_flashdata('message', 'Record Not Found');
-            redirect(site_url('Report/AdminStaff/UpdateList'));
-        }
-        $row = $this->Jobs_update_model->get_by_id($id);
-
-        if ($row) {
-            $this->Jobs_update_model->delete($id);
-            $this->session->set_flashdata('message', 'Delete Record Success');
-            $this->session->set_flashdata('status', 'alert-success');
-            redirect(site_url('Report/AdminStaff/UpdateList'));
-        } else {
-            $this->session->set_flashdata('message', 'Record Not Found');
-            $this->session->set_flashdata('status', 'alert-danger');
-            redirect(site_url('Report/AdminStaff/UpdateList'));
-        }
-    }
+    
+    
+    
 
     public function _rules()
     {
@@ -2796,27 +2480,7 @@ class Finance extends AppBase
 
 
 
-    public function _rules_vp()
-    {
-        $this->form_validation->set_rules('jobs_tittle', 'jobs tittle', 'trim|required');
-        $this->form_validation->set_rules('jobs_desc', 'jobs desc', 'trim|required');
-        $this->form_validation->set_rules('jobs_stat', 'jobs stat', 'trim|required');
-        $this->form_validation->set_error_delimiters('<span class="text-danger">', '</span>');
-    }
-
-
-    public function _rules_finance()
-    {
-        $this->form_validation->set_rules('rekening', 'No Rekening', 'trim|required');
-        $this->form_validation->set_error_delimiters('<span class="text-danger">', '</span>');
-    }
-
-
-    public function _rules_sync()
-    {
-        $this->form_validation->set_rules('start', 'start date', 'trim|required');
-        $this->form_validation->set_error_delimiters('<span class="text-danger">', '</span>');
-    }
+    
 
 
     // iki taroh di base ae

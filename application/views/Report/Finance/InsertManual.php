@@ -90,7 +90,7 @@
                                                     <div class="form-group">
                                                         <label class="control-label col-md-3">Tanggal Transaksi</label>
                                                         <div class="col-md-9">
-                                                            <input class="form-control" id='datepicker' type="text" name="trx_date" value="" /> </div> </div>
+                                                            <input class="form-control"  type="date" name="trx_date" value="" /> </div> </div>
                                                     </div> 
 
 

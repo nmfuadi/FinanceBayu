@@ -60,7 +60,7 @@
                                                     <div class="form-group">
                                                         <label class="control-label col-md-3">Range Tanggal Transaksi</label>
                                                         <div class="col-md-4">
-                                                            <input class="form-control" id='datepicker' type="text" name="start" value="" placeholder="Start" />
+                                                            <input class="form-control tgl" id='datepicker' type="text" name="start" value="" placeholder="Start" />
                                                         </div> 
                                                         <div class="col-md-1">
                                                         <label class="control-label">Sampai</label>  
@@ -164,6 +164,7 @@
         $('#kurs').change(function() {
             $("#kurs_amount").empty();
             var kurs_code = $("#kurs").val();
+            var tgl = $(".tgl").val();
            
             if (kurs_code == '') {
                 alert("Select1");
@@ -171,7 +172,7 @@
                 $.ajax({
                     type: "GET",
                     url: "<?php echo site_url('Report/Finance/get_last_update_kurs/') ?>",
-                    data: 'kurs=' + kurs_code,
+                    data: 'kurs=' + kurs_code+ '&tgl='+tgl,
                     cache: true,
                     dataType: 'json',
                     success: function(response) {
