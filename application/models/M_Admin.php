@@ -651,6 +651,7 @@ function pertahun_bulan(){
      function total_rows($q = NULL) {
         $this->db->group_start();
         $this->db->or_like('amount', $q);
+        $this->db->or_like('original_amount', $q);
         $this->db->or_like('type_mutation', $q);
         $this->db->or_like('bank_name', $q);
         $this->db->or_like('bank_norek', $q);
@@ -669,6 +670,7 @@ function pertahun_bulan(){
             $this->db->select('fin_mutation.*,fin_mutation.id as mut_id,fin_bank.*');
             $this->db->group_start();
             $this->db->or_like('amount', $q);
+            $this->db->or_like('original_amount', $q);
             $this->db->or_like('type_mutation', $q);
             $this->db->or_like('bank_name', $q);
             $this->db->or_like('bank_norek', $q);
@@ -684,8 +686,8 @@ function pertahun_bulan(){
          // get total rows
      function total_rows_jurnal($q = NULL) {
         $this->db->group_start();
-        $this->db->or_like('amount', $q);
-        $this->db->or_like('original_amount', $q);
+        $this->db->or_like('convert(decimal(20,10), amount)', $q);
+        $this->db->or_like('convert(decimal(20,10), original_amount)', $q);
         $this->db->or_like('type_mutation', $q);
         $this->db->or_like('bank_name', $q);
         $this->db->or_like('bank_norek', $q);
@@ -706,8 +708,8 @@ function pertahun_bulan(){
             $this->db->order_by('trx_date', 'DESC');
             $this->db->select('fin_mutation.*,fin_mutation.id as mut_id,fin_bank.*,fin_account.*');
             $this->db->group_start();
-            $this->db->or_like('amount', $q);
-            $this->db->or_like('original_amount', $q);
+            $this->db->or_like('convert(decimal(20,10), amount)', $q);
+            $this->db->or_like('convert(decimal(20,10), original_amount)', $q);
             $this->db->or_like('type_mutation', $q);
             $this->db->or_like('bank_name', $q);
             $this->db->or_like('code', $q);
