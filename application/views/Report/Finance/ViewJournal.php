@@ -85,7 +85,7 @@
                                                 <td><?php echo $val->account_name; ?> (<?php echo $val->code; ?>) </td>
                                                 <td><?php echo $val->bank_name .'-'.$val->branch;  ?> (<?php echo $val->bank_norek?>) </td>
                                                 <td>
-                                                    <a class="btn btn-danger btn-outline btn-xs" onclick="return confirm('Are you sure you want to delete this item?');" href="<?php echo site_url('Report/Finance/postingPorcess/' . $val->mut_id . '/' . $val->posting_date . '/DELETE/jurnal') ?>">DELETE <i class="fa fa-trash" aria-hidden="true"></i></a>
+                                                    <a class="btn btn-danger btn-outline btn-xs" onclick="return confirm('Are you sure you want to delete this item?');" href="<?php echo site_url('Report/Finance/DeletePorcess/' . $val->mut_id . '/'.$val->posting_date.'/viewAllJournal/'.$start) ?>">DELETE <i class="fa fa-trash" aria-hidden="true"></i></a>
                                                     <a class="btn btn-success btn-outline btn-xs" href="<?php echo site_url('Report/Finance/editMutasi/' . $val->mut_id.'/'.$val->posting_date.'/viewAllJournal/'.$start) ?>">Edit <i class="fa fa-pencil" aria-hidden="true"></i></a>
                                                 </td>
                                             </tr>

@@ -2080,55 +2080,45 @@ class Finance extends AppBase
 
     public function postingPorcessAll()
     {
-   
-       $id =$this->input->post('myCheckboxes', TRUE);
-       echo $account = $this->input->post('accountAll', TRUE);
 
-        $mutasi_id=explode(",",$id);
+        $id = $this->input->post('myCheckboxes', TRUE);
+        echo $account = $this->input->post('accountAll', TRUE);
+
+        $mutasi_id = explode(",", $id);
         print_r($mutasi_id);
+        echo count($mutasi_id);
         $jml_acc = count($mutasi_id);
 
-        for($i=0;$i<=$jml_acc;$i++){
-  
-            $db = $this->M_Admin->get_data_by_id('fin_account','code',"'".$account."'");
+        for ($i = 0; $i <= $jml_acc; $i++) {
 
-            $mut =  $this->M_Admin->get_data_by_id('fin_mutation','id',"'".$mutasi_id[$i]."'");
-            if(!empty($db) and !empty($mut)){
-
-            if($mut['currancy'] != 'IDR'){
-
-                $cur = $this->M_Admin->get_currancy_amount($mut['currancy'] );
-                $cur_ammount = $cur['kurs_amount'] * $mut['original_amount'];
-            }else{
-
-                $cur_ammount =  $mut['original_amount'];
-            }
-
-                if($db['trx_type'] == $mut['type_mutation']){
-
+            $db = $this->M_Admin->get_data_by_id('fin_account', 'code', "'" . $account . "'");
+            $mut =  $this->M_Admin->get_data_by_id('fin_mutation', 'id', "'" .$mutasi_id[$i]. "'");
+            if (!empty($db['code']) and !empty($mut['id'])) {
+                if ($mut['currancy'] != 'IDR') {
+                    $cur = $this->M_Admin->get_currancy_amount($mut['currancy']);
+                    $cur_ammount = $cur['kurs_amount'] * $mut['amount'];
+                } else {
+                    $cur_ammount =  $mut['amount'];
+                }
+                if ($db['trx_type'] == $mut['type_mutation']) {
                     $data = array(
                         'account_code' => $account,
                         'posting_st' => 'YES',
-                        'amount' =>$cur_ammount,
+                        'original_amount' => $mut['amount'],
+                        'amount' => $cur_ammount,
                         'posting_by' => $this->session->userdata('u'),
                     );
-        
                     $where = array(
-        
                         'id' => $mutasi_id[$i]
                     );
-        
                     $this->M_Admin->update('fin_mutation', $data, $where);
                 }
+            }
 
-            }
-           
-            
-               
-    
-               
-            }
-       
+           echo $mut['amount'].' bacaa ';
+        }
+
+        echo json_encode($data);
     }
 
     public function postingPorcess($ids = null, $tgll = null, $typeAct = null, $fr = null)
@@ -2141,10 +2131,10 @@ class Finance extends AppBase
         if($mut['currancy'] != 'IDR'){
 
             $cur = $this->M_Admin->get_currancy_amount($mut['currancy'] );
-            $cur_ammount = $cur['kurs_amount'] * $mut['original_amount'];
+            $cur_ammount = $cur['kurs_amount'] * $mut['amount'];
         }else{
 
-            $cur_ammount =  $mut['original_amount'];
+            $cur_ammount =  $mut['amount'];
         }
         $tglnew = rawurldecode($tgl);
        
@@ -2153,7 +2143,8 @@ class Finance extends AppBase
 
                 'account_code' => $account,
                 'posting_st' => 'YES',
-                'amount' =>$cur_ammount,
+                'original_amount' => $mut['amount'],
+                 'amount' => $cur_ammount,
                 'posting_by' => $this->session->userdata('u'),
             );
 
@@ -2171,11 +2162,10 @@ class Finance extends AppBase
     }
 
 
-    public function DeletePorcess($ids = null, $tgll = null, $typeAct = null, $fr = null)
+    public function DeletePorcess($id = null, $tgl = null,$source = null, $pagination=null)
     {
-        $typeAction = $_GET['actionType'] == null ? $typeAct : $_GET['actionType'];
-        $tgl = $tgll;
-        $id = $ids;
+       // $typeAction = $_GET['actionType'] == null ? $typeAct : $_GET['actionType'];
+        
          $where = array(
 
                 'id' => $id
@@ -2183,12 +2173,12 @@ class Finance extends AppBase
 
             $this->M_Admin->delete('fin_mutation', $where);
 
-            if(!empty($tgl)){
-
+            if ($this->input->post('source', TRUE)!='PostingImport') {
+                redirect(site_url('Report/Finance/'.$source.'?start='.$pagination));
+            } else {
                 redirect(site_url('Report/Finance/PostingImport/'.$tgl));
-            }else {
-                redirect(site_url('Report/Finance/viewAllPostingJournal'));
             }
+            
 
             $this->session->set_flashdata('message', 'Delete Reocrd Success');
             $this->session->set_flashdata('status', 'alert-success');

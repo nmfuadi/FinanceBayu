@@ -79,7 +79,7 @@
                                                         <input id="actionType<?php echo $val['id']; ?>" type="hidden" name="actionType" value="UPDATE">
                                                         <button id="submit<?php echo $val['id']; ?>" type="submit" class="btn btn-primary btn-outline btn-xs">POSTING <i class="fa fa-pencil" aria-hidden="true"></i></button>
 
-                                                        <a class="btn btn-danger btn-outline btn-xs" onclick="return confirm('Are you sure you want to delete this item?');" href="<?php echo site_url('Report/Finance/DeletePorcess/' . $val['id'] . '/' . $val['posting_date']) ?>">DELETE <i class="fa fa-trash" aria-hidden="true"></i></a>
+                                                        <a class="btn btn-danger btn-outline btn-xs" onclick="return confirm('Are you sure you want to delete this item?');" href="<?php echo site_url('Report/Finance/DeletePorcess/' . $val['id'] . '/' . $val['posting_date'].'/PostingImport') ?>">DELETE <i class="fa fa-trash" aria-hidden="true"></i></a>
                                                         <a class="btn btn-success btn-outline btn-xs" href="<?php echo site_url('Report/Finance/editMutasi/' . $val['id'] . '/' . $val['posting_date'].'/PostingImport') ?>">Edit <i class="fa fa-pencil" aria-hidden="true"></i></a>
 
                                                     </div>
@@ -237,8 +237,9 @@
             url: "<?php echo site_url('Report/Finance/postingPorcessAll/') ?>",
             data: 'tglGet='+tglGet+'&actionType='+actionType+'&accountAll='+accountAll+'&myCheckboxes='+myCheckboxes,
             cache: false,
-            success: function(data){
-                window.location.reload();
+            success: function(response){
+               window.location.reload(); 
+
             }
         });
         return false;

@@ -705,7 +705,7 @@ function pertahun_bulan(){
     
         // get data with limit and search
         function get_limit_data_jurnal($limit, $start = 0, $q = NULL) {
-            $this->db->order_by('trx_date', 'DESC');
+            $this->db->order_by('posting_date', 'DESC');
             $this->db->select('fin_mutation.*,fin_mutation.id as mut_id,fin_bank.*,fin_account.*');
             $this->db->group_start();
             $this->db->or_like('convert(decimal(20,10), amount)', $q);
