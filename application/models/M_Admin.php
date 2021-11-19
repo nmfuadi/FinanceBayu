@@ -726,11 +726,51 @@ function pertahun_bulan(){
 
 
 
+        function get_data_export_excel($start=null, $end = null,$bank_id=null, $q = NULL) {
+            $this->db->order_by('posting_date', 'DESC');
+            $this->db->select('fin_mutation.*,fin_mutation.id as mut_id,fin_bank.*,fin_account.*');
+            $this->db->group_start();
+            $this->db->or_like('convert(decimal(20,10), amount)', $q);
+            $this->db->or_like('convert(decimal(20,10), original_amount)', $q);
+            $this->db->or_like('type_mutation', $q);
+            $this->db->or_like('bank_name', $q);
+            $this->db->or_like('code', $q);
+            $this->db->or_like('account_name', $q);
+            $this->db->or_like('bank_norek', $q);
+            $this->db->or_like('remark', $q);
+            $this->db->group_end();
+            $this->db->where('posting_st', 'YES');
+            $this->db->join('fin_bank', 'fin_mutation.bank_id = fin_bank.id');
+            $this->db->join('fin_account', 'fin_mutation.account_code = fin_account.code');
+            return $this->db->get('fin_mutation')->result();
+        }
+
+
+
         function cek_avail($table,$where,$value){
             $sql = "SELECT count(*) as 'total' FROM $table WHERE $where = $value";
             $query = $this->db->query($sql);
             if ($query->num_rows() > 0) {
                 $result = $query->row_array();
+                $query->free_result();
+                return $result;
+            } else {
+                return NULL;
+            }
+        }
+
+
+
+        function ExportExcell($start = null,$end= null,$bank_id = null, $currancy=null){
+
+            $sql = "select * from fin_mutation a 
+                                join fin_account b on a.account_code = b.code 
+                                join fin_bank c on a.bank_id = c.id 
+                        where trx_date BETWEEN '$start' and '$end' and bank_id like '%$bank_id%' and currancy like '%$currancy%'
+                        order by bank_id,currancy ASC"; 
+            $query = $this->db->query($sql);
+            if ($query->num_rows() > 0) {
+                $result = $query->result_array();
                 $query->free_result();
                 return $result;
             } else {

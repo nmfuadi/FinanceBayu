@@ -31,6 +31,7 @@
                                     <input class="form-control" type="hidden" name="source" value="<?php echo $data['source'] ?>" />
                                     <input class="form-control" type="hidden" name="pagination" value="<?php echo $data['pagination'] ?>" />
                                     <input class="form-control" type="hidden" name="tglform" value="<?php echo $data['tgl'] ?>" />
+                                    <input class="form-control" type="hidden" name="q" value="<?php echo $data['q'] ?>" />
                                     <div class="form-body">
                                         <h3 class="box-title">Insert Data Jurnal</h3>
                                         <hr class="m-t-0 m-b-40">

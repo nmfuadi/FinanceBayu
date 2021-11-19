@@ -9,7 +9,12 @@ require_once(APPPATH . 'controllers/base/BaseReport.php');
 
 use PhpOffice\PhpSpreadsheet\Spreadsheet;
 use PhpOffice\PhpSpreadsheet\Reader\Csv;
-use PhpOffice\PhpSpreadsheet\Reader\Xlsx;
+use PhpOffice\PhpSpreadsheet\Writer\Xlsx;
+
+
+
+
+
 
 class Finance extends AppBase
 {
@@ -26,6 +31,7 @@ class Finance extends AppBase
         $this->load->library('pagination');
         $this->load->library("form_validation");
         $this->load->library('session');
+        
 
 
         $session_rules = $this->session->userdata('rules');
@@ -59,7 +65,14 @@ class Finance extends AppBase
             $load_resource = $this->load_resource(); // digawe ngene ikie
             $load_resource['emp'] = $this->M_Admin->get_employe_by_id($this->session->userdata('u'));
             $load_resource['kurs'] = $this->M_Admin->get_all_data('fin_kurs_name');
-            $table = "fin_bank WHERE bank_name = '".$_GET['format']."'";
+
+            if($_GET['format']!='GENERAL'){
+                $table = "fin_bank WHERE bank_name = '".$_GET['format']."' Order By bank_name ASC";
+            }else {
+                $table = "fin_bank   Order By bank_name ASC";
+            }
+
+           
             $load_resource['bank'] = $this->M_Admin->get_all_data($table);
             $load_resource['data'] = array(
                 'button' => 'Import Excell',
@@ -196,7 +209,7 @@ class Finance extends AppBase
     }
 
 
-    public function editMutasi($id = null, $tgl = null,$source = null, $pagination=null)
+    public function editMutasi($id = null, $tgl = null,$source = null, $pagination=null,$q=null)
     {
 
         $this->VIEW_FILE = "Report/Finance/Edit";
@@ -221,6 +234,7 @@ class Finance extends AppBase
                 'tgl' => $tgl,
                 'source'=>$source,
                 'pagination'=>$pagination,
+                'q'=>$q
             );
             $this->load->view($this->MAIN_VIEW, $load_resource); // fix
         } else {
@@ -248,11 +262,9 @@ class Finance extends AppBase
 
            // $mut =  $this->M_Admin->get_data_by_id('fin_mutation','id',"'".$id."'");
                 if($bank['currency_code'] != 'IDR'){
-
                     $cur = $this->M_Admin->get_currancy_amount($bank['currency_code'] );
                     $cur_ammount = $cur['kurs_amount'] * $this->input->post('amount', TRUE);
                 }else{
-
                     $cur_ammount =  $this->input->post('amount', TRUE);
                 }
 
@@ -278,7 +290,7 @@ class Finance extends AppBase
             $this->session->set_flashdata('message', 'Update Record Success');
             $this->session->set_flashdata('status', 'alert-success');
             if ($this->input->post('source', TRUE)!='PostingImport') {
-                redirect(site_url('Report/Finance/'.$this->input->post('source', TRUE).'?start='.$this->input->post('pagination', TRUE)));
+                redirect(site_url('Report/Finance/'.$this->input->post('source', TRUE).'?start='.$this->input->post('pagination', TRUE).'&q='.$this->input->post('q', TRUE)));
             } else {
                 redirect(site_url('Report/Finance/PostingImport/'.$tglnew));
             }
@@ -300,12 +312,11 @@ class Finance extends AppBase
             $bank = $this->M_Admin->get_fin_by_id('fin_bank','id',$this->input->post('rekening', TRUE));
 
            // $mut =  $this->M_Admin->get_data_by_id('fin_mutation','id',"'".$id."'");
-                if($bank['currency_code'] != 'IDR'){
 
-                    $cur = $this->M_Admin->get_currancy_amount($bank['currency_code'] );
+           $cur = $this->M_Admin->get_currancy_amount($bank['currency_code'] );
+                if($bank['currency_code'] != 'IDR' and !empty($cur['kurs_amount'])){
                     $cur_ammount = $cur['kurs_amount'] * $this->input->post('amount', TRUE);
                 }else{
-
                     $cur_ammount =  $this->input->post('amount', TRUE);
                 }
 
@@ -2058,6 +2069,125 @@ class Finance extends AppBase
     }
 
 
+
+    public function GENERAL()
+    {
+
+        $this->_rules_finance();
+        if ($this->form_validation->run() == FALSE) {
+            $this->session->set_flashdata('message', 'Error! Field Not Complited');
+            $this->session->set_flashdata('status', 'alert-danger');
+            redirect(site_url('Report/Finance/importData'));
+        } else {
+
+            // If file uploaded
+
+            if (!empty($_FILES['uploadFile']['name'])) {
+                // get file extension
+                $extension = pathinfo($_FILES['uploadFile']['name'], PATHINFO_EXTENSION);
+
+                if ($extension == 'csv') {
+                    $reader = new \PhpOffice\PhpSpreadsheet\Reader\Csv();
+                } elseif ($extension == 'xlsx') {
+                    $reader = new \PhpOffice\PhpSpreadsheet\Reader\Xlsx();
+                } else {
+                    $reader = new \PhpOffice\PhpSpreadsheet\Reader\Xls();
+                }
+
+                // file path
+                $spreadsheet = $reader->load($_FILES['uploadFile']['tmp_name']);
+                //$allDataInSheet = $spreadsheet->getActiveSheet()->toArray(null, true, true, true);
+                $sheetData = $spreadsheet->getActiveSheet()->toArray();
+
+            //       echo count($sheetData);
+            //      echo '<table border=1>
+            //      <tr>
+            //      <th>NO</th>
+            //     <th>TGL</th>
+            //      <th>KET</th>
+            //      <th>JML</th>
+            //    <th>JN</th>
+            //     </tr>';
+
+                for ($i = 1; $i < count($sheetData); $i++) {
+                    $tgl = $sheetData[$i]['0'];
+                    $ket = $sheetData[$i]['1'];
+                    $dbt = $sheetData[$i]['2'];
+                    $crd = $sheetData[$i]['3'];
+
+                    if ($dbt == '0.00' or empty($dbt)) {
+                        $jml = $crd;
+                        $jml_jn = 'CR';
+                    } else {
+
+                        $jml = $dbt;
+                        $jml_jn = 'DB';
+                    }
+
+                    $str = [','];
+                    $jml_fix = str_replace($str, '', $jml);
+                    //$jml_jn = substr($jml, -2);
+                  
+                   
+                    //$date_ok = $date_exp[2].'-'.$date_exp[1].'-'.$date_exp[0];
+                    //   echo '  <tr>
+                    //              <td>'.$i.'</td>
+                    //             <td>'.$date_ok.'</td>
+                    //             <td>'.$ket.'</td>
+                    //            <td>'.$jml_fix.'</td>
+                    //             <td>'.$jml_jn.'</td>
+                    //         </tr>
+                    // ';
+
+
+
+                    if ($tgl != 0 or !empty($tgl)) {
+
+                        if(!empty($tgl)){
+                            $date_exp = explode('/',$tgl);
+                        }
+                        
+                        //print_r($date_exp);
+    
+                       $date_ok =  $date_exp[2].'-'.$date_exp[1].'-'.$date_exp[0];  
+                        $dataPost = date('Y-m-d H:i:s', strtotime("now"));
+                        $ar[] = array(
+                            'bank_id' => $this->input->post('rekening', TRUE),
+                            'remark' => strval($ket),
+                            'amount' => $jml_fix,
+                            'original_amount' => $jml_fix,
+                            'currancy'=>$this->input->post('currancy', TRUE),
+                            'trx_date' => date('Y-m-d', strtotime($date_ok)),
+                            'type_mutation' => $jml_jn,
+                            'posting_st' => 'NO',
+                            'posting_date' => $dataPost
+                        );
+                    }
+                }
+
+
+                // echo '</table>';
+
+
+                if ($this->db->insert_batch('fin_mutation', $ar)) {
+
+                    $this->session->set_flashdata('message', 'Import Data Sukses');
+                    $this->session->set_flashdata('status', 'alert-success');
+                    redirect(site_url('Report/Finance/PostingImport/' . $dataPost));
+                } else {
+                    $this->session->set_flashdata('message', 'Error! Data Gagal di import mohon di ulangi');
+                    $this->session->set_flashdata('status', 'alert-danger');
+                    redirect(site_url('Report/Finance/importData'));
+                }
+            } else {
+                $this->session->set_flashdata('message', 'Error! File Tidak Di dukung');
+                $this->session->set_flashdata('status', 'alert-danger');
+                redirect(site_url('Report/Finance/importData'));
+            }
+        }
+    }
+
+
     public function PostingImport($tgl = null)
     {
 
@@ -2190,6 +2320,105 @@ class Finance extends AppBase
     }
 
 
+   
+
+
+
+    public function excelJurnalUmum()
+    {
+        $spreadsheet = new Spreadsheet();
+        $sheet = $spreadsheet->getActiveSheet();
+
+        $star = $this->input->post('start');
+        $end = $this->input->post('end');
+        $rekening = $this->input->post('rekening');
+        $kurs = $this->input->post('kurs');
+        
+
+            $sheet->setCellValue('A1', 'No');
+			$sheet->setCellValue('B1', 'Tanggal');
+			$sheet->setCellValue('C1', 'Keterangan');
+			$sheet->setCellValue('D1', 'Amount (Curency IDR)');
+			$sheet->setCellValue('E1', 'Amount Origin');
+            $sheet->setCellValue('F1', 'Jenis');
+            $sheet->setCellValue('G1', 'Account');
+            $sheet->setCellValue('H1', 'Bank');
+
+            $no = 1;
+			$x = 2;
+
+        $data_list = $this->M_Admin->ExportExcell($star,$end,$rekening,$kurs);
+        if(!empty($data_list)){
+            foreach ($data_list as $data) {
+            
+
+                $account = $data['account_name'].'('.$data['code'].')';
+                $banks = $data['bank_name'].'-'.$data['branch'].'('.$data['bank_norek'].')';
+    
+                //ubah xlsWriteLabel menjadi xlsWriteNumber untuk kolom numeric
+                $sheet->setCellValue('A'. $x,  $no++);
+                $sheet->setCellValue('B'. $x, $data['trx_date']);
+                $sheet->setCellValue('C'. $x, $data['remark']);
+                $sheet->setCellValue('D'. $x, $data['amount']);
+                $sheet->setCellValue('E'. $x, $data['original_amount']);
+                $sheet->setCellValue('F'. $x, $data['type_mutation']);
+                $sheet->setCellValue('G'. $x, $account);
+                $sheet->setCellValue('H'. $x, $banks);
+                $x++;
+                
+            }
+
+        }
+       
+
+        $writer = new Xlsx($spreadsheet);
+			$filename = 'laporan-excel';
+			
+			header('Content-Type: application/vnd.ms-excel');
+			header('Content-Disposition: attachment;filename="'. $filename .'.xlsx"'); 
+			header('Cache-Control: max-age=0');
+	
+			$writer->save('php://output');
+
+       
+        
+    }
+
+
+    public function ExcelContoh(){
+
+
+       
+			$spreadsheet = new Spreadsheet();
+			$sheet = $spreadsheet->getActiveSheet();
+			$sheet->setCellValue('A1', 'No');
+			$sheet->setCellValue('B1', 'Nama');
+			$sheet->setCellValue('C1', 'Kelas');
+			$sheet->setCellValue('D1', 'Jenis Kelamin');
+			$sheet->setCellValue('E1', 'Alamat');
+			
+			
+			$no = 1;
+			$x = 2;
+			
+				$sheet->setCellValue('A'.$x, $no++);
+				$sheet->setCellValue('B'.$x, 'Nama');
+				$sheet->setCellValue('C'.$x, 'Keles');
+				$sheet->setCellValue('D'.$x,'Kelamin');
+				$sheet->setCellValue('E'.$x, 'Alamat');
+				$x++;
+			
+			$writer = new Xlsx($spreadsheet);
+			$filename = 'laporan-siswa';
+			
+			header('Content-Type: application/vnd.ms-excel');
+			header('Content-Disposition: attachment;filename="'. $filename .'.xlsx"'); 
+			header('Cache-Control: max-age=0');
+	
+			$writer->save('php://output');
+    }
+
+
     public function DeleteAllData($tgl = null)
     {
         
@@ -2198,7 +2427,7 @@ class Finance extends AppBase
                 'posting_date' => rawurldecode($tgl)
             );
 
-            ;
+            
 
             if($this->M_Admin->delete('fin_mutation', $where)){
 
@@ -2211,10 +2440,7 @@ class Finance extends AppBase
                 redirect(site_url('Report/Finance/PostingImport/'.$tgl));
             }
 
-            
-           
-           
-           
+ 
          
     }
 
@@ -2280,6 +2506,10 @@ class Finance extends AppBase
             $config['base_url'] = base_url() . 'Report/Finance/viewAllJournal';
             $config['first_url'] = base_url() . 'Report/Finance/viewAllJournal';
         }
+
+        $load_resource['bank'] = $this->M_Admin->get_all_data('fin_bank order by bank_name');
+        $load_resource['kurs'] = $this->M_Admin->get_all_data('fin_kurs_name');
+        $load_resource['action'] = site_url('Report/Finance/excelJurnalUmum');
 
         $config['per_page'] = 50;
         $config['page_query_string'] = TRUE;

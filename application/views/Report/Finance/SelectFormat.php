@@ -31,7 +31,9 @@
 																		 
                                         <div class="form-body">
                                             <h3 class="box-title">PILIH FORMAT EXCELL</h3>
+                                           
                                             <hr class="m-t-0 m-b-40">
+                                           
                                             <div class="row">
                                                 
                                          </div>
@@ -57,10 +59,16 @@
                                                             <option value="CASH">CASH</option>
                                                             <option value="MAYBANK">MAYBANK</option>
                                                             <option value="MANDIRI_PERSONAL">MANDIRI PERSONAL</option>
+                                                            <option value="GENERAL">GENERAL FROMAT</option>
 
                                                                 
-                                                            </select> </div>
+                                                            </select> 
+                                                            <br/>
+                                                            <a href="<?php echo site_url('file/FormatGeneral.xlsx') ?>" class="btn btn-default"><h5 class="box-title">Download Format General Excel Di sini</h5></a> 
+                                                        </div>
                                                     </div>
+
+                                                   
                                                 </div>
                                                 <!--/span-->
                                                <!--  <div class="col-md-12">
