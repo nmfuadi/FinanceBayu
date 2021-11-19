@@ -3,12 +3,9 @@
     <!--<div class="preloader">
             <div class="cssload-speeding-wheel"></div>
         </div> -->
-
-
     <!-- ===== Left-Sidebar-End ===== -->
     <!-- ===== Page-Content ===== -->
     <div class="page-wrapper">
-
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12 col-sm-12 col-xs-12">
@@ -79,19 +76,16 @@
                                                 <td><?php echo $ss++; ?></td>
                                                 <td><?php echo date_format($ret_d, "d/m/y"); ?></td>
                                                 <td><?php echo $val->remark; ?></td>
-                                                <td class="text-right"><?php echo 'IDR ' .number_format($val->amount,2); ?></td>
-                                                <td class="text-right"><?php echo $val->currancy.' ' .number_format($val->original_amount,2); ?></td>
+                                                <td class="text-right"><?php echo 'IDR ' . number_format($val->amount, 2); ?></td>
+                                                <td class="text-right"><?php echo $val->currancy . ' ' . number_format($val->original_amount, 2); ?></td>
                                                 <td><?php echo $val->type_mutation; ?></td>
                                                 <td><?php echo $val->account_name; ?> (<?php echo $val->code; ?>) </td>
-                                                <td><?php echo $val->bank_name .'-'.$val->branch;  ?> (<?php echo $val->bank_norek?>) </td>
+                                                <td><?php echo $val->bank_name . '-' . $val->branch;  ?> (<?php echo $val->bank_norek ?>) </td>
                                                 <td>
-                                                    <a class="btn btn-danger btn-outline btn-xs" onclick="return confirm('Are you sure you want to delete this item?');" href="<?php echo site_url('Report/Finance/DeletePorcess/' . $val->mut_id . '/'.$val->posting_date.'/viewAllJournal/'.$start) ?>">DELETE <i class="fa fa-trash" aria-hidden="true"></i></a>
-                                                    <a class="btn btn-success btn-outline btn-xs" href="<?php echo site_url('Report/Finance/editMutasi/' . $val->mut_id.'/'.$val->posting_date.'/viewAllJournal/'.$start) ?>">Edit <i class="fa fa-pencil" aria-hidden="true"></i></a>
+                                                    <a class="btn btn-danger btn-outline btn-xs" onclick="return confirm('Are you sure you want to delete this item?');" href="<?php echo site_url('Report/Finance/DeletePorcess/' . $val->mut_id . '/' . $val->posting_date . '/viewAllJournal/' . $start) ?>">DELETE <i class="fa fa-trash" aria-hidden="true"></i></a>
+                                                    <a class="btn btn-success btn-outline btn-xs" href="<?php echo site_url('Report/Finance/editMutasi/' . $val->mut_id . '/' . $val->posting_date . '/viewAllJournal/' . $start . '/' . $q) ?>">Edit <i class="fa fa-pencil" aria-hidden="true"></i></a>
                                                 </td>
                                             </tr>
-
-
-                                          
                                     <?php
                                         }
                                     }
@@ -102,7 +96,7 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <a href="#" class="btn btn-primary">Total Record : <?php echo $total_rows ?></a>
-                                <?php echo anchor(site_url('bayuform/excel'), 'Excel', 'class="btn btn-primary"'); ?>
+                                <a href="#" class="btn btn-success" data-toggle="modal" data-target="#largeModal">Export Excell</a>
                             </div>
                             <div class="col-md-6 text-right">
                                 <?php echo $pagination ?>
@@ -113,7 +107,95 @@
             </div>
         </div>
 
-        
+
+        <div class="modal fade" id="largeModal" tabindex="-1" role="dialog" aria-labelledby="largeModal" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title" id="myModalLabel">Large Modal</h4>
+                    </div>
+                    <div class="modal-body">
+                        
+                                    
+                    <form action="<?php echo $action; ?>" class="form-horizontal" method="POST" enctype="multipart/form-data" accept-charset="utf-8"> 
+                      
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label class="control-label col-md-3">Rekenening Bank </label>
+                                    <div class="col-md-9">
+                                        <select name="rekening" class="form-control">
+                                            <option value="" selected disabled>Pilih Rekening</option>
+                                            <option value="">Semua Rekening Bank</option>
+                                            <?php
+                                            if (!empty($bank)) {
+                                                foreach ($bank as $banks) { ?>
+                                                    <option value="<?php echo $banks['id'] ?>"><?php echo $banks['bank_name'] . '-' . $banks['branch'] . ' (' . $banks['bank_norek'] . ')-' . $banks['currency_code']; ?></option>
+                                            <?php }
+                                            } ?>
+
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+                            <!--/span-->
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label class="control-label col-md-3">Range Tanggal Transaksi</label>
+                                    <div class="col-md-4">
+                                        <input class="form-control" type="date" name="start" value="" placeholder="Start" />
+                                    </div>
+                                    <div class="col-md-1">
+                                        <label class="control-label">Sampai</label>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <input class="form-control"  type="date" name="end" value="" placeholder="End" />
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label class="control-label col-md-3">Original Currancy </label>
+                                    <div class="col-md-9">
+                                        <select id="kurs" name="kurs" class="form-control">
+                                            <option value="" selected disabled>Pilih Kurs Matauang</option>
+                                            <option value="">All Currancy</option>
+                                            <?php
+                                            if (!empty($kurs)) {
+                                                foreach ($kurs as $kurs) {
+                                                 
+                                            ?>
+                                            <option value="<?php echo $kurs['kurs_code'] ?>"><?php echo $kurs['kurs_code']; ?></option>
+                                                        
+                                            <?php 
+                                                }
+                                            } ?>
+
+                                        </select>
+                                        
+                                    </div>
+
+                                </div>
+                            </div>
+                        
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary">Export Excel</button>
+                    </div>
+
+                                        </form>
+                </div>
+            </div>
+        </div>
+
+
 
         <!-- ===== Page-Container-End ===== -->
         <footer class="footer t-a-c">
