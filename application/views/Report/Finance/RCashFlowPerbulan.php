@@ -44,7 +44,7 @@
                     <div class="modal-body">
                         
                                     
-                    <form action="<?php echo $action; ?>" class="form-horizontal" method="POST" enctype="multipart/form-data" accept-charset="utf-8"> 
+                    <form action="<?php echo $action; ?>" class="form-horizontal" method="GET" enctype="multipart/form-data" accept-charset="utf-8"> 
                       
                             <div class="col-md-12">
                                 <div class="form-group">
