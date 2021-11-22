@@ -23,8 +23,13 @@
 
                         <div class="row" style="margin-bottom: 10px">
                             <div class="col-md-4">
-                                <h3 class="box-title m-b-0">Report Cashflow <?php echo date_format($start, "d/m/y") .' S/d '. date_format($end, "d/m/y") ?></h3>
-                                <p class="text-muted m-b-30">Report Cashflow <?php echo date_format($start, "d/m/y") .' S/d '. date_format($end, "d/m/y") ?></p>
+                                <?php
+                                
+                                $newstart = date("d/m/y", strtotime($start));  
+                                $newend = date("d/m/y", strtotime($end)); 
+                                ?>
+                                <h3 class="box-title m-b-0">Report Cashflow <?php echo  $newstart.' S/d '. $newstart ?></h3>
+                                <p class="text-muted m-b-30">Report Cashflow <?php echo $newend .' S/d '. $newend ?></p>
                             </div>
                             <div class="col-md-4 text-center">
                                 <div style="margin-top: 8px" id="message">
