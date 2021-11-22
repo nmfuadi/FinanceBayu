@@ -168,7 +168,7 @@
 
                                             </tr>
                                             <?php
-                                            $jml_cr = $val['uang'] + $jan_cr;
+                                            $jml_cr = $val['uang'] + $jml_cr;
                                             $jml_cr_ori = $val['uang_ori'] +  $jml_cr_ori;
                                            
 
