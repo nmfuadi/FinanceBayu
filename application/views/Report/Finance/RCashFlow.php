@@ -90,7 +90,7 @@
                                         foreach ($data_cr as $val) {
                                     ?>
                                             <tr>
-                                                <td  class="text-right"> <?php echo $val['account_name'] ?></td>
+                                                <td  class="text-left"> <?php echo $val['account_name'] ?></td>
                                                 <td  class="text-right"> <?php echo number_format($val['January'], 2, ",", ".") ?></td>
                                                 <td  class="text-right"> <?php echo number_format($val['February'], 2, ",", ".") ?></td>
                                                 <td  class="text-right"> <?php echo number_format($val['March'], 2, ",", ".") ?></td>

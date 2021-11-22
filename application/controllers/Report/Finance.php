@@ -220,12 +220,21 @@ class Finance extends AppBase
         $where = "trx_type ='" . $row['type_mutation'] . "'";
         $load_resource['account'] = $this->M_Admin->get_all_data_where('fin_account', $where);
         if ($row) {
+
+            if($source == 'viewAllJournal'){
+
+                $amount = $row['original_amount'];
+            }else {
+
+                $amount = $row['amount'];
+
+            }
             $load_resource['data'] = array(
                 'button' => 'Update',
                 'action' => site_url('Report/Finance/edit_action'),
                 'id' => set_value('id', $row['id']),
                 'account_code' => set_value('account_code', $row['account_code']),
-                'amount' => set_value('amount', $row['amount']),
+                'amount' => set_value('amount', $amount),
                 'trx_date' => set_value('trx_date', $row['trx_date']),
                 'bank_id' => set_value('bank_id', $row['bank_id']),
                 'type_mutation' => set_value('type_mutation', $row['type_mutation']),
