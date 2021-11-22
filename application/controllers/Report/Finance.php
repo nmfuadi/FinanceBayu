@@ -2560,10 +2560,38 @@ class Finance extends AppBase
             $q_val = $q;
 
         }
-       
+        
         $load_resource['data_cr'] = $this->M_Admin->ReportCashflow($q_val,'CR');
         $load_resource['data_db'] = $this->M_Admin->ReportCashflow($q_val,'DB');
         $load_resource['q'] =$q_val;
+        $this->load->view($this->MAIN_VIEW, $load_resource); // fix
+
+    }
+
+
+    public function ReportBulanan(){
+
+        $this->VIEW_FILE = "Report/Finance/RCashFlowPerbulan"; // dynamic
+        $load_resource = $this->load_resource(); // digawe ngene ikie
+        //$load_resource['CONTOH'] = 'Namaku Fuad';
+        //$load_resource['emp'] = $this->M_Admin->get_employe_by_id($this->session->userdata('u'));
+        
+       // $q = urldecode($this->input->get('q', TRUE));
+        $start = $this->input->get('start', TRUE);
+        $end = $this->input->get('end', TRUE);
+        $bank_id = $this->input->get('rekening', TRUE);
+        $cur = $this->input->get('kurs', TRUE);
+
+
+        $load_resource['currancy'] = $this->input->get('kurs', TRUE);
+        $load_resource['start'] = $start;
+        $load_resource['end'] = $end;
+        $load_resource['action'] = site_url('Report/Finance/ReportBulanan');
+        $load_resource['bank'] = $this->M_Admin->get_all_data('fin_bank order by bank_name');
+        $load_resource['kurs'] = $this->M_Admin->get_all_data('fin_kurs_name');
+        $load_resource['data_cr'] = $this->M_Admin->ReportCashflowPerBulan($start,$end,$bank_id, $cur,'CR');
+        $load_resource['data_db'] = $this->M_Admin->ReportCashflowPerBulan($start,$end,$bank_id, $cur,'DB');
+        //$load_resource['q'] =$q_val;
         $this->load->view($this->MAIN_VIEW, $load_resource); // fix
 
     }
