@@ -171,7 +171,7 @@
 
 
                                             <tr>
-                                                <td class="text-right"> <?php echo $val_db['account_name'] ?></td>
+                                                <td class="text-left"> <?php echo $val_db['account_name'] ?></td>
                                                 <td class="text-right"> <?php echo number_format($val_db['January'], 2, ",", ".") ?></td>
                                                 <td class="text-right"> <?php echo number_format($val_db['February'], 2, ",", ".") ?></td>
                                                 <td class="text-right"> <?php echo number_format($val_db['March'], 2, ",", ".") ?></td>
