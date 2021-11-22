@@ -2342,6 +2342,7 @@ class Finance extends AppBase
         $end = $this->input->post('end');
         $rekening = $this->input->post('rekening');
         $kurs = $this->input->post('kurs');
+        $type = $this->input->post('type');
         
 
             $sheet->setCellValue('A1', 'No');
@@ -2356,7 +2357,7 @@ class Finance extends AppBase
             $no = 1;
 			$x = 2;
 
-        $data_list = $this->M_Admin->ExportExcell($star,$end,$rekening,$kurs);
+        $data_list = $this->M_Admin->ExportExcell($star,$end,$rekening,$kurs,$type);
         if(!empty($data_list)){
             foreach ($data_list as $data) {
             

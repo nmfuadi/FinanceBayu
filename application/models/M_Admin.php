@@ -761,12 +761,12 @@ function pertahun_bulan(){
 
 
 
-        function ExportExcell($start = null,$end= null,$bank_id = null, $currancy=null){
+        function ExportExcell($start = null,$end= null,$bank_id = null, $currancy=null,$type=null){
 
             $sql = "select * from fin_mutation a 
                                 join fin_account b on a.account_code = b.code 
                                 join fin_bank c on a.bank_id = c.id 
-                        where trx_date BETWEEN '$start' and '$end' and bank_id like '%$bank_id%' and currancy like '%$currancy%'
+                        where trx_date BETWEEN '$start' and '$end' and bank_id like '%$bank_id%' and currancy like '%$currancy%' and type_mutation like '%$type%'
                         order by bank_id,currancy ASC"; 
             $query = $this->db->query($sql);
             if ($query->num_rows() > 0) {

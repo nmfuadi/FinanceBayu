@@ -113,7 +113,7 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title" id="myModalLabel">Large Modal</h4>
+                        <h4 class="modal-title" id="myModalLabel">Eksport Journal Ke Excel</h4>
                     </div>
                     <div class="modal-body">
                         
@@ -176,6 +176,25 @@
                                             <?php 
                                                 }
                                             } ?>
+
+                                        </select>
+                                        
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label class="control-label col-md-3">Jenis </label>
+                                    <div class="col-md-9">
+                                        <select id="type" name="type" class="form-control">
+                                            <option value="" selected disabled>Pilih Jenis Transaksi</option>
+                                            <option value="">Semua Jenis</option>
+                                            <option value="CR">Credit</option>
+                                            <option value="DB">Debit</option>
+                                            
 
                                         </select>
                                         
