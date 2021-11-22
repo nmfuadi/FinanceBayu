@@ -66,8 +66,6 @@
                             </div>
 
 
-
-
                             <!--/span-->
                             <div class="col-md-12">
                                 <div class="form-group">
@@ -108,13 +106,7 @@
                                     </div>
 
                                 </div>
-                            </div>
-
-
-                            
-
-
-                            
+                            </div>                            
                         
                     </div>
                     <div class="modal-footer">
@@ -250,7 +242,7 @@
                                             <td class="text-center" colspan="1"><b> SALDO PENERIMAAN - PENGELUARAN</b></td>
                                             <td class="text-right"><b><?php echo number_format($jml_cr-$jml_db, 2, ",", "."); ?> </b></td>
                                             <?php if(!empty($currancy) and $currancy !='IDR') { ?>
-                                            <td class="text-right"><b><?php echo number_format($jml_db_ori-$jml_db_ori, 2, ",", "."); ?> </b></td>
+                                            <td class="text-right"><b><?php echo number_format($jml_cr_ori-$jml_db_ori, 2, ",", "."); ?> </b></td>
                                             <?php } ?>
 
                                     </tr>
