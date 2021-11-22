@@ -155,7 +155,7 @@
                                     ?>
                                             <tr>
                                                
-                                                <td  class="text-right"> <?php echo number_format($val['trx_date'], 2, ",", ".") ?></td>
+                                                <td  class="text-right"> <?php echo $val['trx_date'] ?></td>
                                                 <td  class="text-left"> <?php echo $val['account_name'] ?></td>
                                                 <td  class="text-right"> <?php echo number_format($val['uang'], 2, ",", ".") ?></td>
                                                 <th class="text-center">JUMLAH (IDR)</th>
@@ -207,7 +207,7 @@
 
 
                                             <tr>
-                                            <td  class="text-right"> <?php echo number_format($val_db['trx_date'], 2, ",", ".") ?></td>
+                                            <td  class="text-right"> <?php echo $val_db['trx_date'] ?></td>
                                                 <td  class="text-left"> <?php echo $val_dbal['account_name'] ?></td>
                                                 <td  class="text-right"> <?php echo number_format($val_db['uang'], 2, ",", ".") ?></td>
                                                 <th class="text-center">JUMLAH (IDR)</th>
