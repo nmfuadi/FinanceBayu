@@ -207,7 +207,7 @@
 
                                             <tr>
                                             <td  class="text-right"> <?php echo $val_db['trx_date'] ?></td>
-                                                <td  class="text-left"> <?php echo $val_dbal['account_name'] ?></td>
+                                                <td  class="text-left"> <?php echo $val_db['account_name'] ?></td>
                                                 <td  class="text-right"> <?php echo number_format($val_db['uang'], 2, ",", ".") ?></td>
                                             <?php if(!empty($currancy) and $currancy !='IDR') { ?>
                                                 <td  class="text-right"> <?php echo number_format($val_db['uang_ori'], 2, ",", ".") ?></td>
