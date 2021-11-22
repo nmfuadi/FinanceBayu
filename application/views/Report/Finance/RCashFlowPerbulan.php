@@ -137,7 +137,7 @@
                                         <th class="text-center">KETERANGAN</th>
                                         <th class="text-center">JUMLAH (IDR)</th>
                                         <?php if(!empty($currancy) and $currancy !='IDR') { ?>
-                                        <th class="text-center">ORIGINAL AMOUNT (<?php $currancy ?>)</th>
+                                        <th class="text-center">ORIGINAL AMOUNT (<?php echo $currancy ?>)</th>
                                         <?php } ?>
                                         
                                     </tr>
