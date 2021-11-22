@@ -226,7 +226,13 @@
 
                                     <?php
                                     }
+
+                                    if(!empty($data_db) and !empty($data_cr)){
+
+                                   
                                     ?>
+
+                                    
                                     <tr>
                                             <td class="text-center"><b> SALDO PENERIMAAN - PENGELUARAN</b></td>
                                             <td class="text-right"><b><?php echo number_format($jan_cr-$jan_db, 2, ",", "."); ?> </b></td>
@@ -243,6 +249,7 @@
                                             <td class="text-right"><b><?php echo number_format($des_cr-$des_db, 2, ",", "."); ?> </b></td>
 
                                     </tr>
+                                    <?php  } ?>
                                 </tbody>
                             </table>
                         </div>
