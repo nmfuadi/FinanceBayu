@@ -158,8 +158,7 @@
                                                 <td  class="text-right"> <?php echo $val['trx_date'] ?></td>
                                                 <td  class="text-left"> <?php echo $val['account_name'] ?></td>
                                                 <td  class="text-right"> <?php echo number_format($val['uang'], 2, ",", ".") ?></td>
-                                                <th class="text-center">JUMLAH (IDR)</th>
-                                        <?php if(!empty($currancy) and $currancy !='IDR') { ?>
+                                                 <?php if(!empty($currancy) and $currancy !='IDR') { ?>
                                                 <td  class="text-right"> <?php echo number_format($val['uang_ori'], 2, ",", ".") ?></td>
 
                                                 <?php } ?>
@@ -210,8 +209,7 @@
                                             <td  class="text-right"> <?php echo $val_db['trx_date'] ?></td>
                                                 <td  class="text-left"> <?php echo $val_dbal['account_name'] ?></td>
                                                 <td  class="text-right"> <?php echo number_format($val_db['uang'], 2, ",", ".") ?></td>
-                                                <th class="text-center">JUMLAH (IDR)</th>
-                                        <?php if(!empty($currancy) and $currancy !='IDR') { ?>
+                                            <?php if(!empty($currancy) and $currancy !='IDR') { ?>
                                                 <td  class="text-right"> <?php echo number_format($val_db['uang_ori'], 2, ",", ".") ?></td>
 
                                                 <?php } ?>
