@@ -133,7 +133,7 @@
                             <table class="table color-table primary-table table-bordered">
                                 <thead>
                                     <tr>
-                                        <th class="text-center">TANGGAL</th>
+                                        
                                         <th class="text-center">KETERANGAN</th>
                                         <th class="text-center">JUMLAH (IDR)</th>
                                         <?php if(!empty($currancy) and $currancy !='IDR') { ?>
@@ -155,7 +155,7 @@
                                     ?>
                                             <tr>
                                                
-                                                <td  class="text-right"> <?php echo $val['trx_date'] ?></td>
+                                                
                                                 <td  class="text-left"> <?php echo $val['account_name'] ?></td>
                                                 <td  class="text-right"> <?php echo number_format($val['uang'], 2, ",", ".") ?></td>
                                                  <?php if(!empty($currancy) and $currancy !='IDR') { ?>
@@ -178,7 +178,7 @@
                                         ?>
 
                                         <tr>
-                                            <td class="text-center" colspan="2"><b>TOTAL PENERIMAAN</b></td>
+                                            <td class="text-center" colspan="1"><b>TOTAL PENERIMAAN</b></td>
                                             <td  class="text-right"><b><?php echo number_format($jml_cr, 2, ",", "."); ?> </b></td>
                                             <?php if(!empty($currancy) and $currancy !='IDR') { ?>
                                             <td  class="text-right"><b><?php echo number_format($jml_cr_ori, 2, ",", "."); ?> </b></td>
@@ -206,7 +206,7 @@
 
 
                                             <tr>
-                                            <td  class="text-right"> <?php echo $val_db['trx_date'] ?></td>
+                                            
                                                 <td  class="text-left"> <?php echo $val_db['account_name'] ?></td>
                                                 <td  class="text-right"> <?php echo number_format($val_db['uang'], 2, ",", ".") ?></td>
                                             <?php if(!empty($currancy) and $currancy !='IDR') { ?>
@@ -229,7 +229,7 @@
                                         ?>
 
                                         <tr>
-                                            <td class="text-center" colspan="2"><b>TOTAL PENGELUARAN</b></td>
+                                            <td class="text-center" colspan="1"><b>TOTAL PENGELUARAN</b></td>
                                             <td class="text-right"><b><?php echo number_format($jml_db, 2, ",", "."); ?> </b></td>
                                             <?php if(!empty($currancy) and $currancy !='IDR') { ?>
                                             <td class="text-right"><b><?php echo number_format($jml_db_ori, 2, ",", "."); ?> </b></td>
@@ -247,7 +247,7 @@
 
                                     
                                     <tr>
-                                            <td class="text-center" colspan="2"><b> SALDO PENERIMAAN - PENGELUARAN</b></td>
+                                            <td class="text-center" colspan="1"><b> SALDO PENERIMAAN - PENGELUARAN</b></td>
                                             <td class="text-right"><b><?php echo number_format($jml_cr-$jml_db, 2, ",", "."); ?> </b></td>
                                             <?php if(!empty($currancy) and $currancy !='IDR') { ?>
                                             <td class="text-right"><b><?php echo number_format($jml_db_ori-$jml_db_ori, 2, ",", "."); ?> </b></td>
