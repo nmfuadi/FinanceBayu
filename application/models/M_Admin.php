@@ -805,10 +805,10 @@ function pertahun_bulan(){
 
         function ReportCashflowPerBulan($start = null,$end = null,$bank_id= null,$cur=null,$type=null){
 
-            $sql = "select account_code,account_name,sum(amount) as uang ,sum(original_amount) as uang_ori,trx_date from fin_mutation a
+            $sql = "select account_code,account_name,sum(amount) as uang ,sum(original_amount) as uang_ori from fin_mutation a
             join fin_account b on a.account_code = b.code 
             where posting_st = 'YES' And account_code <>'' and trx_date BETWEEN '$start' and '$end' and bank_id like '%$bank_id%' and currancy like '%$cur%'  and type_mutation = '$type' 
-            GROUP BY account_code,account_name,trx_date
+            GROUP BY account_code,account_name
             "; 
             $query = $this->db->query($sql);
             if ($query->num_rows() > 0) {
