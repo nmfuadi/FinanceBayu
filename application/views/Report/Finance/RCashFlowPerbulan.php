@@ -247,7 +247,7 @@
 
                                     
                                     <tr>
-                                            <td class="text-center"><b> SALDO PENERIMAAN - PENGELUARAN</b></td>
+                                            <td class="text-center" colspan="2"><b> SALDO PENERIMAAN - PENGELUARAN</b></td>
                                             <td class="text-right"><b><?php echo number_format($jml_cr-$jml_db, 2, ",", "."); ?> </b></td>
                                             <td class="text-right"><b><?php echo number_format($jml_db_ori-$jml_db_ori, 2, ",", "."); ?> </b></td>
                                             
