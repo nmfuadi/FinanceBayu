@@ -821,7 +821,18 @@ function pertahun_bulan(){
         }
 
 
-   
+        function get_bank_by_no_rek($st=null){
+
+            $sql = "SELECT * FROM fin_bank where bank_norek = '$st' ";
+            $query = $this->db->query($sql);
+            if ($query->num_rows() > 0) {
+                $result = $query->row_array();
+                $query->free_result();
+                return $result;
+            } else {
+                return NULL;
+            }
+        }
 
 
 

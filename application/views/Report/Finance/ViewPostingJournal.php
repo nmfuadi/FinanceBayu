@@ -81,7 +81,7 @@
                                                 <td><?php echo $val->remark; ?></td>
                                                 <td><?php echo $val->currancy.' '.number_format($val->amount,2); ?></td>
                                                 <td><?php echo $val->type_mutation; ?></td>
-                                                <td><?php echo $val->bank_name . '(' . $val->bank_norek . ')'; ?> </td>
+                                                <td><?php echo $val->bank_name.'-'.$val->bank_rek_name. '(' . $val->bank_norek . ')'; ?> </td>
 
                                                 <td>
                                                     <select name="account" id="account<?php echo $val->mut_id; ?>" required>

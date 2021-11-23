@@ -14,8 +14,6 @@ use PhpOffice\PhpSpreadsheet\Writer\Xlsx;
 
 
 
-
-
 class Finance extends AppBase
 {
     protected $rules = 5;
@@ -454,8 +452,6 @@ class Finance extends AppBase
 
                
 
-
-
                 if (($jml_fix != 0 or !empty(is_numeric($jml))) and $tgl !='PEND') {
                         $dataPost = date('Y-m-d H:i:s', strtotime("now"));
                         $ar[] = array(
@@ -532,21 +528,21 @@ class Finance extends AppBase
                 //$allDataInSheet = $spreadsheet->getActiveSheet()->toArray(null, true, true, true);
                 $sheetData = $spreadsheet->getActiveSheet()->toArray();
 
-            //       echo count($sheetData);
-            //      echo '<table border=1>
-            //      <tr>
-            //      <th>NO</th>
-            //     <th>TGL</th>
-            //      <th>KET</th>
-            //      <th>JML</th>
-            //    <th>JN</th>
-            //     </tr>';
+                  echo count($sheetData);
+                 echo '<table border=1>
+                 <tr>
+                 <th>NO</th>
+                <th>TGL</th>
+                 <th>KET</th>
+                 <th>JML</th>
+               <th>JN</th>
+                </tr>';
 
                 for ($i = 1; $i < count($sheetData); $i++) {
-                    $tgl = $sheetData[$i]['3'];
+                    $tgl = $sheetData[$i]['1'];
                     $ket = $sheetData[$i]['5'];
-                    $dbt = $sheetData[$i]['7'];
-                    $crd = $sheetData[$i]['8'];
+                    $dbt = $sheetData[$i]['10'];
+                    $crd = $sheetData[$i]['12'];
 
                     if ($dbt == '0.00') {
                         $jml = $crd;
@@ -561,28 +557,43 @@ class Finance extends AppBase
                     $jml_fix = str_replace($str, '', $jml);
                     //$jml_jn = substr($jml, -2);
                   
-                   
-                    //$date_ok = $date_exp[2].'-'.$date_exp[1].'-'.$date_exp[0];
-                    //   echo '  <tr>
-                    //              <td>'.$i.'</td>
-                    //             <td>'.$date_ok.'</td>
-                    //             <td>'.$ket.'</td>
-                    //            <td>'.$jml_fix.'</td>
-                    //             <td>'.$jml_jn.'</td>
-                    //         </tr>
-                    // ';
+                            
+                            //print_r($date_exp);
+        
+                //             if (($tgl != 0 or !empty($tgl)) and !empty(is_numeric($jml_fix))) {
+                //                 if(!empty($tgl)){
+
+                //                     $date_exp = explode('/',$tgl);
+                //                     $yy = substr($date_exp[2],0,4);
+    
+                //                     $date_ok =  $yy.'-'.$date_exp[1].'-'.$date_exp[0]; 
+                //                 }
+
+                //                 echo '  <tr>
+                //                 <td>'.$i.'</td>
+                //                <td>'. $date_ok.'</td>
+                //                <td>'.$ket.'</td>
+                //               <td>'.$jml_fix.'</td>
+                //                <td>'.$jml_jn.'</td>
+                //            </tr>
+                //    ';
+                //             }   
+                  
+                     
 
 
 
-                    if ($tgl != 0 or !empty($tgl)) {
+                if (($tgl != 0 or !empty($tgl)) and !empty(is_numeric($jml_fix))) {
+                    if(!empty($tgl)){
+                    $date_exp = explode('/',$tgl);
+                    $yy = substr($date_exp[2],0,4);
 
-                        if(!empty($tgl)){
-                            $date_exp = explode('/',$tgl);
+                     $date_ok =  $yy.'-'.$date_exp[1].'-'.$date_exp[0]; 
                         }
                         
                         //print_r($date_exp);
     
-                       $date_ok =  $date_exp[2].'-'.$date_exp[1].'-'.$date_exp[0];  
+                      
                         $dataPost = date('Y-m-d H:i:s', strtotime("now"));
                         $ar[] = array(
                             'bank_id' => $this->input->post('rekening', TRUE),
@@ -945,7 +956,7 @@ class Finance extends AppBase
                     print_r($date_exp);
     
     
-                   $date_ok =  $date_exp[2].'-'.$date_exp[1].'-'.$date_exp[0];
+                   $date_ok =  $date_exp[2].'-'.$date_exp[0].'-'.$date_exp[1];
 
                         $dataPost = date('Y-m-d H:i:s', strtotime("now"));
                         $ar[] = array(
@@ -1062,12 +1073,13 @@ class Finance extends AppBase
 
                         if(!empty($tgl)){
                             $date_exp = explode('/',$tgl);
+                            $date_ok =  $date_exp[2].'-'.$date_exp[0].'-'.$date_exp[1];
                         }
                         
-                        print_r($date_exp);
+                     
         
         
-                       $date_ok =  $date_exp[2].'-'.$date_exp[0].'-'.$date_exp[1];
+                      
                         $dataPost = date('Y-m-d H:i:s', strtotime("now"));
                         $ar[] = array(
                             'bank_id' => $this->input->post('rekening', TRUE),
@@ -1281,12 +1293,13 @@ class Finance extends AppBase
 
                         if(!empty($tgl)){
                             $date_exp = explode('/',$tgl);
+                            $date_ok =  $date_exp[2].'-'.$date_exp[1].'-'.$date_exp[0];
                         }
                         
-                        print_r($date_exp);
+                       
         
         
-                       $date_ok =  $date_exp[2].'-'.$date_exp[1].'-'.$date_exp[0];
+                       
 
                         $dataPost = date('Y-m-d H:i:s', strtotime("now"));
                         $ar[] = array(
@@ -1468,53 +1481,65 @@ class Finance extends AppBase
                 //$allDataInSheet = $spreadsheet->getActiveSheet()->toArray(null, true, true, true);
                 $sheetData = $spreadsheet->getActiveSheet()->toArray();
 
-                  echo count($sheetData);
-                 echo '<table border=1>
-                 <tr>
-                 <th>NO</th>
-                <th>TGL</th>
-                 <th>KET</th>
-                 <th>JML</th>
-                 <th>JN</th>
-                 </tr>';
+                //   echo count($sheetData);
+                //  echo '<table border=1>
+                //  <tr>
+                //  <th>NO</th>
+                // <th>TGL</th>
+                //  <th>KET</th>
+                //  <th>BANL</th>
+                //  <th>JML</th>
+                //  <th>JN</th>
+                //  </tr>';
 
                 for ($i = 1; $i < count($sheetData); $i++) {
-                    $tgl = $sheetData[$i]['2'];
+                    $no_rek = $sheetData[$i]['1'];
+                    $tgl = $sheetData[$i]['4'];
                     $ket = $sheetData[$i]['9'];
-                    $jml = $sheetData[$i]['4'];
-                    $ket2 = $sheetData[$i]['6'];        
+                    $jml = $sheetData[$i]['6'];
+                    $ket2 = $sheetData[$i]['5'];        
                     $str = [','];
                     $jml_fix = str_replace($str, '', $jml);
-                    $ket_fix = '('.$ket2 .') '.$ket;
+                    $ket_fix = $ket2 .' - '.$ket;
                     
+                   
                     //$jml_jn = substr($jml, -2);
 
-                    /*
-                    if (!empty(is_numeric($jml_fix))) {
-                      echo '  <tr>
-                                 <td>'.$i.'</td>
-                                <td>'.$tgl.'</td>
-                                <td>'.$ket_fix.'</td>
-                        <td>'.$jml_fix.'</td>
-                         <td>'.$ket2.'</td>
-                             </tr>
-                     ';
-                    }
+                   
+//                     if (!empty(is_numeric($jml_fix))) {
+//                         $bank_id = $this->M_Admin->get_bank_by_no_rek($no_rek);
+//                         if(!empty($bank_id)){
 
-                    */
-                 
+//                             $bnk = $bank_id['id'];
+// ;                        }
+//                       echo '  <tr>
+//                                  <td>'.$i.'</td>
+//                                 <td>'.$tgl.'</td>
+//                                 <td>'.$ket_fix.'</td>
+//                                 <td>'. $bnk.'</td>
+//                                 <td>'.$jml_fix.'</td>
+//                                  <td>'.$ket2.'</td>
+//                              </tr>
+//                      ';
+//                     }
+
+               
                     if (!empty(is_numeric($jml_fix))) {
                         if(!empty($tgl)){
                             $date_exp = explode('/',$tgl);
                         }
                         
-                        print_r($date_exp);
-        
+                       // print_r($date_exp);
+                        $bank_id = $this->M_Admin->get_bank_by_no_rek($no_rek);
+                        if(!empty($bank_id)){
+
+                            $bnk = $bank_id['id'];
+                       }
         
                        $date_ok =  $date_exp[2].'-'.$date_exp[1].'-'.$date_exp[0];
                         $dataPost = date('Y-m-d H:i:s', strtotime("now"));
                         $ar[] = array(
-                            'bank_id' => $this->input->post('rekening', TRUE),
+                            'bank_id' => $bnk,
                             'remark' => strval($ket_fix),
                             'amount' => $jml_fix,
                             'original_amount' => $jml_fix,
