@@ -407,6 +407,8 @@ class Finance extends AppBase
                     $reader = new \PhpOffice\PhpSpreadsheet\Reader\Xls();
                 }
 
+
+                $dataPost = date('Y-m-d H:i:s', strtotime("now"));
                 // file path
                 $spreadsheet = $reader->load($_FILES['uploadFile']['tmp_name']);
                 //$allDataInSheet = $spreadsheet->getActiveSheet()->toArray(null, true, true, true);
@@ -453,7 +455,7 @@ class Finance extends AppBase
                
 
                 if (($jml_fix != 0 or !empty(is_numeric($jml))) and $tgl !='PEND') {
-                        $dataPost = date('Y-m-d H:i:s', strtotime("now"));
+                      
                         $ar[] = array(
                             'bank_id' => $this->input->post('rekening', TRUE),
                             'remark' => strval($ket),
@@ -523,6 +525,7 @@ class Finance extends AppBase
                     $reader = new \PhpOffice\PhpSpreadsheet\Reader\Xls();
                 }
 
+                $dataPost = date('Y-m-d H:i:s', strtotime("now"));
                 // file path
                 $spreadsheet = $reader->load($_FILES['uploadFile']['tmp_name']);
                 //$allDataInSheet = $spreadsheet->getActiveSheet()->toArray(null, true, true, true);
@@ -594,7 +597,7 @@ class Finance extends AppBase
                         //print_r($date_exp);
     
                       
-                        $dataPost = date('Y-m-d H:i:s', strtotime("now"));
+                       
                         $ar[] = array(
                             'bank_id' => $this->input->post('rekening', TRUE),
                             'remark' => strval($ket),
@@ -657,6 +660,7 @@ class Finance extends AppBase
                     $reader = new \PhpOffice\PhpSpreadsheet\Reader\Xls();
                 }
 
+                $dataPost = date('Y-m-d H:i:s', strtotime("now"));
                 // file path
                 $spreadsheet = $reader->load($_FILES['uploadFile']['tmp_name']);
                 //$allDataInSheet = $spreadsheet->getActiveSheet()->toArray(null, true, true, true);
@@ -712,15 +716,16 @@ class Finance extends AppBase
 
                     if(!empty($tgl)){
                         $date_exp = explode('/',$tgl);
+                        $date_ok =  $date_exp[2].'-'.$date_exp[1].'-'.$date_exp[0];
                     }
                     
-                    print_r($date_exp);
+                   
     
     
-                   $date_ok =  $date_exp[2].'-'.$date_exp[1].'-'.$date_exp[0];
+                   
 
 
-                        $dataPost = date('Y-m-d H:i:s', strtotime("now"));
+                        
                         $ar[] = array(
                             'bank_id' => $this->input->post('rekening', TRUE),
                             'remark' => strval($ket),
@@ -780,6 +785,7 @@ class Finance extends AppBase
                     $reader = new \PhpOffice\PhpSpreadsheet\Reader\Xls();
                 }
 
+                $dataPost = date('Y-m-d H:i:s', strtotime("now"));
                 // file path
                 $spreadsheet = $reader->load($_FILES['uploadFile']['tmp_name']);
                 //$allDataInSheet = $spreadsheet->getActiveSheet()->toArray(null, true, true, true);
@@ -826,14 +832,15 @@ class Finance extends AppBase
                 if ($tgl != 0 or !empty($tgl) and !empty (is_numeric($jml)) ) {
                     if(!empty($tgl)){
                         $date_exp = explode('/',$tgl);
+                        $year = substr($date_exp[2],0,4);
+                        $date_ok =  $year.'-'.$date_exp[1].'-'.$date_exp[0];
                     }
                     
-                    print_r($date_exp);
+                  
     
-                    $year = substr($date_exp[2],0,4);
-                   $date_ok =  $year.'-'.$date_exp[1].'-'.$date_exp[0];
+                   
 
-                        $dataPost = date('Y-m-d H:i:s', strtotime("now"));
+                       
                         $ar[] = array(
                             'bank_id' => $this->input->post('rekening', TRUE),
                             'remark' => strval($ket),
@@ -891,7 +898,8 @@ class Finance extends AppBase
                 } else {
                     $reader = new \PhpOffice\PhpSpreadsheet\Reader\Xls();
                 }
-
+                //datenow
+                $dataPost = date('Y-m-d H:i:s', strtotime("now"));
                 // file path
                 $spreadsheet = $reader->load($_FILES['uploadFile']['tmp_name']);
                 //$allDataInSheet = $spreadsheet->getActiveSheet()->toArray(null, true, true, true);
@@ -951,14 +959,15 @@ class Finance extends AppBase
                         
                     if(!empty($tgl)){
                         $date_exp = explode('/',$tgl);
+                        $date_ok =  $date_exp[2].'-'.$date_exp[0].'-'.$date_exp[1];
                     }
                     
                     print_r($date_exp);
     
     
-                   $date_ok =  $date_exp[2].'-'.$date_exp[0].'-'.$date_exp[1];
+                  
 
-                        $dataPost = date('Y-m-d H:i:s', strtotime("now"));
+                      
                         $ar[] = array(
                             'bank_id' => $this->input->post('rekening', TRUE),
                             'remark' => strval($ket),
@@ -1023,6 +1032,8 @@ class Finance extends AppBase
                     $reader = new \PhpOffice\PhpSpreadsheet\Reader\Xls();
                 }
 
+                //datenow
+                $dataPost = date('Y-m-d H:i:s', strtotime("now"));
                 // file path
                 $spreadsheet = $reader->load($_FILES['uploadFile']['tmp_name']);
                 //$allDataInSheet = $spreadsheet->getActiveSheet()->toArray(null, true, true, true);
@@ -1076,11 +1087,10 @@ class Finance extends AppBase
                             $date_ok =  $date_exp[2].'-'.$date_exp[0].'-'.$date_exp[1];
                         }
                         
-                     
+                        
         
         
-                      
-                        $dataPost = date('Y-m-d H:i:s', strtotime("now"));
+                       
                         $ar[] = array(
                             'bank_id' => $this->input->post('rekening', TRUE),
                             'remark' => strval($ket),
@@ -1141,7 +1151,8 @@ class Finance extends AppBase
                 } else {
                     $reader = new \PhpOffice\PhpSpreadsheet\Reader\Xls();
                 }
-
+                //datenow
+                $dataPost = date('Y-m-d H:i:s', strtotime("now"));
                 // file path
                 $spreadsheet = $reader->load($_FILES['uploadFile']['tmp_name']);
                 //$allDataInSheet = $spreadsheet->getActiveSheet()->toArray(null, true, true, true);
@@ -1192,7 +1203,7 @@ class Finance extends AppBase
 
                     if (!empty(is_numeric($jml_fix))) {
 
-                        $dataPost = date('Y-m-d H:i:s', strtotime("now"));
+                        
                         $ar[] = array(
                             'bank_id' => $this->input->post('rekening', TRUE),
                             'remark' => strval($ket),
@@ -1253,7 +1264,8 @@ class Finance extends AppBase
                 } else {
                     $reader = new \PhpOffice\PhpSpreadsheet\Reader\Xls();
                 }
-
+                //datenow
+                $dataPost = date('Y-m-d H:i:s', strtotime("now"));
                 // file path
                 $spreadsheet = $reader->load($_FILES['uploadFile']['tmp_name']);
                 //$allDataInSheet = $spreadsheet->getActiveSheet()->toArray(null, true, true, true);
@@ -1301,7 +1313,7 @@ class Finance extends AppBase
         
                        
 
-                        $dataPost = date('Y-m-d H:i:s', strtotime("now"));
+                       
                         $ar[] = array(
                             'bank_id' => $this->input->post('rekening', TRUE),
                             'remark' => strval($ket),
@@ -1339,7 +1351,7 @@ class Finance extends AppBase
         }
     }
 
-
+    //warms
     public function CIMB()
     {
 
@@ -1364,6 +1376,7 @@ class Finance extends AppBase
                     $reader = new \PhpOffice\PhpSpreadsheet\Reader\Xls();
                 }
 
+                $dataPost = date('Y-m-d H:i:s', strtotime("now"));
                 // file path
                 $spreadsheet = $reader->load($_FILES['uploadFile']['tmp_name']);
                 //$allDataInSheet = $spreadsheet->getActiveSheet()->toArray(null, true, true, true);
@@ -1413,7 +1426,7 @@ class Finance extends AppBase
                     */
 
                     if (!empty(is_numeric($jml_fix))) {
-                        $dataPost = date('Y-m-d H:i:s', strtotime("now"));
+                       
                         $ar[] = array(
                             'bank_id' => $this->input->post('rekening', TRUE),
                             'remark' => strval($ket),
@@ -1476,6 +1489,8 @@ class Finance extends AppBase
                     $reader = new \PhpOffice\PhpSpreadsheet\Reader\Xls();
                 }
 
+                //datenow
+                $dataPost = date('Y-m-d H:i:s', strtotime("now"));
                 // file path
                 $spreadsheet = $reader->load($_FILES['uploadFile']['tmp_name']);
                 //$allDataInSheet = $spreadsheet->getActiveSheet()->toArray(null, true, true, true);
@@ -1527,17 +1542,18 @@ class Finance extends AppBase
                     if (!empty(is_numeric($jml_fix))) {
                         if(!empty($tgl)){
                             $date_exp = explode('/',$tgl);
+                            $bank_id = $this->M_Admin->get_bank_by_no_rek($no_rek);
                         }
                         
                        // print_r($date_exp);
-                        $bank_id = $this->M_Admin->get_bank_by_no_rek($no_rek);
+                        
                         if(!empty($bank_id)){
 
                             $bnk = $bank_id['id'];
                        }
         
                        $date_ok =  $date_exp[2].'-'.$date_exp[1].'-'.$date_exp[0];
-                        $dataPost = date('Y-m-d H:i:s', strtotime("now"));
+                       
                         $ar[] = array(
                             'bank_id' => $bnk,
                             'remark' => strval($ket_fix),
@@ -1599,7 +1615,8 @@ class Finance extends AppBase
                 } else {
                     $reader = new \PhpOffice\PhpSpreadsheet\Reader\Xls();
                 }
-
+                //datenow
+                $dataPost = date('Y-m-d H:i:s', strtotime("now"));
                 // file path
                 $spreadsheet = $reader->load($_FILES['uploadFile']['tmp_name']);
                 //$allDataInSheet = $spreadsheet->getActiveSheet()->toArray(null, true, true, true);
@@ -1667,14 +1684,15 @@ class Finance extends AppBase
 
 
                     if (!empty(is_numeric($jml_fix))) {
-                        $dataPost = date('Y-m-d H:i:s', strtotime("now"));
+                        
                          if(!empty($tgl)){
                             $date_exp = explode('-',$tgl);
+                            $date_ok =  $this->input->post('tahun', TRUE).'-'.$date_exp[1].'-'.$date_exp[0];  
                         }
                         
                         //print_r($date_exp);
     
-                       $date_ok =  $this->input->post('tahun', TRUE).'-'.$date_exp[1].'-'.$date_exp[0];  
+                       
                         $ar[] = array(
                             'bank_id' => $this->input->post('rekening', TRUE),
                             'remark' => $ket,
@@ -1742,6 +1760,8 @@ class Finance extends AppBase
                     $reader = new \PhpOffice\PhpSpreadsheet\Reader\Xls();
                 }
 
+                //datenow
+                $dataPost = date('Y-m-d H:i:s', strtotime("now"));
                 // file path
                 $spreadsheet = $reader->load($_FILES['uploadFile']['tmp_name']);
                 //$allDataInSheet = $spreadsheet->getActiveSheet()->toArray(null, true, true, true);
@@ -1802,13 +1822,13 @@ class Finance extends AppBase
                     if (!empty(is_numeric($jml_fix))) {
                         if(!empty($tgl)){
                             $date_exp = explode('/',$tgl);
+                            $date_ok =  $date_exp[2].'-'.$date_exp[1].'-'.$date_exp[0];
                         }
                         
-                        print_r($date_exp);
+                        
         
-        
-                       $date_ok =  $date_exp[2].'-'.$date_exp[1].'-'.$date_exp[0];
-                        $dataPost = date('Y-m-d H:i:s', strtotime("now"));
+                      
+                        
                         $ar[] = array(
                             'bank_id' => $this->input->post('rekening', TRUE),
                             'remark' => strval($ket),
@@ -1871,6 +1891,8 @@ class Finance extends AppBase
                     $reader = new \PhpOffice\PhpSpreadsheet\Reader\Xls();
                 }
 
+                $dataPost = date('Y-m-d H:i:s', strtotime("now"));
+
                 // file path
                 $spreadsheet = $reader->load($_FILES['uploadFile']['tmp_name']);
                 //$allDataInSheet = $spreadsheet->getActiveSheet()->toArray(null, true, true, true);
@@ -1929,14 +1951,15 @@ class Finance extends AppBase
                  
                       
                     if (!empty(is_numeric($jml_fix))) {
-                        $dataPost = date('Y-m-d H:i:s', strtotime("now"));
+                       
                          if(!empty($tgl)){
                             $date_exp = explode('/',$tgl);
+                            $date_ok =  $this->input->post('tahun', TRUE).'-'.$date_exp[1].'-'.$date_exp[0]; 
                         }
                         
                         //print_r($date_exp);
     
-                       $date_ok =  $this->input->post('tahun', TRUE).'-'.$date_exp[1].'-'.$date_exp[0];  
+                       
                         $ar[] = array(
                             'bank_id' => $this->input->post('rekening', TRUE),
                             'remark' => $ket,
@@ -1993,7 +2016,7 @@ class Finance extends AppBase
             if (!empty($_FILES['uploadFile']['name'])) {
                 // get file extension
                 $extension = pathinfo($_FILES['uploadFile']['name'], PATHINFO_EXTENSION);
-
+                $dataPost = date('Y-m-d H:i:s', strtotime("now"));
                 if ($extension == 'csv') {
                     $reader = new \PhpOffice\PhpSpreadsheet\Reader\Csv();
                 } elseif ($extension == 'xlsx') {
@@ -2060,12 +2083,13 @@ class Finance extends AppBase
 
                         if(!empty($tgl)){
                             $date_exp = explode('/',$tgl);
+                            $date_ok = $date_exp[2].'-'.$date_exp[0].'-'.$date_exp[1];
                         }
                         
                         //print_r($date_exp);
     
-                        $date_ok = $date_exp[2].'-'.$date_exp[0].'-'.$date_exp[1];  
-                        $dataPost = date('Y-m-d H:i:s', strtotime("now"));
+                          
+                        
                         $ar[] = array(
                             'bank_id' => $this->input->post('rekening', TRUE),
                             'remark' => strval($ket),
@@ -2128,6 +2152,7 @@ class Finance extends AppBase
                     $reader = new \PhpOffice\PhpSpreadsheet\Reader\Xls();
                 }
 
+                $dataPost = date('Y-m-d H:i:s', strtotime("now"));
                 // file path
                 $spreadsheet = $reader->load($_FILES['uploadFile']['tmp_name']);
                 //$allDataInSheet = $spreadsheet->getActiveSheet()->toArray(null, true, true, true);
@@ -2179,12 +2204,13 @@ class Finance extends AppBase
 
                         if(!empty($tgl)){
                             $date_exp = explode('/',$tgl);
+                            $date_ok =  $date_exp[2].'-'.$date_exp[1].'-'.$date_exp[0]; 
                         }
                         
                         //print_r($date_exp);
     
-                       $date_ok =  $date_exp[2].'-'.$date_exp[1].'-'.$date_exp[0];  
-                        $dataPost = date('Y-m-d H:i:s', strtotime("now"));
+                        
+                        
                         $ar[] = array(
                             'bank_id' => $this->input->post('rekening', TRUE),
                             'remark' => strval($ket),
