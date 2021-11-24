@@ -2714,7 +2714,7 @@ class Finance extends AppBase
 
         $load_resource['bank'] = $this->M_Admin->get_all_data('fin_bank order by bank_name');
         $load_resource['kurs'] = $this->M_Admin->get_all_data('fin_kurs_name');
-        $load_resource['bank'] = $this->M_Admin->get_fin_by_id('fin_bank','id',$account);
+        $load_resource['bank'] = $this->M_Admin->get_fin_by_id('fin_bank','id',$bank_id);
         $load_resource['akun'] = $this->M_Admin->get_data_by_id("fin_account","code","'$account'");
         $load_resource['action'] = site_url('Report/Finance/excelJurnalUmum');
 
