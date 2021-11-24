@@ -136,6 +136,7 @@
                                         <?php if(!empty($currancy) and $currancy !='IDR') { ?>
                                         <th class="text-center">ORIGINAL AMOUNT (<?php echo $currancy ?>)</th>
                                         <?php } ?>
+                                        <th class="text-center">ACTION</th>
                                         
                                     </tr>
                                 </thead>
@@ -157,8 +158,12 @@
                                                 <td  class="text-right"> <?php echo number_format($val['uang'], 2, ",", ".") ?></td>
                                                  <?php if(!empty($currancy) and $currancy !='IDR') { ?>
                                                 <td  class="text-right"> <?php echo number_format($val['uang_ori'], 2, ",", ".") ?></td>
-
+                                                
                                                 <?php } ?>
+                                                <td>
+                                                    
+                                                    <a class="btn btn-success btn-outline btn-xs" href="<?php echo site_url('Report/Finance/DetailReportBulanan/?start_date='.$start.'&end_date='.$end.'&account='.$val['account_code'])?>" target="_blank">DETAIL<i class="fa fa-pencil" aria-hidden="true"></i></a>
+                                                </td>
 
                                                
 
@@ -208,8 +213,13 @@
                                                 <td  class="text-right"> <?php echo number_format($val_db['uang'], 2, ",", ".") ?></td>
                                             <?php if(!empty($currancy) and $currancy !='IDR') { ?>
                                                 <td  class="text-right"> <?php echo number_format($val_db['uang_ori'], 2, ",", ".") ?></td>
+                                                
 
                                                 <?php } ?>
+                                                <td>
+                                                    
+                                                    <a class="btn btn-success btn-outline btn-xs" href="<?php echo site_url('Report/Finance/DetailReportBulanan/?start_date='.$start.'&end_date='.$end.'&account='.$val_db['account_code'])?>">DETAIL<i class="fa fa-pencil" aria-hidden="true" target="_blank"></i></a>
+                                                </td>
 
                                             </tr>
                                             <?php

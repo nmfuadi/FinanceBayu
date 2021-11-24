@@ -726,6 +726,52 @@ function pertahun_bulan(){
 
 
 
+        function total_rows_jurnal_for_report_bulanan($start_date=null,$end_date=null,$account=null,$q = NULL) {
+            $this->db->group_start();
+            $this->db->or_like('convert(decimal(20,10), amount)', $q);
+            $this->db->or_like('convert(decimal(20,10), original_amount)', $q);
+            $this->db->or_like('type_mutation', $q);
+            $this->db->or_like('bank_name', $q);
+            $this->db->or_like('bank_norek', $q);
+            $this->db->or_like('code', $q);
+            $this->db->or_like('account_name', $q);
+            $this->db->or_like('remark', $q);
+            $this->db->group_end();
+            $this->db->where('posting_st', 'YES');
+            $this->db->where("trx_date BETWEEN '$start_date' AND '$end_date'");
+            $this->db->where('account_code',$account);
+            $this->db->from('fin_mutation');
+            $this->db->join('fin_bank', 'fin_mutation.bank_id = fin_bank.id');
+            $this->db->join('fin_account', 'fin_mutation.account_code = fin_account.code');
+           
+                return $this->db->count_all_results();
+            }
+        
+            // get data with limit and search
+            function get_limit_jurnal_for_report_bulanan($start_date=null,$end_date=null,$account=null,$limit, $start = 0, $q = NULL) {
+                $this->db->order_by('posting_date', 'DESC');
+                $this->db->select('fin_mutation.*,fin_mutation.id as mut_id,fin_bank.*,fin_account.*');
+                $this->db->group_start();
+                $this->db->or_like('convert(decimal(20,10), amount)', $q);
+                $this->db->or_like('convert(decimal(20,10), original_amount)', $q);
+                $this->db->or_like('type_mutation', $q);
+                $this->db->or_like('bank_name', $q);
+                $this->db->or_like('code', $q);
+                $this->db->or_like('account_name', $q);
+                $this->db->or_like('bank_norek', $q);
+                $this->db->or_like('remark', $q);
+                $this->db->group_end();
+                $this->db->where('posting_st', 'YES');
+                $this->db->where("trx_date BETWEEN '$start_date' AND '$end_date'");
+                $this->db->where('account_code',$account);
+                $this->db->join('fin_bank', 'fin_mutation.bank_id = fin_bank.id');
+                $this->db->join('fin_account', 'fin_mutation.account_code = fin_account.code');
+                $this->db->limit($limit, $start);
+                return $this->db->get('fin_mutation')->result();
+            }
+
+
+
         function get_data_export_excel($start=null, $end = null,$bank_id=null, $q = NULL) {
             $this->db->order_by('posting_date', 'DESC');
             $this->db->select('fin_mutation.*,fin_mutation.id as mut_id,fin_bank.*,fin_account.*');

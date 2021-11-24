@@ -2649,6 +2649,60 @@ class Finance extends AppBase
 
 
 
+
+    public function DetailReportBulanan()
+    {
+
+        $this->VIEW_FILE = "Report/Finance/VDetailReportBulanan"; // dynamic
+        $load_resource = $this->load_resource(); // digawe ngene ikie
+        //$load_resource['CONTOH'] = 'Namaku Fuad';
+        //$load_resource['emp'] = $this->M_Admin->get_employe_by_id($this->session->userdata('u'));
+        //$load_resource['jobs'] = $this->M_Admin->get_jobs_by_dprtmn_id($load_resource['emp']['dptmn_id']);	
+        $q = urldecode($this->input->get('q', TRUE));
+        $start_date = urldecode($this->input->get('start_date', TRUE));
+        $end_date = urldecode($this->input->get('end_date', TRUE));
+        $account = urldecode($this->input->get('account', TRUE));
+        $start = intval($this->input->get('start'));
+
+        if ($q <> '') {
+            $config['base_url'] = base_url() . 'Report/Finance/DetailReportBulanan?q=' . urlencode($q).'&start_date='.$start_date.'&end_date='.$end_date.'&account='.$account;
+            $config['first_url'] = base_url() . 'Report/Finance/DetailReportBulanan?q=' . urlencode($q).'&start_date='.$start_date.'&end_date='.$end_date.'&account='.$account;
+        } else {
+            $config['base_url'] = base_url() . 'Report/Finance/DetailReportBulanan';
+            $config['first_url'] = base_url() . 'Report/Finance/DetailReportBulanan';
+        }
+
+        $load_resource['bank'] = $this->M_Admin->get_all_data('fin_bank order by bank_name');
+        $load_resource['kurs'] = $this->M_Admin->get_all_data('fin_kurs_name');
+        $load_resource['akun'] = $this->M_Admin->get_fin_by_id('fin_account','code',$account);
+        $load_resource['action'] = site_url('Report/Finance/excelJurnalUmum');
+
+        $config['per_page'] = 100;
+        $config['page_query_string'] = TRUE;
+        $config['total_rows'] = $this->M_Admin->total_rows_jurnal_for_report_bulanan($start_date, $end_date, $account,$q);
+        $bayuform = $this->M_Admin->get_limit_jurnal_for_report_bulanan($start_date, $end_date, $account,$config['per_page'], $start, $q);
+
+        $this->load->library('pagination');
+        $this->pagination->initialize($config);
+        $load_resource['account'] = $this->M_Admin->get_all_data('fin_account');
+        $load_resource['data'] = array(
+            'bayu_data' => $bayuform,
+            'q' => $q,
+            'pagination' => $this->pagination->create_links(),
+            'total_rows' => $config['total_rows'],
+            'start' => $start,
+            'start_date'=> $start_date,
+            'end_date'=>$end_date,
+            'account'=>$account
+
+        );
+        //$this->load->view('bayuform/bayu_form_list', $data);
+
+        $this->load->view($this->MAIN_VIEW, $load_resource); // fix
+    }
+
+
+
     public function _rules_vp()
     {
         $this->form_validation->set_rules('jobs_tittle', 'jobs tittle', 'trim|required');
