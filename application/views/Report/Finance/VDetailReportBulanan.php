@@ -19,7 +19,7 @@
                         <div class="row" style="margin-bottom: 10px">
                             <div class="col-md-7">
                                 <h3 class="box-title m-b-0"> Account :<?php echo $akun['account_name'].' ('.$akun['code'].')' ?> </h3>
-                                <p class="text-muted m-b-30">Date Range : <? echo $data['start_date'] .'S/d'.$data['end_date']; ?> </p>
+                                <p class="text-muted m-b-30">Date Range : <? echo $start_date .'S/d'.$end_date; ?> </p>
                             </div>
                             <div class="col-md-4 text-center">
                                 <div style="margin-top: 8px" id="message">
