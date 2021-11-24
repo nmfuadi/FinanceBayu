@@ -422,36 +422,27 @@ function get_jobs_by_user_id_ext_from($params){
     }
 
 
-    
 	
 	
 	
-	function get_data_by_id($table, $column, $id,$and=null){
-		$sql = "SELECT * FROM $table WHERE $column = ".$id.$and;
-		$query = $this->db->query($sql);
-        if ($query->num_rows() > 0) {
-            $result = $query->row_array();
-            $query->free_result();
-            return $result;
-        } else {
-            return NULL;
-        }
-		
-	}
-
-
-    function get_data_by_mutation_id($table, $column, $id,$and=null){
-		$sql = "SELECT * FROM $table WHERE $column = $id.$and";
-		$query = $this->db->query($sql);
-        if ($query->num_rows() > 0) {
-            $result = $query->row_array();
-            $query->free_result();
-            return $result;
-        } else {
-            return NULL;
-        }
-		
-	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+    //Cashflow startt
+	
+	
+	
+	
 	
 	
 	function data_departement($table, $column, $id,$and=null){
@@ -645,8 +636,57 @@ function pertahun_bulan(){
             return NULL;
         }
     }
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 
 // FInance Bayu Buana 
+
+
+function get_data_by_id($table, $column, $id,$and=null){
+		$sql = "SELECT * FROM $table WHERE $column = ".$id.$and;
+		$query = $this->db->query($sql);
+        if ($query->num_rows() > 0) {
+            $result = $query->row_array();
+            $query->free_result();
+            return $result;
+        } else {
+            return NULL;
+        }
+		
+	}
+
+
+    function get_data_by_mutation_id($table, $column, $id,$and=null){
+		$sql = "SELECT * FROM $table WHERE $column = $id.$and";
+		$query = $this->db->query($sql);
+        if ($query->num_rows() > 0) {
+            $result = $query->row_array();
+            $query->free_result();
+            return $result;
+        } else {
+            return NULL;
+        }
+		
+	}
+	
      // get total rows
      function total_rows($q = NULL) {
         $this->db->group_start();
@@ -855,6 +895,24 @@ function pertahun_bulan(){
             join fin_account b on a.account_code = b.code 
             where posting_st = 'YES' And account_code <>'' and trx_date BETWEEN '$start' and '$end' and bank_id like '%$bank_id%' and currancy like '%$cur%'  and type_mutation = '$type' 
             GROUP BY account_code,account_name
+            "; 
+            $query = $this->db->query($sql);
+            if ($query->num_rows() > 0) {
+                $result = $query->result_array();
+                $query->free_result();
+                return $result;
+            } else {
+                return NULL;
+            }
+        }
+		
+		
+		
+		function ReportCashflowPerBulanByAccount($start = null,$end = null,$bank_id= null,$cur=null,$type=null){
+
+            $sql = "select sum(amount) as uang,sum(original_amount) as uang_or ,bank_id,b.id,b.bank_norek,bank_name,branch from fin_mutation a join fin_bank b on a.bank_id = b.id
+where trx_date between '2021-11-01' and '2021-11-30' and account_code = '10142' and posting_st = 'YES'
+group by bank_id,b.id,bank_norek,bank_name,branch
             "; 
             $query = $this->db->query($sql);
             if ($query->num_rows() > 0) {
