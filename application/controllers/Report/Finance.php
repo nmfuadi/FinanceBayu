@@ -2648,6 +2648,43 @@ class Finance extends AppBase
     }
 
 
+    public function ReportBulananByAccount(){
+
+        $this->VIEW_FILE = "Report/Finance/RCashFlowPerbulanByAccount"; // dynamic
+        $load_resource = $this->load_resource(); // digawe ngene ikie
+        //$load_resource['CONTOH'] = 'Namaku Fuad';
+        //$load_resource['emp'] = $this->M_Admin->get_employe_by_id($this->session->userdata('u'));
+        
+       // $q = urldecode($this->input->get('q', TRUE));
+        $start = $this->input->get('start_date', TRUE);
+        $end = $this->input->get('end_date', TRUE);
+        $account=$this->input->get('account', TRUE);
+       // $bank_id = $this->input->get('rekening', TRUE);
+        //$cur = $this->input->get('kurs', TRUE);
+
+
+        $load_resource['currancy'] = $this->input->get('kurs', TRUE);
+        $load_resource['start'] = $start;
+        $load_resource['end'] = $end;
+        $load_resource['action'] = site_url('Report/Finance/ReportBulanan');
+        $load_resource['akun'] = $this->M_Admin->get_data_by_id("fin_account","code","'$account'");
+        $load_resource['kurs'] = $this->M_Admin->get_all_data('fin_kurs_name');
+        $load_resource['data_ac'] = $this->M_Admin->ReportCashflowPerBulanByAccount($start,$end,$account);
+
+        $load_resource['data'] = array(
+            
+            'start' => $start,
+            'end'=>$end,
+            'account'=>$account
+
+        );
+       
+        //$load_resource['q'] =$q_val;
+        $this->load->view($this->MAIN_VIEW, $load_resource); // fix
+
+    }
+
+
 
 
     public function DetailReportBulanan()
@@ -2674,7 +2711,7 @@ class Finance extends AppBase
 
         $load_resource['bank'] = $this->M_Admin->get_all_data('fin_bank order by bank_name');
         $load_resource['kurs'] = $this->M_Admin->get_all_data('fin_kurs_name');
-        $load_resource['akun'] = $this->M_Admin->get_fin_by_id('fin_account','code',$account);
+        $load_resource['bank'] = $this->M_Admin->get_fin_by_id('fin_bank','id',$account);
         $load_resource['action'] = site_url('Report/Finance/excelJurnalUmum');
 
         $config['per_page'] = 100;

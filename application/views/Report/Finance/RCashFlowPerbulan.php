@@ -162,7 +162,7 @@
                                                 <?php } ?>
                                                 <td>
                                                     
-                                                    <a class="btn btn-success btn-outline btn-xs" href="<?php echo site_url('Report/Finance/DetailReportBulanan/?start_date='.$start.'&end_date='.$end.'&account='.$val['account_code'])?>" target="_blank">DETAIL<i class="fa fa-pencil" aria-hidden="true"></i></a>
+                                                    <a class="btn btn-success btn-outline btn-xs" href="<?php echo site_url('Report/Finance/ReportBulananByAccount/?start_date='.$start.'&end_date='.$end.'&account='.$val['account_code'])?>" target="_blank">DETAIL<i class="fa fa-pencil" aria-hidden="true"></i></a>
                                                 </td>
 
                                                
@@ -218,7 +218,7 @@
                                                 <?php } ?>
                                                 <td>
                                                     
-                                                    <a class="btn btn-success btn-outline btn-xs" href="<?php echo site_url('Report/Finance/DetailReportBulanan/?start_date='.$start.'&end_date='.$end.'&account='.$val_db['account_code'])?>" target="_blank">DETAIL<i class="fa fa-pencil" aria-hidden="true" target="_blank"></i></a>
+                                                    <a class="btn btn-success btn-outline btn-xs" href="<?php echo site_url('Report/Finance/ReportBulananByAccount/?start_date='.$start.'&end_date='.$end.'&account='.$val_db['account_code'])?>" target="_blank">DETAIL<i class="fa fa-pencil" aria-hidden="true" target="_blank"></i></a>
                                                 </td>
 
                                             </tr>

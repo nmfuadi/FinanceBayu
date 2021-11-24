@@ -18,7 +18,7 @@
 
                         <div class="row" style="margin-bottom: 10px">
                             <div class="col-md-7">
-                                <h3 class="box-title m-b-0"> Account :<?php echo $akun['account_name'].' ('.$akun['code'].')' ?> </h3>
+                                <h3 class="box-title m-b-0"> Account Bank :<?php echo $bank['bank_name'] . '-' . $bank['branch'];  ?> (<?php echo $bank['bank_norek'] ?>) </h3>
                                 <p class="text-muted m-b-30">Date Range : <?php echo $start_date .' S/d '.$end_date; ?> </p>
                             </div>
                             <div class="col-md-4 text-center">

@@ -779,7 +779,7 @@ function get_data_by_id($table, $column, $id,$and=null){
             $this->db->group_end();
             $this->db->where('posting_st', 'YES');
             $this->db->where("trx_date BETWEEN '$start_date' AND '$end_date'");
-            $this->db->where('account_code',$account);
+            $this->db->where('bank_id',$account);
             $this->db->from('fin_mutation');
             $this->db->join('fin_bank', 'fin_mutation.bank_id = fin_bank.id');
             $this->db->join('fin_account', 'fin_mutation.account_code = fin_account.code');
@@ -803,7 +803,7 @@ function get_data_by_id($table, $column, $id,$and=null){
                 $this->db->group_end();
                 $this->db->where('posting_st', 'YES');
                 $this->db->where("trx_date BETWEEN '$start_date' AND '$end_date'");
-                $this->db->where('account_code',$account);
+                $this->db->where('bank_id',$account);
                 $this->db->join('fin_bank', 'fin_mutation.bank_id = fin_bank.id');
                 $this->db->join('fin_account', 'fin_mutation.account_code = fin_account.code');
                 $this->db->limit($limit, $start);
@@ -908,11 +908,12 @@ function get_data_by_id($table, $column, $id,$and=null){
 		
 		
 		
-		function ReportCashflowPerBulanByAccount($start = null,$end = null,$bank_id= null,$cur=null,$type=null){
+		function ReportCashflowPerBulanByAccount($start = null,$end = null, $account= null){
 
-            $sql = "select sum(amount) as uang,sum(original_amount) as uang_or ,bank_id,b.id,b.bank_norek,bank_name,branch from fin_mutation a join fin_bank b on a.bank_id = b.id
-where trx_date between '2021-11-01' and '2021-11-30' and account_code = '10142' and posting_st = 'YES'
-group by bank_id,b.id,bank_norek,bank_name,branch
+            $sql = "select sum(amount) as uang,sum(original_amount) as uang_ori ,bank_id,b.id,b.bank_norek,bank_name,branch 
+            from fin_mutation a join fin_bank b on a.bank_id = b.id
+            where trx_date between '$start' and '$end' and account_code = '$account' and posting_st = 'YES'
+            group by bank_id,b.id,bank_norek,bank_name,branch
             "; 
             $query = $this->db->query($sql);
             if ($query->num_rows() > 0) {
