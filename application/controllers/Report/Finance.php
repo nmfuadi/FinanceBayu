@@ -2660,7 +2660,7 @@ class Finance extends AppBase
         $start = $this->input->get('start_date', TRUE);
         $end = $this->input->get('end_date', TRUE);
         $account=$this->input->get('account', TRUE);
-       // $bank_id = $this->input->get('rekening', TRUE);
+        $bank_id = $this->input->get('bank_id', TRUE);
         //$cur = $this->input->get('kurs', TRUE);
 
 
@@ -2670,7 +2670,7 @@ class Finance extends AppBase
         $load_resource['action'] = site_url('Report/Finance/ReportBulanan');
         $load_resource['akun'] = $this->M_Admin->get_data_by_id("fin_account","code","'$account'");
         $load_resource['kurs'] = $this->M_Admin->get_all_data('fin_kurs_name');
-        $load_resource['data_ac'] = $this->M_Admin->ReportCashflowPerBulanByAccount($start,$end,$account);
+        $load_resource['data_ac'] = $this->M_Admin->ReportCashflowPerBulanByAccount($start,$end,$account,$bank_id);
 
         $load_resource['data'] = array(
             
