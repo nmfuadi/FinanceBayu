@@ -2637,6 +2637,7 @@ class Finance extends AppBase
         $load_resource['currancy'] = $this->input->get('kurs', TRUE);
         $load_resource['start'] = $start;
         $load_resource['end'] = $end;
+        $load_resource['bank_id'] = $bank_id;
         $load_resource['action'] = site_url('Report/Finance/ReportBulanan');
         $load_resource['bank'] = $this->M_Admin->get_all_data('fin_bank order by bank_name');
         $load_resource['kurs'] = $this->M_Admin->get_all_data('fin_kurs_name');
@@ -2699,11 +2700,12 @@ class Finance extends AppBase
         $start_date = urldecode($this->input->get('start_date', TRUE));
         $end_date = urldecode($this->input->get('end_date', TRUE));
         $account = urldecode($this->input->get('account', TRUE));
+        $bank_id = urldecode($this->input->get('bank_id', TRUE));
         $start = intval($this->input->get('start'));
 
         if ($q <> '') {
-            $config['base_url'] = base_url() . 'Report/Finance/DetailReportBulanan?q=' . urlencode($q).'&start_date='.$start_date.'&end_date='.$end_date.'&account='.$account;
-            $config['first_url'] = base_url() . 'Report/Finance/DetailReportBulanan?q=' . urlencode($q).'&start_date='.$start_date.'&end_date='.$end_date.'&account='.$account;
+            $config['base_url'] = base_url() . 'Report/Finance/DetailReportBulanan?q=' . urlencode($q).'&start_date='.$start_date.'&end_date='.$end_date.'&account='.$account.'&bank_id='.$bank_id;
+            $config['first_url'] = base_url() . 'Report/Finance/DetailReportBulanan?q=' . urlencode($q).'&start_date='.$start_date.'&end_date='.$end_date.'&account='.$account.'&bank_id='.$bank_id;
         } else {
             $config['base_url'] = base_url() . 'Report/Finance/DetailReportBulanan';
             $config['first_url'] = base_url() . 'Report/Finance/DetailReportBulanan';

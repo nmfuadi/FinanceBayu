@@ -68,7 +68,7 @@
                                                 <?php } ?>
                                                 <td>
 
-                                                    <a class="btn btn-success btn-outline btn-xs" href="<?php echo site_url('Report/Finance/DetailReportBulanan/?start_date=' . $start . '&end_date=' . $end . '&account=' . $val['bank_id']) ?>" target="_blank">DETAIL<i class="fa fa-pencil" aria-hidden="true"></i></a>
+                                                    <a class="btn btn-success btn-outline btn-xs" href="<?php echo site_url('Report/Finance/DetailReportBulanan/?start_date=' . $start . '&end_date=' . $end . '&acount=' . $account. '&bank_id=' . $val['bank_id']) ?>" target="_blank">DETAIL<i class="fa fa-pencil" aria-hidden="true"></i></a>
                                                 </td>
 
 

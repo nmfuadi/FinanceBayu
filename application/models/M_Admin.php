@@ -766,7 +766,7 @@ function get_data_by_id($table, $column, $id,$and=null){
 
 
 
-        function total_rows_jurnal_for_report_bulanan($start_date=null,$end_date=null,$account=null,$q = NULL) {
+        function total_rows_jurnal_for_report_bulanan($start_date=null,$end_date=null,$account=null,$bank_id=null,$q = NULL) {
             $this->db->group_start();
             $this->db->or_like('convert(decimal(20,10), amount)', $q);
             $this->db->or_like('convert(decimal(20,10), original_amount)', $q);
@@ -779,7 +779,8 @@ function get_data_by_id($table, $column, $id,$and=null){
             $this->db->group_end();
             $this->db->where('posting_st', 'YES');
             $this->db->where("trx_date BETWEEN '$start_date' AND '$end_date'");
-            $this->db->where('bank_id',$account);
+            $this->db->where('bank_id',$bank_id);
+            $this->db->where('account_code',$account);
             $this->db->from('fin_mutation');
             $this->db->join('fin_bank', 'fin_mutation.bank_id = fin_bank.id');
             $this->db->join('fin_account', 'fin_mutation.account_code = fin_account.code');
@@ -788,7 +789,7 @@ function get_data_by_id($table, $column, $id,$and=null){
             }
         
             // get data with limit and search
-            function get_limit_jurnal_for_report_bulanan($start_date=null,$end_date=null,$account=null,$limit, $start = 0, $q = NULL) {
+            function get_limit_jurnal_for_report_bulanan($start_date=null,$end_date=null,$account=null,$bank_id=null,$limit, $start = 0, $q = NULL) {
                 $this->db->order_by('posting_date', 'DESC');
                 $this->db->select('fin_mutation.*,fin_mutation.id as mut_id,fin_bank.*,fin_account.*');
                 $this->db->group_start();
@@ -803,7 +804,8 @@ function get_data_by_id($table, $column, $id,$and=null){
                 $this->db->group_end();
                 $this->db->where('posting_st', 'YES');
                 $this->db->where("trx_date BETWEEN '$start_date' AND '$end_date'");
-                $this->db->where('bank_id',$account);
+                $this->db->where('bank_id',$bank_id);
+                $this->db->where('account_code',$account);
                 $this->db->join('fin_bank', 'fin_mutation.bank_id = fin_bank.id');
                 $this->db->join('fin_account', 'fin_mutation.account_code = fin_account.code');
                 $this->db->limit($limit, $start);
@@ -908,11 +910,11 @@ function get_data_by_id($table, $column, $id,$and=null){
 		
 		
 		
-		function ReportCashflowPerBulanByAccount($start = null,$end = null, $account= null){
+		function ReportCashflowPerBulanByAccount($start = null,$end = null, $account= null,$bank_id=null){
 
             $sql = "select sum(amount) as uang,sum(original_amount) as uang_ori ,bank_id,b.id,b.bank_norek,bank_name,branch 
             from fin_mutation a join fin_bank b on a.bank_id = b.id
-            where trx_date between '$start' and '$end' and account_code = '$account' and posting_st = 'YES'
+            where trx_date between '$start' and '$end' and account_code = '$account' and posting_st = 'YES' and bank_id like '%$bank_id%'
             group by bank_id,b.id,bank_norek,bank_name,branch
             "; 
             $query = $this->db->query($sql);
