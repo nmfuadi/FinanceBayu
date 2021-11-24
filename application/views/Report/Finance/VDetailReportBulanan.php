@@ -31,14 +31,18 @@
                             </div>
                             
                             <div class="col-md-3 text-right">
-                                <form action="<?php echo site_url('Report/Finance/viewAllJournal'); ?>" class="form-inline" method="get">
+                                <form action="<?php echo site_url('Report/Finance/DetailReportBulanan'); ?>" class="form-inline" method="get">
                                     <div class="input-group">
                                         <input type="text" class="form-control" name="q" value="<?php echo $q; ?>">
+                                        <input type="hidden" class="form-control" name="start_date" value="<?php echo $start_date; ?>">
+                                        <input type="hidden" class="form-control" name="end_date" value="<?php echo $end_date; ?>">
+                                        <input type="hidden" class="form-control" name="account" value="<?php echo $akun['code']; ?>">
+                                        <input type="hidden" class="form-control" name="bank_id" value="<?php echo $bank['id']; ?>">
                                         <span class="input-group-btn">
                                             <?php
                                             if ($q <> '') {
                                             ?>
-                                                <a href="<?php echo site_url('Report/Finance/viewAllJournal'); ?>" class="btn btn-default">Reset</a>
+                                                <a href="<?php echo site_url('Report/Finance/DetailReportBulanan'); ?>" class="btn btn-default">Reset</a>
                                             <?php
                                             }
                                             ?>
