@@ -25,8 +25,14 @@
                             <div class="col-md-4">
                                 <?php
                                 
-                                $newstart = date("d/m/y", strtotime($start));  
-                                $newend = date("d/m/y", strtotime($end)); 
+                                if(!empty($start)){
+                                    $newstart = date("d/m/y", strtotime($start));  
+                                    $newend = date("d/m/y", strtotime($end));
+                                }else{
+                                    $newstart = '';
+                                    $newend ='';
+                                }
+                              
                                 ?>
                                 <h3 class="box-title m-b-0">Report Cashflow <?php echo  $newstart.' S/d '. $newend ?></h3>
                                 <p class="text-muted m-b-30">Report Cashflow <?php echo $newstart .' S/d '. $newend ?></p>
