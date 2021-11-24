@@ -2720,8 +2720,8 @@ class Finance extends AppBase
 
         $config['per_page'] = 100;
         $config['page_query_string'] = TRUE;
-        $config['total_rows'] = $this->M_Admin->total_rows_jurnal_for_report_bulanan($start_date, $end_date, $account,$q);
-        $bayuform = $this->M_Admin->get_limit_jurnal_for_report_bulanan($start_date, $end_date, $account,$config['per_page'], $start, $q);
+        $config['total_rows'] = $this->M_Admin->total_rows_jurnal_for_report_bulanan($start_date, $end_date, $account,$bank_id,$q);
+        $bayuform = $this->M_Admin->get_limit_jurnal_for_report_bulanan($start_date, $end_date, $account,$bank_id,$config['per_page'], $start, $q);
 
         $this->load->library('pagination');
         $this->pagination->initialize($config);
