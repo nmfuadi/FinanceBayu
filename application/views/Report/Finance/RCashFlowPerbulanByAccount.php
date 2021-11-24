@@ -41,7 +41,9 @@
 
                                         <th class="text-center">BANK INFO</th>
                                         <th class="text-center">JUMLAH (IDR)</th>
+                                        <?php if (!empty($currancy) and $currancy != 'IDR') { ?>
                                         <th class="text-center">ORIGINAL AMOUNT</th>
+                                        <?php } ?>
                                         <th class="text-center">ACTION</th>
 
                                     </tr>
