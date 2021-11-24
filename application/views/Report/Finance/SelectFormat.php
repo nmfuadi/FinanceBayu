@@ -53,9 +53,9 @@
                                                             <option value="OCBC">BANK OCBC</option>
                                                             <option value="UOB">BANK UOB</option>
                                                             <option value="DBS">BANK DBS</option>
-                                                            <option value="CIMB">CIMB</option>
-                                                            <option value="VICTORIA">VICTORIA</option>
-                                                            <option value="DANAMON">DANAMON</option>
+                                                            <option value="CIMB">BANK CIMB</option>
+                                                            <option value="VICTORIA">BANK VICTORIA</option>
+                                                            <option value="DANAMON">BANK DANAMON</option>
                                                             <option value="CASH">CASH</option>
                                                             <option value="MAYBANK">MAYBANK</option>
                                                             <option value="MANDIRI_PERSONAL">MANDIRI PERSONAL</option>
