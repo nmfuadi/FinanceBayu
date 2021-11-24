@@ -26,12 +26,12 @@
                                 <h3 class="box-title m-b-0">Report Cashflow <?php echo $q ?></h3>
                                 <p class="text-muted m-b-30">Report Cashflot Tahun <?php echo $q ?></p>
                             </div>
-                            <div class="col-md-2 text-center">
+                            <div class="col-md-1 text-center">
                                 <div style="margin-top: 8px" id="message">
                                 </div>
                             </div>
 
-                            <div class="col-md-5 text-right">
+                            <div class="col-md-6 text-right">
                                 <form action="<?php echo site_url('Report/Finance/ReportCashflow'); ?>" class="form-inline" method="get">
                                     <div class="input-group">
                                         <input type="text" class="form-control" name="q" value="<?php echo $q; ?>">
