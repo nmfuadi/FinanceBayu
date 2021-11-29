@@ -879,7 +879,7 @@ function get_data_by_id($table, $column, $id,$and=null){
                                 (
                                     SUM(uang)
                                     FOR [bulan] IN ([January],[February],[March],[April],[May],[June],[July],[August],[September],[October],[November],[December])
-                                ) AS P"; 
+                                ) AS P order by account_code asc"; 
             $query = $this->db->query($sql);
             if ($query->num_rows() > 0) {
                 $result = $query->result_array();
@@ -915,6 +915,24 @@ function get_data_by_id($table, $column, $id,$and=null){
             $sql = "select sum(amount) as uang,sum(original_amount) as uang_ori ,bank_id,b.id,b.bank_norek,bank_name,branch 
             from fin_mutation a join fin_bank b on a.bank_id = b.id
             where trx_date between '$start' and '$end' and account_code = '$account' and posting_st = 'YES' and bank_id like '%$bank_id%'
+            group by bank_id,b.id,bank_norek,bank_name,branch
+            "; 
+            $query = $this->db->query($sql);
+            if ($query->num_rows() > 0) {
+                $result = $query->result_array();
+                $query->free_result();
+                return $result;
+            } else {
+                return NULL;
+            }
+        }
+
+
+        function SaldoaAwalAccount($mont = null,$year = null,$currancy=null){
+
+            $sql = "select sum(amount) as uang,sum(original_amount) as uang_ori ,bank_id,b.id,b.bank_norek,bank_name,branch 
+            from fin_mutation a join fin_bank b on a.bank_id = b.id
+            where month(trx_date) = '$mont' and YEAR(trx_date)='$year' and posting_st = 'YES' and currency_code ='$currancy'
             group by bank_id,b.id,bank_norek,bank_name,branch
             "; 
             $query = $this->db->query($sql);

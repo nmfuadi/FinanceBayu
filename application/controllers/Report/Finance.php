@@ -108,7 +108,7 @@ class Finance extends AppBase
         $this->VIEW_FILE = "Report/Finance/InsertManual"; // dynamic
         $load_resource = $this->load_resource(); // digawe ngene ikie
         $load_resource['emp'] = $this->M_Admin->get_employe_by_id($this->session->userdata('u'));
-        $load_resource['bank'] = $this->M_Admin->get_all_data('fin_bank');
+        $load_resource['bank'] = $this->M_Admin->get_all_data('fin_bank order by bank_name ASC');
         $load_resource['kurs'] = $this->M_Admin->get_all_data('fin_kurs_name');
         $load_resource['account'] = $this->M_Admin->get_all_data('fin_account');
         $load_resource['data'] = array(
@@ -128,7 +128,7 @@ class Finance extends AppBase
         $this->VIEW_FILE = "Report/Finance/VsyncCurrency"; // dynamic
         $load_resource = $this->load_resource(); // digawe ngene ikie
      
-        $load_resource['bank'] = $this->M_Admin->get_all_data('fin_bank');
+        $load_resource['bank'] = $this->M_Admin->get_all_data('fin_bank order by bank_name');
         $load_resource['kurs'] = $this->M_Admin->get_all_data('fin_kurs_name');
         
         $load_resource['data'] = array(

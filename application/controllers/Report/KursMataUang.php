@@ -41,7 +41,7 @@ class KursMataUang extends AppBase
 
         $this->load->library('pagination');
         $this->pagination->initialize($config);
-
+        $load_resource['kurs'] = $this->M_Admin->get_all_data('fin_kurs_name');
         $load_resource['data'] = array(
             'KursMataUang_data' => $KursMataUang,
             'q' => $q,
