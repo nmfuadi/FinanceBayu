@@ -2744,6 +2744,32 @@ class Finance extends AppBase
 
 
 
+    public function ListSaldoAwal(){
+
+        $this->VIEW_FILE = "Report/Finance/VsaldoAwalList"; // dynamic
+        $load_resource = $this->load_resource(); // digawe ngene ikie
+        //$load_resource['CONTOH'] = 'Namaku Fuad';
+        //$load_resource['emp'] = $this->M_Admin->get_employe_by_id($this->session->userdata('u'));
+        
+       // $q = urldecode($this->input->get('q', TRUE));
+        $mont = $this->input->get('mont', TRUE);
+        $cur = $this->input->get('kurs', TRUE);
+       
+
+        $load_resource['currancy'] = $this->input->get('kurs', TRUE);
+        $load_resource['mont'] = $mont;
+        $load_resource['action'] = site_url('Report/Finance/ReportBulanan');
+        $load_resource['bank'] = $this->M_Admin->get_all_data('fin_bank order by bank_name');
+        $load_resource['kurs'] = $this->M_Admin->get_all_data('fin_kurs_name');
+        $load_resource['data'] = $this->M_Admin->SaldoaAwalAccount();
+       
+        //$load_resource['q'] =$q_val;
+        $this->load->view($this->MAIN_VIEW, $load_resource); // fix
+
+    }
+
+
+
     public function _rules_vp()
     {
         $this->form_validation->set_rules('jobs_tittle', 'jobs tittle', 'trim|required');

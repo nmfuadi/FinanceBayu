@@ -21,7 +21,7 @@
 				   ' . $this->session->userdata('message') . '
 				</div>' : ''; ?>
 
-                        <div class="row" style="margin-bottom: 10px">
+                        <div class="row">
                             <div class="col-md-4">
                                 <?php
 
@@ -39,57 +39,29 @@
                             </div>
                             <div class="col-md-4 text-center">
                                 <div style="margin-top: 8px" id="message">
-                                    <a href="#" class="btn btn-success" data-toggle="modal" data-target="#largeModal">Select Report</a>
+                                    <a href="#" class="btn btn-success" data-toggle="modal" data-target="#largeModal">Select Setup Saldo Awal</a>
                                 </div>
                             </div>
 
 
-
+                            <form action="<?php echo $action; ?>" class="form-horizontal" method="GET" enctype="multipart/form-data" accept-charset="utf-8">
                             <div class="modal fade" id="largeModal" tabindex="-1" role="dialog" aria-labelledby="largeModal" aria-hidden="true">
                                 <div class="modal-dialog modal-lg">
                                     <div class="modal-content">
                                         <div class="modal-header">
                                             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                                            <h4 class="modal-title" id="myModalLabel">Report Bulanan</h4>
+                                            <h4 class="modal-title" id="myModalLabel">Select List Saldo Awal</h4>
                                         </div>
                                         <div class="modal-body">
-
-
-                                            <form action="<?php echo $action; ?>" class="form-horizontal" method="GET" enctype="multipart/form-data" accept-charset="utf-8">
-
-                                                <div class="col-md-12">
-                                                    <div class="form-group">
-                                                        <label class="control-label col-md-3">Rekenening Bank </label>
-                                                        <div class="col-md-9">
-                                                            <select name="rekening" class="form-control">
-                                                                <option value="" selected disabled>Pilih Rekening</option>
-                                                                <option value="">Semua Rekening Bank</option>
-                                                                <?php
-                                                                if (!empty($bank)) {
-                                                                    foreach ($bank as $banks) { ?>
-                                                                        <option value="<?php echo $banks['id'] ?>"><?php echo $banks['bank_name'] . '-' . $banks['branch'] . ' (' . $banks['bank_norek'] . ')-' . $banks['currency_code']; ?></option>
-                                                                <?php }
-                                                                } ?>
-
-                                                            </select>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
 
                                                 <!--/span-->
                                                 <div class="col-md-12">
                                                     <div class="form-group">
-                                                        <label class="control-label col-md-3">Range Tanggal Transaksi</label>
+                                                        <label class="control-label col-md-3">Bulan</label>
                                                         <div class="col-md-4">
-                                                            <input class="form-control" type="date" name="start" value="" placeholder="Start" />
+                                                            <input class="form-control" type="month" name="start" value="" placeholder="Start" />
                                                         </div>
-                                                        <div class="col-md-1">
-                                                            <label class="control-label">Sampai</label>
-                                                        </div>
-                                                        <div class="col-md-4">
-                                                            <input class="form-control" type="date" name="end" value="" placeholder="End" />
-                                                        </div>
+                                                        
                                                     </div>
                                                 </div>
 
@@ -100,7 +72,7 @@
                                                         <div class="col-md-9">
                                                             <select id="kurs" name="kurs" class="form-control">
                                                                 <option value="" selected disabled>Pilih Kurs Matauang</option>
-                                                                <option value="">All Currancy</option>
+                                                               
                                                                 <?php
                                                                 if (!empty($kurs)) {
                                                                     foreach ($kurs as $kurs) {
@@ -122,13 +94,14 @@
                                         </div>
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                            <button type="submit" class="btn btn-primary">View Report</button>
+                                            <button type="submit" class="btn btn-primary">Submit</button>
                                         </div>
 
-                                        </form>
+                                       
                                     </div>
                                 </div>
                             </div>
+                            </form>
 
 
                         </div>
@@ -139,7 +112,7 @@
 
                                         <th class="text-center">KETERANGAN</th>
                                         <th class="text-center">JUMLAH (IDR)</th>
-                                        <?php if (empty($currancy) or $currancy != 'IDR') { ?>
+                                        <?php if (!empty($currancy) and $currancy != 'IDR') { ?>
                                             <th class="text-center">ORIGINAL AMOUNT (<?php echo $currancy ?>)</th>
                                         <?php } ?>
                                         <th class="text-center">ACTION</th>
@@ -162,7 +135,7 @@
 
                                                 <td class="text-left"> <?php echo $val['account_name'] ?></td>
                                                 <td class="text-right"> <?php echo number_format($val['uang'], 2, ",", ".") ?></td>
-                                                <?php if (empty($currancy) or $currancy != 'IDR') { ?>
+                                                <?php if (!empty($currancy) and $currancy != 'IDR') { ?>
                                                     <td class="text-right"> <?php echo number_format($val['uang_ori'], 2, ",", ".") ?></td>
 
                                                 <?php } ?>
@@ -188,7 +161,7 @@
                                         <tr>
                                             <td class="text-center" colspan="1"><b>TOTAL PENERIMAAN</b></td>
                                             <td class="text-right"><b><?php echo number_format($jml_cr, 2, ",", "."); ?> </b></td>
-                                            <?php if (empty($currancy) or $currancy != 'IDR') { ?>
+                                            <?php if (!empty($currancy) and $currancy != 'IDR') { ?>
                                                 <td class="text-right"><b><?php echo number_format($jml_cr_ori, 2, ",", "."); ?> </b></td>
                                             <?php } ?>
                                         </tr>
@@ -217,7 +190,7 @@
 
                                                 <td class="text-left"> <?php echo $val_db['account_name'] ?></td>
                                                 <td class="text-right"> <?php echo number_format($val_db['uang'], 2, ",", ".") ?></td>
-                                                <?php if (empty($currancy) or $currancy != 'IDR') { ?>
+                                                <?php if (!empty($currancy) and $currancy != 'IDR') { ?>
                                                     <td class="text-right"> <?php echo number_format($val_db['uang_ori'], 2, ",", ".") ?></td>
 
 
@@ -244,7 +217,7 @@
                                         <tr>
                                             <td class="text-center" colspan="1"><b>TOTAL PENGELUARAN</b></td>
                                             <td class="text-right"><b><?php echo number_format($jml_db, 2, ",", "."); ?> </b></td>
-                                            <?php if (empty($currancy) or $currancy != 'IDR') { ?>
+                                            <?php if (!empty($currancy) and $currancy != 'IDR') { ?>
                                                 <td class="text-right"><b><?php echo number_format($jml_db_ori, 2, ",", "."); ?> </b></td>
                                             <?php } ?>
 
@@ -262,7 +235,7 @@
                                         <tr>
                                             <td class="text-center" colspan="1"><b> SALDO PENERIMAAN - PENGELUARAN</b></td>
                                             <td class="text-right"><b><?php echo number_format($jml_cr - $jml_db, 2, ",", "."); ?> </b></td>
-                                            <?php if (empty($currancy) or $currancy != 'IDR') { ?>
+                                            <?php if (!empty($currancy) and $currancy != 'IDR') { ?>
                                                 <td class="text-right"><b><?php echo number_format($jml_cr_ori - $jml_db_ori, 2, ",", "."); ?> </b></td>
                                             <?php } ?>
 

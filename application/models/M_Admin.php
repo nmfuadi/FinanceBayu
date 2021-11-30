@@ -939,7 +939,7 @@ function get_data_by_id($table, $column, $id,$and=null){
             (sum(case when type_mutation='CR' then original_amount end) - sum(case when type_mutation='DB' then original_amount end)) as jml_uang_ori,
             bank_id,b.id,b.bank_norek,bank_name,branch 
                 from fin_mutation a join fin_bank b on a.bank_id = b.id
-                where month(trx_date) = '11' and YEAR(trx_date)='2021' and posting_st = 'YES' and currency_code ='IDR'
+                where month(trx_date) = '$mont' and YEAR(trx_date)='$year' and posting_st = 'YES' and currency_code ='$currancy'
                 group by bank_id,b.id,bank_norek,bank_name,branch
             "; 
             $query = $this->db->query($sql);
