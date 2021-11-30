@@ -2755,7 +2755,7 @@ class Finance extends AppBase
         $mont = $this->input->get('mont', TRUE);
         $cur = $this->input->get('kurs', TRUE);
        
-
+        
         $load_resource['currancy'] = $this->input->get('kurs', TRUE);
         $load_resource['mont'] = $mont;
         $load_resource['action'] = site_url('Report/Finance/ReportBulanan');
