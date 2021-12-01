@@ -100,7 +100,7 @@
                                                     <div class="form-group">
                                                         <label class="control-label col-md-3">Jumlah Transaksi</label>
                                                         <div class="col-md-9">
-                                                            <input class="form-control"  type="number" name="amount" value="" /> </div> </div>
+                                                            <input class="form-control"  type="text" name="amount" value="" /> </div> </div>
                                                     </div>
 
 
