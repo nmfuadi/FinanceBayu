@@ -1767,7 +1767,7 @@ class Finance extends AppBase
                 //$allDataInSheet = $spreadsheet->getActiveSheet()->toArray(null, true, true, true);
                 $sheetData = $spreadsheet->getActiveSheet()->toArray();
 
-                  echo count($sheetData);
+                echo count($sheetData);
                  echo '<table border=1>
                  <tr>
                  <th>NO</th>
@@ -1780,10 +1780,10 @@ class Finance extends AppBase
                 for ($i = 1; $i < count($sheetData); $i++) {
                     $tgl = $sheetData[$i]['0'];
                     $ket = $sheetData[$i]['1'];
-                    $dbt = $sheetData[$i]['2'];
-                    $crd = $sheetData[$i]['3'];
-
-                    if ($dbt == '0,00' or $dbt == '0.00' or $dbt == ''  ) {
+                    $dbt = $sheetData[$i]['4'];
+                    $crd = $sheetData[$i]['5'];
+                    
+                    if ( $dbt == '0.00' or $dbt == ''  ) {
                         $jml = $crd;
                         $jml_jn = 'CR';
                     } else {
@@ -1792,49 +1792,35 @@ class Finance extends AppBase
                         $jml_jn = 'DB';
                     }
 
-
-                    
-                    $str = ['.',','];
-                    $replace = ['','.'];
+                    $str = [','];
+                    $replace = [''];
                     $jml_fix = str_replace($str, $replace, $jml);
                 
-
-
-                   /*
-                    //$jml_jn = substr($jml, -2);
-                    if (!empty(is_numeric($jml_fix))) {
-                      echo '  <tr>
-                                 <td>'.$i.'</td>
-                                <td>'.$tgl.'</td>
-                                <td>'.$ket.'</td>
-                        <td>'.$jml_fix.'</td>
-                         <td>'.$jml_jn.'</td>
-                             </tr>
-                     ';
-                    }
-
-                */
-
+                   
+                    // //$jml_jn = substr($jml, -2);
+                 
+                    //   echo '  <tr>
+                    //              <td>'.$i.'</td>
+                    //             <td>'.date('Y-m-d', strtotime($tgl)).'</td>
+                    //             <td>'.$ket.'</td>
+                    //     <td>'.$jml_fix.'</td>
+                    //      <td>'.$jml_jn.'</td>
+                    //          </tr>
+                    //  ';
                     
+                    if(!empty($tgl)){
+                        // $date_exp = explode('/',$tgl);
+                         $date_ok =  date('Y-m-d', strtotime($tgl));
+                     }
 
- 
-
-                    if (!empty(is_numeric($jml_fix))) {
-                        if(!empty($tgl)){
-                            $date_exp = explode('/',$tgl);
-                            $date_ok =  $date_exp[2].'-'.$date_exp[1].'-'.$date_exp[0];
-                        }
-                        
-                        
-        
-                      
-                        
+                    if (!empty(is_numeric($jml_fix)) and $date_ok !='1970-01-01') {
+                          
                         $ar[] = array(
                             'bank_id' => $this->input->post('rekening', TRUE),
                             'remark' => strval($ket),
                             'amount' => $jml_fix,
                             'original_amount' => $jml_fix,
-                            'trx_date' => date('m-d-Y', strtotime($date_ok)),
+                            'trx_date' =>  $date_ok,
                             'type_mutation' => $jml_jn,
                             'currancy'=>$this->input->post('currancy', TRUE),
                             'posting_st' => 'NO',
