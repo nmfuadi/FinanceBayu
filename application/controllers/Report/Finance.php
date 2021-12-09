@@ -65,9 +65,9 @@ class Finance extends AppBase
             $load_resource['kurs'] = $this->M_Admin->get_all_data('fin_kurs_name');
 
             if($_GET['format']!='GENERAL'){
-                $table = "fin_bank WHERE bank_name = '".$_GET['format']."' Order By bank_name ASC";
+                $table = "fin_bank WHERE bank_name = '".$_GET['format']."' Order By bank_name,branch ASC";
             }else {
-                $table = "fin_bank   Order By bank_name ASC";
+                $table = "fin_bank   Order By bank_name,branch ASC";
             }
 
            
@@ -108,7 +108,7 @@ class Finance extends AppBase
         $this->VIEW_FILE = "Report/Finance/InsertManual"; // dynamic
         $load_resource = $this->load_resource(); // digawe ngene ikie
         $load_resource['emp'] = $this->M_Admin->get_employe_by_id($this->session->userdata('u'));
-        $load_resource['bank'] = $this->M_Admin->get_all_data('fin_bank order by bank_name ASC');
+        $load_resource['bank'] = $this->M_Admin->get_all_data('fin_bank order by bank_name,branch ASC');
         $load_resource['kurs'] = $this->M_Admin->get_all_data('fin_kurs_name');
         $load_resource['account'] = $this->M_Admin->get_all_data('fin_account');
         $load_resource['data'] = array(
@@ -128,7 +128,7 @@ class Finance extends AppBase
         $this->VIEW_FILE = "Report/Finance/VsyncCurrency"; // dynamic
         $load_resource = $this->load_resource(); // digawe ngene ikie
      
-        $load_resource['bank'] = $this->M_Admin->get_all_data('fin_bank order by bank_name');
+        $load_resource['bank'] = $this->M_Admin->get_all_data('fin_bank order by bank_name,branch');
         $load_resource['kurs'] = $this->M_Admin->get_all_data('fin_kurs_name');
         
         $load_resource['data'] = array(
@@ -213,7 +213,7 @@ class Finance extends AppBase
         $this->VIEW_FILE = "Report/Finance/Edit";
         $load_resource = $this->load_resource(); // digawe ngene ikie
         $row = $this->M_Admin->get_data_by_mutation_id('fin_mutation', 'id', $id);
-        $load_resource['bank'] = $this->M_Admin->get_all_data('fin_bank');
+        $load_resource['bank'] = $this->M_Admin->get_all_data('fin_bank order by bank_name,branch');
         $load_resource['kurs'] = $this->M_Admin->get_all_data('fin_kurs_name');
         $where = "trx_type ='" . $row['type_mutation'] . "'";
         $load_resource['account'] = $this->M_Admin->get_all_data_where('fin_account', $where);
@@ -296,10 +296,10 @@ class Finance extends AppBase
             $this->M_Admin->update('fin_mutation',$data, $where);
             $this->session->set_flashdata('message', 'Update Record Success');
             $this->session->set_flashdata('status', 'alert-success');
-            if ($this->input->post('source', TRUE)!='PostingImport') {
+            if ($this->input->post('source', TRUE)!='PostingImport' and $this->input->post('source', TRUE)!='MonitoringDetail') {
                 redirect(site_url('Report/Finance/'.$this->input->post('source', TRUE).'?start='.$this->input->post('pagination', TRUE).'&q='.$this->input->post('q', TRUE)));
             } else {
-                redirect(site_url('Report/Finance/PostingImport/'.$tglnew));
+                redirect(site_url('Report/Finance/'.$this->input->post('source', TRUE).'/'.$tglnew));
             }
            
         }
@@ -373,7 +373,7 @@ class Finance extends AppBase
         $this->VIEW_FILE = "Report/Finance/Insert"; // dynamic
         $load_resource = $this->load_resource(); // digawe ngene ikie
         $load_resource['emp'] = $this->M_Admin->get_employe_by_id($this->session->userdata('u'));
-        $load_resource['bank'] = $this->M_Admin->get_all_data('fin_bank');
+        $load_resource['bank'] = $this->M_Admin->get_all_data('fin_bank order by bank_name,branch');
         $load_resource['data'] = array(
             'button' => 'Import Excell',
             'action' => site_url('Report/Finance/ImportPorcess'),
@@ -2253,6 +2253,53 @@ class Finance extends AppBase
     }
 
 
+    public function MonitoringDetail($tgl = null)
+    {
+
+        $this->VIEW_FILE = "Report/Finance/VMonitoringDetail"; // dynamic
+        $load_resource = $this->load_resource(); // digawe ngene ikie
+        //$load_resource['CONTOH'] = 'Namaku Fuad';
+        //$load_resource['emp'] = $this->M_Admin->get_employe_by_id($this->session->userdata('u'));
+        $tglnew = rawurldecode($tgl);
+        $where = "posting_date = '$tglnew' order by trx_date ASC";
+        $table = 'fin_mutation a JOIN fin_bank b ON a.bank_id = b.id';
+        $select = 'a.*,bank_rek_name,bank_norek,branch,gl_account,bank_name';
+        $load_resource['tgl'] =$tgl;
+        $load_resource['data'] = $this->M_Admin->get_all_data_where_select($select,$table, $where);
+        
+        $this->load->view($this->MAIN_VIEW, $load_resource); // fix
+    }
+
+
+    public function Monitroting()
+    {
+
+        $this->VIEW_FILE = "Report/Finance/Vmonitoring"; // dynamic
+        $load_resource = $this->load_resource(); // digawe ngene ikie
+        //$load_resource['CONTOH'] = 'Namaku Fuad';
+        //$load_resource['emp'] = $this->M_Admin->get_employe_by_id($this->session->userdata('u'));
+        
+        $load_resource['data'] = $this->M_Admin->Monitoring();
+        
+        
+        $this->load->view($this->MAIN_VIEW, $load_resource); // fix
+    }
+
+    public function DetailMonitoring($tgl = null)
+    {
+
+        $this->VIEW_FILE = "Report/Finance/VDetailMonitoring"; // dynamic
+        $load_resource = $this->load_resource(); // digawe ngene ikie
+        //$load_resource['CONTOH'] = 'Namaku Fuad';
+        //$load_resource['emp'] = $this->M_Admin->get_employe_by_id($this->session->userdata('u'));
+        
+        $load_resource['data'] = $this->M_Admin->Monitoring();
+        
+        
+        $this->load->view($this->MAIN_VIEW, $load_resource); // fix
+    }
+
+
 
     public function postingPorcessAll()
     {
@@ -2349,10 +2396,10 @@ class Finance extends AppBase
 
             $this->M_Admin->delete('fin_mutation', $where);
 
-            if ($this->input->post('source', TRUE)!='PostingImport') {
+            if ($source!='PostingImport' and $source!='MonitoringDetail') {
                 redirect(site_url('Report/Finance/'.$source.'?start='.$pagination));
             } else {
-                redirect(site_url('Report/Finance/PostingImport/'.$tgl));
+                redirect(site_url('Report/Finance/'.$source.'/'.$tgl));
             }
             
 
@@ -2556,7 +2603,7 @@ class Finance extends AppBase
             $config['first_url'] = base_url() . 'Report/Finance/viewAllJournal';
         }
 
-        $load_resource['bank'] = $this->M_Admin->get_all_data('fin_bank order by bank_name');
+        $load_resource['bank'] = $this->M_Admin->get_all_data('fin_bank order by bank_name,branch');
         $load_resource['kurs'] = $this->M_Admin->get_all_data('fin_kurs_name');
         $load_resource['action'] = site_url('Report/Finance/excelJurnalUmum');
 
@@ -2625,9 +2672,10 @@ class Finance extends AppBase
         $load_resource['currancy'] = $this->input->get('kurs', TRUE);
         $load_resource['start'] = $start;
         $load_resource['end'] = $end;
-        $load_resource['bank_id'] = $bank_id;
+        $load_resource['cur'] = $cur;
+        $load_resource['kur'] = $bank_id;
         $load_resource['action'] = site_url('Report/Finance/ReportBulanan');
-        $load_resource['bank'] = $this->M_Admin->get_all_data('fin_bank order by bank_name');
+        $load_resource['bank'] = $this->M_Admin->get_all_data('fin_bank order by bank_name,branch');
         $load_resource['kurs'] = $this->M_Admin->get_all_data('fin_kurs_name');
         $load_resource['data_cr'] = $this->M_Admin->ReportCashflowPerBulan($start,$end,$bank_id, $cur,'CR');
         $load_resource['data_db'] = $this->M_Admin->ReportCashflowPerBulan($start,$end,$bank_id, $cur,'DB');
@@ -2649,7 +2697,7 @@ class Finance extends AppBase
         $end = $this->input->get('end_date', TRUE);
         $account=$this->input->get('account', TRUE);
         $bank_id = $this->input->get('bank_id', TRUE);
-        //$cur = $this->input->get('kurs', TRUE);
+        $cur = $this->input->get('cur', TRUE);
 
 
         $load_resource['currancy'] = $this->input->get('kurs', TRUE);
@@ -2659,7 +2707,7 @@ class Finance extends AppBase
         $load_resource['akun'] = $this->M_Admin->get_data_by_id("fin_account","code","'$account'");
         $load_resource['bank'] = $this->M_Admin->get_data_by_id("fin_bank","id","'$bank_id'");
         $load_resource['kurs'] = $this->M_Admin->get_all_data('fin_kurs_name');
-        $load_resource['data_ac'] = $this->M_Admin->ReportCashflowPerBulanByAccount($start,$end,$account,$bank_id);
+        $load_resource['data_ac'] = $this->M_Admin->ReportCashflowPerBulanByAccount($start,$end,$account,$bank_id,$cur);
 
         $load_resource['data'] = array(
             
@@ -2700,7 +2748,7 @@ class Finance extends AppBase
             $config['first_url'] = base_url() . 'Report/Finance/DetailReportBulanan';
         }
 
-        $load_resource['bank'] = $this->M_Admin->get_all_data('fin_bank order by bank_name');
+        $load_resource['bank'] = $this->M_Admin->get_all_data('fin_bank order by bank_name,branch');
         $load_resource['kurs'] = $this->M_Admin->get_all_data('fin_kurs_name');
         $load_resource['bank'] = $this->M_Admin->get_fin_by_id('fin_bank','id',$bank_id);
         $load_resource['akun'] = $this->M_Admin->get_data_by_id("fin_account","code","'$account'");
@@ -2747,7 +2795,7 @@ class Finance extends AppBase
         $load_resource['currancy'] = $this->input->get('kurs', TRUE);
         $load_resource['mont'] = $mont;
         $load_resource['action'] = site_url('Report/Finance/ReportBulanan');
-        $load_resource['bank'] = $this->M_Admin->get_all_data('fin_bank order by bank_name');
+        $load_resource['bank'] = $this->M_Admin->get_all_data('fin_bank order by bank_name,branch');
         $load_resource['kurs'] = $this->M_Admin->get_all_data('fin_kurs_name');
         $load_resource['data'] = $this->M_Admin->SaldoaAwalAccount();
        

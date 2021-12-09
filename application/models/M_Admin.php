@@ -926,12 +926,12 @@ function get_data_by_id($table, $column, $id,$and=null){
 		
 		
 		
-		function ReportCashflowPerBulanByAccount($start = null,$end = null, $account= null,$bank_id=null){
+		function ReportCashflowPerBulanByAccount($start = null,$end = null, $account= null,$bank_id=null,$cur=null){
 
             $sql = "select sum(amount) as uang,sum(original_amount) as uang_ori ,bank_id,b.id,b.bank_norek,bank_name,branch 
             from fin_mutation a join fin_bank b on a.bank_id = b.id
-            where trx_date between '$start' and '$end' and account_code = '$account' and posting_st = 'YES' and bank_id like '%$bank_id%'
-            group by bank_id,b.id,bank_norek,bank_name,branch
+            where trx_date between '$start' and '$end' and account_code = '$account' and posting_st = 'YES' and bank_id like '%$bank_id%' and a.currancy like '%$cur%'
+            group by bank_id,b.id,bank_norek,bank_name,branch order by bank_name,branch
             "; 
             $query = $this->db->query($sql);
             if ($query->num_rows() > 0) {

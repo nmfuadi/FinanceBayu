@@ -159,22 +159,15 @@
                                         foreach ($data_cr as $val) {
                                     ?>
                                             <tr>
-
-
                                                 <td class="text-left"> <?php echo $val['account_name'] ?></td>
                                                 <?php if (empty($currancy) or $currancy != 'IDR') { ?>
                                                     <td class="text-right"> <?php echo number_format($val['uang_ori'], 2, ",", ".") ?></td>
 
                                                 <?php } ?>
-                                                <td class="text-right"> <?php echo number_format($val['uang'], 2, ",", ".") ?></td>
-                                                
+                                                <td class="text-right"> <?php echo number_format($val['uang'], 2, ",", ".") ?></td>      
                                                 <td>
-
-                                                    <a class="btn btn-success btn-outline btn-xs" href="<?php echo site_url('Report/Finance/ReportBulananByAccount/?start_date=' . $start . '&end_date=' . $end . '&account=' . $val['account_code'] . '&bank_id=' . $bank_id) ?>" target="_blank">DETAIL<i class="fa fa-pencil" aria-hidden="true"></i></a>
+                                                    <a class="btn btn-success btn-outline btn-xs" href="<?php echo site_url('Report/Finance/ReportBulananByAccount/?start_date=' . $start . '&end_date=' . $end . '&account=' . $val['account_code'] . '&bank_id=' . $bank_id. '&cur=' . $cur) ?>" target="_blank">DETAIL<i class="fa fa-pencil" aria-hidden="true"></i></a>
                                                 </td>
-
-
-
                                             </tr>
                                             <?php
                                             $jml_cr = $val['uang'] + $jml_cr;
