@@ -2390,6 +2390,7 @@ class Finance extends AppBase
             $sheet->setCellValue('F1', 'Jenis');
             $sheet->setCellValue('G1', 'Account');
             $sheet->setCellValue('H1', 'Bank');
+			$sheet->setCellValue('I1', 'ID');
 
             $no = 1;
 			$x = 2;
@@ -2411,6 +2412,7 @@ class Finance extends AppBase
                 $sheet->setCellValue('F'. $x, $data['type_mutation']);
                 $sheet->setCellValue('G'. $x, $account);
                 $sheet->setCellValue('H'. $x, $banks);
+				$sheet->setCellValue('I'. $x, $data['id_mut']);
                 $x++;
                 
             }

@@ -23,7 +23,7 @@
 
                             <div class="form-group">
                                 <label for="double">Kurs Amount <?php echo form_error('kurs_amount') ?></label>
-                                <input type="number" class="form-control" name="kurs_amount" id="kurs_amount" placeholder="Kurs Amount" value="<?php echo $kurs_amount; ?>" />
+                                <input type="text" class="form-control" name="kurs_amount" id="kurs_amount" placeholder="Kurs Amount" value="<?php echo $kurs_amount; ?>" />
                             </div>
                             <div class="form-group">
                                 <label for="date">Kurs Date <?php echo form_error('kurs_date') ?></label>
