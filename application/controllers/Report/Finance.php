@@ -2271,7 +2271,7 @@ class Finance extends AppBase
     }
 
 
-    public function Monitroting()
+    public function Monitoring()
     {
 
         $this->VIEW_FILE = "Report/Finance/Vmonitoring"; // dynamic
