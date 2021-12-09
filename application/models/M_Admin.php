@@ -889,6 +889,22 @@ function get_data_by_id($table, $column, $id,$and=null){
                 return NULL;
             }
         }
+		
+		
+		function Monitoring(){
+
+            $sql = "select count(*) as jumlah,posting_date,bank_name,bank_norek,branch, min(trx_date) as tgl_awal,max(trx_date) as tgl_ahir from
+					fin_mutation a join fin_bank b on a.bank_id = b.id 
+					group by posting_date,bank_name,bank_norek,branch having count(posting_date) > 1 order by bank_name,branch,posting_date desc"; 
+            $query = $this->db->query($sql);
+            if ($query->num_rows() > 0) {
+                $result = $query->result_array();
+                $query->free_result();
+                return $result;
+            } else {
+                return NULL;
+            }
+        }
 
 
         function ReportCashflowPerBulan($start = null,$end = null,$bank_id= null,$cur=null,$type=null){
